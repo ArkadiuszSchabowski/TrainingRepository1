@@ -6,10 +6,8 @@ namespace Application
     {
         static void Main(string[] args)
         {
-        char znak = 'c';
-        string imie = "Mateusz";
-        int wiek = 20;
-        double pi = 3.14;
+console.writeline("Hej świnko")
+console.writeline("Jak się masz?")
         }
     }
 }
