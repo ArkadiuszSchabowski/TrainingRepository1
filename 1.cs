@@ -6,7 +6,10 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        char znak = 'c';
+        string imie = "Mateusz";
+        int wiek = 20;
+        double pi = 3.14;
         }
     }
 }
