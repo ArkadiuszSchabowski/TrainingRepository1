@@ -1,0 +1,15 @@
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\bin\Debug\net6.0\BladZnaleziony.exe
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\bin\Debug\net6.0\BladZnaleziony.deps.json
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\bin\Debug\net6.0\BladZnaleziony.runtimeconfig.json
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\bin\Debug\net6.0\BladZnaleziony.dll
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\bin\Debug\net6.0\BladZnaleziony.pdb
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.AssemblyInfoInputs.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.AssemblyInfo.cs
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.dll
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\refint\BladZnaleziony.dll
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.pdb
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\BladZnaleziony.genruntimeconfig.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\BladZnaleziony\BladZnaleziony\obj\Debug\net6.0\ref\BladZnaleziony.dll
