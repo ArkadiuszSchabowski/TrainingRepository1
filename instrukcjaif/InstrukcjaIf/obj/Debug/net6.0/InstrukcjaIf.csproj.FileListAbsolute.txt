@@ -1,0 +1,15 @@
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\bin\Debug\net6.0\InstrukcjaIf.exe
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\bin\Debug\net6.0\InstrukcjaIf.deps.json
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\bin\Debug\net6.0\InstrukcjaIf.runtimeconfig.json
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\bin\Debug\net6.0\InstrukcjaIf.dll
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\bin\Debug\net6.0\InstrukcjaIf.pdb
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.AssemblyInfoInputs.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.AssemblyInfo.cs
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.dll
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\refint\InstrukcjaIf.dll
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.pdb
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\InstrukcjaIf.genruntimeconfig.cache
+C:\Users\Greedy Piggy\Desktop\PROGRAMOWANIE 2023\InstrukcjaIf\InstrukcjaIf\obj\Debug\net6.0\ref\InstrukcjaIf.dll
