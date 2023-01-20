@@ -6,16 +6,24 @@ namespace BladZnaleziony
     {
         static void Main(string[] args)
         {
-            double number1;
-            double number2;
+            int zmienna1, zmienna2;
 
-            Console.WriteLine("Podaj pierwszą liczbę");
-            double.TryParse(Console.ReadLine(), out number1);
-            Console.WriteLine("Podaj drugą liczbę");
-            double.TryParse(Console.ReadLine(), out number2);
+            Console.WriteLine("Wprowadź 1 cyfrę");
+            zmienna1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wprowadź 2 cyfrę");
+            zmienna2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wynik działania to " + (zmienna1 + zmienna2));
 
+            double pierwsza, druga;
 
-            Console.WriteLine("Wynik Twojego dodawania to: " + (number1 + number2));
+            Console.WriteLine("Wprowadź 3 cyfrę");
+            double.TryParse(Console.ReadLine(), out pierwsza);
+            Console.WriteLine("Wprowadź 4 cyfrę");
+            double.TryParse(Console.ReadLine(), out druga);
+            Console.WriteLine("wynik to: " + (zmienna1 + zmienna2 + pierwsza + druga));
+
+            if ((zmienna1 + zmienna2 + pierwsza + druga) > 20) ;
+
         }
     }
 }
