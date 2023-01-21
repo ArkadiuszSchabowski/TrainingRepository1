@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace instrukcja
+namespace SwinskiTest
 {
     class Program
     {
