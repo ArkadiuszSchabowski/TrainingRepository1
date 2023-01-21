@@ -20,6 +20,6 @@ Console.ReadLine();
 }
 else
 {
-    Console.WriteLine("Twoja wiedza na temat świnek morskich wymaga powtórki");
+    Console.WriteLine("Twoja wiedza o świnkach wymaga powtórki");
 }
 */

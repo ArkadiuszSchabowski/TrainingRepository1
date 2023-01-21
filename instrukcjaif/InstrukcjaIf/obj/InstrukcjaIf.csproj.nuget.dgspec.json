@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\InstrukcjaIf\\InstrukcjaIf\\InstrukcjaIf.csproj": {}
+    "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\instrukcjaif\\InstrukcjaIf\\InstrukcjaIf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\InstrukcjaIf\\InstrukcjaIf\\InstrukcjaIf.csproj": {
+    "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\instrukcjaif\\InstrukcjaIf\\InstrukcjaIf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\InstrukcjaIf\\InstrukcjaIf\\InstrukcjaIf.csproj",
+        "projectUniqueName": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\instrukcjaif\\InstrukcjaIf\\InstrukcjaIf.csproj",
         "projectName": "InstrukcjaIf",
-        "projectPath": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\InstrukcjaIf\\InstrukcjaIf\\InstrukcjaIf.csproj",
+        "projectPath": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\instrukcjaif\\InstrukcjaIf\\InstrukcjaIf.csproj",
         "packagesPath": "C:\\Users\\Greedy Piggy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\InstrukcjaIf\\InstrukcjaIf\\obj\\",
+        "outputPath": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\instrukcjaif\\InstrukcjaIf\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Greedy Piggy\\AppData\\Roaming\\NuGet\\NuGet.Config",
