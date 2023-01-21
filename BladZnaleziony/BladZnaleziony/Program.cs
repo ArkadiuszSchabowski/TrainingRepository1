@@ -5,16 +5,32 @@ namespace BladZnaleziony
     class Program
     {
         static void Main(string[] args)
+
         {
-            int number1, number2;
+            bool prawda, nieprawda;
+            int kotek, piesek;
+            string wynik;
+            Console.WriteLine("Podaj pierwszą cyfrę!");
+            kotek = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Podaj drugą cyfrę");
+            piesek = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wynik Twojego odejmowania to");
+            Console.WriteLine("Twój wynik to " + (kotek - piesek));
+            prawda = kotek == 1;
+            nieprawda = piesek == 0;
+            wynik = C;
 
-            Console.WriteLine("Podaj pierwszą liczbę");
-            number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Podaj drugą liczbę");
-            number2 = Convert.ToInt32(Console.ReadLine());
+            wynik = kotek + piesek;
+            
 
+            if (prawda)
 
-            Console.WriteLine("Wynik Twojego dodawania to: " + (number1 + number2));
+            {
+                Console.WriteLine("Brawo.Poradziłeś, sobie z zadaniem");
+            }
+else
+            Console.WriteLine("Spróbuj jeszcze raz");
+
         }
     }
 }
