@@ -9,9 +9,7 @@ namespace Opponent
     internal class Program
     {
         static void Main(string[] args)
-        {
-
-        }
+        { }
     }
 }
 
@@ -22,7 +20,52 @@ namespace Opponent
 
 
 
-/* Program numer 2
+
+
+
+
+
+        /* Program Numer 3
+
+        {
+            double x1, x2;
+            string operation1;
+
+            Console.WriteLine("Podaj pierwszą cyfrę");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Podaj drugą cyfrę");
+            x2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Podaj operację, którą chcesz wykonać.");
+            Console.WriteLine("Dostępne opcje: dodaj, odejmij, pomnóż, podziel");
+            operation1 = Console.ReadLine();
+
+            if (operation1 == "dodaj")
+            {
+                Console.WriteLine(x1 + x2);
+                Console.ReadLine();
+            }
+            if (operation1 == "odejmij")
+            {
+                Console.WriteLine(x1 - x2);
+                Console.ReadLine();
+            }
+            if (operation1 == "pomnóż")
+            {
+                Console.WriteLine(x1 * x2);
+                Console.ReadLine();
+            }
+                if (operation1 == "podziel")
+                {
+                    Console.WriteLine(x1 / x2);
+                    Console.ReadLine();
+                }
+               else
+            Console.WriteLine("Wpisałeś złą opcję wyboru");
+            }
+        }
+    }
+
+ Program numer 2
 
             bool y1, y2;
             double x1, x2;

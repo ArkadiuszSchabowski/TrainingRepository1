@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\CSharp\\CSharp.csproj": {}
+    "C:\\Users\\Greedy Piggy\\Desktop\\Programowanie2023\\2023\\Csharp\\CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\CSharp\\CSharp.csproj": {
+    "C:\\Users\\Greedy Piggy\\Desktop\\Programowanie2023\\2023\\Csharp\\CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\CSharp\\CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\Greedy Piggy\\Desktop\\Programowanie2023\\2023\\Csharp\\CSharp.csproj",
         "projectName": "CSharp",
-        "projectPath": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\CSharp\\CSharp.csproj",
+        "projectPath": "C:\\Users\\Greedy Piggy\\Desktop\\Programowanie2023\\2023\\Csharp\\CSharp.csproj",
         "packagesPath": "C:\\Users\\Greedy Piggy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Greedy Piggy\\Desktop\\PROGRAMOWANIE 2023\\CSharp\\obj\\",
+        "outputPath": "C:\\Users\\Greedy Piggy\\Desktop\\Programowanie2023\\2023\\Csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Greedy Piggy\\AppData\\Roaming\\NuGet\\NuGet.Config",
