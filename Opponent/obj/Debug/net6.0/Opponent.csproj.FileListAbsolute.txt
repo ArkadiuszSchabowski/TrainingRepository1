@@ -1,0 +1,15 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\bin\Debug\net6.0\Opponent.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\bin\Debug\net6.0\Opponent.deps.json
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\bin\Debug\net6.0\Opponent.runtimeconfig.json
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\bin\Debug\net6.0\Opponent.dll
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\bin\Debug\net6.0\Opponent.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.AssemblyInfoInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.AssemblyInfo.cs
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.dll
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\refint\Opponent.dll
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\Opponent.genruntimeconfig.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Opponent\obj\Debug\net6.0\ref\Opponent.dll
