@@ -11,7 +11,6 @@ namespace Opponent
         static void Main(string[] args)
 
         {
-            string y1;
             int x1, x2;
 
             Console.WriteLine("Ile zarabiasz rocznie (liczba)?");
