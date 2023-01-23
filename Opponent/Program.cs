@@ -10,6 +10,27 @@ namespace Opponent
     {
         static void Main(string[] args)
         {
+            int i = 1;
+
+            while (i <= 10)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+        }
+    }
+}
+        
+
+
+
+
+
+
+
+
+/*Program Numer 4
+        {
             {
                 bool con1, con2;
                 double x1, x2;
@@ -56,19 +77,11 @@ namespace Opponent
                             }
                     }
 
-                }
             }
         }
     }
-
-
-            
-            
-            
-            
-            
-            
-            /*Program Numer 3
+}
+            Program Numer 3
         {
             double x1, x2;
             string operation1;
