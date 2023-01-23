@@ -9,24 +9,66 @@ namespace Opponent
     internal class Program
     {
         static void Main(string[] args)
-        { }
+        {
+            {
+                bool con1, con2;
+                double x1, x2;
+                string operation1;
+
+                Console.WriteLine("Podaj pierwszą cyfrę");
+                con1 = double.TryParse(Console.ReadLine(), out x1);
+                Console.WriteLine("Podaj drugą cyfrę");
+                con2 = double.TryParse(Console.ReadLine(), out x2);
+                Console.WriteLine("Podaj operację, którą chcesz wykonać.");
+                Console.WriteLine("Dostępne opcje: dodaj, odejmij, pomnóż, podziel");
+                operation1 = Console.ReadLine();
+
+                if (con1 || con2)
+                    switch (operation1)
+                    {
+                        case "dodaj":
+                            Console.WriteLine(x1 + x2);
+                            Console.ReadLine();
+                            {
+                                break;
+                            }
+                        case "odejmij":
+                            Console.WriteLine(x1 - x2);
+                            Console.ReadLine();
+                            {
+                                break;
+                            }
+                        case "pomnóż":
+                            Console.WriteLine(x1 * x2);
+                            Console.ReadLine();
+                            {
+                                break;
+                            }
+                        case "podziel":
+                            Console.WriteLine(x1 / x2);
+                            Console.ReadLine();
+                            {
+                                break;
+                            }
+                        default:
+                            {
+                                break;
+                            }
+                    }
+
+                }
+            }
+        }
     }
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-        /* Program Numer 3
-
+            
+            
+            
+            
+            
+            
+            /*Program Numer 3
         {
             double x1, x2;
             string operation1;
@@ -44,16 +86,19 @@ namespace Opponent
                 Console.WriteLine(x1 + x2);
                 Console.ReadLine();
             }
+            else
             if (operation1 == "odejmij")
             {
                 Console.WriteLine(x1 - x2);
                 Console.ReadLine();
             }
+            else
             if (operation1 == "pomnóż")
             {
                 Console.WriteLine(x1 * x2);
                 Console.ReadLine();
             }
+            else
                 if (operation1 == "podziel")
                 {
                     Console.WriteLine(x1 / x2);
@@ -65,7 +110,7 @@ namespace Opponent
         }
     }
 
- Program numer 2
+ /*Program numer 2
 
             bool y1, y2;
             double x1, x2;
