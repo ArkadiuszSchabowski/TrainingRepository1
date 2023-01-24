@@ -9,24 +9,28 @@ namespace Opponent
     internal class Program
     {
         static void Main(string[] args)
-        { }
+        {
+        
+        }
     }
 }
-        
+
+            /* Program Numer 6 - Petla for
+        {
+            for (int hp = 100; hp <= 100; hp--)
+            {
+                Console.WriteLine(hp);
+
+            }
+        }
+    }
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-/*Program Numer 5
+/*Program Numer 5 - Petla While
  * {
             int hp = 100;
             while (hp <= 100)
