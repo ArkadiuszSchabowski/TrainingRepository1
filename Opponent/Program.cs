@@ -10,7 +10,28 @@ namespace Opponent
     {
         static void Main(string[] args)
         {
-        
+
+        }
+    }
+}
+
+/* Program 7 - Pętla w pętli - zagnieżdżanie pętli
+        {
+            int x1, x2;
+
+            x1 = 0;
+            x2 = 0;
+            while (x1 <= 3)
+            {
+                while(x2 <=3)
+                {
+                    Console.WriteLine("x1 " + x1 + "    x2 " + x2);
+                    x2++;
+                }
+                x2 = 0;
+                x1++;
+            }
+
         }
     }
 }
