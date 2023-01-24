@@ -9,15 +9,7 @@ namespace Opponent
     internal class Program
     {
         static void Main(string[] args)
-        {
-            int i = 1;
-
-            while (i <= 10)
-            {
-                Console.WriteLine(i);
-                i++;
-            }
-        }
+        { }
     }
 }
         
@@ -27,6 +19,24 @@ namespace Opponent
 
 
 
+
+
+
+
+
+
+
+/*Program Numer 5
+ * {
+            int hp = 100;
+            while (hp <= 100)
+            {
+                Console.WriteLine(hp);
+                hp--;
+            }
+        }
+    }
+}
 
 
 /*Program Numer 4
