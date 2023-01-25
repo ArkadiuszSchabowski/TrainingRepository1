@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ConsoleApp3\obj\Debug\ConsoleApp3.pdb

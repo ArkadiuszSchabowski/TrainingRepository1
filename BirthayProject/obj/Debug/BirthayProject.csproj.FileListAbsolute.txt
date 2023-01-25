@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\bin\Debug\BirthayProject.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\bin\Debug\BirthayProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\bin\Debug\BirthayProject.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\obj\Debug\BirthayProject.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\obj\Debug\BirthayProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\obj\Debug\BirthayProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\obj\Debug\BirthayProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\BirthayProject\obj\Debug\BirthayProject.pdb
