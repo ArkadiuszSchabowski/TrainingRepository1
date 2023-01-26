@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,36 +10,40 @@ class TwojaKlasa
     static void Main(string[] args)
 
     {
-        bool y1, y2;
-        double x1, x2;
-        string operation1, operation2;
 
-        Console.WriteLine("Podaj pierwszą cyfrę");
-        y1 = double.TryParse(Console.ReadLine(), out x1);
-        Console.WriteLine("Podaj drugą cyfrę");
-        y2 = double.TryParse(Console.ReadLine(), out x2);
-        Console.WriteLine("Podaj operację, którą chcesz wykonać");
-        Console.WriteLine("Dodaj, Odejmij, pomnóż, podziel");
-        operation1 = Console.ReadLine();
-        operation2 = Console.ReadLine();
-
-        if (operation1 == "dodaj")
-        {
-            Console.WriteLine("Wybierz 1 lub 2");
- 
-        }
-        else
-        if (operation2 == "1")
-        {
-            Console.WriteLine("Wybrałeś 1");
-        }
-        else
-        if (operation2 == "2")
-        {
-            Console.WriteLine("Wybrałeś 2");
-        }
     }
 }
+        //Program Numer 9 - cwiczenia
+//        bool y1, y2;
+//        double x1, x2;
+//        string operation1, operation2;
+
+//        Console.WriteLine("Podaj pierwszą cyfrę");
+//        y1 = double.TryParse(Console.ReadLine(), out x1);
+//        Console.WriteLine("Podaj drugą cyfrę");
+//        y2 = double.TryParse(Console.ReadLine(), out x2);
+//        Console.WriteLine("Podaj operację, którą chcesz wykonać");
+//        Console.WriteLine("Dodaj, Odejmij, pomnóż, podziel");
+//        operation1 = Console.ReadLine();
+//        operation2 = Console.ReadLine();
+
+//        if (operation1 == "dodaj")
+//        {
+//            Console.WriteLine("Wybierz 1 lub 2");
+
+//        }
+//        else
+//        if (operation2 == "1")
+//        {
+//            Console.WriteLine("Wybrałeś 1");
+//        }
+//        else
+//        if (operation2 == "2")
+//        {
+//            Console.WriteLine("Wybrałeś 2");
+//        }
+//    }
+//}
 
 //        if (operation1 == "odejmij")
 //        {
@@ -58,6 +63,8 @@ class TwojaKlasa
 
 //    }
 //}
+
+//Program 8 - Menu prawidłowe
 //            Console.Title = "Proste Menu";
 
 //            while (true)
