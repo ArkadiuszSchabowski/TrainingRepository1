@@ -7,36 +7,86 @@ using System.Threading.Tasks;
 class TwojaKlasa
 {
     static void Main(string[] args)
+
     {
-            Console.Title = "Proste Menu";
+        bool y1, y2;
+        double x1, x2;
+        string operation1, operation2;
 
-            while (true)
-            {
-                Console.WriteLine("Jaką chcesz kawę?");
-                Console.WriteLine("1. Czarną");
-                Console.WriteLine("2. Biała");
-                Console.WriteLine("3.Koniec");
+        Console.WriteLine("Podaj pierwszą cyfrę");
+        y1 = double.TryParse(Console.ReadLine(), out x1);
+        Console.WriteLine("Podaj drugą cyfrę");
+        y2 = double.TryParse(Console.ReadLine(), out x2);
+        Console.WriteLine("Podaj operację, którą chcesz wykonać");
+        Console.WriteLine("Dodaj, Odejmij, pomnóż, podziel");
+        operation1 = Console.ReadLine();
+        operation2 = Console.ReadLine();
 
-                ConsoleKeyInfo klawisz = Console.ReadKey();
-                switch (klawisz.Key)
-                {
-                    case ConsoleKey.D1:
-                        Console.Clear(); OpcjaWBudowie(); break;
-                    case ConsoleKey.D2:
-                        Console.Clear(); OpcjaWBudowie(); break;
-                    case ConsoleKey.Escape: break;
-                    case ConsoleKey.D3:
-                        Environment.Exit(0); break;
-                    default: break;
-                }
-                static void OpcjaWBudowie()
-                {
-                    Console.Write("Opcja w budowie");
-                    Console.ReadKey();
-                }
-            }
+        if (operation1 == "dodaj")
+        {
+            Console.WriteLine("Wybierz 1 lub 2");
+ 
+        }
+        else
+        if (operation2 == "1")
+        {
+            Console.WriteLine("Wybrałeś 1");
+        }
+        else
+        if (operation2 == "2")
+        {
+            Console.WriteLine("Wybrałeś 2");
         }
     }
+}
+
+//        if (operation1 == "odejmij")
+//        {
+//            Console.WriteLine("wynik = " + (x1 - x2));
+//            Console.ReadKey();
+//        }
+//        if (operation1 == "pomnóż")
+//        {
+//            Console.WriteLine("wynik = " + (x1 * x2));
+//            Console.ReadKey();
+//        }
+//        if (operation1 == "podziel")
+//        {
+//            Console.WriteLine("wynik = " + (x1 / x2));
+//            Console.ReadKey();
+//        }
+
+//    }
+//}
+//            Console.Title = "Proste Menu";
+
+//            while (true)
+//            {
+//                Console.WriteLine("Jaką chcesz kawę?");
+//                Console.WriteLine("1. Czarną");
+//                Console.WriteLine("2. Biała");
+//                Console.WriteLine("3.Koniec");
+
+//                ConsoleKeyInfo klawisz = Console.ReadKey();
+//                switch (klawisz.Key)
+//                {
+//                    case ConsoleKey.D1:
+//                        Console.Clear(); OpcjaWBudowie(); break;
+//                    case ConsoleKey.D2:
+//                        Console.Clear(); OpcjaWBudowie(); break;
+//                    case ConsoleKey.Escape: break;
+//                    case ConsoleKey.D3:
+//                        Environment.Exit(0); break;
+//                    default: break;
+//                }
+//                static void OpcjaWBudowie()
+//                {
+//                    Console.Write("Opcja w budowie");
+//                    Console.ReadKey();
+//                }
+//            }
+//        }
+//    }
 //Program 7 - Pętla w pętli - zagnieżdżanie pętli
 //        {
 //            int x1, x2;
