@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\bin\Debug\Lista1.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\bin\Debug\Lista1.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\bin\Debug\Lista1.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\obj\Debug\Lista1.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\obj\Debug\Lista1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\obj\Debug\Lista1.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\obj\Debug\Lista1.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lista1\obj\Debug\Lista1.pdb

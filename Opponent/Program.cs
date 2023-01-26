@@ -5,15 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class TwojaKlasa
+public class Menu
 {
-    static void Main(string[] args)
-
-    {
-
-    }
+    public string Name { get; set; }
+    public List<Menu> Submenus { get; set; }
 }
-        //Program Numer 9 - cwiczenia
+//Program Numer 9 - cwiczenia
 //        bool y1, y2;
 //        double x1, x2;
 //        string operation1, operation2;
