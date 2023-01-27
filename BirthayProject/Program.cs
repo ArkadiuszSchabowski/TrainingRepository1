@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace PrawidlowyKod
 {
-    internal class Program
+    internal class Operacja
     {
         static void Main(string[] args)
+        { }
+        public void CreateMyMainMenu()
         {
+            // Create an empty MainMenu.
+            Program Program = new Program();
 
             string operationMenu;
 
@@ -39,7 +43,7 @@ namespace PrawidlowyKod
             switch (operationMenu)
             {
                 case "1":
-            
+
                     Console.WriteLine("");
                     Console.WriteLine("1.Podstawy C#");
                     Console.WriteLine("");
@@ -52,7 +56,7 @@ namespace PrawidlowyKod
                     Console.WriteLine("");
                     Console.ReadLine();
 
-                    { 
+                    {
                         break;
                     }
 
@@ -276,5 +280,51 @@ namespace PrawidlowyKod
                     }
             }
         }
+    }
+}
+internal class Program
+{
+    public class Menu
+    {
+        public string Name { get; set; }
+        public List<Menu> Submenus { get; set; }
+    }
+}
+class Program1
+{
+    // Wykonanie programu
+    static void Main(string[] args)
+    {
+        Rectangle r = new Rectangle();
+        r.AkceptujDetale();
+        r.WyswietlPodusmowanie();
+        // W przypadku braku poniższej linijki program zostanie wykonany, konsola zostanie wyświetlona
+        // na ułamki sekund, nie będziemy w stanie dostrzec efektu działania naszego programu.
+        Console.ReadKey();
+    }
+}
+// Definicja klasy Rectangle wraz z polami oraz metodami
+class Rectangle
+{
+    // Zmienne użytkownika
+    double dlugosc;
+    double szerokosc;
+    // Metoda ustawiająca wartości parametrów na starcie
+    public void AkceptujDetale()
+    {
+        dlugosc = 10;
+        szerokosc = 20;
+    }
+    // Obliczanie powierzchni
+    public double ObliczPowierzechnie()
+    {
+        return dlugosc * szerokosc;
+    }
+    // Wyświetlenie wyników działania programu w konsoli
+    public void WyswietlPodusmowanie()
+    {
+        Console.WriteLine("Długość: {0}", dlugosc);
+        Console.WriteLine("Szerokość: {0}", szerokosc);
+        Console.WriteLine("Powierzchnia: {0}", ObliczPowierzechnie());
     }
 }
