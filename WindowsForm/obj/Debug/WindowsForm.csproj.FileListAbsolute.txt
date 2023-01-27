@@ -1,0 +1,11 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\bin\Debug\WindowsForm.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\bin\Debug\WindowsForm.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\bin\Debug\WindowsForm.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.Properties.Resources.resources
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.csproj.GenerateResource.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\WindowsForm\obj\Debug\WindowsForm.Form1.resources
