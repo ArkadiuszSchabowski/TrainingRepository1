@@ -1,38 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Test;
-
-namespace Test
+﻿class Osoba
 {
+    private int _wiek;
 
-    class Osoba
+    public int PobierzWiek()
     {
-        public int _wiek;
-        public int PobierzWiek()
-        {
-            return _wiek;
-        }
-
-        public void UstawWiek(int wiek)
-        {
-            wiek = _wiek;
-        }
-
+        return _wiek;
     }
-    class Program
+
+    public void UstawWiek(int wiek)
     {
-        static void Main(string[] args)
-        {
-            Osoba Arek = new Osoba();
+        _wiek = wiek;
+    }
+}
 
-            Arek.UstawWiek(21);
-            System.Console.WriteLine(Arek.PobierzWiek());
-            Console.ReadKey();
+class Program
+{
+    static void Main(string[] args)
+    {
+        Osoba Karol = new Osoba();
 
-        }
+        Karol.UstawWiek(21);
+        System.Console.WriteLine(Karol.PobierzWiek());
+
+        System.Console.ReadKey();
     }
 }
