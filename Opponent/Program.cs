@@ -7,9 +7,58 @@ using System.Threading.Tasks;
 
 public class Menu
 {
-    public string Name { get; set; }
-    public List<Menu> Submenus { get; set; }
+
+    private string _Text;
+
+    public string Text
+    {
+        get { return _Text; }
+        set { _Text = value; }
+    }
 }
+
+//    public string Name
+
+//    { get; set; }
+
+//    public List<Menu> Submenus
+//    { get; set; }
+
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Program numer 2
+
+//            bool y1, y2;
+//            double x1, x2;
+
+//            Console.WriteLine("Podaj pierwszą cyfrę");
+//            y1 = double.TryParse(Console.ReadLine(), out x1);
+//            Console.WriteLine("Podaj drugą cyfrę");
+//            y2 = double.TryParse(Console.ReadLine(), out x2);
+
+//            if(y1 && y2)
+//            {
+//                Console.WriteLine("Obie cyfry są prawidłowe");
+//            }
+//            else
+//            {
+//                Console.WriteLine("Przynajmniej jedna cyfra jest nieprawidłowa");
+//            }
+//        }
+//    }
+//}
 //Program Numer 9 - cwiczenia
 //        bool y1, y2;
 //        double x1, x2;
@@ -283,4 +332,4 @@ public class Menu
 //            }
 //        }
 //    }
-//}*/
+//}*
