@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\bin\Debug\getSet.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\bin\Debug\getSet.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\bin\Debug\getSet.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\obj\Debug\getSet.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\obj\Debug\getSet.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\obj\Debug\getSet.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\obj\Debug\getSet.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\getSet\obj\Debug\getSet.pdb
