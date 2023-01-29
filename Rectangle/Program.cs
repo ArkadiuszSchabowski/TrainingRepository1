@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+
+//Wyswietl prostokat o wymiarach x i y. Wymiary podaje uzytkownik. Prostokat ma byc zbudowany z gwiazdek (8).
 
 namespace Rectangle
 {
@@ -10,28 +13,25 @@ namespace Rectangle
     {
         static void Main(string[] args)
         {
-            Rectangle1 r = new Rectangle1();
-            r.Zmienne();
-            r.Podsumowanie();
+            string szerokosc, wysokosc;
+            int x, y;
+            Console.WriteLine("Wprowadz wysokosc prostokata");
+            wysokosc = Console.ReadLine();
+            Console.WriteLine("Wprowadz szerokosc prostokata");
+            szerokosc = Console.ReadLine();
+
+            x = Convert.ToInt32(szerokosc);
+            y = Convert.ToInt32(wysokosc);
+
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
+            }
             Console.ReadKey();
         }
     }
 }
-class Rectangle1
-{
-    // Zmienne użytkownika
-    double dlugosc;
-    double szerokosc;
-    // Metoda ustawiająca wartości parametrów na starcie
-    public void Zmienne()
-    {
-        dlugosc = 10;
-        szerokosc = 20;
-    }
-    public void Podsumowanie()
-    {
-        Console.WriteLine("dlugosc: " + dlugosc);
-        Console.WriteLine("szerokosc: " + szerokosc);
-    }
-}
-    
