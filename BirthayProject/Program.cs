@@ -8,7 +8,7 @@ namespace PrawidlowyKod
 {
     internal class Operacja
     {
-        static void Main(string[] args)
+        public static void StartMenu()
         {
             while (true)
             {
