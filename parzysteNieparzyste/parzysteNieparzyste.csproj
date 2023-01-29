@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B4383F0-334E-4065-A678-88DE8842E529}</ProjectGuid>
+    <ProjectGuid>{F3663D1F-9304-48CA-B85C-F37CBBF17D5C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rectangle</RootNamespace>
-    <AssemblyName>Rectangle</AssemblyName>
+    <RootNamespace>parzysteNieparzyste</RootNamespace>
+    <AssemblyName>parzysteNieparzyste</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
