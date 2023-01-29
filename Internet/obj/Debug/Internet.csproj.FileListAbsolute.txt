@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\obj\Debug\Internet.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\obj\Debug\Internet.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\obj\Debug\Internet.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\bin\Debug\Internet.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\bin\Debug\Internet.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\bin\Debug\Internet.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\obj\Debug\Internet.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Internet\obj\Debug\Internet.pdb
