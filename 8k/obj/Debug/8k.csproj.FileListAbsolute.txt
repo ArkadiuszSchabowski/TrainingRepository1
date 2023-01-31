@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\bin\Debug\8k.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\bin\Debug\8k.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\bin\Debug\8k.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\obj\Debug\8k.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\obj\Debug\8k.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\obj\Debug\8k.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\obj\Debug\8k.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\8k\obj\Debug\8k.pdb
