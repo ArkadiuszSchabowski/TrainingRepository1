@@ -5,20 +5,20 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _31Styczeń
+namespace fourthBase
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            czwartaBaza();
+            fourthBase();
         }
   
-        static void czwartaBaza()
+        static void fourthBase()
         //Napisz przy użyciu pętli oraz instrukcji if kod, który znajdzie sumę wszystkich 
         //liczb całkowitych od 1 do 30, które są podzielne przez 7. Wskazówka - użyj modulo.
         {
-            int x1, x2, x3, x4, wynik;
+            int x1, x2, x3, x4, result;
             for (int i = 1; i <= 30; i++)
 
                 if (i % 7 == 0)
@@ -35,8 +35,8 @@ namespace _31Styczeń
             Console.Write("Przepisz 4 liczbę ");
             x4 = int.Parse(Console.ReadLine());
 
-            wynik = x1 + x2 + x3 + x4;
-            Console.WriteLine($"Twój wynik to: {wynik}.");
+            result = x1 + x2 + x3 + x4;
+            Console.WriteLine($"Twój wynik to: {result}.");
             Console.ReadKey();
         }
     }
