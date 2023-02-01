@@ -7,27 +7,23 @@ using System.Threading.Tasks;
 namespace _31Styczeń
 {
     internal class Program
+//Teraz, gdy znasz już różne typy liczbowe, napisz kod obliczający pole koła o danym promieniu - załóżmy w naszym przykladzie, że bedzie to` 2,50 centymetra.Pamiętaj, że obszar koła to promień podniesiony do kwadratu pomnożony przez PI.
     {
-        static void NumbersInCSharp()
+        static void doubleradius()
         {
-            int a = 10;
-            int b = 5;
 
-            Console.WriteLine("Wprowadź pierwszą liczbę ");
-            a = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Twoja liczba to: {a}!");
+            double r = 2.5*2.5;
+            double pi = Math.PI;
+            double kolo = r * pi;
 
-            Console.WriteLine("Wprowadź drugą liczbę ");
-            b = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Twoja liczba to: {b}!");
-
-            Console.WriteLine($"Wynik mnożenia dwóch podanych przez Ciebie liczb to: {a * b}");
-
+            Console.WriteLine($"Pole koła wynosi: {kolo}!");
             Console.ReadKey();
+
         }
+        
         static void Main(string[] args)
         {
-            NumbersInCSharp();
+        doubleradius();
         }
     }
 }
