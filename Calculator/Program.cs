@@ -12,56 +12,53 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Engine();
-        }
 
-        static void Engine()
-        {
-
-            Console.WriteLine("Aplikacja konsolowy kalkulator\n");
+            Console.WriteLine("Witaj w aplikacji kalkulator\n");
 
             while (true)
             {
+                try
                 {
-                    try
-                    {
-                        Console.WriteLine("Podaj pierwszą liczbę");
-                        var x1 = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Podaj operację, którą chcesz wykonać.\nDostępne operacje: + , -  , * , / .");
-                        var operation = Console.ReadLine();
-                        Console.WriteLine("Podaj drugą liczbę");
-                        var x2 = int.Parse(Console.ReadLine());
-                        Console.WriteLine("");
+                    Console.WriteLine("Podaj proszę 1 liczbę");
+                    var number1 = GetInput();
 
-                        var result = 0;
+                    Console.WriteLine($"Podaj operację, którą chcesz wykonać. Dostępne opcje: +, -, *, /.");
+                    var operation = Console.ReadLine();
 
-                        switch (operation)
-                        {
-                            case "+":
-                                result = x1 + x2;
-                                break;
-                            case "-":
-                                result = x1 - x2;
-                                break;
-                            case "*":
-                                result = x1 * x2;
-                                break;
-                            case "/":
-                                result = x1 / x2;
-                                break;
-                            default:
-                                throw new Exception("Wybrałeś złą operację");
-                        }
-                        Console.WriteLine($"Wynik Twojego działania to {result}");
-                        Console.WriteLine("");
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                        Console.WriteLine();
-                    }
+                    Console.WriteLine("Podaj proszę 2 liczbę");
+                    var number2 = GetInput();
 
+                    var result = Calculate(number1, number2, operation);
+
+                    Console.WriteLine($"Twój wynik to: {Math.Round(result, 2)}.\n");
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+        private static double GetInput()
+        {
+            if (!double.TryParse(Console.ReadLine(), out double input))
+                throw new Exception("Podana wartość nie jest liczbą\n");
+
+            return input;
+        }
+        private static double Calculate(double x1, double x2, string operation)
+        {
+            switch (operation)
+            {
+                case "+":
+                    return x1 + x2;
+                case "-":
+                    return x1 - x2;
+                case "*":
+                    return x1 * x2;
+                case "/":
+                    return x1 / x2;
+                default:
+                    throw new Exception("Podałeś złą operację\n");
             }
         }
     }
