@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,47 +17,52 @@ namespace Calculator
 
         static void Engine()
         {
-            double x1, x2;
-            string operation;
 
             Console.WriteLine("Aplikacja konsolowy kalkulator\n");
 
             while (true)
             {
-                Console.WriteLine("Podaj pierwszą liczbę");
-                double.TryParse(Console.ReadLine(), out x1);
-                Console.WriteLine("Podaj drugą liczbę");
-                double.TryParse(Console.ReadLine(), out x2);
-                Console.WriteLine("Podaj operację, którą chcesz wykonać.\nDostępne operacje: dodaj, odejmij, pomnóż, podziel");
-                Console.WriteLine("");
-                operation = Console.ReadLine();
-                Console.WriteLine("");
-
-                switch (operation)
                 {
-                    case "dodaj":
-                        Console.WriteLine($"Twój wynik to: {x1 + x2}\n");
-                        break;
-                    case "odejmij":
-                        Console.WriteLine($"Twój wynik to: {x1 - x2}\n");
-                        break;
-                    case "pomnóż":
-                        Console.WriteLine($"Twój wynik to: {x1 * x2}\n");
-                        break;
-                    case "podziel":
-                        Console.WriteLine($"Twój wynik to: {x1 / x2}\n");
-                        break;
-                    default:
-                        Console.WriteLine("Podałeś złą operację");
-                        break;
+                    try
+                    {
+                        Console.WriteLine("Podaj pierwszą liczbę");
+                        var x1 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Podaj operację, którą chcesz wykonać.\nDostępne operacje: + , -  , * , / .");
+                        var operation = Console.ReadLine();
+                        Console.WriteLine("Podaj drugą liczbę");
+                        var x2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("");
+
+                        var result = 0;
+
+                        switch (operation)
+                        {
+                            case "+":
+                                result = x1 + x2;
+                                break;
+                            case "-":
+                                result = x1 - x2;
+                                break;
+                            case "*":
+                                result = x1 * x2;
+                                break;
+                            case "/":
+                                result = x1 / x2;
+                                break;
+                            default:
+                                throw new Exception("Wybrałeś złą operację");
+                        }
+                        Console.WriteLine($"Wynik Twojego działania to {result}");
+                        Console.WriteLine("");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine();
+                    }
+
                 }
             }
         }
-
-        static void GetInput()
-        {
-
-        }
     }
 }
-
