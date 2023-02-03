@@ -27,7 +27,6 @@ namespace Calculator
 
                     Console.WriteLine("Podaj proszę 2 liczbę");
                     var number2 = GetInput();
-
                     var result = Calculate(number1, number2, operation);
 
                     Console.WriteLine($"Twój wynik to: {Math.Round(result, 2)}.\n");

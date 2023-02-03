@@ -24,10 +24,10 @@ namespace FifthBase
                     int i = 0; int j = 0;
                     while (i<20)
                     {
-                        while (j<60)
+                        while (j<20)
                         {
                             Console.WriteLine(j);
-                            j++;
+                            j += i;
                             
                         }
                         Console.WriteLine(i);

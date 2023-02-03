@@ -1,0 +1,11 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\bin\Debug\Calculator.WindowsFormApp.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\bin\Debug\Calculator.WindowsFormApp.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\bin\Debug\Calculator.WindowsFormApp.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.Properties.Resources.resources
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.csproj.GenerateResource.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Calculator.WindowsFormApp\obj\Debug\Calculator.WindowsFormApp.Form1.resources
