@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\bin\Debug\needSomeCofee.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\bin\Debug\needSomeCofee.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\bin\Debug\needSomeCofee.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\obj\Debug\needSomeCofee.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\obj\Debug\needSomeCofee.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\obj\Debug\needSomeCofee.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\obj\Debug\needSomeCofee.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\needSomeCofee\obj\Debug\needSomeCofee.pdb
