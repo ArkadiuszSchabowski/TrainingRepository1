@@ -23,5 +23,22 @@ namespace CalculatorWindowsForm
 
             tbScreen.Text += ClickedValue;
         }
+
+        private void OnBtnResultClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void OnBtnClearClick(object sender, MouseEventArgs e)
+        {
+            var ClickedClear = (sender as Button).Text;
+
+            tbScreen.Clear();
+        }
+
+        private void OnBtnOperationClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
