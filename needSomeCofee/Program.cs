@@ -11,18 +11,25 @@ namespace needSomeCofee
     {
         static void Main(string[] args)
         {
-            double sum = 0;
+            double number1, number2;
+            bool zmienna1, zmienna2;
 
-            for (int i = 1; i <= 30; i++)
+            Console.WriteLine("Podaj pierwszą cyfrę");
+            zmienna1 = double.TryParse(Console.ReadLine(), out number1);
+            Console.WriteLine("Podaj drugą cyfrę");
+            zmienna2 = double.TryParse(Console.ReadLine(), out number2);
+            if (zmienna1 == false && zmienna2 == false)
             {
-                if (i % 7 == 0)
-                {
-                    Console.WriteLine(i);
-                    sum = sum + i;
-                }
-
+                Console.WriteLine("Obie liczby są nieprawidłowe");
             }
-            Console.WriteLine(sum);
+            else if(zmienna1 == false || zmienna2 == false)
+            {
+                Console.WriteLine("Jedna z liczb jest nieprawidłowa");
+            }
+            else
+            {
+                Console.WriteLine($"Your result is: {number1 + number2}.");
+            }
             Console.ReadKey();
         }
     }
