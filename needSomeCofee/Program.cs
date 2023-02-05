@@ -112,7 +112,7 @@ namespace needSomeCofee
                     }
                     if (typBielizny == "stringi")
                     {
-                        Console.WriteLine("\nWybierz krój: G-Stringi(G), T-Stringi(T): ");
+                        Console.Write("\nWybierz krój: G-Stringi(G), T-Stringi(T): ");
                         kroj = Console.ReadLine();
 
                         if (kroj == "G")

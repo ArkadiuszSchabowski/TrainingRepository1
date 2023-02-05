@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\bin\Debug\SwitchAppWoman.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\bin\Debug\SwitchAppWoman.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\bin\Debug\SwitchAppWoman.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\obj\Debug\SwitchAppWoman.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\obj\Debug\SwitchAppWoman.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\obj\Debug\SwitchAppWoman.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\obj\Debug\SwitchAppWoman.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SwitchAppWoman\obj\Debug\SwitchAppWoman.pdb
