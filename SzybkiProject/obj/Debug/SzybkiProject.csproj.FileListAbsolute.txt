@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\bin\Debug\SzybkiProject.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\bin\Debug\SzybkiProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\bin\Debug\SzybkiProject.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\obj\Debug\SzybkiProject.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\obj\Debug\SzybkiProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\obj\Debug\SzybkiProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\obj\Debug\SzybkiProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SzybkiProject\obj\Debug\SzybkiProject.pdb
