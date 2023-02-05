@@ -11,7 +11,7 @@ namespace needSomeCofee
     {
         static void Main(string[] args)
         {
-            string typOdziezy, operation1, kolor;
+            string typOdziezy, rodzajButow, typBielizny, rodzajBielizny, kolor, kroj;
             Console.WriteLine("Aplikacja dla Kobiet.\n");
 
             while (true)
@@ -24,9 +24,9 @@ namespace needSomeCofee
                 {
                     Console.Write("\nWybierz typ butów: ");
                     Console.Write("koturny, szpilki, kozaki: ");
-                    operation1 = Console.ReadLine();
+                    rodzajButow = Console.ReadLine();
 
-                    if (operation1 == "koturny")
+                    if (rodzajButow == "koturny")
                     {
                         Console.Write("\nWybierz kolor koturnów: ");
                         Console.Write("białe, beżowe, czarne: ");
@@ -48,7 +48,7 @@ namespace needSomeCofee
                         Console.Write("");
                     }
 
-                    if (operation1 == "szpilki")
+                    if (rodzajButow == "szpilki")
                     {
                         Console.Write("\nWybierz kolor szpilek: ");
                         Console.Write("różowe, czarne: ");
@@ -67,7 +67,7 @@ namespace needSomeCofee
                         Console.WriteLine("");
                     }
 
-                    if (operation1 == "kozaki")
+                    if (rodzajButow == "kozaki")
                     {
                         Console.Write("\nWybierz kolor kozaków: białe, beżowe czarne: ");
                         kolor = Console.ReadLine();
@@ -92,17 +92,37 @@ namespace needSomeCofee
 
                 if (typOdziezy == "bielizna")
                 {
-                    Console.Write("\nWybierz typ bielizny: stringi, figi: ");
-                    
+                    Console.Write("\nWybierz typ bielizny: figi, stringi: ");
+                    typBielizny = Console.ReadLine();
 
-                    operation1 = Console.ReadLine();
-                    if(operation1 == "stringi")
+                    if(typBielizny == "figi")
                     {
-                        Console.WriteLine("\nI tak dostanę się do twojej szparki\n");
+                        Console.Write("\nWybierz rodzaj: koronkowe, gładkie: ");
+                        rodzajBielizny = Console.ReadLine();
+
+                        if (rodzajBielizny == "koronkowe")
+                        {
+                            Console.WriteLine("\nTwój wybór to koronkowe figi\n");
+                        }
+                        if (rodzajBielizny == "gładkie")
+                        {
+                            Console.WriteLine("\nTwój wybór to gładkie figi\n");
+                        }
+
                     }
-                    if (operation1 == "figi")
+                    if (typBielizny == "stringi")
                     {
-                        Console.WriteLine("\nI tak zaraz ci je ściągne\n");
+                        Console.WriteLine("\nWybierz krój: G-Stringi(G), T-Stringi(T): ");
+                        kroj = Console.ReadLine();
+
+                        if (kroj == "G")
+                        {
+                            Console.WriteLine("\nTwój wybór to: stringi typu G\n"); 
+                        }
+                        if (kroj == "T")
+                        {
+                            Console.WriteLine("\nTwój wybór to stringi typu T\n");
+                        }
                     }
                 }
             }
