@@ -11,26 +11,101 @@ namespace needSomeCofee
     {
         static void Main(string[] args)
         {
-            double number1, number2;
-            bool zmienna1, zmienna2;
+            string typOdziezy, operation1, kolor;
+            Console.WriteLine("Aplikacja dla Kobiet.\n");
 
-            Console.WriteLine("Podaj pierwszą cyfrę");
-            zmienna1 = double.TryParse(Console.ReadLine(), out number1);
-            Console.WriteLine("Podaj drugą cyfrę");
-            zmienna2 = double.TryParse(Console.ReadLine(), out number2);
-            if (zmienna1 == false && zmienna2 == false)
+            while (true)
             {
-                Console.WriteLine("Obie liczby są nieprawidłowe");
+
+                Console.Write("Wybierz typ odzieży: buty, bielizna: ");
+                typOdziezy = Console.ReadLine();
+
+                if (typOdziezy == "buty")
+                {
+                    Console.Write("\nWybierz typ butów: ");
+                    Console.Write("koturny, szpilki, kozaki: ");
+                    operation1 = Console.ReadLine();
+
+                    if (operation1 == "koturny")
+                    {
+                        Console.Write("\nWybierz kolor koturnów: ");
+                        Console.Write("białe, beżowe, czarne: ");
+                        kolor = Console.ReadLine();
+                        Console.WriteLine("");
+
+                        if (kolor == "białe")
+                        {
+                            Console.WriteLine("Twój wybór do białe koturny");
+                        }
+                        if (kolor == "beżowe")
+                        {
+                            Console.WriteLine("Twój wybór do beżowe koturny");
+                        }
+                        if (kolor == "czarne")
+                        {
+                            Console.WriteLine("Twój wybór to czarne koturny");
+                        }
+                        Console.Write("");
+                    }
+
+                    if (operation1 == "szpilki")
+                    {
+                        Console.Write("\nWybierz kolor szpilek: ");
+                        Console.Write("różowe, czarne: ");
+                        kolor = Console.ReadLine();
+                        Console.WriteLine("");
+
+                        if (kolor == "różowe")
+                        {
+                            Console.WriteLine("Twój wybór to różowe szpilki");
+                        }
+
+                        if (kolor == "czarne")
+                        {
+                            Console.WriteLine("Twój wybór to czarne szpilki");
+                        }
+                        Console.WriteLine("");
+                    }
+
+                    if (operation1 == "kozaki")
+                    {
+                        Console.Write("\nWybierz kolor kozaków: białe, beżowe czarne: ");
+                        kolor = Console.ReadLine();
+                        Console.WriteLine("");
+
+                        if (kolor == "białe")
+                        {
+                            Console.WriteLine("Twój wybór to białe kozaki");
+                        }
+                        if (kolor == "beżowe")
+                        {
+                            Console.WriteLine("Twój wybór to beżowe kozaki");
+                        }
+                        if (kolor == "czarne")
+                        {
+                            Console.WriteLine("Twój wybór to czarne kozaki");
+                        }
+                        Console.WriteLine("");
+                    }
+                }
+            
+
+                if (typOdziezy == "bielizna")
+                {
+                    Console.Write("\nWybierz typ bielizny: stringi, figi: ");
+                    
+
+                    operation1 = Console.ReadLine();
+                    if(operation1 == "stringi")
+                    {
+                        Console.WriteLine("\nI tak dostanę się do twojej szparki\n");
+                    }
+                    if (operation1 == "figi")
+                    {
+                        Console.WriteLine("\nI tak zaraz ci je ściągne\n");
+                    }
+                }
             }
-            else if(zmienna1 == false || zmienna2 == false)
-            {
-                Console.WriteLine("Jedna z liczb jest nieprawidłowa");
-            }
-            else
-            {
-                Console.WriteLine($"Your result is: {number1 + number2}.");
-            }
-            Console.ReadKey();
         }
     }
 }
