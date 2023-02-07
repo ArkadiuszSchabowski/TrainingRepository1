@@ -181,12 +181,15 @@ namespace testOSwinkach
                                                         {
                                                             case "D":
                                                                 {
-                                                                    Console.WriteLine("Brawo to czwarta poprawna odpowiedź! Wygrywasz 4000zł.");
+                                                                    Console.ForegroundColor = ConsoleColor.Green;
+                                                                    Console.WriteLine("\nBrawo to czwarta poprawna odpowiedź! Świński hamak jest Twój!");
                                                                     Console.ReadKey();
+                                                                    Console.Clear();
                                                                     break;
                                                                 }
                                                             case "R":
                                                                 {
+                                                                    Console.ForegroundColor = ConsoleColor.White;
                                                                     Console.WriteLine($"Dziękujemy za grę {Name}. Wygrałeś 2000zł!");
                                                                     Console.WriteLine("Naciśnij dowolny klawisz, aby zagrać jeszcze raz");
                                                                     Console.ReadKey();
