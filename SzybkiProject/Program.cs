@@ -10,33 +10,17 @@ namespace SzybkiProject
     {
         static void Main(string[] args)
         {
-            double x1, x2;
-            string operation;
-            while (true)
+            int i = 50;
+            do
             {
-                Console.WriteLine("Pierwsza cyfra");
-                x1 = double.Parse(Console.ReadLine());
-                Console.WriteLine("Druga cyfra");
-                x2 = double.Parse(Console.ReadLine());
-                Console.WriteLine("+, -, *, /");
-                operation = Console.ReadLine();
+                Console.WriteLine(i);
+                i++;
 
-                if (operation == "+")
-                    Console.WriteLine(x1 + x2);
-
-                else if(operation == "-")
-                    Console.WriteLine(x1 - x2);
-
-                else if (operation == "*")
-                    Console.WriteLine(x1 * x2);
-
-                else if (operation == "/")
-                    Console.WriteLine(x1 / x2);
-                else
-                {
-                    Console.WriteLine("Zła operacja");
-                }
-            }
+            } 
+            while (i<10);
+            Console.ReadKey();
         }
+        
     }
 }
+
