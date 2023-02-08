@@ -10,20 +10,43 @@ namespace SzybkiProject
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            int i = 0, j = 0;
-            while (i <= 3)
+            int number1, number2, result;
+
+            while (true)
             {
-                while (j <= 3)
-                {
-                    Console.WriteLine("i " + i +"    " + "j " + j);
-                    j++;
-                }
-                j = 0;
-                i++;
+
+                Console.WriteLine("Podaj pierwszą liczbę");
+                number1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Podaj drugą liczbę");
+                number2 = int.Parse(Console.ReadLine());
+
+                CompareValues(number1, number2);
+
+                result = SumValues(number1, number2);
+
+                Console.WriteLine("Twój wynik to" + result);
             }
-            Console.ReadKey();
         }
+        private static void CompareValues(int firstValue, int secondValue)
+        {
+            if (firstValue > secondValue)
+            {
+                Console.WriteLine("Pierwsza liczba jest większa od drugiej");
+            }
+            else if (firstValue == secondValue)
+            {
+                Console.WriteLine("Liczby są sobie równe");
+            }
+            else
+            {
+                Console.WriteLine("Pierwsza liczba jest mniejsza od drugiej");
+            }
+        }
+        private static int SumValues(int firstValue, int secondValue)
+        {
+            return firstValue + secondValue;
+    }
     }
 }
