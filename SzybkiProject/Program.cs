@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,17 +12,18 @@ namespace SzybkiProject
     {
         static void Main(string[] args)
         {
-            int i = 50;
-            do
+            int i = 0, j = 0;
+            while (i <= 3)
             {
-                Console.WriteLine(i);
+                while (j <= 3)
+                {
+                    Console.WriteLine("i " + i +"    " + "j " + j);
+                    j++;
+                }
+                j = 0;
                 i++;
-
-            } 
-            while (i<10);
+            }
             Console.ReadKey();
         }
-        
     }
 }
-

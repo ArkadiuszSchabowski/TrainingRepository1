@@ -18,8 +18,8 @@ namespace testOSwinkach
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Witamy w Milionerach świnko!\n");
 
-            Console.Write("Podaj swoje imię: ");
-            Name = Console.ReadLine();
+                Console.Write("Podaj swoje imię: ");
+                Name = Console.ReadLine();
 
                 Console.WriteLine("\nTest o świnkach morskich.\n");
                 Console.Write("Czy jesteś gotów zagrać o atrakcyjne nagrody? Jeśli tak naciśnij dowolny klawisz. ");
@@ -35,12 +35,12 @@ namespace testOSwinkach
                 Console.WriteLine("Zestaw 10 zabiegów SPA oraz kąpieli błotnych");
                 Console.WriteLine("Zestaw świnkowych domków");
                 Console.WriteLine("Klatka dla 3 świnek o wymiarach 120cmx60cm");
-                Console.WriteLine("Świński Hamak");
+                Console.WriteLine("Świński Hamak (nagroda gwarantowana)");
                 Console.WriteLine("Miesięczny warzywny catering dietetyczny");
                 Console.WriteLine("Miesięczny zapas karmy Versele Laga");
-                Console.WriteLine("Zapas siana na miesiąc (Suma gwarantowana)");
+                Console.WriteLine("Zapas siana na miesiąc (nagroda gwarantowana)");
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Świński Kubek - nagroda pocieszenia\n\n");
+                Console.WriteLine("Świński Kubek (nagroda pocieszenia)\n\n");
 
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Pytanie 1. Na czym najbardziej zetrze zęby świnka morska?\n");
@@ -58,7 +58,6 @@ namespace testOSwinkach
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("\nGratulacje to poprawna odpowiedź! Zapas siana na miesiąc jest Twój!");
                             Console.WriteLine("Przypominam również, że to suma gwarantowana!\n");
-                            Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine("Gramy dalej? - jeśli tak naciśnij dowolny klawisz");
                             Console.ReadKey();
                             Console.Clear();
@@ -72,12 +71,12 @@ namespace testOSwinkach
                             Console.WriteLine("Zestaw 10 zabiegów SPA oraz kąpieli błotnych");
                             Console.WriteLine("Zestaw świnkowych domków");
                             Console.WriteLine("Klatka dla 3 świnek o wymiarach 120cmx60cm");
-                            Console.WriteLine("Świński Hamak");
+                            Console.WriteLine("Świński Hamak (nagroda gwarantowana)");
                             Console.WriteLine("Miesięczny warzywny catering dietetyczny");
                             Console.WriteLine("Miesięczny zapas karmy Versele Laga");
                             Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine("Zapas siana na miesiąc (Suma gwarantowana)");
-                            Console.WriteLine("Świński Kubek - nagroda pocieszenia\n\n");
+                            Console.WriteLine("Zapas siana na miesiąc (nagroda gwarantowana)");
+                            Console.WriteLine("Świński Kubek - (nagroda pocieszenia)\n\n");
 
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine("Pytanie 2. Jak Inaczej kiedyś nazywano świnkę morską?\n");
@@ -93,8 +92,8 @@ namespace testOSwinkach
                                 case "D":
                                     {
                                         Console.ForegroundColor = ConsoleColor.Green;
-                                        Console.WriteLine($"\nGratulacje {Name} otrzymujesz gwarantowany 1000zł!");
-                                        Console.WriteLine("Idziesz jak burza! - Naciśnij dowolny klawisz, by kontynuować\n");
+                                        Console.WriteLine($"\nGratulacje {Name} otrzymujesz gwarantowany miesięczny zapas dobrej jakości karmy: Versele Laga!\n");
+                                        Console.WriteLine("Naciśnij dowolny klawisz, by kontynuować\n");
                                         Console.ReadKey();
                                         Console.Clear();
 
@@ -107,12 +106,12 @@ namespace testOSwinkach
                                         Console.WriteLine("Zestaw 10 zabiegów SPA oraz kąpieli błotnych");
                                         Console.WriteLine("Zestaw świnkowych domków");
                                         Console.WriteLine("Klatka dla 3 świnek o wymiarach 120cmx60cm");
-                                        Console.WriteLine("Świński Hamak");
+                                        Console.WriteLine("Świński Hamak (nagroda gwarantowana");
                                         Console.WriteLine("Miesięczny warzywny catering dietetyczny");
                                         Console.ForegroundColor = ConsoleColor.Green;
                                         Console.WriteLine("Miesięczny zapas karmy Versele Laga");
-                                        Console.WriteLine("Zapas siana na miesiąc (Suma gwarantowana)");
-                                        Console.WriteLine("Świński Kubek - nagroda pocieszenia\n\n");
+                                        Console.WriteLine("Zapas siana na miesiąc (nagroda gwarantowana)");
+                                        Console.WriteLine("Świński Kubek (nagroda pocieszenia)\n\n");
 
                                         Console.ForegroundColor = ConsoleColor.White;
                                         Console.WriteLine("Pytanie Nr 3.Jak inaczej inaczej nazwiemy świnkę o rasie Rozetka?");
@@ -127,7 +126,8 @@ namespace testOSwinkach
                                         {
                                             case "R":
                                                 {
-                                                    Console.WriteLine($"Dziękujemy za grę {Name}. Wygrałeś 2000zł!");
+                                                    Console.ForegroundColor = ConsoleColor.White;
+                                                    Console.WriteLine($"Dziękujemy za grę {Name}. Zapas dobrej jakości karmy: Versele Laga jest Twój!");
                                                     Console.WriteLine("Naciśnij dowolny klawisz, aby zagrać jeszcze raz");
                                                     Console.ReadKey();
 
@@ -137,11 +137,12 @@ namespace testOSwinkach
                                             case "C":
                                                 {
                                                     Console.ForegroundColor = ConsoleColor.Green;
-                                                    Console.WriteLine("Brawo to poprawna odpowiedź. Wygrywasz 2000zł! Świnka rozetka to inaczej świnka abisyńska\n");
-                                                    Console.ForegroundColor = ConsoleColor.White;
+                                                    Console.WriteLine("Brawo to poprawna odpowiedź. Świnka rozetka to inaczej świnka abisyńska.");
+                                                    Console.WriteLine("Miesięczny warzywny catering dietetyczny od firmy Chrumka jest Twój!\n");
                                                     Console.WriteLine("Gotowy grać dalej? - Jeśli tak, naciśnij dowolny klawisz");
                                                     Console.ReadKey();
                                                     Console.Clear();
+
 
                                                     Console.ForegroundColor = ConsoleColor.Green;
                                                     Console.WriteLine("Twoja aktualna nagroda:\n");
@@ -152,12 +153,12 @@ namespace testOSwinkach
                                                     Console.WriteLine("Zestaw 10 zabiegów SPA oraz kąpieli błotnych");
                                                     Console.WriteLine("Zestaw świnkowych domków");
                                                     Console.WriteLine("Klatka dla 3 świnek o wymiarach 120cmx60cm");
-                                                    Console.WriteLine("Świński Hamak");
+                                                    Console.WriteLine("Świński Hamak (nagroda gwarantowana)");
                                                     Console.ForegroundColor = ConsoleColor.Green;
                                                     Console.WriteLine("Miesięczny warzywny catering dietetyczny");
                                                     Console.WriteLine("Miesięczny zapas karmy Versele Laga");
-                                                    Console.WriteLine("Zapas siana na miesiąc (Suma gwarantowana)");
-                                                    Console.WriteLine("Świński Kubek - nagroda pocieszenia\n\n");
+                                                    Console.WriteLine("Zapas siana na miesiąc (nagroda gwarantowana)");
+                                                    Console.WriteLine("Świński Kubek (nagroda pocieszenia)\n\n");
 
                                                     Console.ForegroundColor = ConsoleColor.White;
                                                     Console.WriteLine("Pytanie Nr 4.Jaki powinien być najmniejszy rozmiar klatki przeznaczonej dla 2 świnek?");
@@ -183,6 +184,7 @@ namespace testOSwinkach
                                                                 {
                                                                     Console.ForegroundColor = ConsoleColor.Green;
                                                                     Console.WriteLine("\nBrawo to czwarta poprawna odpowiedź! Świński hamak jest Twój!");
+                                                                    Console.WriteLine($"{Name} nawet jeśli odpowiesz błędnie na któreś z kolejnych pytań, będziesz mógł wylegiwać się wygodnie o każdej porze!");
                                                                     Console.ReadKey();
                                                                     Console.Clear();
                                                                     break;
@@ -190,14 +192,14 @@ namespace testOSwinkach
                                                             case "R":
                                                                 {
                                                                     Console.ForegroundColor = ConsoleColor.White;
-                                                                    Console.WriteLine($"Dziękujemy za grę {Name}. Wygrałeś 2000zł!");
+                                                                    Console.WriteLine($"Dziękujemy za grę {Name}. Catering warzywnyny od firmy Chrumka na cały kolejny miesiąc. Gratulacje!");
                                                                     Console.WriteLine("Naciśnij dowolny klawisz, aby zagrać jeszcze raz");
                                                                     Console.ReadKey();
                                                                     break;
                                                                 }
                                                             case "P":
-                                                                { 
-                                                                    Console.WriteLine ("Skorzystajmy z pomocy naszej świńskiej publicznośći");
+                                                                {
+                                                                    Console.WriteLine("Skorzystajmy z pomocy naszej świńskiej publicznośći");
                                                                 }
                                                                 break;
                                                             case "H":
@@ -210,29 +212,36 @@ namespace testOSwinkach
                                                                     Console.WriteLine("Zadzwońmy więc do przyjaciela");
                                                                     Console.WriteLine("Kto mógłby znać odpowiedź na to pytanie? Świnka Kropka czy Świnka Tola?");
                                                                     phoneFriend = Console.ReadLine();
+
+
+
                                                                     if (phoneFriend == "K")
                                                                     {
                                                                         Console.WriteLine("Dzwonimy do świnki Kropki\n");
                                                                         Console.WriteLine("Dryń, dryń, dryń\n");
                                                                         Console.WriteLine("Dryń, dryń, dryń\n");
-                                                                        Console.WriteLine($"Halo {Name} tu Kropka. Postaram się Ci pomóc.");
-                                                                        Console.ReadKey();
+                                                                        Console.WriteLine($"Halo {Name} tu Kropka. Wydaje mi się, że odpowiedź D jest prawidłowa.");
+                                                                        Console.WriteLine("Myślę, że możesz zaryzykować.");
+                                                                        Console.ReadKey(); 
                                                                     }
                                                                     if (phoneFriend == "T")
                                                                     {
                                                                         Console.WriteLine("Dzwonimy do świnki Toli");
                                                                         Console.WriteLine("Dryń, dryń, dryń\n");
                                                                         Console.WriteLine("Dryń, dryń, dryń\n");
-                                                                        Console.WriteLine($"Hej {Name} tu Tola. Mam nadzieję, że będę znała odpowiedź na to pytanie");
+                                                                        Console.WriteLine($"Hej {Name} tu Tola. Na pewno chodzi o klatkę sporych rozmiarów");
+                                                                        Console.WriteLine("Waham się między odpowiedziami C i D.");
+                                                                        Console.WriteLine("Może skorzystaj jeszcze z jednego koła ratunkowego");
                                                                         Console.ReadKey();
                                                                     }
 
                                                                 }
+
                                                                 break;
                                                             default:
                                                                 {
                                                                     Console.ForegroundColor = ConsoleColor.Red;
-                                                                    Console.WriteLine($"Niestety to niepoprawna odpowiedź.{Name} otrzymujesz gwarantowany 1000zł! Gratulacje!");
+                                                                    Console.WriteLine($"Niestety to niepoprawna odpowiedź.{Name} Nie martw się otrzymujesz nagrodę gwarantowaną - zapas siana na cały kolejny miesiąc! Gratulacje!");
                                                                     Console.ReadKey();
                                                                     Console.Clear();
                                                                     break;
@@ -244,7 +253,7 @@ namespace testOSwinkach
                                             default:
                                                 {
                                                     Console.ForegroundColor = ConsoleColor.Red;
-                                                    Console.WriteLine("Poprawna odpowiedź to C-Abisyńską. Dziękujemy za grę. Wygrywasz gwarantowany 1000zł");
+                                                    Console.WriteLine("Poprawna odpowiedź to C-Abisyńską. Dziękujemy za grę. Zapas siana na cały kolejny miesiąc jest Twój!");
                                                 }
 
                                                 break;
