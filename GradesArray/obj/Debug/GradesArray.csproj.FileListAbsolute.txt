@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\bin\Debug\GradesArray.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\bin\Debug\GradesArray.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\bin\Debug\GradesArray.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\obj\Debug\GradesArray.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\obj\Debug\GradesArray.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\obj\Debug\GradesArray.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\obj\Debug\GradesArray.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GradesArray\obj\Debug\GradesArray.pdb
