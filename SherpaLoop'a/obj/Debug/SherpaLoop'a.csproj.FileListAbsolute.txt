@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\bin\Debug\SherpaLoop'a.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\bin\Debug\SherpaLoop'a.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\bin\Debug\SherpaLoop'a.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\obj\Debug\SherpaLoop'a.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\obj\Debug\SherpaLoop'a.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\obj\Debug\SherpaLoop'a.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\obj\Debug\SherpaLoop'a.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SherpaLoop'a\obj\Debug\SherpaLoop'a.pdb

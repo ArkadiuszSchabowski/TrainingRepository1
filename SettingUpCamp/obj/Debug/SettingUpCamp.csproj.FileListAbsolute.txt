@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\bin\Debug\SettingUpCamp.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\bin\Debug\SettingUpCamp.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\bin\Debug\SettingUpCamp.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\obj\Debug\SettingUpCamp.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\obj\Debug\SettingUpCamp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\obj\Debug\SettingUpCamp.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\obj\Debug\SettingUpCamp.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SettingUpCamp\obj\Debug\SettingUpCamp.pdb
