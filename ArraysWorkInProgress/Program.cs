@@ -9,14 +9,32 @@ namespace ArraysWorkInProgress
     internal class Program
     {
         static void Main(string[] args)
-
         {
-            int[] TablicaSwinkowa = new int[4] { 6, 3, 4, 2 };
-            Console.WriteLine("Tablica Swinska " + TablicaSwinkowa[0]);
+            int zmienna1, zmienna2;
 
-            for (int i = 0; i < TablicaSwinkowa.Length; i++)
+            zmienna1 = 5;
+            zmienna2 = zmienna1;
+            zmienna1 = 3;
+
+            Console.WriteLine($"Zmienna1 powinna wynosić 3, a wynosi:{zmienna1}");
+            Console.WriteLine($"Zmienna2 powinna wynosić 5, a wynosi:{zmienna2}\n");
+
+
+
+            int[] tablica1 = new int[3] { 6, 10, 3 };
+            int[] tablica2 = tablica1;
+            tablica1[0] = 5;
+
+            for (int i = 0; i < tablica1.Length; i++)
             {
-                Console.WriteLine("Index:" + i + " Element tablicy:" + (i + 1) + " Swinska ocena:" + TablicaSwinkowa[i]);
+                Console.Write("Tablica ocen1:");
+                Console.WriteLine($"{tablica1[i]}");
+            }
+            Console.WriteLine("");
+            for (int i = 0; i < tablica2.Length; i++)
+            {
+                Console.Write("Tablica ocen2:");
+                Console.WriteLine($"{tablica2[i]}");
             }
             Console.ReadKey();
         }
