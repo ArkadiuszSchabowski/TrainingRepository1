@@ -12,12 +12,6 @@ namespace expedition8k
 {
     internal class Program
     {
-        //Teraz, gdy znasz już różne typy liczbowe, napisz kod obliczający pole koła o danym promieniu - załóżmy w naszym przykladzie, że bedzie to` 2,50 centymetra.Pamiętaj, że obszar koła to promień podniesiony do kwadratu pomnożony przez PI.
-
-        //.NET zawiera stałą dla PI, Math.PI, której można użyć dla tej wartości. Math.PI, podobnie jak wszystkie stałe zadeklarowane w przestrzeni nazw System.Math, jest wartością podwójną.
-        //W tym zadaniunależy używać wartości double zamiast wartości int. Powinieneś otrzymać odpowiedź między 19 a 20.
-
-        //Teraz przenieś kod do osobnej metody z parametrem "double radius" i koniecznie podziel się swoim kodem w naszej grupie na FB
         static void Main(string[] args)
         {
             DoubleRadius();

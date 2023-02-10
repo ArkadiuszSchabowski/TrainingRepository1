@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\bin\Debug\ArraysWorkInProgress.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\bin\Debug\ArraysWorkInProgress.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\bin\Debug\ArraysWorkInProgress.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\obj\Debug\ArraysWorkInProgress.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\obj\Debug\ArraysWorkInProgress.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\obj\Debug\ArraysWorkInProgress.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\obj\Debug\ArraysWorkInProgress.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ArraysWorkInProgress\obj\Debug\ArraysWorkInProgress.pdb
