@@ -1,0 +1,3 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GetSetAva\obj\Debug\GetSetAva.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GetSetAva\obj\Debug\GetSetAva.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\GetSetAva\obj\Debug\GetSetAva.csproj.CoreCompileInputs.cache

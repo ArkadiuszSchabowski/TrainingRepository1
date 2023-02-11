@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\bin\Debug\Avalanche.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\bin\Debug\Avalanche.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\bin\Debug\Avalanche.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\obj\Debug\Avalanche.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\obj\Debug\Avalanche.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\obj\Debug\Avalanche.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\obj\Debug\Avalanche.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Avalanche\obj\Debug\Avalanche.pdb
