@@ -17,7 +17,6 @@ namespace SettingUpCamp
 
             for (int i = 0; i < 18; i++)
             {
-
                 var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
                 var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
 
@@ -34,6 +33,5 @@ namespace SettingUpCamp
 
             Console.ReadKey();
         }
-
     }
 }

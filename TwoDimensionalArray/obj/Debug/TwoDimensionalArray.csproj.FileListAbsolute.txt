@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\bin\Debug\TwoDimensionalArray.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\bin\Debug\TwoDimensionalArray.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\bin\Debug\TwoDimensionalArray.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.pdb
