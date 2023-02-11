@@ -8,17 +8,24 @@ namespace Avalanche.Properties
 {
     public class Card
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+
             var card = new Card("Arkadiusz");
             Console.WriteLine($"Card {card.Number} was created for {card.Owner}.");
+            Console.ReadKey();
         }
-
-        public string Number { get; }
 
         private static int cardNumberSeed = 1234567890;
 
+        public string Number { get; }
         public string Owner { get; set; }
+
+        public void RegisterNewTrace(decimal kilometers, string note)
+        {
+            var trace = new Trace(kilometers, note);
+            allTraces.Add(trace);
+        }
         public Card(string owner)
         {
             this.Owner = owner;
@@ -26,12 +33,6 @@ namespace Avalanche.Properties
             cardNumberSeed++;
         }
         private List<Trace> allTraces = new List<Trace> {};
-
-        public void RegisterNewTrace(decimal kilometers, DateTime date, string note)
-        {
-            var trace = new Trace(kilometers, date, note);
-            allTraces.Add(trace);
-        }
         public decimal Distance
         {
             get
@@ -41,9 +42,9 @@ namespace Avalanche.Properties
                 {
                     distance += item.Kilometers;
                 }
-
                 return distance;
             }
+            
         }
     }
 }
