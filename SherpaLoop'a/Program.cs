@@ -13,12 +13,16 @@ namespace SherpaLoop_a
     {
         static void Main(string[] args)
         {
+            Sherpa();
+        }
+        static void Sherpa()
+        {
             int sum = 0;
             int i = 1;
 
             while (i <= 30)
             {
-                if(i % 7 == 0)
+                if (i % 7 == 0)
                 {
                     sum = sum + i;
                 }

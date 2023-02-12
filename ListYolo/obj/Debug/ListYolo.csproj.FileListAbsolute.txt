@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\bin\Debug\ListYolo.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\bin\Debug\ListYolo.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\bin\Debug\ListYolo.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\obj\Debug\ListYolo.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\obj\Debug\ListYolo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\obj\Debug\ListYolo.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\obj\Debug\ListYolo.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ListYolo\obj\Debug\ListYolo.pdb
