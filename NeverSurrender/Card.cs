@@ -15,6 +15,14 @@ namespace NeverSurrender
         {
             var card = new Card("Arkadiusz");
             Console.WriteLine($"Card {card.Number} was created for {card.Owner}.");
+
+            foreach (var trace in allTraces)
+            {
+                Console.WriteLine($"  {trace.Date.ToString("dd.MM.yyyy HH:mm")} -{trace.Kilometers,4}km");
+            }
+        }
+        public void showAllTraces()
+        {
         }
 
         public string Number { get; }
@@ -31,7 +39,7 @@ namespace NeverSurrender
         {
         }
 
-    public decimal Distance
+        public decimal Distance
         {
             get
             {
@@ -44,7 +52,7 @@ namespace NeverSurrender
                 return distance;
             }
         }
-}
+    }
     public class Trace
     {
         public decimal Kilometers { get; }
