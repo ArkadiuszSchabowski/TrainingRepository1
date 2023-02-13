@@ -12,41 +12,18 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            int number1, number2, result;
-
-            while (true)
-            {
-
-                Console.WriteLine("Podaj pierwszą liczbę");
-                number1 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Podaj drugą liczbę");
-                number2 = int.Parse(Console.ReadLine());
-
-                CompareValues(number1, number2);
-
-                result = SumValues(number1, number2);
-
-                Console.WriteLine("Twój wynik to" + result);
-            }
+            Lista();
         }
-        private static void CompareValues(int firstValue, int secondValue)
+        private static void Lista()
         {
-            if (firstValue > secondValue)
+            var names = new List<string> {"Arkadiusz", "Beata", "Dominika" };
+            foreach (var name in names)
             {
-                Console.WriteLine("Pierwsza liczba jest większa od drugiej");
+                Console.WriteLine($"Hello {name}");
             }
-            else if (firstValue == secondValue)
-            {
-                Console.WriteLine("Liczby są sobie równe");
-            }
-            else
-            {
-                Console.WriteLine("Pierwsza liczba jest mniejsza od drugiej");
-            }
+            Console.WriteLine("Wybierz dział:");
+            Console.ReadKey();
+
         }
-        private static int SumValues(int firstValue, int secondValue)
-        {
-            return firstValue + secondValue;
-    }
     }
 }
