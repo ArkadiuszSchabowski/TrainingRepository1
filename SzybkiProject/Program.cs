@@ -12,18 +12,11 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            Lista();
-        }
-        private static void Lista()
-        {
-            var names = new List<string> {"Arkadiusz", "Beata", "Dominika" };
-            foreach (var name in names)
-            {
-                Console.WriteLine($"Hello {name}");
-            }
-            Console.WriteLine("Wybierz dział:");
+            long zmienna = long.MaxValue;
+            long zmienna2 = 100;
+            double value = 9999999999999999999;
+            Console.WriteLine(value);
             Console.ReadKey();
-
         }
     }
 }
