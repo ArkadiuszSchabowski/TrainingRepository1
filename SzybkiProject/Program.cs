@@ -12,10 +12,10 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            long zmienna = long.MaxValue;
-            long zmienna2 = 100;
-            double value = 9999999999999999999;
-            Console.WriteLine(value);
+            double a = 1;
+            double b = 3;
+            a %= b;
+            Console.WriteLine(a);
             Console.ReadKey();
         }
     }
