@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,10 +13,14 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            double a = 1;
-            double b = 3;
-            a %= b;
-            Console.WriteLine(a);
+            //Rzutowanie zmiennych
+
+            int i = int.MaxValue;
+            double d = 5.9;
+
+            i = (int)d;
+
+            Console.WriteLine(i);
             Console.ReadKey();
         }
     }
