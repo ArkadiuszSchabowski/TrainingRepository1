@@ -13,14 +13,11 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            //Rzutowanie zmiennych
+            int i = 5;
+            string jeden = "5";
+            string c = i + jeden;
+            Console.WriteLine(c);
 
-            int i = int.MaxValue;
-            double d = 5.9;
-
-            i = (int)d;
-
-            Console.WriteLine(i);
             Console.ReadKey();
         }
     }
