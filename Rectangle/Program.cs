@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -13,26 +13,16 @@ namespace Rectangle
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i <= 3; i++)
-            {
-                for (int j = 0; j <= 3; j++)
-                {
-                    Console.WriteLine(i + " " + j);
-                }
-
-            }
+            string s1;
+            string s2;
+            s1 = "witaj";
+            s2 = " świecie";
+            s3 = s1 + s2;
+            Console.WriteLine(s3);
             Console.ReadKey();
         }
     }
 }
-
-
-
-
-
-
-
-
 
 //            string szerokosc, wysokosc;
 //            int x, y;

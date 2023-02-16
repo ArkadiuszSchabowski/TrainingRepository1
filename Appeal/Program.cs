@@ -12,12 +12,12 @@ namespace Appeal
         {
             History();
             Liczba();
-
         }
+
         static void History()
         {
-
         }
+
         static void Liczba()
         {
             var Program = new Program();
@@ -26,6 +26,7 @@ namespace Appeal
             int b = 2;
             int liczba = a + b;
             Console.WriteLine(liczba);
+            Console.ReadKey();
         }
     }
 }
