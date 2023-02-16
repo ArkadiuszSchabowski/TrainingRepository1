@@ -13,9 +13,12 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            int i = 5;
-            string jeden = "5";
-            string c = i + jeden;
+            //int a = 5;
+            //string nazwa = "5";
+            //int c = a + int.Parse(nazwa);
+
+
+
             Console.WriteLine(c);
 
             Console.ReadKey();
