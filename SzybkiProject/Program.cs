@@ -13,13 +13,13 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            //int a = 5;
-            //string nazwa = "5";
-            //int c = a + int.Parse(nazwa);
+            int i = 5;
+            string nazwa = "10";
+            string b;
 
+            b = i.ToString() + 10;
 
-
-            Console.WriteLine(c);
+            Console.WriteLine(b);
 
             Console.ReadKey();
         }
