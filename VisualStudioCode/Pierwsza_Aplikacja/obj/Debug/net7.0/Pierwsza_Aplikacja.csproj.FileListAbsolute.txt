@@ -1,0 +1,15 @@
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\bin\Debug\net7.0\Pierwsza_Aplikacja.exe
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\bin\Debug\net7.0\Pierwsza_Aplikacja.deps.json
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\bin\Debug\net7.0\Pierwsza_Aplikacja.runtimeconfig.json
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\bin\Debug\net7.0\Pierwsza_Aplikacja.dll
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\bin\Debug\net7.0\Pierwsza_Aplikacja.pdb
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.csproj.AssemblyReference.cache
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.AssemblyInfoInputs.cache
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.AssemblyInfo.cs
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.csproj.CoreCompileInputs.cache
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.dll
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\refint\Pierwsza_Aplikacja.dll
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.pdb
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\Pierwsza_Aplikacja.genruntimeconfig.cache
+c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\VisualStudioCode\Pierwsza_Aplikacja\obj\Debug\net7.0\ref\Pierwsza_Aplikacja.dll
