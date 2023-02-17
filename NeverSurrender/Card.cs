@@ -8,62 +8,49 @@ using System.Threading.Tasks;
 
 namespace NeverSurrender
 {
-    public class Card
+    public class FridayEvening
     {
-        private static int cardNumberSeed = 1234567890;
         static void Main(string[] args)
         {
-            var card = new Card("Arkadiusz");
-            Console.WriteLine($"Card {card.Number} was created for {card.Owner}.");
+            int number;
 
-            foreach (var trace in allTraces)
+            Random rnd = new Random();
+
+            int los = rnd.Next(1, 11);
+
+            Console.ForegroundColor = ConsoleColor.White;
+            int ileRazy = 0;
+            Console.WriteLine("Zgadnij liczbę z zakresu 1-10\n");
+
+            do
             {
-                Console.WriteLine($"  {trace.Date.ToString("dd.MM.yyyy HH:mm")} -{trace.Kilometers,4}km");
-            }
-        }
-        public void showAllTraces()
-        {
-        }
-
-        public string Number { get; }
-        public string Owner { get; set; }
-        public Card(string owner)
-        {
-            this.Owner = owner;
-            this.Number = cardNumberSeed.ToString();
-            cardNumberSeed++;
-        }
-        private List<Trace> allTraces = new List<Trace> { };
-
-        public void RegisterNewTrace(decimal kilometers, DateTime date, string note)
-        {
-        }
-
-        public decimal Distance
-        {
-            get
-            {
-                decimal distance = 0;
-                foreach (var item in allTraces)
+                number = int.Parse(Console.ReadLine());
+                if (number > 10 || number < 1)
                 {
-                    distance += item.Kilometers;
+                    Console.WriteLine("Liczba z poza zakresu");
                 }
+                else
+                {
+                    ileRazy++;
+                    if (number > los)
+                    {
+                        Console.WriteLine("Podałeś za duża liczbę");
+                    }
+                    else if (number < los)
+                    {
+                        Console.WriteLine("Podałeś za małą liczbę");
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Gratulacje");
+                        Console.WriteLine($"Odgałeś moją liczbę za {ileRazy} razem");
+                        Console.ReadKey();
+                    }
 
-                return distance;
+                }
             }
-        }
-    }
-    public class Trace
-    {
-        public decimal Kilometers { get; }
-        public DateTime Date { get; }
-        public string Notes { get; }
-
-        public Trace(decimal kilometers, DateTime date, string note)
-        {
-            this.Kilometers = kilometers;
-            this.Date = date;
-            this.Notes = note;
+            while (number != los);
         }
     }
 }
