@@ -11,74 +11,37 @@ namespace Exercises
 {
     internal class Program
     {
-        //Wyswietl w konsoli prostokat o szerokosci x oraz dlugosci y, który zbydowany jest z ****.
-        //X oraz Y podaje użytkownik
         static void Main(string[] args)
         {
-            RandomNumber();
-        }
+            int labbelHeight;
 
-        static void RandomNumber()
-        {
-            //Gra w zgadywanie liczby wylosowanej przez komputer
-            //Komputer losuje liczbe z zakresu od 1-10
-            //Jesli liczba wieksza mniejsza lub rowna nastepuja komunikaty
+            Console.WriteLine("Podaj wysokość drabiny");
+            labbelHeight = int.Parse(Console.ReadLine());
 
-            Random rnd = new Random();
-            int los = rnd.Next(1, 11);
-            int mojaLiczba;
-            int ileRazy = 0;
-            do
+            for (int i = 0; i < labbelHeight; i++)
             {
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("Zgadnij liczbę z zakresu od 1-10: ");
-                mojaLiczba = int.Parse(Console.ReadLine());
-                if (mojaLiczba < 1 || mojaLiczba > 10)
+                for (int j = 0; j < labbelHeight; j++)
                 {
-                    Console.WriteLine("Podałeś złą liczbę");
-                }
-                else
-                    ileRazy++;
-                {
-
-                    if (mojaLiczba < los)
+                    if (i % 2 == 0)
                     {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Twoja liczba jest za mała");
-                    }
-                    else if (mojaLiczba > los)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Twoja liczba jest za duża");
+                        Console.Write("*");
                     }
                     else
                     {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Brawo odgadłeś moją liczbę!!! Za {0} razem!", ileRazy);
-                        Console.ReadKey();
+                        if (j == 0 || j == labbelHeight-1)
+                        {
+                            Console.Write("X");
+                        }
+                        else
+                        {
+                            Console.Write(".");
+                        }
                     }
-                }
-            } while (mojaLiczba != los);
-        }
-        static void Rectangle()
-        {
-            int x = 0;
-            int y = 0;
-
-            Console.WriteLine("Podaj szerokość prostokąta");
-            x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Podaj długość prostokąta");
-            y = int.Parse(Console.ReadLine());
-            Console.WriteLine();
-
-            for (int i = 0; i < y; i++)
-            {
-                for (int j = 0; j < x; j++)
-                {
-                    Console.Write("*");
                 }
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
     }
 }
+

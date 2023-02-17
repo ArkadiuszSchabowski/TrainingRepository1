@@ -13,25 +13,34 @@ namespace SzybkiProject
     {
         private static void Main(string[] args)
         {
-            int wysokoscDrabiny;
+            int ladderHeight;
             Console.WriteLine("Podaj wysokość drabiny");
-            wysokoscDrabiny = int.Parse(Console.ReadLine());
-            for (int i = 0; i < wysokoscDrabiny; i++)
+            ladderHeight = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < ladderHeight; i++)
             {
-                for (int j = 0; j < wysokoscDrabiny; j++)
+                for (int j = 0; j < ladderHeight; j++)
                 {
-                    if (i%2==1)
+                    if (i % 2 == 0)
                     {
                         Console.Write("X");
                     }
-                    else
+                    if (i % 2 == 1)
                     {
-                        Console.Write(".");
+                        if (j==0 || j == ladderHeight - 1)
+                        {
+                            Console.Write("X");
+                        }
+                        else
+                        {
+                            Console.Write(".");
+                        }
                     }
                 }
                 Console.WriteLine();
             }
             Console.ReadKey();
+
         }
     }
 }
