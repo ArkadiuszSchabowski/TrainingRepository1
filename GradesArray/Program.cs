@@ -11,12 +11,37 @@ namespace GradesArray
     {
         static void Main(string[] args)
         {
+            //GradesLoopyFor();
+            GradesArray();
+        }
+
+
+        static void GradesLoopyFor()
+        {
+            int[] tablica = new int[10] { 5, 4, 3, 2, 1, 2, 3, 6, 6, 2 };
+            double sum = 0;
+
+            for (int i = 0; i < tablica.Length; i++)
+            {
+                Console.WriteLine(tablica[i]);
+                sum = sum + i;
+            }
+            Console.WriteLine();
+            Console.WriteLine(sum);
+
+            double grades = sum / tablica.Length;
+            Console.WriteLine($"Twoją średnia to: {grades}");
+            Console.ReadKey();
+        }
+        static void GradesArray()
+        {
             double sum = 0;
             int[] NowaTablica = new int[10] { 3, 4, 5, 3, 2, 1, 6, 2, 2, 1 };
-            for (int i = 0; i < NowaTablica.Length; i++)
-            {
-                Console.WriteLine("index " + i + " pozycja " + (i + 1) + " ocena " + NowaTablica[i]);
-            }
+
+            //for (int i = 0; i < NowaTablica.Length; i++)
+            //{
+            //    Console.WriteLine("index " + i + " pozycja " + (i + 1) + " ocena " + NowaTablica[i]);
+            //}
 
             foreach (int elem in NowaTablica)
             {
@@ -29,3 +54,4 @@ namespace GradesArray
         }
     }
 }
+
