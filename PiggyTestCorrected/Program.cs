@@ -12,7 +12,7 @@ namespace testOSwinkach
     {
         private static void Main(string[] args)
         {
-            string Name;
+            string Name, phoneFriend;
             string questionOne, questionTwo, questionThree, questionFour;
 
             while (true)
@@ -35,31 +35,24 @@ namespace testOSwinkach
                 switch (questionOne)
                 {
                     case "F":
-
                         PhoneFriend();
                         break;
-
                     case "R":
                         Console.WriteLine($"Mimo wszystko dziękujemy za udział w programie {Name}!");
                         Console.WriteLine("Chcesz zagrać jeszcze raz? - naciśnij dowolny klawisz");
                         Console.ReadKey();
                         Console.Clear();
-
                         break;
                     case "P":
                         Console.WriteLine($"Drogie Świnki pomóżcie proszę {Name} podjąć poprawną decyzję");
                         break;
-
                     case "H":
                         Console.WriteLine("Prosimy o losowe odrzucenie dwóch błędnych odpowiedzi");
                         break;
                     case "B":
                         Console.ForegroundColor = ConsoleColor.Green;
-
                         CorrectAnswerOne();
-
                         PriceAfterCorrectAnswerOne();
-
                         QuestionTwo();
                         break;
                     default:
@@ -67,18 +60,13 @@ namespace testOSwinkach
                         break;
                 }
                 questionTwo = Console.ReadLine();
-
                 switch (questionTwo)
                 {
                     case "D":
-
                         CorrectAnswerTwo();
-
                         PriceAfterCorrectAnswerTwo();
-
                         QuestionThree();
                         break;
-
                     default:
                         IncorrectAnswerTwo();
                         break;
@@ -88,18 +76,14 @@ namespace testOSwinkach
                 switch (questionThree)
                 {
                     case "R":
-
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Dziękujemy za grę {Name}. Zapas dobrej jakości karmy: Versele Laga jest Twój!");
                         Console.WriteLine("Naciśnij dowolny klawisz, aby zagrać jeszcze raz");
                         Console.ReadKey();
                         break;
                     case "C":
-
                         CorrectAnswerThree();
-
                         PriceAfterCorrectAnswerThree();
-
                         QuestionFour();
                         break;
                     default:
@@ -121,21 +105,44 @@ namespace testOSwinkach
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Prosimy o losowe odrzucenie dwóch błędnych odpowiedzi");
                         break;
-                    default:
-                        IncorrectAnswerFour();
-                        break;
                     case "R":
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Dziękujemy za grę {Name}. Catering warzywnyny od firmy Chrumka na cały kolejny miesiąc. Gratulacje!");
                         Console.WriteLine("Naciśnij dowolny klawisz, aby zagrać jeszcze raz");
                         Console.ReadKey();
                         break;
+                    case "F":
+                        PhoneFriend();
+                        break;
+                    default:
+                        IncorrectAnswerFour();
+                        break;
+                }
+                phoneFriend = Console.ReadLine();
 
+                if (phoneFriend == "K")
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Dzwonimy do świnki Kropki\n");
+                    Console.WriteLine("Dryń, dryń, dryń\n");
+                    Console.WriteLine("Dryń, dryń, dryń\n");
+                    Console.WriteLine($"Halo {Name} tu Kropka. Wydaje mi się, że odpowiedź D jest prawidłowa.");
+                    Console.WriteLine("Myślę, że możesz zaryzykować.");
+                    Console.ReadKey();
+                }
+                if (phoneFriend == "T")
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("\nDzwonimy do świnki Toli\n");
+                    Console.WriteLine("Dryń, dryń, dryń\n");
+                    Console.WriteLine("Dryń, dryń, dryń\n");
+                    Console.WriteLine($"Hej {Name} tu Tola. Na pewno chodzi o klatkę sporych rozmiarów");
+                    Console.WriteLine("Waham się między odpowiedziami C i D.");
+                    Console.WriteLine("Może skorzystaj jeszcze z jednego koła ratunkowego");
+                    Console.ReadKey();
                 }
             }
-
         }
-
         private static void Introduction()
         {
             Console.WriteLine("\nTest o świnkach morskich.\n");
@@ -338,31 +345,3 @@ namespace testOSwinkach
         }
     }
 }
-//case "F":
-//    {
-//        PhoneFriend();
-
-//        phoneFriend = Console.ReadLine();
-
-
-//        if (phoneFriend == "K")
-//        {
-//            Console.ForegroundColor = ConsoleColor.White;
-//            Console.WriteLine("Dzwonimy do świnki Kropki\n");
-//            Console.WriteLine("Dryń, dryń, dryń\n");
-//            Console.WriteLine("Dryń, dryń, dryń\n");
-//            Console.WriteLine($"Halo {Name} tu Kropka. Wydaje mi się, że odpowiedź D jest prawidłowa.");
-//            Console.WriteLine("Myślę, że możesz zaryzykować.");
-//            Console.ReadKey();
-//        }
-//        if (phoneFriend == "T")
-//        {
-//            Console.ForegroundColor = ConsoleColor.White;
-//            Console.WriteLine("\nDzwonimy do świnki Toli\n");
-//            Console.WriteLine("Dryń, dryń, dryń\n");
-//            Console.WriteLine("Dryń, dryń, dryń\n");
-//            Console.WriteLine($"Hej {Name} tu Tola. Na pewno chodzi o klatkę sporych rozmiarów");
-//            Console.WriteLine("Waham się między odpowiedziami C i D.");
-//            Console.WriteLine("Może skorzystaj jeszcze z jednego koła ratunkowego");
-//            Console.ReadKey();
-//     
