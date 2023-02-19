@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\bin\Debug\FunctionandMethods.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\bin\Debug\FunctionandMethods.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\bin\Debug\FunctionandMethods.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\obj\Debug\FunctionandMethods.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\obj\Debug\FunctionandMethods.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\obj\Debug\FunctionandMethods.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\obj\Debug\FunctionandMethods.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\FunctionandMethods\obj\Debug\FunctionandMethods.pdb
