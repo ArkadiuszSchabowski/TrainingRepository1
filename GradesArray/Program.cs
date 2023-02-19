@@ -11,20 +11,77 @@ namespace GradesArray
     {
         static void Main(string[] args)
         {
-            WorkWithArrays();
+            //RevisionArray();
+            //WorkWithArrays();
             //TwoDimensionalArray();
             //GradesLoopyFor();
             //GradesArray();
+
+            int[,] grades = new int[2, 3] { { 1, 4, 6 }, { 2, 9, 3 } };
+
+            PrintArray(grades);
+        }
+
+        static void PrintArray(int[,]array)
+        {
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(array[i , j]+",");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+            
+        }
+        static void RevisionArray()
+        {
+            int[] tablica1D = new int[5] { 0, 2, 3, 4, 5 };
+            int[,] tablica2D = new int[3, 2] {
+
+                { 1, 5 },
+                { 2, 2 },
+                { 3, 2 }
+            };
+            int[,] tablicaDwuwymiarowa = new int[2, 3] {
+
+                { 0, 1, 2 },
+                { 0, 3, 2 }
+            };
+            int[,,] Tablica3D = new int[2, 3, 3] { { { 0, 1, 7 }, { 4, 7, 2 }, { 5, 9, 4 }, }, { { 0, 1, 3 }, { 4, 7, 6 }, { 5, 9, 10 }, }, };
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    for (int k = 0; k < 3; k++)
+                    {
+                        Console.Write(Tablica3D[i, j, k]+",");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+
+            foreach (int elem in Tablica3D)
+            {
+                Console.WriteLine(elem);
+            }
+            Console.ReadKey();
+
         }
         static void WorkWithArrays()
         {
-            int[]Tablica = new int[5] { 4, 3, 1, 2, 6 };
+            int[] Tablica = new int[5] { 4, 3, 1, 2, 6 };
             Console.WriteLine(Tablica[4]);
 
-            int[,]Tablica2 = new int[3,6];
+            int[,] Tablica2 = new int[3, 6];
             Tablica2[2, 5] = 10;
 
-            Console.WriteLine(Tablica2[2,5]);
+            Console.WriteLine(Tablica2[2, 5]);
 
             int[][] TablicaTablic = new int[3][];
             int[] TablicaPierwsza = new int[3];
