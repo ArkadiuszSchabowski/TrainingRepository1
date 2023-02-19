@@ -21,6 +21,7 @@ namespace Palindromy
             {
                 if (word[i] != word[word.Length - 1 - i])
                 {
+                    isPalindrom = false;
                 }
             }
             if(isPalindrom)
