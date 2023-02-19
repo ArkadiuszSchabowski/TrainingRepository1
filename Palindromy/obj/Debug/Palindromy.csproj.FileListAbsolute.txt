@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\bin\Debug\Palindromy.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\bin\Debug\Palindromy.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\bin\Debug\Palindromy.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\obj\Debug\Palindromy.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\obj\Debug\Palindromy.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\obj\Debug\Palindromy.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\obj\Debug\Palindromy.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Palindromy\obj\Debug\Palindromy.pdb

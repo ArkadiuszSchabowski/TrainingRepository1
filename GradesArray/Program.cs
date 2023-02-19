@@ -11,10 +11,54 @@ namespace GradesArray
     {
         static void Main(string[] args)
         {
+            WorkWithArrays();
+            //TwoDimensionalArray();
             //GradesLoopyFor();
-            GradesArray();
+            //GradesArray();
         }
+        static void WorkWithArrays()
+        {
+            int[]Tablica = new int[5] { 4, 3, 1, 2, 6 };
+            Console.WriteLine(Tablica[4]);
 
+            int[,]Tablica2 = new int[3,6];
+            Tablica2[2, 5] = 10;
+
+            Console.WriteLine(Tablica2[2,5]);
+
+            int[][] TablicaTablic = new int[3][];
+            int[] TablicaPierwsza = new int[3];
+            int[] TablicaDruga = new int[2];
+
+            TablicaPierwsza[0] = 5;
+            TablicaPierwsza[1] = 9;
+            TablicaPierwsza[2] = 3;
+
+            TablicaDruga[0] = 11;
+            TablicaDruga[1] = 22;
+
+            Console.WriteLine(TablicaDruga[1]);
+            Console.ReadKey();
+
+        }
+        static void TwoDimensionalArray()
+        {
+            int[,] Tablica = new int[2, 3];
+
+            Tablica[0, 0] = 3;
+            Tablica[0, 1] = 6;
+            Tablica[0, 2] = 5;
+            Tablica[1, 0] = 1;
+            Tablica[1, 1] = 4;
+            Tablica[1, 2] = 2;
+
+            foreach (int elem in Tablica)
+            {
+                Console.WriteLine(elem);
+            }
+            Console.ReadKey();
+
+        }
 
         static void GradesLoopyFor()
         {
