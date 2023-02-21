@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\bin\Debug\Exercise6vol2.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\bin\Debug\Exercise6vol2.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\bin\Debug\Exercise6vol2.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\obj\Debug\Exercise6vol2.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\obj\Debug\Exercise6vol2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\obj\Debug\Exercise6vol2.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\obj\Debug\Exercise6vol2.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Exercise6vol2\obj\Debug\Exercise6vol2.pdb

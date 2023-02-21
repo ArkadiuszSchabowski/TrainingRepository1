@@ -10,21 +10,41 @@ namespace FunctionandMethods
     {
         static void Main(string[] args)
         {
-            Add(2, 4);
-            //Addition(2, 4);
+            Substraction(19, 3);
+            //Multiplication(10,3);
+            //    Addition();
             Console.ReadKey();
         }
-
-        static int Add(int a, int b)
+        static int Substraction(int a, int b)
         {
-            return a + b;
+            int wynik = a - b;
+            Console.WriteLine(wynik);
+            if (wynik > 10)
+            {
+                Console.WriteLine("Twój wynik jest większy od 10");
+            }
+            else if (wynik == 10)
+            {
+                Console.WriteLine("Twój wynik jest równy 10");
+            }
+            else
+            {
+                Console.WriteLine("Twój wynik jest mniejszy od 10");
+            }
+            return wynik;
         }
-        static void Addition(int a, int b)
+        static void Multiplication(int a, int b)
         {
+            int wynik = a * b;
+            Console.WriteLine(wynik);
+        }
+
+        static void Addition()
+        {
+            int a = 5;
+            int b = 7;
             int wynik = a + b;
-            Console.WriteLine($"Your result is: {wynik}");
-
-
+            Console.WriteLine($"Twój wynik to: {wynik}");
         }
     }
 }
