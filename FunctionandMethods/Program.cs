@@ -10,6 +10,11 @@ namespace FunctionandMethods
     {
         static void Main(string[] args)
         {
+            //int a = 5;
+            //Console.WriteLine($"Przed funkcją: {a}");
+            ////Add(a);
+            ////AddWithRef(ref a);
+            //Console.WriteLine($"Po funkcji: {a}");
             Substraction(19, 3);
             //Multiplication(10,3);
             //    Addition();
@@ -32,6 +37,17 @@ namespace FunctionandMethods
                 Console.WriteLine("Twój wynik jest mniejszy od 10");
             }
             return wynik;
+        }
+        static void AddWithRef(ref int a)
+        {
+            a += 5;
+            Console.WriteLine("W trakcie funkcji: " + a);
+        }
+        static void Add(int a)
+        {
+            a += 5;
+            Console.WriteLine($"W trakcie funkcji: {a}");
+
         }
         static void Multiplication(int a, int b)
         {

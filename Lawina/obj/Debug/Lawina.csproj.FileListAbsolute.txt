@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\bin\Debug\Lawina.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\bin\Debug\Lawina.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\bin\Debug\Lawina.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\obj\Debug\Lawina.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\obj\Debug\Lawina.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\obj\Debug\Lawina.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\obj\Debug\Lawina.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Lawina\obj\Debug\Lawina.pdb

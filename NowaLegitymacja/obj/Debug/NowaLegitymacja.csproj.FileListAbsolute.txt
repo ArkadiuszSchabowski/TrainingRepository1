@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\bin\Debug\NowaLegitymacja.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\bin\Debug\NowaLegitymacja.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\bin\Debug\NowaLegitymacja.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\obj\Debug\NowaLegitymacja.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\obj\Debug\NowaLegitymacja.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\obj\Debug\NowaLegitymacja.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\obj\Debug\NowaLegitymacja.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NowaLegitymacja\obj\Debug\NowaLegitymacja.pdb
