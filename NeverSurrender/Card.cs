@@ -1,56 +1,84 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NeverSurrender
 {
-    public class FridayEvening
+    class Program
     {
         static void Main(string[] args)
         {
-            int number;
+            var card = new Card("Arkadiusz");
+            card.registerNewTrace(10, DateTime.Now.AddDays(-1), "Lorem ipsum 1");
+            card.registerNewTrace(5, DateTime.Now.AddDays(-3), "Lorem ipsum 2");
+            card.registerNewTrace(8, DateTime.Now.AddDays(-5), "Lorem ipsum 3");
+            card.registerNewTrace(120, DateTime.Now.AddDays(-2), "Lorem ipsum 4");
+            card.showCard();
+        }
+    }
 
-            Random rnd = new Random();
+    class Card
+    {
+        private static int cardNumberSeed = 1;
+        public string Number { get; }
+        public string Owner { get; set; }
 
-            int los = rnd.Next(1, 11);
+        public Card(string owner)
+        {
+            this.Owner = owner;
+            this.Number = cardNumberSeed.ToString().PadLeft(9, '0');
+            cardNumberSeed++;
+        }
 
-            Console.ForegroundColor = ConsoleColor.White;
-            int ileRazy = 0;
-            Console.WriteLine("Zgadnij liczbę z zakresu 1-10\n");
+        public void showCard()
+        {
+            Console.WriteLine($"Card {this.Number} was created for {this.Owner}.");
+            showAllTraces();
+            Console.WriteLine($"\n  Pokonany dystans: {this.Distance}km");
+        }
 
-            do
+        private List<Trace> allTraces = new List<Trace> { };
+
+        public void registerNewTrace(decimal kilometers, DateTime date, string note)
+        {
+            var trace = new Trace(kilometers, date, note);
+            allTraces.Add(trace);
+        }
+
+        public void showAllTraces()
+        {
+            foreach (var trace in allTraces)
             {
-                number = int.Parse(Console.ReadLine());
-                if (number > 10 || number < 1)
-                {
-                    Console.WriteLine("Liczba z poza zakresu");
-                }
-                else
-                {
-                    ileRazy++;
-                    if (number > los)
-                    {
-                        Console.WriteLine("Podałeś za duża liczbę");
-                    }
-                    else if (number < los)
-                    {
-                        Console.WriteLine("Podałeś za małą liczbę");
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Gratulacje");
-                        Console.WriteLine($"Odgałeś moją liczbę za {ileRazy} razem");
-                        Console.ReadKey();
-                    }
-
-                }
+                Console.WriteLine($"  {trace.Date.ToString("dd.MM.yyyy HH:mm")} -{trace.Kilometers,4}km {trace.Note}");
             }
-            while (number != los);
+            Console.ReadKey();
+        }
+
+        public decimal Distance
+        {
+            get
+            {
+                decimal distance = 0;
+                foreach (var trace in allTraces)
+                {
+                    distance += trace.Kilometers;
+                }
+
+                return distance;
+            }
+        }
+    }
+
+    public class Trace
+    {
+        public decimal Kilometers { get; }
+        public DateTime Date { get; }
+        public string Note { get; }
+
+        public Trace(decimal kilometers, DateTime date, string note)
+        {
+            this.Kilometers = kilometers;
+            this.Date = date;
+            this.Note = note;
         }
     }
 }

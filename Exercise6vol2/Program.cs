@@ -1,78 +1,85 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO.Ports;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Exercise6vol2
+namespace NeverSurrender
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
             var card = new Card("Arkadiusz");
-            Console.WriteLine($"Card {card.Number} was created for {card.Owner}.");
-            Console.WriteLine($"Przedstawiam Twoje wszystkie trasy: {card.AllTraces}");
+            Console.WriteLine($"Karta użytkownika: { card.Owner}, numer karty {card.Number}");
+            card.registerNewTrace(10, DateTime.Now.AddDays(-1), "Lorem ipsum 1");
+            card.registerNewTrace(5, DateTime.Now.AddDays(-3), "Lorem ipsum 2");
+            card.registerNewTrace(8, DateTime.Now.AddDays(-5), "Lorem ipsum 3");
+            card.registerNewTrace(120, DateTime.Now.AddDays(-2), "Lorem ipsum 4");
+            card.showCard();
             Console.ReadKey();
         }
     }
-    public class Card
+    class Card
     {
-        private static int cardNumberSeed = 1234567890;
+        private static int cardNumberSeed = 1;
+        public string Number { get; }
+        public string Owner { get; set; }
+
         public Card(string owner)
         {
-            this.Owner = owner;
-            this.Number = cardNumberSeed.ToString();
+            Owner = owner;
+            Number = cardNumberSeed.ToString().PadLeft(9, '0');
             cardNumberSeed++;
-            this.AllTraces = allTraces.ToString();
         }
-        private List<Trace> allTraces = new List<Trace> ();
-        Trace FirstTrip = new Trace(10, "02.21.20", "Było ciężko");
-        Trace SecondTrip = new Trace(20, "02.22.21", "Podczas wycieczki padał śnieg");
 
-    public string Number { get; }
-        public string Owner { get; set; }
-        public string AllTraces { get; }
-        public void RegisterNewTrace(decimal kilometers, string date, string note)
+        public void showCard()
+        {
+            Console.WriteLine();
+            Console.WriteLine($"Card {this.Number} was created for {this.Owner}.");
+            showAllTraces();
+            Console.WriteLine($"\n  Pokonany dystans: {this.Distance}km");
+        }
+
+        private List<Trace> allTraces = new List<Trace> { };
+
+        public void registerNewTrace(decimal kilometers, DateTime date, string note)
         {
             var trace = new Trace(kilometers, date, note);
             allTraces.Add(trace);
         }
-        public string GetAccountHistory()
+
+        public void showAllTraces()
         {
-            foreach (var elem in allTraces)
+            foreach (var trace in allTraces)
             {
-                Console.WriteLine(elem);
-                Console.ReadKey();
+                Console.WriteLine($"  {trace.Date.ToString("dd.MM.yyyy HH:mm")} -{trace.Kilometers,4}km {trace.Note}");
             }
-            return allTraces.ToString(); 
         }
+
         public decimal Distance
         {
             get
             {
                 decimal distance = 0;
-                foreach (var item in allTraces)
+                foreach (var trace in allTraces)
                 {
-                    distance += item.Kilometers;
+                    distance += trace.Kilometers;
                 }
-                Console.WriteLine(distance);
+
                 return distance;
             }
         }
     }
+
     public class Trace
     {
         public decimal Kilometers { get; }
-        public string Date { get; }
-        public string Notes { get; }
-        public Trace(decimal kilometers, string date, string note)
+        public DateTime Date { get; }
+        public string Note { get; }
+
+        public Trace(decimal kilometers, DateTime date, string note)
         {
             this.Kilometers = kilometers;
             this.Date = date;
-            this.Notes = note;
+            this.Note = note;
         }
     }
 }
