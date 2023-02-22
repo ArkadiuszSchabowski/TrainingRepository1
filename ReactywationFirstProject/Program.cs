@@ -7,53 +7,30 @@ using System.Xml.Linq;
 
 namespace OwnTask
 {
-    class Program
+    class FirstClass
     {
         static void Main(string[] args)
         {
-            Mazda mazda = new Mazda();
-            Console.WriteLine($"{mazda.Kolor}, {mazda.PredkoscMaksymalna}, {mazda.LiczbaKol}");
-            BMW bmw = new BMW();
-            Console.WriteLine($"{bmw.Kolor}, {bmw.PredkoscMaksymalna}, {bmw.LiczbaKol}");
+            Student uczen = new Student();
+            Console.WriteLine($"{uczen.Wiek}");
+            Console.WriteLine($"Oceny ucznia to {uczen.Grades}");
             Console.ReadKey();
         }
     }
-    class BMW
+    class Student
     {
-        private string kolor = "biały";
-
-        private string predkoscMaksymalna = "300km/h";
-
-        private int liczbaKol = 4;
-
-        public string Kolor { get; set; }
-        public int LiczbaKol { get; set; }
-        public string PredkoscMaksymalna { get; }
-
-        public BMW()
+        public Student()
         {
-            Kolor = kolor;
-            LiczbaKol = liczbaKol;
-            PredkoscMaksymalna = predkoscMaksymalna;
+            Wiek = wiek;
+            Grades = grades;
         }
-    }
-    class Mazda
-    {
-        public Mazda()
-        {
-            Kolor = kolor;
-            PredkoscMaksymalna = predkoscMaksymalna;
-            LiczbaKol = liczbaKol;
-        }
-        private string kolor = "srebrny";
-        private string predkoscMaksymalna = "240kmh";
-        private int liczbaKol = 4;
 
-        public string Kolor { get; }
-        public string PredkoscMaksymalna { get;}
+        public int Wiek { get; set; }
 
-        public int LiczbaKol { get;}
+        private int wiek = 21;
 
+        public List<int> Grades { get; set; }
+
+        private List<int> grades = new List<int> { 1, 2, 3 };
     }
 }
-
