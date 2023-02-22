@@ -28,7 +28,7 @@ namespace Exercise6vol2
             cardNumberSeed++;
             this.AllTraces = allTraces.ToString();
         }
-        private List<Trace> allTraces = new List<Trace> {};
+        private List<Trace> allTraces = new List<Trace> ();
         Trace FirstTrip = new Trace(10, "02.21.20", "Było ciężko");
         Trace SecondTrip = new Trace(20, "02.22.21", "Podczas wycieczki padał śnieg");
 
