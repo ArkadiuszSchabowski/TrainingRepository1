@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\bin\Debug\ReactywationFirstProject.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\bin\Debug\ReactywationFirstProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\bin\Debug\ReactywationFirstProject.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\obj\Debug\ReactywationFirstProject.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\obj\Debug\ReactywationFirstProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\obj\Debug\ReactywationFirstProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\obj\Debug\ReactywationFirstProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ReactywationFirstProject\obj\Debug\ReactywationFirstProject.pdb
