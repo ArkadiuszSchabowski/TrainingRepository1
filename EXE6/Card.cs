@@ -14,7 +14,7 @@ namespace EXE6
         public string Number { get; set; }
         public string Owner { get; set; }
 
-        public Card(string owner)
+        public Card()
         {
             this.Owner = owner;
             this.Number = number.ToString().PadLeft(9, '0');
@@ -22,13 +22,6 @@ namespace EXE6
         }
         public List<Trace> allTraces = new List<Trace> { };
 
-        public void ShowCard()
-        {
-            Console.WriteLine($"Wlasciciel legitymacji to: {Owner}, numer legitymacji to {Number}.\n");
-            ShowAllTraces();
-            Console.WriteLine($"Twój przebyty dystans to: {Distance}km");
-
-        }
         public void ShowAllTraces()
         {
             foreach (var trace in allTraces)

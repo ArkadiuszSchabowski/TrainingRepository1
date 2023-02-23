@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EXE6
 {
-    class Trip
+    public class Trip
     {
         public string StartTime;
         public string EndTime;
@@ -16,13 +16,6 @@ namespace EXE6
             this.StartTime = startTime;
             this.EndTime = endTime;
             this.Kilometers = kilometers;
-        }
-    }
-    public void ShowAllPlannedTrips()
-    {
-        foreach (var trip in AllTrips)
-        {
-            Console.WriteLine("Hej");
         }
     }
 }

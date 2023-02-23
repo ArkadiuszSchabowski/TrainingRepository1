@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="GuiderCard-Card.cs" />
     <Compile Include="Trip.cs" />
     <Compile Include="MemberCard-Card.cs" />
     <Compile Include="Program.cs" />

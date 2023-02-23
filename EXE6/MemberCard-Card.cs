@@ -10,7 +10,7 @@ namespace EXE6
     {
         private string organisation = "Świnki Morskie na Szczytach";
         public string Organisation { get; set; }
-        public MemberCard(string owner, string organisation) : base(owner)
+        public MemberCard()
         {
             this.Organisation = organisation;
         }
