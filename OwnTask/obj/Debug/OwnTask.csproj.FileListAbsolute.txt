@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\bin\Debug\OwnTask.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\bin\Debug\OwnTask.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\bin\Debug\OwnTask.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\obj\Debug\OwnTask.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\obj\Debug\OwnTask.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\obj\Debug\OwnTask.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\obj\Debug\OwnTask.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\OwnTask\obj\Debug\OwnTask.pdb

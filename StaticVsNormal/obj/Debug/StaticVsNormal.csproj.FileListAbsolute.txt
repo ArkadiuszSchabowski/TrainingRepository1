@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\bin\Debug\StaticVsNormal.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\bin\Debug\StaticVsNormal.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\bin\Debug\StaticVsNormal.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\obj\Debug\StaticVsNormal.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\obj\Debug\StaticVsNormal.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\obj\Debug\StaticVsNormal.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\obj\Debug\StaticVsNormal.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\StaticVsNormal\obj\Debug\StaticVsNormal.pdb

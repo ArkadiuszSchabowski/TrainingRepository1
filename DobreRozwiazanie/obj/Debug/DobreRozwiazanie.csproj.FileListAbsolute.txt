@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\bin\Debug\DobreRozwiazanie.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\bin\Debug\DobreRozwiazanie.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\bin\Debug\DobreRozwiazanie.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\obj\Debug\DobreRozwiazanie.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\obj\Debug\DobreRozwiazanie.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\obj\Debug\DobreRozwiazanie.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\obj\Debug\DobreRozwiazanie.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\DobreRozwiazanie\obj\Debug\DobreRozwiazanie.pdb
