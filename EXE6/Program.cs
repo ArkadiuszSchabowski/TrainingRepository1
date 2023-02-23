@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace NeverSurrender
 {
@@ -9,8 +10,9 @@ namespace NeverSurrender
     {
         static void Main(string[] args)
         {
-            var card = new Card("Arkadiusz");
-            card.RegisterNewTrace(42, " 22.02.2023", "Test Kropki");
+            Card card = new Card();
+            card.RegisterNewTrace(5, "22.02.2023", "Kropka przygotowanie do zdobycia tytułu mistrza C#");
+            card.RegisterNewTrace(42, "23.02.2023", "Kropka Mistrzem C#");
             card.ShowCard();
             Console.ReadKey();
         }
@@ -18,60 +20,61 @@ namespace NeverSurrender
     class Card
     {
         private int number = 1;
+        private string owner = "Kropka";
+
+        public string Number { get; set; }
         public string Owner { get; set; }
-        public string Number { get; }
-        public Card(string owner)
+
+        public Card()
         {
-            Owner = owner;
-            Number = number.ToString().PadLeft(9, '0');
-            number++;
+            this.Owner = owner;
+            this.Number = number.ToString().PadLeft(9, '0');
         }
+        public List<Trace> allTraces = new List<Trace> {};
+
         public void ShowCard()
         {
-            Console.WriteLine($"Właściciel legitymacji: {Owner} o numerze legitymacji: {Number}");
+            Console.WriteLine($"Wlasciciel legitymacji to: {Owner}, numer legitymacji to {Number}.\n");
             ShowAllTraces();
-            Console.WriteLine($"Łączny dystans to: {Distance}km");
+            Console.WriteLine($"\nTwój przebyty dystans to: {Distance}km");
+
         }
-        private List<Trace> allTraces = new List<Trace>{};
+        public void ShowAllTraces()
+        {
+            foreach (var trace in allTraces)
+            {
+                Console.WriteLine($"{trace.Kilometers}, {trace.Date}, {trace.Notes}.");
+            }
+        }
         public void RegisterNewTrace(double kilometers, string date, string notes)
         {
             var trace = new Trace(kilometers, date, notes);
             allTraces.Add(trace);
         }
-        public string ShowAllTraces()
-        {
-            foreach (var elem in allTraces)
-            {
-                Console.WriteLine(elem.Kilometers + elem.Date + elem.Notes);
-            }
-            return allTraces.ToString();
-        }
         public double Distance
         {
-            get{
+           get
+            {
                 double distance = 0;
                 foreach (var trace in allTraces)
                 {
                     distance += trace.Kilometers;
                 }
-
                 return distance;
             }
         }
     }
-    public class Trace
+    class Trace
     {
-        private double kilometers;
-        private string date;
-        private string notes;
-        public double Kilometers { get; set; }
-        public string Date { get; set; }
-        public string Notes { get; set; }
+        public double Kilometers { get; }
+        public string Date { get; }
+        public string Notes { get; }
+
         public Trace(double kilometers, string date, string notes)
         {
-            Kilometers = kilometers;
-            Date = date;
-            Notes = notes;
+            this.Kilometers = kilometers;
+            this.Date = date;
+            this.Notes = notes;
         }
     }
 }
