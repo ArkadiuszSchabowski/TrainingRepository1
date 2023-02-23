@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DFC64A63-F185-46B4-8272-CE86081356F9}</ProjectGuid>
+    <ProjectGuid>{200286EF-EC51-4DA4-BC97-EBB94977F51C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EXE6</RootNamespace>
-    <AssemblyName>EXE6</AssemblyName>
+    <RootNamespace>ClassTraining</RootNamespace>
+    <AssemblyName>ClassTraining</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,17 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
-    <Compile Include="Trip.cs" />
-    <Compile Include="MemberCard-Card.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="SherpaCard-Card.cs" />
-    <Compile Include="Trace.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

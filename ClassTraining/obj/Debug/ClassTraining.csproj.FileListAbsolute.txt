@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\bin\Debug\ClassTraining.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\bin\Debug\ClassTraining.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\bin\Debug\ClassTraining.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\obj\Debug\ClassTraining.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\obj\Debug\ClassTraining.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\obj\Debug\ClassTraining.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\obj\Debug\ClassTraining.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\ClassTraining\obj\Debug\ClassTraining.pdb
