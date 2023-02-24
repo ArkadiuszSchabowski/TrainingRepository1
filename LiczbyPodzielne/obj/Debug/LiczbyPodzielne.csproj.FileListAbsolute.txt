@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\bin\Debug\LiczbyPodzielne.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\bin\Debug\LiczbyPodzielne.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\bin\Debug\LiczbyPodzielne.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\obj\Debug\LiczbyPodzielne.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\obj\Debug\LiczbyPodzielne.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\obj\Debug\LiczbyPodzielne.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\obj\Debug\LiczbyPodzielne.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\LiczbyPodzielne\obj\Debug\LiczbyPodzielne.pdb
