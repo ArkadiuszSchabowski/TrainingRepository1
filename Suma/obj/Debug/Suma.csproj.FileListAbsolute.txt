@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\bin\Debug\Suma.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\bin\Debug\Suma.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\bin\Debug\Suma.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\obj\Debug\Suma.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\obj\Debug\Suma.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\obj\Debug\Suma.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\obj\Debug\Suma.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Suma\obj\Debug\Suma.pdb

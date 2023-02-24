@@ -18,8 +18,8 @@ namespace SimpleMenu
                 Console.Clear();
                 Console.WriteLine("Wybierz interesujący Cie dział:");
                 Console.WriteLine("1.Dział pierwszy - świnki");
-                Console.WriteLine("2.Dział pierwszy - koty");
-                Console.WriteLine("3.Dział pierwszy - psy");
+                Console.WriteLine("2.Dział drugi - koty");
+                Console.WriteLine("3.Dział trzeci - psy");
 
                 ConsoleKeyInfo klawisz = Console.ReadKey();
 
