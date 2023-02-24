@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\bin\Debug\SimpleMenu.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\bin\Debug\SimpleMenu.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\bin\Debug\SimpleMenu.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\obj\Debug\SimpleMenu.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\obj\Debug\SimpleMenu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\obj\Debug\SimpleMenu.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\obj\Debug\SimpleMenu.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\SimpleMenu\obj\Debug\SimpleMenu.pdb
