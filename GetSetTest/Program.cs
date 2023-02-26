@@ -17,6 +17,13 @@ namespace GetSetTest
             Console.WriteLine($"Wzrost Dominiki to : {Dominika.Wzrost}");
             Console.WriteLine($"Waga Dominiki to : {Dominika.Waga}");
 
+            ArrayList zainteresowania = new ArrayList();
+            zainteresowania.Add("sex");
+            zainteresowania.Add("rozwój osobisty");
+            zainteresowania.Add("taniec na rurze");
+
+            Console.WriteLine($"Długość zainteresować to: {zainteresowania.Count}");
+            Console.WriteLine(zainteresowania);
             Console.ReadKey();
 
         }
@@ -28,7 +35,6 @@ namespace GetSetTest
             Wiek = wiek;
             Wzrost = wzrost;
             Waga = waga;
-            Zainteresowania = zainteresowania;
         }
         private int wiek = 20;
         private string waga = "55kg";
@@ -40,9 +46,5 @@ namespace GetSetTest
 
         public string Waga { get; set; }
 
-        List<string> Zainteresowania { get; set; }
-
-        List<string> zainteresowania = new List<string>
-        { "Bieganie", "Sex", "Odpoczynek" };
     }
 }

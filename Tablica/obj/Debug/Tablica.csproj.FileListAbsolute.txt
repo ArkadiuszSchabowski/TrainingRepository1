@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\bin\Debug\Tablica.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\bin\Debug\Tablica.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\bin\Debug\Tablica.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\obj\Debug\Tablica.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\obj\Debug\Tablica.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\obj\Debug\Tablica.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\obj\Debug\Tablica.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Tablica\obj\Debug\Tablica.pdb
