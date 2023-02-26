@@ -11,17 +11,29 @@ namespace Dictionary
     {
         static void Main(string[] args)
         {
-            Dictionary<int, string> dictionary = new Dictionary<int, string> {};
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(4);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Enqueue(9);
 
-            dictionary.Add(1, "Dominika");
-            dictionary.Add(2, "Paulina");
-            dictionary.Add(3, "Ania");
-
-            foreach (var item in dictionary)
-            {
-                Console.WriteLine("{0}. {1}", item.Key, item.Value);
-            }
+            queue.Dequeue();
+            queue.Dequeue();
+            Console.WriteLine(queue.Peek());
+            Console.WriteLine(queue.Peek());
             Console.ReadKey();
+
+            //Dictionary<int, string> dictionary = new Dictionary<int, string> {};
+
+            //dictionary.Add(1, "Dominika");
+            //dictionary.Add(2, "Paulina");
+            //dictionary.Add(3, "Ania");
+
+            //foreach (var item in dictionary)
+            //{
+            //    Console.WriteLine("{0}. {1}", item.Key, item.Value);
+            //}
+            //Console.ReadKey();
 
             //foreach (var item in dictionary)
             //{
