@@ -22,8 +22,12 @@ namespace GetSetTest
             zainteresowania.Add("rozwój osobisty");
             zainteresowania.Add("taniec na rurze");
 
-            Console.WriteLine($"Długość zainteresować to: {zainteresowania.Count}");
-            Console.WriteLine(zainteresowania);
+            Console.WriteLine($"Długość zainteresowań to: {zainteresowania.Count}");
+            //Console.WriteLine($"Zainteresowania Dominiki to: {zainteresowania[0]}, {zainteresowania[1]}, {zainteresowania[2]}");
+            foreach (var item in zainteresowania)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadKey();
 
         }
