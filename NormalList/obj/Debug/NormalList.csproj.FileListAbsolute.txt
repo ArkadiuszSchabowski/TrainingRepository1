@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\bin\Debug\NormalList.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\bin\Debug\NormalList.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\bin\Debug\NormalList.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\obj\Debug\NormalList.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\obj\Debug\NormalList.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\obj\Debug\NormalList.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\obj\Debug\NormalList.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\NormalList\obj\Debug\NormalList.pdb
