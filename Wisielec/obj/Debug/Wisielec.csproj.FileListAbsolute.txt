@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\bin\Debug\Wisielec.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\bin\Debug\Wisielec.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\bin\Debug\Wisielec.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\obj\Debug\Wisielec.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\obj\Debug\Wisielec.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\obj\Debug\Wisielec.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\obj\Debug\Wisielec.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Wisielec\obj\Debug\Wisielec.pdb
