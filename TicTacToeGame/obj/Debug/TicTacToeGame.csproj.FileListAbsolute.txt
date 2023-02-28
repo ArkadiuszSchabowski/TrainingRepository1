@@ -1,0 +1,16 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\bin\Debug\TicTacToeGame.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\bin\Debug\TicTacToeGame.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\bin\Debug\TicTacToeGame.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\MainWindow.g.cs
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\App.g.cs
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame_MarkupCompile.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame_MarkupCompile.lref
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\MainWindow.baml
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.g.resources
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.Properties.Resources.resources
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.csproj.GenerateResource.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TicTacToeGame\obj\Debug\TicTacToeGame.pdb
