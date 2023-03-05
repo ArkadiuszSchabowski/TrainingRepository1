@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Realera_started_today___3_days_little_break
 {
-    internal class Program
+    internal class RoyalPaladin
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
