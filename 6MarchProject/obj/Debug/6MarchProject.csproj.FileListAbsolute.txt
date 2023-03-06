@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\bin\Debug\6MarchProject.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\bin\Debug\6MarchProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\bin\Debug\6MarchProject.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\obj\Debug\6MarchProject.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\obj\Debug\6MarchProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\obj\Debug\6MarchProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\obj\Debug\6MarchProject.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\6MarchProject\obj\Debug\6MarchProject.pdb
