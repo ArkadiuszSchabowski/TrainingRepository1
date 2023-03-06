@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Realera_started_today___3_days_little_break
 {
-    public class EliteKnight
+    public class EliteKnight : Knight
     {
+
     }
 }

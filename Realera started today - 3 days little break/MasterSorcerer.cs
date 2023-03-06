@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Realera_started_today___3_days_little_break
 {
-    public class MasterSorcerer
+    public class MasterSorcerer : Sorcerer
     {
+        public void SpellsMS()
+        {
+            Console.WriteLine("Exevo gran mas vis");
+        }
     }
 }

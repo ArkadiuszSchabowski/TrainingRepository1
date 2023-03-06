@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\bin\Debug\Realera started today - 3 days little break.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\bin\Debug\Realera started today - 3 days little break.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\bin\Debug\Realera started today - 3 days little break.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\obj\Debug\Realera started today - 3 days little break.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\obj\Debug\Realera started today - 3 days little break.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\obj\Debug\Realera started today - 3 days little break.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\obj\Debug\Realera started today - 3 days little break.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Realera started today - 3 days little break\obj\Debug\Realera started today - 3 days little break.pdb

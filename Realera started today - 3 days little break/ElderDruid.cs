@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Realera_started_today___3_days_little_break
 {
-    public class ElderDruid
+    public class ElderDruid : Druid
     {
+        public void SpellsED()
+        {
+            Console.WriteLine("Adana Ani");
+        }
+
     }
 }

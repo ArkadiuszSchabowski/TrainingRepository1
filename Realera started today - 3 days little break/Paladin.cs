@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Realera_started_today___3_days_little_break
 {
-    public class Paladin
+    public class Paladin : Character
     {
     }
 }
