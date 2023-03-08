@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\bin\Debug\Static.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\bin\Debug\Static.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\bin\Debug\Static.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\obj\Debug\Static.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\obj\Debug\Static.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\obj\Debug\Static.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\obj\Debug\Static.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Static\obj\Debug\Static.pdb

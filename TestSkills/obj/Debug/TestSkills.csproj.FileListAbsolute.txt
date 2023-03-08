@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\bin\Debug\TestSkills.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\bin\Debug\TestSkills.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\bin\Debug\TestSkills.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\obj\Debug\TestSkills.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\obj\Debug\TestSkills.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\obj\Debug\TestSkills.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\obj\Debug\TestSkills.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\TestSkills\obj\Debug\TestSkills.pdb
