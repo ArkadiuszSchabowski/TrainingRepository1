@@ -6,34 +6,54 @@ using System.Threading.Tasks;
 
 namespace Static
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Czlowiek czlowiek = new Czlowiek("Dominika", "Króliczek");
-            czlowiek.PrzedstawSie();
-            Console.ReadKey();
+            Druid kropka = new Druid();
+            kropka.TerraHur(200);
+
+            ILeczenie leczenie = (ILeczenie)kropka;
+            leczenie.Sio(250);
+            leczenie.MasRes(150);
         }
     }
-    class Czlowiek
+    interface IAtakTerraHur
     {
-        public string imie = "Paulina";
-        public string nazwisko = "Kropka";
-
-        public Czlowiek()
+        void TerraHur(int obrazenia);
+    }
+    interface ILeczenie
+    {
+        void Sio(int uleczGracza);
+        void MasRes(int uleczObszarowo);
+    }
+    public class Character
+    {
+        public void Poruszanie()
         {
-
-        }
-        public Czlowiek(string imieKonstruktora, string nazwiskoKonstruktora)
-        {
-            imie = imieKonstruktora;
-            nazwisko = nazwiskoKonstruktora;
-        }
-
-        public void PrzedstawSie()
-        {
-            Console.WriteLine($"Nazywam się: {imie} {nazwisko}");
+            Console.WriteLine("Poruszanie za pomocą strzałek");
         }
     }
+    public class Druid : Character, IAtakTerraHur, ILeczenie
+    {
+        public void TerraHur(int obrazenia)
+        {
+            Console.WriteLine("Atak TerraHur");
+        }
 
+        public void TypRozdzki()
+        {
+            Console.WriteLine("Zezwól na założenie roda");
+        }
+
+        void ILeczenie.MasRes(int uleczObszarowo)
+        {
+            Console.WriteLine("Spell: Exura gran mas res");
+        }
+
+        void ILeczenie.Sio(int uleczGracza)
+        {
+            Console.WriteLine("Spell: Exura sio player");
+        }
+    }
 }
