@@ -10,18 +10,30 @@ namespace Static
     {
         static void Main(string[] args)
         {
-            Czlowiek czlowiek = new Czlowiek();
-            Console.WriteLine(czlowiek.imie);
-            Czlowiek czlowiek2 = new Czlowiek();
-            czlowiek2.imie = "Bartek";
-            Console.WriteLine(czlowiek2.imie);
-            Czlowiek czlowiek3 = new Czlowiek();
-            Console.WriteLine(czlowiek3.imie);
+            Czlowiek czlowiek = new Czlowiek("Dominika", "Króliczek");
+            czlowiek.PrzedstawSie();
             Console.ReadKey();
         }
     }
     class Czlowiek
     {
-        public string imie = "Adrian";
+        public string imie = "Paulina";
+        public string nazwisko = "Kropka";
+
+        public Czlowiek()
+        {
+
+        }
+        public Czlowiek(string imieKonstruktora, string nazwiskoKonstruktora)
+        {
+            imie = imieKonstruktora;
+            nazwisko = nazwiskoKonstruktora;
+        }
+
+        public void PrzedstawSie()
+        {
+            Console.WriteLine($"Nazywam się: {imie} {nazwisko}");
+        }
     }
+
 }
