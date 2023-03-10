@@ -1,0 +1,8 @@
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\bin\Debug\Struktury.exe.config
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\bin\Debug\Struktury.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\bin\Debug\Struktury.pdb
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\obj\Debug\Struktury.csproj.AssemblyReference.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\obj\Debug\Struktury.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\obj\Debug\Struktury.csproj.CoreCompileInputs.cache
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\obj\Debug\Struktury.exe
+C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\Struktury\obj\Debug\Struktury.pdb
