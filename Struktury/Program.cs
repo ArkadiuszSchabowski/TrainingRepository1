@@ -6,24 +6,17 @@ using System.Threading.Tasks;
 
 namespace Struktury
 {
-    internal class Program
+    enum PoryRoku : sbyte
+    {
+        Wiosna =15, Lato=25, Jesień=25, Zima=-5
+    }
+    class Program
     {
         static void Main(string[] args)
         {
-            Punkt2D punkt1;
-            punkt1.x = 5;
-
-            Console.WriteLine(punkt1.x);
+            PoryRoku poraRoku = (PoryRoku)25;
+            Console.WriteLine(poraRoku);
             Console.ReadKey();
-        }
-    }
-    struct Punkt2D
-    {
-        public int x;
-        public int y;
-        public void OdlegloscOdSrodka()
-        {
-
         }
     }
 }
