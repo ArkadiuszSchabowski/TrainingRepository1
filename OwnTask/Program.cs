@@ -12,39 +12,46 @@ namespace OwnTask
     class DisplayProgram
     {
     public static void Main(string[] args)
-        {
-            Student student = new Student();
-            Console.WriteLine($"Numer 1: {student.Owner}, Wiek {student.Wiek}, Oceny ucznia to: {string.Join(",",student.Grades)}");
-            Console.WriteLine($"Numer 2: {student.Owner2}, Wiek {student.Wiek2}, Oceny ucznia to: {string.Join(",", student.Grades2)}");
-            Console.ReadKey();
-        }
+        {}
     }
-    class Student
+    class LottoGame
     {
-        private string owner = "Tola";
-        private int wiek = 20;
-        public string Owner { get; set; }
-        public int Wiek { get; set; }
+        //Gracz zgaduje 10 z 80 wylosowanych liczb przez maszynę. (potem wzbogacić program o ilość liczb)
+        //Jeśli gracz trafi wszystkie wygrywa główną wygraną.
 
-        private string owner2 = "Pepa";
-        private int wiek2 = 22;
-        public string Owner2 { get; set; }
-        public int Wiek2 { get; set; }
-        public Student()
-        {
-            this.Owner = owner;
-            this.Wiek = wiek;
-            this.Grades = grades;
-            this.Owner2 = owner2;
-            this.Wiek2 = wiek2;
-            this.Grades2 = grades2;
-        }
+        Console.WriteLine("Podaj 10 liczb z zakresu od 1-80");
+        int firstNumber = int.Parse(Console.Readline());
+        int secondNumber = int.Parse(Console.Readline());
+        int thirdNumber = int.Parse(Console.Readline());
+        int fourthNumber = int.Parse(Console.Readline());
+        int fifthNumber = int.Parse(Console.Readline());
+        int sixthNumber = int.Parse(Console.Readline());
+        int seventhNumber = int.Parse(Console.Readline());
+        int eightNumber = int.Parse(Console.Readline());
+        int nintethNumber = int.Parse(Console.Readline());
+        int tenthNumber = int.Parse(Console.Readline());
 
-        private List<int> grades = new List<int> { 3, 6, 5 };
-        public List<int> Grades { get; set; }
+        Random random1 = new Random();
+        int los1 = random1(Next(1,80))
+        Random random2 = new Random();
+        int los2 = random2(Next(1,80))
+        Random random3 = new Random();
+        int los3 = random3(Next(1,80))
+        Random random4 = new Random();
+        int los4 = random4(Next(1,80))
+        Random random5 = new Random();
+        int los5 = random5(Next(1,80))
+        Random random6 = new Random();
+        int los6 = random6(Next(1,80))
+        Random random7 = new Random();
+        int los7 = random7(Next(1,80))
+        Random random7 = new Random();
+        int los8 = random8(Next(1,80))
+        Random random8 = new Random();
+        int los9 = random9(Next(1,80))
+        Random random10 = new Random();
+        int los1 = random10(Next(1,80))
 
-        private List<int> grades2 = new List<int> { 6, 5, 3 };
-        public List<int> Grades2 { get; set; }
+        Console.ReadKey();
     }
-
 }
