@@ -17,7 +17,7 @@ namespace fourthBase
   
         static void fourthBase()
         //Napisz przy użyciu pętli oraz instrukcji if kod, który znajdzie sumę wszystkich 
-        //liczb całkowitych od 1 do 30, które są podzielne przez 7. Wskazówka - użyj modulo.
+        //liczb całkowitych od 1 - 30, które są podzielne przez 7. Wskazówka - użyj modulo.
         {
             int sum = 0;
             for (int i = 1; i <= 30; i++)
