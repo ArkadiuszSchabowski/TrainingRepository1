@@ -10,7 +10,7 @@ namespace AppWoman
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hej");
+            Console.WriteLine("Hej czika");
             Console.ReadKey();
         }
     }

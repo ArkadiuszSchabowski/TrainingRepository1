@@ -6,3 +6,11 @@ c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\AppWoman\obj\Debug\AppWoman
 c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\AppWoman\obj\Debug\AppWoman.csproj.CoreCompileInputs.cache
 c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\AppWoman\obj\Debug\AppWoman.exe
 c:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\AppWoman\obj\Debug\AppWoman.pdb
+C:\Users\Greedy\Desktop\2023\AppWoman\bin\Debug\AppWoman.exe.config
+C:\Users\Greedy\Desktop\2023\AppWoman\bin\Debug\AppWoman.exe
+C:\Users\Greedy\Desktop\2023\AppWoman\bin\Debug\AppWoman.pdb
+C:\Users\Greedy\Desktop\2023\AppWoman\obj\Debug\AppWoman.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\AppWoman\obj\Debug\AppWoman.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\AppWoman\obj\Debug\AppWoman.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\AppWoman\obj\Debug\AppWoman.exe
+C:\Users\Greedy\Desktop\2023\AppWoman\obj\Debug\AppWoman.pdb
