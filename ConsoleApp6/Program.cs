@@ -9,33 +9,18 @@ namespace ConsoleApp6
 {
     internal class LottoGame
     {
-        public static int numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix;
         static void Main(string[] args)
         {
-            int kumulacja;
-
-            Random price = new Random();
-
-            int iloscKuponow;
-            int dzien = 0;
-            int trafiony = 0;
-            int trafiony2 = 0;
-            //int trafiony3 = 0;
-            //int trafiony4 = 0;
-            //int trafiony5 = 0;
-
-            Console.WriteLine("Podaj kwotę, którą chcesz wpłacić na grę Lotto. Minimalna kwota 3zł, Maksymalna 10000zł.");
-            int start = int.Parse(Console.ReadLine());
-            int iloscPieniedzy = start;
-
+            Console.WriteLine("Podaj ilość pieniędzy jaką chcesz wpłacić. Minimum 3zł(stawka jednego losu), Max10000zł.");
+            int iloscPieniedzy = int.Parse(Console.ReadLine());
             if (iloscPieniedzy < 3)
             {
-                Console.WriteLine("Nie wpłaciłeś wystarczająco pieniędzy, by kupić los - koszt zakupu losu to 3zł.");
+                Console.WriteLine("Wpłaciłeś za mało pieniędzy, by kupić los!");
                 Console.ReadKey();
             }
             else if (iloscPieniedzy > 10000)
             {
-                Console.WriteLine("Jednorazowo nie możesz wpłacić tak dużej kwoty.");
+                Console.WriteLine("Nie możesz jednorazowo wpłacić tak dużej kwoty!");
                 Console.ReadKey();
             }
             else
@@ -44,6 +29,18 @@ namespace ConsoleApp6
                 {
                     Console.ResetColor();
                     Console.Clear();
+                    Random price = new Random();
+                    Random rnd = new Random();
+
+                    int kumulacja;
+                    int iloscKuponow = 0;
+                    int dzien = 0;
+                    int trafiony = 0;
+                    int trafiony2 = 0;
+
+                    int numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix;
+                    Console.ResetColor();
+
                     Console.WriteLine($"Twój stan konta wynosi: {iloscPieniedzy}zł");
                     dzien++;
                     Console.WriteLine($"\nTo Twój {dzien} dzień gry");
@@ -51,7 +48,7 @@ namespace ConsoleApp6
                     kumulacja = price.Next(1, 40);
                     Console.WriteLine($"Dzisiejsza kumulacja wynosi: {kumulacja} mln");
 
-                    Console.WriteLine("\nPodaj ile kuponów chcesz postawić. Maksymalnie możesz postawić 5 kuponów.");
+                    Console.WriteLine("\nPodaj ile kuponów chcesz postawić. Maksymalnie możesz postawić 2 kupony.");
                     Console.WriteLine("Stawka za kupon to 3 zł\n");
                     iloscKuponow = int.Parse(Console.ReadLine());
                     iloscPieniedzy = iloscPieniedzy - (iloscKuponow * 3);
@@ -60,9 +57,6 @@ namespace ConsoleApp6
 
                     int[] kupon = new int[6];
                     int[] kupon2 = new int[6];
-                    int[] kupon3 = new int[6];
-                    int[] kupon4 = new int[6];
-                    int[] kupon5 = new int[6];
 
                     if (iloscKuponow == 1)
                     {
@@ -84,7 +78,6 @@ namespace ConsoleApp6
                         kupon[3] = int.Parse(Console.ReadLine());
                         kupon[4] = int.Parse(Console.ReadLine());
                         kupon[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
 
                         Console.WriteLine("\nPodaj wytypowane liczby dla kuponu drugiego:");
                         kupon2[0] = int.Parse(Console.ReadLine());
@@ -93,131 +86,15 @@ namespace ConsoleApp6
                         kupon2[3] = int.Parse(Console.ReadLine());
                         kupon2[4] = int.Parse(Console.ReadLine());
                         kupon2[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
                     }
-                    else if (iloscKuponow == 3)
-                    {
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu pierwszego:");
-                        kupon[0] = int.Parse(Console.ReadLine());
-                        kupon[1] = int.Parse(Console.ReadLine());
-                        kupon[2] = int.Parse(Console.ReadLine());
-                        kupon[3] = int.Parse(Console.ReadLine());
-                        kupon[4] = int.Parse(Console.ReadLine());
-                        kupon[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu drugiego:");
-                        kupon2[0] = int.Parse(Console.ReadLine());
-                        kupon2[1] = int.Parse(Console.ReadLine());
-                        kupon2[2] = int.Parse(Console.ReadLine());
-                        kupon2[3] = int.Parse(Console.ReadLine());
-                        kupon2[4] = int.Parse(Console.ReadLine());
-                        kupon2[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu trzeciego:");
-                        kupon3[0] = int.Parse(Console.ReadLine());
-                        kupon3[1] = int.Parse(Console.ReadLine());
-                        kupon3[2] = int.Parse(Console.ReadLine());
-                        kupon3[3] = int.Parse(Console.ReadLine());
-                        kupon3[4] = int.Parse(Console.ReadLine());
-                        kupon3[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-                    }
-                    else if (iloscKuponow == 4)
-                    {
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu pierwszego:");
-                        kupon[0] = int.Parse(Console.ReadLine());
-                        kupon[1] = int.Parse(Console.ReadLine());
-                        kupon[2] = int.Parse(Console.ReadLine());
-                        kupon[3] = int.Parse(Console.ReadLine());
-                        kupon[4] = int.Parse(Console.ReadLine());
-                        kupon[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu drugiego:");
-                        kupon2[0] = int.Parse(Console.ReadLine());
-                        kupon2[1] = int.Parse(Console.ReadLine());
-                        kupon2[2] = int.Parse(Console.ReadLine());
-                        kupon2[3] = int.Parse(Console.ReadLine());
-                        kupon2[4] = int.Parse(Console.ReadLine());
-                        kupon2[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu trzeciego:");
-                        kupon3[0] = int.Parse(Console.ReadLine());
-                        kupon3[1] = int.Parse(Console.ReadLine());
-                        kupon3[2] = int.Parse(Console.ReadLine());
-                        kupon3[3] = int.Parse(Console.ReadLine());
-                        kupon3[4] = int.Parse(Console.ReadLine());
-                        kupon3[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu czwartego:");
-                        kupon4[0] = int.Parse(Console.ReadLine());
-                        kupon4[1] = int.Parse(Console.ReadLine());
-                        kupon4[2] = int.Parse(Console.ReadLine());
-                        kupon4[3] = int.Parse(Console.ReadLine());
-                        kupon4[4] = int.Parse(Console.ReadLine());
-                        kupon4[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-                    }
-                    else if (iloscKuponow == 5)
-                    {
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu pierwszego:");
-                        kupon[0] = int.Parse(Console.ReadLine());
-                        kupon[1] = int.Parse(Console.ReadLine());
-                        kupon[2] = int.Parse(Console.ReadLine());
-                        kupon[3] = int.Parse(Console.ReadLine());
-                        kupon[4] = int.Parse(Console.ReadLine());
-                        kupon[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu drugiego:");
-                        kupon2[0] = int.Parse(Console.ReadLine());
-                        kupon2[1] = int.Parse(Console.ReadLine());
-                        kupon2[2] = int.Parse(Console.ReadLine());
-                        kupon2[3] = int.Parse(Console.ReadLine());
-                        kupon2[4] = int.Parse(Console.ReadLine());
-                        kupon2[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu trzeciego:");
-                        kupon3[0] = int.Parse(Console.ReadLine());
-                        kupon3[1] = int.Parse(Console.ReadLine());
-                        kupon3[2] = int.Parse(Console.ReadLine());
-                        kupon3[3] = int.Parse(Console.ReadLine());
-                        kupon3[4] = int.Parse(Console.ReadLine());
-                        kupon3[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu czwartego:");
-                        kupon4[0] = int.Parse(Console.ReadLine());
-                        kupon4[1] = int.Parse(Console.ReadLine());
-                        kupon4[2] = int.Parse(Console.ReadLine());
-                        kupon4[3] = int.Parse(Console.ReadLine());
-                        kupon4[4] = int.Parse(Console.ReadLine());
-                        kupon4[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-
-                        Console.WriteLine("\nPodaj wytypowane liczby dla kuponu piątego:");
-                        kupon5[0] = int.Parse(Console.ReadLine());
-                        kupon5[1] = int.Parse(Console.ReadLine());
-                        kupon5[2] = int.Parse(Console.ReadLine());
-                        kupon5[3] = int.Parse(Console.ReadLine());
-                        kupon5[4] = int.Parse(Console.ReadLine());
-                        kupon5[5] = int.Parse(Console.ReadLine());
-                        Console.WriteLine();
-                    }
-
                     Console.WriteLine("Następuje zwolnienie blokady i zaczynamy losowanie 6 liczb");
-                    Random rnd = new Random();
-                    numberOne = rnd.Next(1, 51);
-                    numberTwo = rnd.Next(1, 51);
-                    numberThree = rnd.Next(1, 51);
-                    numberFour = rnd.Next(1, 51);
-                    numberFive = rnd.Next(1, 51);
-                    numberSix = rnd.Next(1, 51);
+
+                    numberOne = rnd.Next(1, 11);
+                    numberTwo = rnd.Next(1, 11);
+                    numberThree = rnd.Next(1, 11);
+                    numberFour = rnd.Next(1, 11);
+                    numberFive = rnd.Next(1, 11);
+                    numberSix = rnd.Next(1, 11);
 
                     int trzyTrafienia = 24;
                     int czteryTrafienia = 205;
@@ -257,7 +134,6 @@ namespace ConsoleApp6
                             Console.WriteLine($"\nUdało Ci się trafić 6 liczb z kuponu pierwszego! Twoja wygrana to {szczescTrafien}");
                             Console.ResetColor();
                             iloscPieniedzy += szczescTrafien;
-
                         }
                         else if (trafiony == 5)
                         {
@@ -265,7 +141,6 @@ namespace ConsoleApp6
                             Console.WriteLine($"\nUdało Ci się trafić 5 liczb z z kuponu pierwszego! Twoja wygrana to {piecTrafien}");
                             Console.ResetColor();
                             iloscPieniedzy += piecTrafien;
-
                         }
                         else if (trafiony == 4)
                         {
@@ -291,7 +166,7 @@ namespace ConsoleApp6
                         }
                         else
                         {
-                            Console.WriteLine("Tym razem nie wygrałeś nic, spróbuj jeszcze raz");
+                            Console.WriteLine("\nTym razem nie wygrałeś nic, spróbuj jeszcze raz");
                         }
 
                     }
@@ -429,7 +304,6 @@ namespace ConsoleApp6
                             Console.WriteLine("Niestety nie trafiłeś żadnej liczby z kuponu numer 2.");
                         }
                     }
-                    Console.WriteLine("Nacisnij dowolny klawisz, by przejść do następnego dnia\n");
                     Console.ReadKey();
                 }
             }
