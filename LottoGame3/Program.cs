@@ -31,12 +31,12 @@ namespace LottoGame
                         Console.Clear();
                         Console.WriteLine("Dzień {0}", dzien);
                         Console.WriteLine("Witaj w grze Lotto dziś do wygrania aż {0}zł!", kumulacja);
-                        Console.WriteLine("\nStan konta {0}zł\n", pieniadze);
+                        Console.WriteLine("\nStan konta {0}zł", pieniadze);
                         WyswietlKupon(kupon);
                         //Menu
                         if (pieniadze >= 3 && losow <= 8)
                         {
-                            Console.WriteLine("1 - Postaw los - 3zł [0/8]", losow + 1);
+                            Console.WriteLine("1 - Postaw los - 3zł [{0}/8]", losow + 1);
                             Console.WriteLine("2 - Sprawdz kupon - losowanie");
                             Console.WriteLine("3 - Zakończ grę");
                         }
@@ -100,7 +100,7 @@ namespace LottoGame
                 }
             }
             Array.Sort(wylosowane);
-            Console.WriteLine("Wylosowane liczby to: ");
+            Console.Write("Wylosowane liczby to: ");
             foreach (int liczba in wylosowane)
             {
                 Console.Write(liczba + "'");
@@ -201,7 +201,7 @@ namespace LottoGame
                         Console.WriteLine(l + ", ");
                     }
                 }
-                Console.WriteLine("\n\nWybierz liczby od 1 do 49:");
+                Console.WriteLine("\nWybierz liczby od 1 do 49:");
                 Console.Write("{0}/6: ", i + 1);
                 bool prawidlowa = int.TryParse(Console.ReadLine(), out liczba);
                 if (prawidlowa && liczba >= 1 && liczba <= 49 && !liczby.Contains(liczba))
