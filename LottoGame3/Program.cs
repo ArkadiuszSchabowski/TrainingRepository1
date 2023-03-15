@@ -8,8 +8,6 @@ namespace LottoGame
 {
     internal class Program
     {
-        //Gracz skreśla 5 liczb z zakresu od 1-50.
-        //Otrzymuje określoną wygraną za ilości trafień.
         static void Main(string[] args)
         {
             int kumulacja;
