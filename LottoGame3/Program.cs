@@ -17,20 +17,17 @@ namespace LottoGame
             int start = 30;
             int dzien = 0;
             Random rnd = new Random();
-            //Głowna pętla - cała rozgrywka
             do
             {
                 pieniadze = start;
                 dzien = 0;
                 ConsoleKey wybor;
-                //jedna kumulacja - kolejny dzień
                 do
                 {
                     kumulacja = rnd.Next(2, 37) * 1000000;
                     dzien++;
                     int losow = 0;
                     List<int[]> kupon = new List<int[]>();
-                    //Kolejny wybór w danym dniu
                     do
                     {
                         Console.Clear();
@@ -87,7 +84,107 @@ namespace LottoGame
 
         private static int Sprawdz(List<int[]> kupon)
         {
-            throw new NotImplementedException();
+
+            int wygrana = 0;
+            int[] wylosowane = new int[6];
+
+            for (int i = 0; i < wylosowane.Length; i++)
+            {
+                Random rnd = new Random();
+                int los = rnd.Next(1, 50);
+                if (!wylosowane.Contains(los))
+                {
+                    wylosowane[i] = los;
+                }
+                else
+                {
+                    i--;
+                }
+            }
+            Array.Sort(wylosowane);
+            Console.WriteLine("Wylosowane liczby to: ");
+            foreach (int liczba in wylosowane)
+            {
+                Console.Write(liczba + "'");
+            }
+            int[] trafione = SprawdzKupon(kupon, wylosowane);
+            int wartosc = 0;
+            Console.WriteLine();
+            if (trafione[0] > 0)
+            {
+                wartosc = trafione[0] * 24;
+                Console.WriteLine("3 Trafienia: {0}+{1}zł", trafione[0], wartosc);
+                wygrana += wartosc;
+            }
+            if (trafione[1] > 0)
+            {
+                Random rnd = new Random();
+                wartosc = trafione[1] * rnd.Next(100, 301);
+                Console.WriteLine("4 Trafienia: {0}+{1}zł", trafione[1], wartosc);
+                wygrana += wartosc;
+            }
+            if (trafione[2] > 0)
+            {
+                Random rnd = new Random();
+                wartosc = trafione[2] * rnd.Next(4000, 8001);
+                Console.WriteLine("5 Trafienia: {0}+{1}zł", trafione[2], wartosc);
+                wygrana += wartosc;
+            }
+            if (trafione[3] > 0)
+            {
+                Random rnd = new Random();
+                int kumulacja = rnd.Next(2, 37) * 1000000;
+                wartosc = (trafione[3] * kumulacja) / trafione[3] + rnd.Next(1, 5);
+                Console.WriteLine("6 Trafien: {0}+{1}zł", trafione[3], wartosc);
+                wygrana += wartosc;
+            }
+            Console.WriteLine();
+
+            return wygrana;
+        }
+
+        private static int[] SprawdzKupon(List<int[]> kupon, int[] wylosowane)
+        {
+            int[] wygrane = new int[4];
+            int i = 0;
+            Console.Write("Twój kupon: ");
+            foreach (int[] los in kupon)
+            {
+                i++;
+                Console.Write(i + ": ");
+                int trafien = 0;
+                foreach (int liczba in los)
+                {
+                    if (wylosowane.Contains(liczba))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write(liczba + ";");
+                        Console.ResetColor();
+                        trafien++;
+                    }
+                    else
+                    {
+                        Console.Write(liczba + ",");
+                    }
+                }
+                switch (trafien)
+                {
+                    case 3:
+                        wygrane[0]++;
+                        break;
+                    case 4:
+                        wygrane[1]++;
+                        break;
+                    case 5:
+                        wygrane[2]++;
+                        break;
+                    case 6:
+                        wygrane[3]++;
+                        break;
+                }
+                Console.WriteLine(" - Trafiono z {0}/6", trafien);
+            }
+            return wygrane;
         }
 
         private static int[] PostawLos()
