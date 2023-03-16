@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +12,48 @@ namespace ThisIsCrazy
         int kumulacja;
         static void Main(string[] args)
         {
+            Menu();
             //UserNumbers();
-            ComputerNumbers();
+            //ComputerNumbers();
+            //CheckNumbers();
         }
 
-        private static void ComputerNumbers()
+        public static void Menu()
+        {
+            Console.WriteLine("Program Lotto - Menu Gry.\nWybierz jedną z opcji");
+            Console.WriteLine("1.Postaw kupon");
+            Console.WriteLine("2.Sprawdź kupon");
+            Console.WriteLine("3. Wyjście z programu");
+
+            bool flaga = true;
+
+            while (flaga)
+            {
+                ConsoleKey wybor;
+                wybor = Console.ReadKey().Key;
+
+                if (wybor == ConsoleKey.D1)
+                {
+                    Console.WriteLine("Postaw Kupon");
+                }
+                if (wybor == ConsoleKey.D2)
+                {
+                    Console.WriteLine("Sprawdź kupon");
+                }
+                if (wybor == ConsoleKey.D3)
+                {
+                    Console.WriteLine("Wyjście z programu");
+                    flaga = false;
+                }
+            }
+        }
+
+        private static void CheckNumbers()
+        {
+
+        }
+
+        public static void ComputerNumbers()
         {
             int[] computerNumbers = new int[6];
             int number;
@@ -35,7 +73,7 @@ namespace ThisIsCrazy
             Console.ReadKey();
         }
 
-        private static void UserNumbers()
+        public static void UserNumbers()
         {
             int number = 0;
             int[] userNumbers = new int[6];
