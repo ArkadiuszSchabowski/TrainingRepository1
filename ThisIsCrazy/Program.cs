@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Data.SqlTypes;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,34 +15,46 @@ namespace ThisIsCrazy
         static void Main(string[] args)
         {
             Menu();
-            //UserNumbers();
-            //ComputerNumbers();
-            //CheckNumbers();
         }
 
         public static void Menu()
         {
-            Console.WriteLine("Program Lotto - Menu Gry.\nWybierz jedną z opcji");
-            Console.WriteLine("1.Postaw kupon");
-            Console.WriteLine("2.Sprawdź kupon");
-            Console.WriteLine("3. Wyjście z programu");
-
+            int i = 0;
+            int money = 250;
             bool flaga = true;
+            ConsoleKey wybor;
 
             while (flaga)
             {
-                ConsoleKey wybor;
+                Console.Clear();
+                Console.WriteLine($"Twój stan konta wynosi: {money}zł");
+                Console.WriteLine("Postawionych Kuponów: {0}/5", i);
+                Console.WriteLine();
+                Console.WriteLine("Program Lotto - Menu Gry. Wybierz jedną z opcji:");
+                Console.WriteLine();
+                Console.WriteLine("1.Postaw kupon");
+                Console.WriteLine("2.Sprawdź kupon");
+                Console.WriteLine("3. Wyjście z programu");
+
                 wybor = Console.ReadKey().Key;
 
                 if (wybor == ConsoleKey.D1)
                 {
-                    Console.WriteLine("Postaw Kupon");
+                    money -= 3;
+                    i++;
+                    if (i>5)
+                    {
+                        Console.WriteLine("Kupon nie został przyjęty - postawiono maksymalną ilość kuponów!");
+                        Console.ReadKey();
+                        money += 3;
+                        i--;
+                    }
                 }
-                if (wybor == ConsoleKey.D2)
+                else if (wybor == ConsoleKey.D2)
                 {
-                    Console.WriteLine("Sprawdź kupon");
+                    CheckNumbers();
                 }
-                if (wybor == ConsoleKey.D3)
+                else if (wybor == ConsoleKey.D3 || money < 3)
                 {
                     Console.WriteLine("Wyjście z programu");
                     flaga = false;
