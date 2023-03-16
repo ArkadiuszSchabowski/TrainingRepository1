@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\bin\Debug\ThisIsCrazy.exe.config
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\bin\Debug\ThisIsCrazy.exe
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\bin\Debug\ThisIsCrazy.pdb
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\obj\Debug\ThisIsCrazy.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\obj\Debug\ThisIsCrazy.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\obj\Debug\ThisIsCrazy.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\obj\Debug\ThisIsCrazy.exe
+C:\Users\Greedy\Desktop\2023\ThisIsCrazy\obj\Debug\ThisIsCrazy.pdb
