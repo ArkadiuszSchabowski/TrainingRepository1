@@ -36,7 +36,7 @@ namespace LottoGame
                         //Menu
                         if (pieniadze >= 3 && losow <= 8)
                         {
-                            Console.WriteLine("1 - Postaw los - 3zł [{0}/8]", losow + 1);
+                            Console.WriteLine("1 - Postaw los - cena losu 3zł. Postawiono [{0}/8]", losow);
                             Console.WriteLine("2 - Sprawdz kupon - losowanie");
                             Console.WriteLine("3 - Zakończ grę");
                         }
@@ -145,7 +145,7 @@ namespace LottoGame
         {
             int[] wygrane = new int[4];
             int i = 0;
-            Console.Write("Twój kupon: ");
+            Console.WriteLine("Twój kupon: ");
             foreach (int[] los in kupon)
             {
                 i++;
@@ -194,11 +194,12 @@ namespace LottoGame
                 liczba = -1;
                 Console.Clear();
                 Console.Write("Postawione liczby: ");
+                Console.WriteLine();
                 foreach (int l in liczby)
                 {
                     if (l > 0)
                     {
-                        Console.WriteLine(l + ", ");
+                        Console.Write(l + ", ");
                     }
                 }
                 Console.WriteLine("\nWybierz liczby od 1 do 49:");
@@ -223,16 +224,16 @@ namespace LottoGame
         {
             if (kupon.Count == 0)
             {
-                Console.WriteLine("\nNie postawiłeś jeszcze żadnych losów");
+                Console.WriteLine("Nie postawiłeś jeszcze żadnych losów\n");
             }
             else
             {
                 int i = 0;
-                Console.WriteLine("\nTwój kupon:");
+                Console.WriteLine("Twoje kupony: ");
                 foreach (int[] los in kupon)
                 {
                     i++;
-                    Console.WriteLine(i + ": ");
+                    Console.Write(i + ": ");
                     foreach (int liczba in los)
                     {
                         Console.Write(liczba + ",");
