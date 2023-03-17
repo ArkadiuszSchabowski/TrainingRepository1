@@ -22,8 +22,7 @@ namespace ConsoleApp7
             do
             {
                 day++;
-                Console.WriteLine("Witaj w grze Lotto!");
-                Console.WriteLine("Dzień {0}, Twój stan konta wynosi: {1}zł", day, money);
+                Console.WriteLine("Dzień {0}, Twój stan konta wynosi: {1}zł\n", day, money);
 
                 Console.WriteLine("1 - Postaw los {0}/5", tickets);
                 Console.WriteLine("2 - Sprawdz los");
@@ -51,7 +50,7 @@ namespace ConsoleApp7
 
         private static void CheckTicket()
         {
-            Console.WriteLine("Sprawdzanie losu...");
+
         }
 
         private static void SetTicket()
@@ -61,10 +60,9 @@ namespace ConsoleApp7
             int number = 0;
 
             Console.Clear();
-            Console.WriteLine($"Dzień {day}");
-            Console.WriteLine($"Twój stan konta wynosi: {money}zł");
+            Console.WriteLine($"Kupon nr {tickets}/5");
             Console.WriteLine();
-            Console.WriteLine( "Wytypuj 6 liczb z zakresu 1-49.");
+            Console.WriteLine("Wytypuj 6 liczb z przedziału 1-49!\n");
 
             for (int i = 0; i < userNumbers.Length; i++)
             {
