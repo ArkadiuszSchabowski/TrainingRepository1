@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\18MarchLotto\bin\Debug\18MarchLotto.exe.config
+C:\Users\Greedy\Desktop\2023\18MarchLotto\bin\Debug\18MarchLotto.exe
+C:\Users\Greedy\Desktop\2023\18MarchLotto\bin\Debug\18MarchLotto.pdb
+C:\Users\Greedy\Desktop\2023\18MarchLotto\obj\Debug\18MarchLotto.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\18MarchLotto\obj\Debug\18MarchLotto.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\18MarchLotto\obj\Debug\18MarchLotto.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\18MarchLotto\obj\Debug\18MarchLotto.exe
+C:\Users\Greedy\Desktop\2023\18MarchLotto\obj\Debug\18MarchLotto.pdb
