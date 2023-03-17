@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Users\Greedy\Desktop\2023\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
