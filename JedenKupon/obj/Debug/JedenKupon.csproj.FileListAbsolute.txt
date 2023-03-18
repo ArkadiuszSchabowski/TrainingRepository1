@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\JedenKupon\bin\Debug\JedenKupon.exe.config
+C:\Users\Greedy\Desktop\2023\JedenKupon\bin\Debug\JedenKupon.exe
+C:\Users\Greedy\Desktop\2023\JedenKupon\bin\Debug\JedenKupon.pdb
+C:\Users\Greedy\Desktop\2023\JedenKupon\obj\Debug\JedenKupon.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\JedenKupon\obj\Debug\JedenKupon.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\JedenKupon\obj\Debug\JedenKupon.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\JedenKupon\obj\Debug\JedenKupon.exe
+C:\Users\Greedy\Desktop\2023\JedenKupon\obj\Debug\JedenKupon.pdb
