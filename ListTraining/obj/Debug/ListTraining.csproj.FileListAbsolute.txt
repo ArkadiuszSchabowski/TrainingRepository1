@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\ListTraining\bin\Debug\ListTraining.exe.config
+C:\Users\Greedy\Desktop\2023\ListTraining\bin\Debug\ListTraining.exe
+C:\Users\Greedy\Desktop\2023\ListTraining\bin\Debug\ListTraining.pdb
+C:\Users\Greedy\Desktop\2023\ListTraining\obj\Debug\ListTraining.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ListTraining\obj\Debug\ListTraining.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ListTraining\obj\Debug\ListTraining.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ListTraining\obj\Debug\ListTraining.exe
+C:\Users\Greedy\Desktop\2023\ListTraining\obj\Debug\ListTraining.pdb

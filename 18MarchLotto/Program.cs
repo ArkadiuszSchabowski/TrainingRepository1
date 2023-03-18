@@ -11,14 +11,15 @@ namespace _18MarchLotto
         static int kumulacja;
         static int pieniadze = 50;
         static Random rnd = new Random();
-        List<int[]> kupon = new List<int[]>();
         static void Main(string[] args)
         {
             ConsoleKey wybor;
+            int losow = 0;
+            List<int[]> kupon = new List<int[]>();
             do
             {
                 kumulacja = rnd.Next(1, 37) * 1000000;
-                Console.WriteLine("Dzisiejsza kumulacja wynosi {0}", kumulacja);
+                Console.WriteLine("Dzisiejsza kumulacja wynosi {0}zł", kumulacja);
                 do
                 {
                     int dzien = 0;
@@ -26,16 +27,20 @@ namespace _18MarchLotto
                     Console.WriteLine("Witaj w grze Lotto!");
                     Console.WriteLine("To Twój {0} dzień gry.", dzien);
                     Console.WriteLine("Twój stan konta wynosi: {0}zł.", pieniadze);
+                    WyswietlKupon(kupon);
+                    Console.ReadKey();
 
-                    Console.WriteLine("1 - Postaw kupon");
+                    Console.WriteLine("1 - Postaw kupon. Postawionych kuponów {0}/5", losow);
                     Console.WriteLine("2 - Sprawdz kupon");
                     Console.WriteLine("3 - Koniec gry");
 
                     wybor = Console.ReadKey().Key;
 
-                    if (wybor == ConsoleKey.D1)
+                    if (wybor == ConsoleKey.D1 && pieniadze >= 3 && losow < 5)
                     {
-                        PostawLos();
+                        pieniadze -= 3;
+                        losow++;
+                        kupon.Add(PostawKupon());
                     }
                     if (wybor == ConsoleKey.D2)
                     {
@@ -50,62 +55,77 @@ namespace _18MarchLotto
             } while (true);
         }
 
-        private static void SprawdzKupon()
+        private static void WyswietlKupon(List<int[]> kupon)
         {
-            int[] liczbyKomputera = new int[6];
-            int liczba;
-
-            for (int i = 0; i < liczbyKomputera.Length; i++)
+            if (kupon.Count == 0)
             {
-                liczba = rnd.Next(1, 50);
-                if (!liczbyKomputera.Contains(liczba))
-                {
-                    liczbyKomputera[i] = liczba;
-                }
-                else
-                {
-                    i--;
-                }
+                Console.WriteLine("Nie postawiłeś jeszcze żadnych kuponów");
             }
-            Array.Sort(liczbyKomputera);
-            Console.WriteLine();
-            foreach (var item in liczbyKomputera)
+            else
             {
-                Console.WriteLine(item);
+                
             }
-            Console.ReadKey();
         }
+    
 
-        private static void PostawLos()
+
+    private static void SprawdzKupon()
+    {
+        int[] liczbyKomputera = new int[6];
+        int liczba;
+
+        for (int i = 0; i < liczbyKomputera.Length; i++)
         {
-            Console.WriteLine("Podaj 6 liczb z przedziału 1-49");
-            int[] liczbyGracza = new int[6];
-            int numer = 0;
-            bool result;
-
-            for (int i = 0; i < liczbyGracza.Length; i++)
+            liczba = rnd.Next(1, 50);
+            if (!liczbyKomputera.Contains(liczba))
             {
-                Console.WriteLine($"Podaj {i+1} liczbę:");
-                result = int.TryParse(Console.ReadLine(), out numer);
-
-                if (result && numer > 0 && numer < 50 && !liczbyGracza.Contains(numer))
-                {
-                    liczbyGracza[i] = numer;
-                }
-                else
-                {
-                    Console.WriteLine("Nieprawidłowa wartość");
-                    i--;
-                }
-
+                liczbyKomputera[i] = liczba;
             }
-            Array.Sort(liczbyGracza);
-            Console.WriteLine();
-            foreach (var item in liczbyGracza)
+            else
             {
-                Console.WriteLine(item);
+                i--;
             }
-            Console.ReadKey();
         }
+        Array.Sort(liczbyKomputera);
+        Console.WriteLine();
+        foreach (var item in liczbyKomputera)
+        {
+            Console.WriteLine(item);
+        }
+        Console.ReadKey();
     }
+
+    private static int[] PostawKupon()
+    {
+        Console.WriteLine("Podaj 6 liczb z przedziału 1-49");
+        int[] liczbyGracza = new int[6];
+        int numer = 0;
+        bool result;
+
+        for (int i = 0; i < liczbyGracza.Length; i++)
+        {
+            Console.WriteLine($"Podaj {i + 1} liczbę:");
+            result = int.TryParse(Console.ReadLine(), out numer);
+
+            if (result && numer > 0 && numer < 50 && !liczbyGracza.Contains(numer))
+            {
+                liczbyGracza[i] = numer;
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidłowa wartość");
+                i--;
+            }
+
+        }
+        Array.Sort(liczbyGracza);
+        Console.WriteLine();
+        foreach (var item in liczbyGracza)
+        {
+            Console.WriteLine(item);
+        }
+        Console.ReadKey();
+        return liczbyGracza;
+    }
+}
 }

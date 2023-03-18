@@ -195,13 +195,6 @@ namespace LottoGame
                 Console.Clear();
                 Console.Write("Postawione liczby: ");
                 Console.WriteLine();
-                foreach (int l in liczby)
-                {
-                    if (l > 0)
-                    {
-                        Console.Write(l + ", ");
-                    }
-                }
                 Console.WriteLine("\nWybierz liczby od 1 do 49:");
                 Console.Write("{0}/6: ", i + 1);
                 bool prawidlowa = int.TryParse(Console.ReadLine(), out liczba);
