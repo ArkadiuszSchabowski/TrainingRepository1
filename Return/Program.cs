@@ -10,7 +10,7 @@ namespace Return
     {
         static void Main(string[] args)
         {
-            int wynik1 = ObjetoscProstokata(10, 3);
+            int wynik1 = ObjetoscProstokata(0, 7);
             Console.WriteLine(wynik1);
             string konkatenacja1 = KonkatenacjaWyrazow("Dominika", " to ", "Króliczek");
             Console.WriteLine(konkatenacja1);
@@ -19,6 +19,7 @@ namespace Return
 
         private static int ObjetoscProstokata(int bok1, int bok2)
         {
+            bok1 = ValidacjaDanych(bok1);
             int wynik;
             wynik = bok1 * bok2;
             return wynik;
@@ -27,6 +28,14 @@ namespace Return
         {
             string konkatenacja = a + b + c;
             return konkatenacja;
+        }
+        private static int ValidacjaDanych(int a)
+        {
+            if (a <= 0)
+            {
+                return 1;
+            }
+            return a;
         }
     }
 }
