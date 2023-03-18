@@ -9,20 +9,19 @@ namespace NeverSurrender2
 {
     internal class Program
     {
+        static Random rnd = new Random();
         static int kumulacja = 0;
         static int start = 10;
         static int dzien = 1;
-        static Random rnd = new Random();
         static int pieniadze = start;
         static int kuponow;
         static void Main(string[] args)
         {
-            ConsoleKey wybor;
             bool isTrue = true;
             int i = 0;
             int[] kupon = new int[6];
+            ConsoleKey wybor;
             ConsoleKey wybor2;
-
             do
             {
                 do
@@ -60,11 +59,13 @@ namespace NeverSurrender2
                     i++;
                 } while (isTrue == true);
 
+
+                Console.WriteLine($"Twój wynik to: {pieniadze - start}zł");
+                Console.WriteLine("Jesli chcesz zagrać jeszcze raz naciśnij Enter");
+
                 wybor2 = Console.ReadKey().Key;
-
-            } while (wybor2 == ConsoleKey.D3);
+            } while (wybor2 == ConsoleKey.Enter);
         }
-
         private static void WyswietlKupon(int[] kuponGracza)
         {
             if (kuponow == 0)
@@ -81,7 +82,6 @@ namespace NeverSurrender2
             }
             Console.WriteLine();
         }
-
         private static void SprawdzKupon(int[] kuponGracza)
         {
             int[] computerNumbers = new int[6];
@@ -180,11 +180,8 @@ namespace NeverSurrender2
             {
                 Console.WriteLine("Niestety nic nie wygrałeś, trafiłeś {0} liczb.", j);
             }
-
             return wygrana;
         }
-
-
         private static int[] PostawKupon(int[] kupon)
         {
             bool prawidlowa;
