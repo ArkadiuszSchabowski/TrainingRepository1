@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\Return\bin\Debug\Return.exe.config
+C:\Users\Greedy\Desktop\2023\Return\bin\Debug\Return.exe
+C:\Users\Greedy\Desktop\2023\Return\bin\Debug\Return.pdb
+C:\Users\Greedy\Desktop\2023\Return\obj\Debug\Return.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\Return\obj\Debug\Return.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\Return\obj\Debug\Return.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\Return\obj\Debug\Return.exe
+C:\Users\Greedy\Desktop\2023\Return\obj\Debug\Return.pdb
