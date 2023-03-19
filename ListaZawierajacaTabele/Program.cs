@@ -18,14 +18,13 @@ namespace ListaZawierajacaTabele
 
         static void Main(string[] args)
         {
+            List<int[]> kupon = new List<int[]>();
             ConsoleKey wybor;
             ConsoleKey wybor2;
             bool isTrue = true;
             pieniadze = start;
             int kuponow = 0;
             int dzien = 0;
-            List<int[]> kupon = new List<int[]>();
-
             do
             {
                 Console.Clear();
@@ -36,6 +35,7 @@ namespace ListaZawierajacaTabele
 
                 do
                 {
+                    dzien++;
                     Console.Clear();
                     Console.WriteLine($"To Twój {dzien} dzien gry.");
                     Console.WriteLine($"Twój stan konta wynosi: {pieniadze}zł");
@@ -58,7 +58,6 @@ namespace ListaZawierajacaTabele
                     }
                     if (wybor == ConsoleKey.D2)
                     {
-                        dzien++;
                         WylosowaneLiczby(kupon);
                     }
                     if (wybor == ConsoleKey.D3)
@@ -130,7 +129,6 @@ namespace ListaZawierajacaTabele
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Kupony użytkownika:");
-
             foreach (int[] los in kupon)
             {
                 j++;
