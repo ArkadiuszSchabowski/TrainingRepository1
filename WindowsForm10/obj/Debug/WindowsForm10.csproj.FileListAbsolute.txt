@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\WindowsForm10\bin\Debug\WindowsForm10.exe.config
+C:\Users\Greedy\Desktop\2023\WindowsForm10\bin\Debug\WindowsForm10.exe
+C:\Users\Greedy\Desktop\2023\WindowsForm10\bin\Debug\WindowsForm10.pdb
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.Form1.resources
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.exe
+C:\Users\Greedy\Desktop\2023\WindowsForm10\obj\Debug\WindowsForm10.pdb
