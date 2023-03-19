@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\bin\Debug\PierwszyProgramOkienkowy.exe.config
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\bin\Debug\PierwszyProgramOkienkowy.exe
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\bin\Debug\PierwszyProgramOkienkowy.pdb
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.Form1.resources
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.exe
+C:\Users\Greedy\Desktop\2023\PierwszyProgramOkienkowy\obj\Debug\PierwszyProgramOkienkowy.pdb
