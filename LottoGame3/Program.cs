@@ -215,13 +215,14 @@ namespace LottoGame
 
         private static void WyswietlKupon(List<int[]> kupon)
         {
+            int i = 0;
+
             if (kupon.Count == 0)
             {
                 Console.WriteLine("Nie postawiłeś jeszcze żadnych losów\n");
             }
             else
             {
-                int i = 0;
                 Console.WriteLine("Twoje kupony: ");
                 foreach (int[] los in kupon)
                 {

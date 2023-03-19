@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\bin\Debug\ListaZawierajacaTabele.exe.config
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\bin\Debug\ListaZawierajacaTabele.exe
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\bin\Debug\ListaZawierajacaTabele.pdb
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\obj\Debug\ListaZawierajacaTabele.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\obj\Debug\ListaZawierajacaTabele.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\obj\Debug\ListaZawierajacaTabele.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\obj\Debug\ListaZawierajacaTabele.exe
+C:\Users\Greedy\Desktop\2023\ListaZawierajacaTabele\obj\Debug\ListaZawierajacaTabele.pdb
