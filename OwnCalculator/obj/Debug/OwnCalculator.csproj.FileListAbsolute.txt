@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\OwnCalculator\bin\Debug\OwnCalculator.exe.config
+C:\Users\Greedy\Desktop\2023\OwnCalculator\bin\Debug\OwnCalculator.exe
+C:\Users\Greedy\Desktop\2023\OwnCalculator\bin\Debug\OwnCalculator.pdb
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.Form1.resources
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.exe
+C:\Users\Greedy\Desktop\2023\OwnCalculator\obj\Debug\OwnCalculator.pdb

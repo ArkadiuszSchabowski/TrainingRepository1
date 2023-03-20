@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\bin\Debug\OwnCalculator_ConsoleProject.exe.config
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\bin\Debug\OwnCalculator_ConsoleProject.exe
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\bin\Debug\OwnCalculator_ConsoleProject.pdb
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\obj\Debug\OwnCalculator_ConsoleProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\obj\Debug\OwnCalculator_ConsoleProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\obj\Debug\OwnCalculator_ConsoleProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\obj\Debug\OwnCalculator_ConsoleProject.exe
+C:\Users\Greedy\Desktop\2023\OwnCalculator_ConsoleProject\obj\Debug\OwnCalculator_ConsoleProject.pdb
