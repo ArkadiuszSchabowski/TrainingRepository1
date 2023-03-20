@@ -1,0 +1,79 @@
+1.
+false
+
+2.
+6
+6
+
+3.
+str == null
+1/1/0001 12:00:00 AM
+
+4.
+static Program()
+static void Main(string[] args)
+
+5.
+6
+6
+6
+6
+6
+6
+
+6.
+This Quiz is: Cool, Interesting
+
+7.
+∞
+
+8.
+Run from ClassB
+
+9.
+Run from ClassB
+
+10.
+constructor A
+constructor B
+A
+
+11.
+A
+B
+
+12.
+0
+
+13.
+nie będzie, bo brakuje przeciążenia dla operatora +
+
+14.
+kolejność nie ma znaczenia gdy parametry przekazujemy jawnie
+
+15.
+Good bye!
+
+16.
+2
+1
+1
+
+17.
+1
+2
+3
+How many elements in the Queue? -> 3
+Does the Queue contain 3? -> True
+
+18.
+System.Byte
+System.Int32
+
+19.
+i
+ok
+
+20.
+100
+1000
