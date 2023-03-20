@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\bin\Debug\PracaDrobnica.exe.config
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\bin\Debug\PracaDrobnica.exe
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\bin\Debug\PracaDrobnica.pdb
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.Form1.resources
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.exe
+C:\Users\Greedy\Desktop\2023\PracaDrobnica\obj\Debug\PracaDrobnica.pdb
