@@ -10,78 +10,100 @@ namespace OwnCalculator_ConsoleProject
     {
         static void Main(string[] args)
         {
-            bool result;
-            bool result2;
-            bool isTrue = true;
-            double number;
-            double number2;
-            double dodawanie;
-            double odejmowanie;
-            double mnozenie;
-            double dzielenie;
-
-            while (isTrue == true)
+            try
             {
-                Console.Clear();
-                Console.WriteLine("Podaj pierwszą liczbę");
-                result = double.TryParse(Console.ReadLine(), out number);
-                if (result)
-                {
+                bool result;
+                bool result2;
+                double number;
+                double number2;
+                double dodawanie;
+                double odejmowanie;
+                double mnozenie;
+                double dzielenie;
 
-                }
-                else
+                while (true)
                 {
-                    Console.WriteLine("Nieprawidłowa liczba");
-                    isTrue = false;
-                }
+                    Console.Clear();
+                    Console.WriteLine("Podaj pierwszą liczbę");
+                    result = double.TryParse(Console.ReadLine(), out number);
+                    if (result)
+                    {
 
-                Console.WriteLine("Wybierz operację: +,-,*,/");
-                string operation = Console.ReadLine();
-
-
-                Console.WriteLine("Podaj drugą liczbę");
-                result2 = double.TryParse(Console.ReadLine(), out number2);
-                Console.WriteLine();
-                if (result2)
-                {
-                }
-                else
-                {
-                    Console.WriteLine("Nieprawidłowa liczba");
-                    isTrue = false;
-                }
-
-                switch (operation)
-                {
-                    case "+":
-                        dodawanie = Dodaj(number, number2);
-                        Console.WriteLine(dodawanie);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Podałeś nieprawidłową liczbę!");
                         Console.ReadKey();
                         break;
+                    }
 
-                    case "-":
-                        odejmowanie = Odejmij(number, number2);
-                        Console.WriteLine(odejmowanie);
+                    Console.WriteLine("Wybierz operację: +,-,*,/");
+                    string operation = Console.ReadLine();
+
+
+                    Console.WriteLine("Podaj drugą liczbę");
+                    result2 = double.TryParse(Console.ReadLine(), out number2);
+                    Console.WriteLine();
+                    if (result2)
+                    {
+                    }
+                    else
+                    {
+                        Console.WriteLine("Podałeś nieprawidłowa liczbę!");
                         Console.ReadKey();
                         break;
+                    }
 
-                    case "*":
-                        mnozenie = Razy(number, number2);
-                        Console.WriteLine(mnozenie);
-                        Console.ReadKey();
-                        break;
+                    switch (operation)
+                    {
+                        case "+":
+                            dodawanie = Dodaj(number, number2);
+                            if (result && result2)
+                            {
+                                Console.WriteLine(dodawanie);
+                            }
+                            Console.ReadKey();
+                            break;
 
-                    case "/":
-                        dzielenie = Podziel(number, number2);
-                        Console.WriteLine(dzielenie);
-                        Console.ReadKey();
-                        break;
+                        case "-":
+                            odejmowanie = Odejmij(number, number2);
+                            if (result && result2)
+                            {
+                                Console.WriteLine(odejmowanie);
+                            }
+                            Console.ReadKey();
+                            break;
+
+                        case "*":
+                            mnozenie = Razy(number, number2);
+                            if (result && result2)
+                            {
+                                Console.WriteLine(mnozenie);
+                            }
+                            Console.ReadKey();
+                            break;
+
+                        case "/":
+                            dzielenie = Podziel(number, number2);
+                            if (result && result2)
+                            {
+                                Console.WriteLine(dzielenie);
+                            }
+                            Console.ReadKey();
+                            break;
+                        default:
+                            {
+                                throw new Exception("Podałeś złą operację");
+                            }
+                    }
                 }
             }
-            Console.WriteLine("Program został zamknięty, ponieważ nie podałeś poprawnych liczb");
-            Console.ReadKey();
-        }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
+        }
         private static double Dodaj(double a, double b)
         {
             double wynik = a + b;
@@ -89,17 +111,17 @@ namespace OwnCalculator_ConsoleProject
         }
         private static double Odejmij(double a, double b)
         {
-            double wynik = a-b;
+            double wynik = a - b;
             return wynik;
         }
         private static double Razy(double a, double b)
         {
-            double wynik = a*b;
+            double wynik = a * b;
             return wynik;
         }
         private static double Podziel(double a, double b)
         {
-            double wynik = a/b;
+            double wynik = a / b;
             return wynik;
         }
     }
