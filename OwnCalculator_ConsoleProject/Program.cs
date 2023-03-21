@@ -34,8 +34,14 @@ namespace OwnCalculator_ConsoleProject
                     Console.WriteLine("Nieprawidłowa liczba");
                     isTrue = false;
                 }
+
+                Console.WriteLine("Wybierz operację: +,-,*,/");
+                string operation = Console.ReadLine();
+
+
                 Console.WriteLine("Podaj drugą liczbę");
                 result2 = double.TryParse(Console.ReadLine(), out number2);
+                Console.WriteLine();
                 if (result2)
                 {
                 }
@@ -44,9 +50,7 @@ namespace OwnCalculator_ConsoleProject
                     Console.WriteLine("Nieprawidłowa liczba");
                     isTrue = false;
                 }
-                Console.WriteLine("Wybierz operację: +,-,*,/");
 
-                string operation = Console.ReadLine();
                 switch (operation)
                 {
                     case "+":
