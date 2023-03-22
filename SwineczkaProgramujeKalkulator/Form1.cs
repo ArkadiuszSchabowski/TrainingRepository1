@@ -91,8 +91,9 @@ namespace SwineczkaProgramujeKalkulator
             tbScreen.Text = result.ToString();
             _secondValue = string.Empty;
             _currentOperation = Operation.None;
-            _isTheResultOnTheScreen = true;
+            _isTheResultOnTheScreen = false;
             SetResultBtnState(true);
+            SetOperationBtnState(true);
             SetBtnCommaState(true);
 
         }
