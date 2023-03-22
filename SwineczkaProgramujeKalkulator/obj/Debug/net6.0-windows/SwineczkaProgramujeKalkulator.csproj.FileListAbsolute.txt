@@ -1,0 +1,17 @@
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\bin\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.exe
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\bin\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.deps.json
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\bin\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.runtimeconfig.json
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\bin\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.dll
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\bin\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.pdb
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.Form1.resources
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.AssemblyInfoInputs.cache
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.AssemblyInfo.cs
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.dll
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\refint\SwineczkaProgramujeKalkulator.dll
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.pdb
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\SwineczkaProgramujeKalkulator.genruntimeconfig.cache
+C:\Users\Greedy\Desktop\2023\SwineczkaProgramujeKalkulator\obj\Debug\net6.0-windows\ref\SwineczkaProgramujeKalkulator.dll
