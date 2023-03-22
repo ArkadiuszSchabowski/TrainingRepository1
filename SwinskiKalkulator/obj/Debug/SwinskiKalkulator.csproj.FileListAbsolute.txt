@@ -1,0 +1,10 @@
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\bin\Debug\SwinskiKalkulator.exe.config
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\bin\Debug\SwinskiKalkulator.exe
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\bin\Debug\SwinskiKalkulator.pdb
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.exe
+C:\Users\Greedy\Desktop\2023\SwinskiKalkulator\obj\Debug\SwinskiKalkulator.pdb
