@@ -25,6 +25,7 @@ namespace OwnCalculator
         private void Btn1_Click(object sender, EventArgs e)
         {
             textBox1.Text += "1";
+
         }
 
         private void Btn2_Click(object sender, EventArgs e)
@@ -80,6 +81,7 @@ namespace OwnCalculator
         private void BtnPlus_Click(object sender, EventArgs e)
         {
             textBox1.Text += "+";
+
         }
 
         private void BtnMinus_Click(object sender, EventArgs e)
@@ -95,6 +97,11 @@ namespace OwnCalculator
         private void BtnPodziel_Click(object sender, EventArgs e)
         {
             textBox1.Text += "/";
+        }
+
+        private void BtnWyczysc_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
         }
     }
 }

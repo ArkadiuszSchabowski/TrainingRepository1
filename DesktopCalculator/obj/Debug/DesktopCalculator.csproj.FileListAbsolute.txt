@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\bin\Debug\DesktopCalculator.exe.config
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\bin\Debug\DesktopCalculator.exe
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\bin\Debug\DesktopCalculator.pdb
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.Form1.resources
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.exe
+C:\Users\Greedy\Desktop\2023\DesktopCalculator\obj\Debug\DesktopCalculator.pdb

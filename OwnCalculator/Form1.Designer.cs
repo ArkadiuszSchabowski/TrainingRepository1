@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Btn1 = new System.Windows.Forms.Button();
             this.Btn8 = new System.Windows.Forms.Button();
             this.Btn7 = new System.Windows.Forms.Button();
@@ -54,6 +52,7 @@
             this.BtnPodziel = new System.Windows.Forms.Button();
             this.Btn0 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnWyczysc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn1
@@ -163,7 +162,7 @@
             // BtnRownosc
             // 
             this.BtnRownosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BtnRownosc.Location = new System.Drawing.Point(184, 296);
+            this.BtnRownosc.Location = new System.Drawing.Point(183, 296);
             this.BtnRownosc.Name = "BtnRownosc";
             this.BtnRownosc.Size = new System.Drawing.Size(68, 43);
             this.BtnRownosc.TabIndex = 2;
@@ -287,7 +286,7 @@
             this.Btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Btn0.Location = new System.Drawing.Point(36, 296);
             this.Btn0.Name = "Btn0";
-            this.Btn0.Size = new System.Drawing.Size(142, 43);
+            this.Btn0.Size = new System.Drawing.Size(68, 43);
             this.Btn0.TabIndex = 7;
             this.Btn0.Text = "0";
             this.Btn0.UseVisualStyleBackColor = true;
@@ -303,12 +302,24 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // BtnWyczysc
+            // 
+            this.BtnWyczysc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BtnWyczysc.Location = new System.Drawing.Point(110, 296);
+            this.BtnWyczysc.Name = "BtnWyczysc";
+            this.BtnWyczysc.Size = new System.Drawing.Size(68, 43);
+            this.BtnWyczysc.TabIndex = 9;
+            this.BtnWyczysc.Text = "C";
+            this.BtnWyczysc.UseVisualStyleBackColor = true;
+            this.BtnWyczysc.Click += new System.EventHandler(this.BtnWyczysc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(383, 453);
+            this.Controls.Add(this.BtnWyczysc);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Btn0);
             this.Controls.Add(this.BtnPodziel);
@@ -341,8 +352,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button Btn1;
         private System.Windows.Forms.Button Btn8;
         private System.Windows.Forms.Button Btn7;
@@ -367,6 +376,7 @@
         private System.Windows.Forms.Button BtnPodziel;
         private System.Windows.Forms.Button Btn0;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BtnWyczysc;
     }
 }
 
