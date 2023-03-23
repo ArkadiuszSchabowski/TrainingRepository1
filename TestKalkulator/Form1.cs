@@ -6,43 +6,66 @@ namespace TestKalkulator
         Addition,
         Substraction,
         Multiplication,
-        Division,
+        Division
     }
     public partial class Form1 : Form
     {
-        private string _firstValue;
-        private string _secondValue;
-        private Operation _currentOperation = Operation.None;
-        private bool _isTheResultOnTheScreen;
+        private string _firstValue = "0";
+        private string _secondValue = "0";
+        private Operation _operation;
+
         public Form1()
         {
             InitializeComponent();
-            tbScreen.Text = "0";
         }
 
         private void OnBtnNumberClick(object sender, EventArgs e)
         {
-            if (_isTheResultOnTheScreen)
-            {
-                _isTheResultOnTheScreen = false;
-                tbScreen.Text = string.Empty;
-            }
 
             var clickedValue = (sender as Button).Text;
-
-            if (tbScreen.Text == "0")
-                tbScreen.Text = string.Empty;
-
             tbScreen.Text += clickedValue;
+        }
 
-            if (_currentOperation != Operation.None)
-            {
-                _secondValue += clickedValue;
-            }
+        private void OnBtnOperationClick(object sender, EventArgs e)
+        {
+            tbScreen.Text = _firstValue;
+            tbScreen.Text = string.Empty;
+
+            var operation = (sender as Button).Text;
+
+            tbScreen.Text += operation;
+
+            tbScreen.Text = _secondValue;
+
+            double firstNumber = double.Parse(_firstValue);
+            double secondNumber = double.Parse(_firstValue);
+
+            double result = Calculate(firstNumber, secondNumber);
+
+            BtnAddition.Enabled = false;
+            BtnSubstraction.Enabled = false;
+            BtnMultiplication.Enabled = false;
+            BtnDivision.Enabled = false;
+        }
+
+        private void OnBtnClearClick(object sender, EventArgs e)
+        {
+            tbScreen.Text = string.Empty;
+
+            BtnAddition.Enabled = true;
+            BtnSubstraction.Enabled = true;
+            BtnMultiplication.Enabled = true;
+            BtnDivision.Enabled = true;
+        }
+
+        private void OnBtnResultClick(object sender, EventArgs e)
+        {
+
         }
         private double Calculate(double firstNumber, double secondNumber)
         {
-            switch (_currentOperation)
+
+            switch (_operation)
             {
                 case Operation.None:
                     return firstNumber;
@@ -58,46 +81,12 @@ namespace TestKalkulator
             return 0;
         }
 
-        private void OnBtnOperationClick(object sender, EventArgs e)
+        private void SetBtnResultState()
         {
-            _firstValue = tbScreen.Text;
-            var operation = (sender as Button).Text;
-
-            _currentOperation = operation switch
-            {
-                "+" => Operation.Addition,
-                "-" => Operation.Substraction,
-                "*" => Operation.Multiplication,
-                "/" => Operation.Substraction,
-                _ => Operation.None,
-
-            };
-
-            tbScreen.Text += $" {operation} ";
         }
-
-        private void OnBtnClearClick(object sender, EventArgs e)
+        private void SetBtnOperationState()
         {
-            tbScreen.Text = string.Empty;
-            _currentOperation = Operation.None;
-            _firstValue = string.Empty;
-            _secondValue = string.Empty;
         }
-
-        private void OnBtnResultClick(object sender, EventArgs e)
-        {
-            double firstNumber = double.Parse(_firstValue);
-            double secondNumber = double.Parse(_secondValue);
-
-            double result = Calculate(firstNumber, secondNumber);
-
-            tbScreen.Text = result.ToString();
-            _secondValue = string.Empty;
-            _currentOperation = Operation.None;
-            _isTheResultOnTheScreen = true;
-
-
-        }
-
     }
+
 }
