@@ -46,6 +46,7 @@
             Btn3 = new Button();
             Btn2 = new Button();
             tbScreen = new TextBox();
+            BtnComma = new Button();
             SuspendLayout();
             // 
             // label1
@@ -276,12 +277,26 @@
             tbScreen.TabIndex = 17;
             tbScreen.TextAlign = HorizontalAlignment.Right;
             // 
+            // BtnComma
+            // 
+            BtnComma.BackColor = Color.Red;
+            BtnComma.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnComma.ForeColor = Color.White;
+            BtnComma.Location = new Point(174, 206);
+            BtnComma.Name = "BtnComma";
+            BtnComma.Size = new Size(75, 37);
+            BtnComma.TabIndex = 18;
+            BtnComma.Text = ",";
+            BtnComma.UseVisualStyleBackColor = false;
+            BtnComma.Click += OnBtnNumberClick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleVioletRed;
             ClientSize = new Size(356, 385);
+            Controls.Add(BtnComma);
             Controls.Add(tbScreen);
             Controls.Add(Btn2);
             Controls.Add(Btn3);
@@ -326,5 +341,6 @@
         private Button Btn3;
         private Button Btn2;
         private TextBox tbScreen;
+        private Button BtnComma;
     }
 }

@@ -1,7 +1,7 @@
 namespace TestKalkulator
 {
     public partial class Form1 : Form
-    { 
+    {
 
         public Form1()
         {
@@ -11,6 +11,7 @@ namespace TestKalkulator
         private void OnBtnNumberClick(object sender, EventArgs e)
         {
         }
+
 
         private void OnBtnOperationClick(object sender, EventArgs e)
         {
@@ -22,8 +23,6 @@ namespace TestKalkulator
 
         private void OnBtnResultClick(object sender, EventArgs e)
         {
-
         }
     }
-
 }
