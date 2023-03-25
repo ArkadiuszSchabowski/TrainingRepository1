@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "TWK+Ev4MTyyFUcjLd5NYUF8BXEh4Bz2DFz15Fos7RZGYm8iaMJ6p5+GJqXWon+f3VMAmSu0ruTjIuWn3b0BsQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Greedy\\Desktop\\2023\\XamarinNewProjectMobile\\XamarinNewProjectMobile.iOS\\XamarinNewProjectMobile.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Greedy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Greedy\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Greedy\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
