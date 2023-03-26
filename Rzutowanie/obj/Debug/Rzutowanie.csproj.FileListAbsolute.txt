@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\Rzutowanie\bin\Debug\Rzutowanie.exe.config
+C:\Users\Greedy\Desktop\2023\Rzutowanie\bin\Debug\Rzutowanie.exe
+C:\Users\Greedy\Desktop\2023\Rzutowanie\bin\Debug\Rzutowanie.pdb
+C:\Users\Greedy\Desktop\2023\Rzutowanie\obj\Debug\Rzutowanie.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\Rzutowanie\obj\Debug\Rzutowanie.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\Rzutowanie\obj\Debug\Rzutowanie.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\Rzutowanie\obj\Debug\Rzutowanie.exe
+C:\Users\Greedy\Desktop\2023\Rzutowanie\obj\Debug\Rzutowanie.pdb

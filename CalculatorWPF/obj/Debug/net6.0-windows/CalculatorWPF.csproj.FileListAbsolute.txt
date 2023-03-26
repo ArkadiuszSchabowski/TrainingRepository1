@@ -19,3 +19,9 @@ C:\Users\Greedy\Desktop\2023\CalculatorWPF\obj\Debug\net6.0-windows\refint\Calcu
 C:\Users\Greedy\Desktop\2023\CalculatorWPF\obj\Debug\net6.0-windows\CalculatorWPF.pdb
 C:\Users\Greedy\Desktop\2023\CalculatorWPF\obj\Debug\net6.0-windows\CalculatorWPF.genruntimeconfig.cache
 C:\Users\Greedy\Desktop\2023\CalculatorWPF\obj\Debug\net6.0-windows\ref\CalculatorWPF.dll
+C:\Users\Greedy\Desktop\2023\CalculatorWPF\bin\Debug\net6.0-windows\ControlzEx.dll
+C:\Users\Greedy\Desktop\2023\CalculatorWPF\bin\Debug\net6.0-windows\MahApps.Metro.dll
+C:\Users\Greedy\Desktop\2023\CalculatorWPF\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Greedy\Desktop\2023\CalculatorWPF\bin\Debug\net6.0-windows\de\MahApps.Metro.resources.dll
+C:\Users\Greedy\Desktop\2023\CalculatorWPF\obj\Debug\net6.0-windows\App.baml
+C:\Users\Greedy\Desktop\2023\CalculatorWPF\obj\Debug\net6.0-windows\CalculatorWPF.csproj.CopyComplete
