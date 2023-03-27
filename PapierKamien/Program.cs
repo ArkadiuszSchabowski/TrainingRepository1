@@ -23,11 +23,11 @@ namespace PapierKamien
             string computer;
             
             //Wybór użytkownika
-            Console.WriteLine("Witaj w grze: Papier, Kamień, Nożyce. Wygrywa ten, kto zdobedzie 10pkt. Grasz przeciwko wlasnemu komputerowi.\n");
+            Console.WriteLine("Witaj w grze: Papier, Kamień, Nożyce. Wygrywa ten, kto zdobedzie 5pkt. Grasz przeciwko wlasnemu komputerowi.\n");
             Console.WriteLine("Nacisnij dowolny klawisz, by sprawdzic swoje sily!");
             Console.ReadKey();
 
-            while (_playerPoints < 10 || _computerPoints < 10)
+            while (_playerPoints < 5 || _computerPoints < 5)
             {
                 Console.Clear();
                 Console.Write("Wybierz z opcji: Papier, Kamien, Nozyce: ");
