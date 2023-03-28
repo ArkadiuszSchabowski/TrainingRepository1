@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\bin\Debug\OwnProject.Console.exe.config
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\bin\Debug\OwnProject.Console.exe
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\bin\Debug\OwnProject.Console.pdb
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\obj\Debug\OwnProject.Console.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\obj\Debug\OwnProject.Console.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\obj\Debug\OwnProject.Console.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\obj\Debug\OwnProject.Console.exe
+C:\Users\Greedy\Desktop\2023\OwnProject.Console\obj\Debug\OwnProject.Console.pdb
