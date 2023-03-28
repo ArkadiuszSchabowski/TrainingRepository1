@@ -27,8 +27,9 @@ namespace PapierKamien
             Console.WriteLine("Nacisnij dowolny klawisz, by sprawdzic swoje sily!");
             Console.ReadKey();
 
-            while (_playerPoints < 5 || _computerPoints < 5)
+            while (_playerPoints < 5 && _computerPoints < 5)
             {
+
                 Console.Clear();
                 Console.Write("Wybierz z opcji: Papier, Kamien, Nozyce: ");
                 player = Console.ReadLine().ToUpper();
