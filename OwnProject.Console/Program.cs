@@ -14,65 +14,114 @@ namespace OwnProjectConsole
 
     internal class Program
     {
+        static int _age = 0;
+        static int _weight = 0;
+        static int _height = 0;
+
+        static double _resultGenderSelection;
+        static double _resultThePurposeOfTheDiet;
+
+        static string genderSelection = null;
+        static string thePurposeOfTheDiet = null;
+
         static void Main(string[] args)
         {
-            int age = 0;
-            int weight = 0;
-            int height = 0;
-
-            double resultGenderSelection;
-            double resultThePurposeOfTheDiet;
-            string genderSelection = null;
-            string thePurposeOfTheDiet = null;
-
             Console.WriteLine("Witaj w aplikacji: AUTOMATYCZNY GENERATOR DIETY!.\n");
             Console.WriteLine("Na podstawie danych, które podasz ułożymy Twoją dietę. Razem na pewno osiągniemy cel!");
             Console.WriteLine();
-            Console.Write("Kliknij dowolny przycisk, aby przejść do generatora diet:");
+            Console.Write("Kliknij dowolny przycisk, aby przejść do generatora diet: ");
             Console.ReadKey();
 
-            resultGenderSelection = GenderSelection();
+            _resultGenderSelection = GenderSelection();
 
-            UserData(age, weight, height);
-
-            if (resultGenderSelection == 1)
+            if (_resultGenderSelection == 1)
             {
                 genderSelection = "Kobieta";
             }
-            if (resultGenderSelection == 2)
+            if (_resultGenderSelection == 2)
             {
                 genderSelection = "Mężczyzna";
             }
 
-            resultThePurposeOfTheDiet = ThePurposeOfThediet();
+            UserInput();
 
-            if (resultThePurposeOfTheDiet == 1)
+            _resultThePurposeOfTheDiet = ThePurposeOfThediet();
+
+            if (_resultThePurposeOfTheDiet == 1)
             {
-                thePurposeOfTheDiet = "Dieta na zrzucenie wagi i redukcję tkanki tłuszczowej";
+                thePurposeOfTheDiet = "Zrzucenie wagi i redukcję tkanki tłuszczowej";
             }
-            if (resultThePurposeOfTheDiet == 2)
+            if (_resultThePurposeOfTheDiet == 2)
             {
-                thePurposeOfTheDiet = "Dieta na wzrost siły i masy mięśniowej";
+                thePurposeOfTheDiet = "Wzrost siły i masy mięśniowej";
             }
-            if (resultThePurposeOfTheDiet == 3)
+            if (_resultThePurposeOfTheDiet == 3)
             {
-                thePurposeOfTheDiet = "Dieta poprawiająca jakość i proporcję ciała";
+                thePurposeOfTheDiet = "Poprawa jakości i proporcji ciała";
             }
-            if (resultThePurposeOfTheDiet == 4)
+            if (_resultThePurposeOfTheDiet == 4)
             {
-                thePurposeOfTheDiet = "Dieta, która poprawi Twój stan zdrowia";
+                thePurposeOfTheDiet = "Poprawa Twojego stanu zdrowia";
             }
 
-            Console.WriteLine($"Sprawdź proszę swoje dane: {age}, {weight}, {height}, {genderSelection}, {thePurposeOfTheDiet}.");
-            Console.ReadKey();
+            TheUserCheckTheData();
 
         }
+        static void TheUserCheckTheData()
+        {
+            Console.Clear();
+            Console.WriteLine($"Sprawdź proszę swoje dane:\n\nPłeć: {genderSelection},\nWiek: {_age},\nWaga: {_weight},\nWzrost: {_height},\nCel diety: {thePurposeOfTheDiet}.\n");
+            Console.WriteLine("Jeśli podane są poprawne kliknij dowolny przycisk, by przejść dalej.\nJeśli podane dane są niepoprawne to możesz uruchomić program ponownie.");
+
+            Console.ReadKey();
+        }
+        static void UserInput()
+        {
+            bool result;
+
+            Console.Clear();
+            Console.WriteLine("Podaj swój wiek:");
+
+            result = int.TryParse(Console.ReadLine(), out _age);
+
+            if (result)
+            {
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidłowa wartość");
+            }
+
+            Console.WriteLine("Podaj swoją wagę:");
+
+            result = int.TryParse(Console.ReadLine(), out _weight);
+
+            if (result)
+            {
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidłowa wartość");
+            }
+
+            Console.WriteLine("Podaj swój wzrost");
+
+            result = int.TryParse(Console.ReadLine(), out _height);
+            if (result)
+            {
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidłowa wartość");
+            }
+        }
+
         private static double GenderSelection()
         {
             ConsoleKey selection;
 
             Console.Clear();
-            Console.WriteLine("Kliknij liczbę, aby wybrać swoją płeć\n");
+            Console.WriteLine("Kliknij liczbę, aby wybrać swoją płeć:\n");
 
             Console.WriteLine("1. Kobieta");
             Console.WriteLine("2. Mężczyzna\n");
@@ -88,59 +137,15 @@ namespace OwnProjectConsole
             }
             return 0;
         }
-        private static double UserData(int age, int weight, int height)
-        {
-            bool result;
-
-            Console.Clear();
-            Console.WriteLine("Podaj swój wiek");
-
-            result = int.TryParse(Console.ReadLine(), out age);
-
-            if (result)
-            {
-                return age;
-            }
-            else
-            {
-                Console.WriteLine("Nieprawidłowa wartość");
-            }
-
-            Console.WriteLine("Podaj swoją wagę");
-
-            result = int.TryParse(Console.ReadLine(), out weight);
-
-            if (result)
-            {
-                return weight;
-            }
-            else
-            {
-                Console.WriteLine("Nieprawidłowa wartość");
-            }
-
-            Console.WriteLine("Podaj swój wzrost");
-
-            result = int.TryParse(Console.ReadLine(), out height);
-            if (result)
-            {
-                return height;
-            }
-            else
-            {
-                Console.WriteLine("Nieprawidłowa wartość");
-            }
-            return 0;
-        }
         private static double ThePurposeOfThediet()
         {
             ConsoleKey selection;
 
             Console.Clear();
-            Console.WriteLine("Kliknij liczbę, aby wybrać cel diety\n");
+            Console.WriteLine("Kliknij liczbę, aby wybrać cel diety:\n");
             Console.WriteLine("1. Redukcja masy tłuszczowej");
             Console.WriteLine("2. Wzrost siły i masy mięśniowej ");
-            Console.WriteLine("3.Poprawa jakości ciała(wzrost masy mięśniowej, spadek masy tłuszczowej) przy utrzymaniu wagi");
+            Console.WriteLine("3. Poprawa jakości ciała(wzrost masy mięśniowej, spadek masy tłuszczowej) przy utrzymaniu wagi");
             Console.WriteLine("4. Poprawa stanu zdrowia\n");
 
             switch (selection = Console.ReadKey().Key)
