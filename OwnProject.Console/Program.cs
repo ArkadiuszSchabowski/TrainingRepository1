@@ -15,10 +15,9 @@ namespace OwnProjectConsole
         static void Main(string[] args)
         {
             User.MainUserData();
+            HarrisBenedictPattern.CaloricRequirementCalculation();
+            HarrisBenedictPattern.Info();
 
-            var user = new User();
-
-            Console.WriteLine($"Wartość: {user.GenderValue}.");
             Console.ReadKey();
             //HarrisBenedictPattern.BasicMetabolism();
         }

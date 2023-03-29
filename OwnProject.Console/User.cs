@@ -8,25 +8,38 @@ namespace OwnProjectConsole
 {
     public class User
     {
-        static int _age = 0;
-        static int _weight = 0;
-        static int _height = 0;
+        static int _age, _weight, _height, _physicalActivity;
+        static double _goal, _caloriesBurnedAtWork;
 
         static double _resultGenderSelection;
         static double _resultThePurposeOfTheDiet;
         static int _resultKindOfTheWork;
         static int _resultHowManyTimesYouTrain;
+        private static double _gendervalue;
 
         static string genderSelection = null;
         static string thePurposeOfTheDiet = null;
         static string kindOfTheWork = null;
         static string howManyTimesYouTrain = null;
 
-        private static double _gendervalue;
+
         public double GenderValue { get; }
+        public double Age { get; }
+        public double Height { get; }
+        public double Weight { get; }
+        public int PhysicalActivity { get; }
+        public double Goal { get; }
+        public double CaloriesBurnedAtWork { get; }
+
         public User()
         {
             GenderValue = _gendervalue;
+            Age = _age;
+            Height = _height;
+            Weight = _weight;
+            PhysicalActivity = _physicalActivity;
+            Goal = _goal;
+            CaloriesBurnedAtWork = _caloriesBurnedAtWork;
         }
 
         public static void MainUserData()
@@ -70,18 +83,23 @@ namespace OwnProjectConsole
                 if (_resultThePurposeOfTheDiet == 1)
                 {
                     thePurposeOfTheDiet = "Zrzucenie wagi i redukcję tkanki tłuszczowej";
+                    _goal = 0.75;
+
                 }
                 else if (_resultThePurposeOfTheDiet == 2)
                 {
                     thePurposeOfTheDiet = "Wzrost siły i masy mięśniowej";
+                    _goal = 1.25;
                 }
                 else if (_resultThePurposeOfTheDiet == 3)
                 {
                     thePurposeOfTheDiet = "Poprawa jakości i proporcji ciała";
+                    _goal = 1;
                 }
                 else if (_resultThePurposeOfTheDiet == 4)
                 {
                     thePurposeOfTheDiet = "Poprawa Twojego stanu zdrowia";
+                    _goal = 1;
                 }
                 else
                 {
@@ -96,10 +114,12 @@ namespace OwnProjectConsole
                 if (_resultKindOfTheWork == 1)
                 {
                     kindOfTheWork = "Praca fizyczna";
+                    _caloriesBurnedAtWork = 0.5;
                 }
                 else if (_resultKindOfTheWork == 2)
                 {
                     kindOfTheWork = "Praca umysłowa";
+                    _caloriesBurnedAtWork = 0.3;
                 }
                 else
                 {
@@ -120,10 +140,12 @@ namespace OwnProjectConsole
                 else if (_resultHowManyTimesYouTrain == 2)
                 {
                     howManyTimesYouTrain = "Umiarkowana aktywność fizyczna";
+                    _physicalActivity = 300;
                 }
                 else if (_resultHowManyTimesYouTrain == 3)
                 {
                     howManyTimesYouTrain = "Duża aktywność fizyczna";
+                    _physicalActivity = 400;
                 }
                 else
                 {
@@ -191,7 +213,7 @@ namespace OwnProjectConsole
                 }
                 else
                 {
-                    Console.WriteLine("Wprowadź jeszcze raz poprawny wiek");
+                    Console.WriteLine("Wprowadź jeszcze raz poprawny wiek!");
                     i--;
                     continue;
                 }
@@ -207,7 +229,7 @@ namespace OwnProjectConsole
                     }
                     else
                     {
-                        Console.WriteLine("Wprowadź jeszcze raz poprawną wagę");
+                        Console.WriteLine("Wprowadź jeszcze raz poprawną wagę!");
                         j--;
                         continue;
                     }
@@ -215,7 +237,7 @@ namespace OwnProjectConsole
                     for (int k = 0; k < 1; k++)
                     {
                         Console.Clear();
-                        Console.WriteLine("Podaj swój wzrost");
+                        Console.WriteLine("Podaj swój wzrost:");
 
                         result = int.TryParse(Console.ReadLine(), out _height);
                         if (result && _height > 0 && _height < 400)
@@ -223,7 +245,7 @@ namespace OwnProjectConsole
                         }
                         else
                         {
-                            Console.WriteLine("Podaj jeszcze raz poprawny wzrost");
+                            Console.WriteLine("Podaj jeszcze raz poprawny wzrost!");
                             k--;
                             continue;
                         }
