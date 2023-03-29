@@ -35,7 +35,7 @@ namespace OwnProjectConsole
             trainingGoal = user.Goal;
             cpm = Math.Round(bmr + (bmr * tea) + tef + neat) * trainingGoal;
 
-            Console.WriteLine($"Twoje łączne zapotrzebowanie kaloryczne wynosi: {cpm} kcal.");
+            Console.WriteLine($"\nTwoje łączne zapotrzebowanie kaloryczne wynosi: {cpm} kcal.");
         }
     }
 }

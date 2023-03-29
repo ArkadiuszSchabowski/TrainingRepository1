@@ -1,4 +1,4 @@
-﻿using OwnProject.Console;
+﻿using OwnProjectConsole;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +16,8 @@ namespace OwnProjectConsole
         {
             User.MainUserData();
             HarrisBenedictPattern.CaloricRequirementCalculation();
-            HarrisBenedictPattern.Info();
 
             Console.ReadKey();
-            //HarrisBenedictPattern.BasicMetabolism();
         }
     }
 }
