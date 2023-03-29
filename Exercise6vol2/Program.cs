@@ -7,8 +7,8 @@ namespace NeverSurrender
     {
         static void Main(string[] args)
         {
-            var card = new Card("Arkadiusz");
-            Console.WriteLine($"Karta użytkownika: { card.Owner}, numer karty {card.Number}");
+            var card = new Card();
+            Console.WriteLine($"Karta użytkownika: numer karty {card.Number}");
             card.registerNewTrace(10, DateTime.Now.AddDays(-1), "Lorem ipsum 1");
             card.registerNewTrace(5, DateTime.Now.AddDays(-3), "Lorem ipsum 2");
             card.registerNewTrace(8, DateTime.Now.AddDays(-5), "Lorem ipsum 3");
@@ -23,9 +23,8 @@ namespace NeverSurrender
         public string Number { get; }
         public string Owner { get; set; }
 
-        public Card(string owner)
+        public Card()
         {
-            Owner = owner;
             Number = cardNumberSeed.ToString().PadLeft(9, '0');
             cardNumberSeed++;
         }

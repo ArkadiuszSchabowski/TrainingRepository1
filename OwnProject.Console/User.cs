@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OwnProjectConsole
 {
-    public class UserData
+    public class User
     {
         static int _age = 0;
         static int _weight = 0;
@@ -21,6 +21,14 @@ namespace OwnProjectConsole
         static string thePurposeOfTheDiet = null;
         static string kindOfTheWork = null;
         static string howManyTimesYouTrain = null;
+
+        private static double _gendervalue;
+        public double GenderValue { get; }
+        public User()
+        {
+            GenderValue = _gendervalue;
+        }
+
         public static void MainUserData()
         {
             Console.WriteLine("Witaj w aplikacji: AUTOMATYCZNY GENERATOR DIETY!.\n");
@@ -29,61 +37,100 @@ namespace OwnProjectConsole
             Console.Write("Kliknij dowolny przycisk, aby przejść do generatora diet: ");
             Console.ReadKey();
 
-            _resultGenderSelection = GenderSelection();
+            for (int i = 0; i < 1; i++)
+            {
+                _resultGenderSelection = GenderSelection();
 
-            if (_resultGenderSelection == 1)
-            {
-                genderSelection = "Kobieta";
-            }
-            if (_resultGenderSelection == 2)
-            {
-                genderSelection = "Mężczyzna";
+                if (_resultGenderSelection == 1)
+                {
+                    genderSelection = "Kobieta";
+                    _gendervalue = 665.09;
+
+                }
+                else if (_resultGenderSelection == 2)
+                {
+                    genderSelection = "Mężczyzna";
+                    _gendervalue = 66.47;
+
+                }
+                else
+                {
+                    Console.WriteLine("\n\nNiewłaściwa operacja! Naciśnij dowolny klawisz, by móc dokonać poprawnego wyboru.");
+                    Console.ReadKey();
+                    i--;
+                }
             }
 
             UserInput();
 
-            _resultThePurposeOfTheDiet = ThePurposeOfThediet();
+            for (int i = 0; i < 1; i++)
+            {
+                _resultThePurposeOfTheDiet = ThePurposeOfThediet();
 
-            if (_resultThePurposeOfTheDiet == 1)
-            {
-                thePurposeOfTheDiet = "Zrzucenie wagi i redukcję tkanki tłuszczowej";
+                if (_resultThePurposeOfTheDiet == 1)
+                {
+                    thePurposeOfTheDiet = "Zrzucenie wagi i redukcję tkanki tłuszczowej";
+                }
+                else if (_resultThePurposeOfTheDiet == 2)
+                {
+                    thePurposeOfTheDiet = "Wzrost siły i masy mięśniowej";
+                }
+                else if (_resultThePurposeOfTheDiet == 3)
+                {
+                    thePurposeOfTheDiet = "Poprawa jakości i proporcji ciała";
+                }
+                else if (_resultThePurposeOfTheDiet == 4)
+                {
+                    thePurposeOfTheDiet = "Poprawa Twojego stanu zdrowia";
+                }
+                else
+                {
+                    Console.WriteLine("\n\nNiewłaściwa operacja! Naciśnij dowolny klawisz, by móc dokonać poprawnego wyboru.");
+                    i--;
+                }
             }
-            if (_resultThePurposeOfTheDiet == 2)
+            for (int i = 0; i < 1; i++)
             {
-                thePurposeOfTheDiet = "Wzrost siły i masy mięśniowej";
-            }
-            if (_resultThePurposeOfTheDiet == 3)
-            {
-                thePurposeOfTheDiet = "Poprawa jakości i proporcji ciała";
-            }
-            if (_resultThePurposeOfTheDiet == 4)
-            {
-                thePurposeOfTheDiet = "Poprawa Twojego stanu zdrowia";
+                _resultKindOfTheWork = KindOfTheWork();
+
+                if (_resultKindOfTheWork == 1)
+                {
+                    kindOfTheWork = "Praca fizyczna";
+                }
+                else if (_resultKindOfTheWork == 2)
+                {
+                    kindOfTheWork = "Praca umysłowa";
+                }
+                else
+                {
+                    Console.WriteLine("\n\nNiewłaściwa operacja! Naciśnij dowolny klawisz, by móc dokonać poprawnego wyboru.");
+                    Console.ReadKey();
+                    i--;
+                }
             }
 
-            _resultKindOfTheWork = KindOfTheWork();
+            for (int i = 0; i < 1; i++)
+            {
+                _resultHowManyTimesYouTrain = HowManyTimesYouTrain();
 
-            if (_resultKindOfTheWork == 1)
-            {
-                kindOfTheWork = "Praca fizyczna";
-            }
-            if (_resultKindOfTheWork == 2)
-            {
-                kindOfTheWork = "Praca umysłowa";
-            }
-            _resultHowManyTimesYouTrain = HowManyTimesYouTrain();
-
-            if (_resultHowManyTimesYouTrain == 1)
-            {
-                howManyTimesYouTrain = "Brak aktywnośi fizycznej";
-            }
-            if (_resultHowManyTimesYouTrain == 2)
-            {
-                howManyTimesYouTrain = "Umiarkowana aktywność fizyczna";
-            }
-            if (_resultHowManyTimesYouTrain == 3)
-            {
-                howManyTimesYouTrain = "Duża aktywność fizyczna";
+                if (_resultHowManyTimesYouTrain == 1)
+                {
+                    howManyTimesYouTrain = "Brak aktywnośi fizycznej";
+                }
+                else if (_resultHowManyTimesYouTrain == 2)
+                {
+                    howManyTimesYouTrain = "Umiarkowana aktywność fizyczna";
+                }
+                else if (_resultHowManyTimesYouTrain == 3)
+                {
+                    howManyTimesYouTrain = "Duża aktywność fizyczna";
+                }
+                else
+                {
+                    Console.WriteLine("\n\nNiewłaściwa operacja! Naciśnij dowolny klawisz, by móc dokonać poprawnego wyboru.");
+                    Console.ReadKey();
+                    i--;
+                }
             }
             TheUserCheckTheData();
         }
@@ -147,7 +194,6 @@ namespace OwnProjectConsole
                     Console.WriteLine("Wprowadź jeszcze raz poprawny wiek");
                     i--;
                     continue;
-
                 }
                 for (int j = 0; j < 1; j++)
                 {
@@ -169,7 +215,7 @@ namespace OwnProjectConsole
                     for (int k = 0; k < 1; k++)
                     {
                         Console.Clear();
-                        Console.WriteLine("Podaj jeszcze raz poprawny wzrost");
+                        Console.WriteLine("Podaj swój wzrost");
 
                         result = int.TryParse(Console.ReadLine(), out _height);
                         if (result && _height > 0 && _height < 400)
@@ -177,7 +223,7 @@ namespace OwnProjectConsole
                         }
                         else
                         {
-                            Console.WriteLine("Nieprawidłowa wartość");
+                            Console.WriteLine("Podaj jeszcze raz poprawny wzrost");
                             k--;
                             continue;
                         }
@@ -235,7 +281,6 @@ namespace OwnProjectConsole
             Console.Clear();
             Console.WriteLine($"Sprawdź proszę swoje dane:\n\nPłeć: {genderSelection},\nWiek: {_age} lat,\nWaga: {_weight} kg,\nWzrost: {_height} cm,\nCel diety: {thePurposeOfTheDiet},\nRodzaj pracy: {kindOfTheWork},\nAktywność fizyczna: {howManyTimesYouTrain}.\n");
             Console.WriteLine("Jeśli podane są poprawne kliknij dowolny przycisk, by przejść dalej.\nJeśli podane dane są niepoprawne to możesz uruchomić program ponownie.");
-            Console.ReadKey();
         }
     }
 }
