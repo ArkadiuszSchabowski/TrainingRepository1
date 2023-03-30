@@ -16,133 +16,33 @@ namespace MemoryGameSoloProject
 {
     public partial class Form1 : Form
     {
-        Random rnd = new Random();
-        List<PictureBox> pictureBoxList = new List<PictureBox>();
-        bool[] cardsState = new bool[16]; // utworzenie tablicy przechowuj¹cej informacje o stanie ka¿dej karty
-        PictureBox firstCard = null;
+        ListBox lista = new ListBox();
+        bool[] tablica = new bool[16];
 
         public Form1()
         {
             InitializeComponent();
-            AddPicturesToList();
-            HidePictures();
+            AddPictureToTheList();
         }
 
-        private void HidePictures()
+        public void AddPictureToTheList()
         {
-            for (int i = 0; i < pictureBoxList.Count; i++)
-            {
-                pictureBoxList[i].BackColor = Color.LightGray;
-                pictureBoxList[i].Image = null;
-                cardsState[i] = false; // ustawienie stanu ka¿dej karty na zakryt¹ (false)
-            }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            foreach (PictureBox pic in pictureBoxList)
-            {
-                pic.Click += new EventHandler(PictureBox_Click);
-            }
-        }
-
-        private void PictureBox_Click(object sender, EventArgs e)
-        {
-            PictureBox pic = sender as PictureBox;
-
-            if (pic != null && !cardsState[pictureBoxList.IndexOf(pic)])
-            {
-                // Karta zosta³a klikniêta i nie jest ju¿ odkryta
-                string tag = pic.Tag.ToString();
-                pic.Image = GetImage(tag);
-                pic.BackColor = Color.White;
-                cardsState[pictureBoxList.IndexOf(pic)] = true; // oznacz kartê jako odkryt¹
-
-                if (firstCard == null)
-                {
-                    firstCard = pic;
-                }
-                else
-                {
-                    if (firstCard.Tag.ToString() == tag)
-                    {
-                        // Odkryto dwie takie same karty
-                    }
-                    else
-                    {
-                        // Odkryto dwie ró¿ne karty
-                        System.Threading.Thread.Sleep(1000); // Poczekaj chwilê, aby gracz zobaczy³ drug¹ kartê
-                        firstCard.BackColor = Color.LightGray;
-                        firstCard.Image = null;
-                        pic.BackColor = Color.LightGray;
-                        pic.Image = null;
-                        cardsState[pictureBoxList.IndexOf(firstCard)] = false; // zresetuj stan pierwszej karty
-                        cardsState[pictureBoxList.IndexOf(pic)] = false; // zresetuj stan drugiej karty
-                    }
-                }
-            }
-        }
-
-        private Image GetImage(string? tag)
-        {
-            switch (tag)
-            {
-                case "1":
-                    return Properties.Resources.swinka1;
-                case "2":
-                    return Properties.Resources.swinka2;
-                case "3":
-                    return Properties.Resources.swinka3;
-                case "4":
-                    return Properties.Resources.swinka4;
-                case "5":
-                    return Properties.Resources.swinka5;
-                case "6":
-                    return Properties.Resources.swinka6;
-                case "7":
-                    return Properties.Resources.swinka7;
-                case "8":
-                    return Properties.Resources.swinka8;
-            }
-            return null;
-        }
-
-        private void AddPicturesToList()
-        {
-            pictureBoxList.Add(Picture1);
-            pictureBoxList.Add(Picture2);
-            pictureBoxList.Add(Picture3);
-            pictureBoxList.Add(Picture4);
-            pictureBoxList.Add(Picture5);
-            pictureBoxList.Add(Picture6);
-            pictureBoxList.Add(Picture7);
-            pictureBoxList.Add(Picture8);
-            pictureBoxList.Add(Picture9);
-            pictureBoxList.Add(Picture10);
-            pictureBoxList.Add(Picture11);
-            pictureBoxList.Add(Picture12);
-            pictureBoxList.Add(Picture13);
-            pictureBoxList.Add(Picture14);
-            pictureBoxList.Add(Picture15);
-            pictureBoxList.Add(Picture16);
-
-            Picture1.Tag = "1";
-            Picture2.Tag = "1";
-            Picture3.Tag = "2";
-            Picture4.Tag = "2";
-            Picture5.Tag = "3";
-            Picture6.Tag = "3";
-            Picture7.Tag = "4";
-            Picture8.Tag = "4";
-            Picture9.Tag = "5";
-            Picture10.Tag = "5";
-            Picture11.Tag = "6";
-            Picture12.Tag = "6";
-            Picture13.Tag = "7";
-            Picture14.Tag = "7";
-            Picture15.Tag = "8";
-            Picture16.Tag = "8";
+            lista.Items.Add(Picture1);
+            lista.Items.Add(Picture2);
+            lista.Items.Add(Picture3);
+            lista.Items.Add(Picture4);
+            lista.Items.Add(Picture5);
+            lista.Items.Add(Picture6);
+            lista.Items.Add(Picture7);
+            lista.Items.Add(Picture8);
+            lista.Items.Add(Picture9);
+            lista.Items.Add(Picture10);
+            lista.Items.Add(Picture11);
+            lista.Items.Add(Picture12);
+            lista.Items.Add(Picture13);
+            lista.Items.Add(Picture14);
+            lista.Items.Add(Picture15);
+            lista.Items.Add(Picture16);
         }
     }
 }
-

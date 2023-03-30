@@ -77,7 +77,6 @@
             Picture1.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture1.TabIndex = 0;
             Picture1.TabStop = false;
-            Picture1.Click += Form1_Load;
             // 
             // Picture2
             // 
@@ -90,7 +89,6 @@
             Picture2.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture2.TabIndex = 1;
             Picture2.TabStop = false;
-            Picture2.Click += Form1_Load;
             // 
             // Picture8
             // 
@@ -103,7 +101,6 @@
             Picture8.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture8.TabIndex = 2;
             Picture8.TabStop = false;
-            Picture8.Click += Form1_Load;
             // 
             // Picture7
             // 
@@ -116,7 +113,6 @@
             Picture7.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture7.TabIndex = 3;
             Picture7.TabStop = false;
-            Picture7.Click += Form1_Load;
             // 
             // Picture6
             // 
@@ -129,7 +125,6 @@
             Picture6.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture6.TabIndex = 4;
             Picture6.TabStop = false;
-            Picture6.Click += Form1_Load;
             // 
             // Picture5
             // 
@@ -142,7 +137,6 @@
             Picture5.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture5.TabIndex = 5;
             Picture5.TabStop = false;
-            Picture5.Click += Form1_Load;
             // 
             // Picture4
             // 
@@ -155,7 +149,6 @@
             Picture4.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture4.TabIndex = 6;
             Picture4.TabStop = false;
-            Picture4.Click += Form1_Load;
             // 
             // Picture3
             // 
@@ -168,7 +161,6 @@
             Picture3.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture3.TabIndex = 7;
             Picture3.TabStop = false;
-            Picture3.Click += Form1_Load;
             // 
             // Picture16
             // 
@@ -181,7 +173,6 @@
             Picture16.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture16.TabIndex = 15;
             Picture16.TabStop = false;
-            Picture16.Click += Form1_Load;
             // 
             // Picture15
             // 
@@ -194,7 +185,6 @@
             Picture15.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture15.TabIndex = 14;
             Picture15.TabStop = false;
-            Picture15.Click += Form1_Load;
             // 
             // Picture9
             // 
@@ -207,7 +197,6 @@
             Picture9.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture9.TabIndex = 13;
             Picture9.TabStop = false;
-            Picture9.Click += Form1_Load;
             // 
             // Picture10
             // 
@@ -220,7 +209,6 @@
             Picture10.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture10.TabIndex = 12;
             Picture10.TabStop = false;
-            Picture10.Click += Form1_Load;
             // 
             // Picture11
             // 
@@ -233,7 +221,6 @@
             Picture11.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture11.TabIndex = 11;
             Picture11.TabStop = false;
-            Picture11.Click += Form1_Load;
             // 
             // Picture12
             // 
@@ -246,7 +233,6 @@
             Picture12.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture12.TabIndex = 10;
             Picture12.TabStop = false;
-            Picture12.Click += Form1_Load;
             // 
             // Picture14
             // 
@@ -259,7 +245,6 @@
             Picture14.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture14.TabIndex = 9;
             Picture14.TabStop = false;
-            Picture14.Click += Form1_Load;
             // 
             // Picture13
             // 
@@ -272,7 +257,6 @@
             Picture13.SizeMode = PictureBoxSizeMode.StretchImage;
             Picture13.TabIndex = 8;
             Picture13.TabStop = false;
-            Picture13.Click += Form1_Load;
             // 
             // Btn1
             // 
@@ -282,7 +266,6 @@
             Btn1.TabIndex = 16;
             Btn1.Text = "NOWA GRA";
             Btn1.UseVisualStyleBackColor = true;
-            Btn1.Click += Form1_Load;
             // 
             // Form1
             // 
