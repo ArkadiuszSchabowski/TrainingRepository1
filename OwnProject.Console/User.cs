@@ -8,7 +8,7 @@ namespace OwnProjectConsole
 {
     public class User
     {
-        static int _age, _weight, _height, _physicalActivity;
+        static int _age, _weight, _height, _physicalActivity, _resultKindOfTheDiet;
         static double _goal, _caloriesBurnedAtWork;
 
         static double _resultGenderSelection;
@@ -21,6 +21,7 @@ namespace OwnProjectConsole
         static string thePurposeOfTheDiet = null;
         static string kindOfTheWork = null;
         static string howManyTimesYouTrain = null;
+        static string kindOfTheDiet;
 
 
         public double GenderValue { get; }
@@ -78,7 +79,34 @@ namespace OwnProjectConsole
 
             for (int i = 0; i < 1; i++)
             {
-                _resultThePurposeOfTheDiet = ThePurposeOfThediet();
+                _resultKindOfTheDiet = TheKindOfTheDiet();
+
+                if (_resultGenderSelection == 1)
+                {
+                    kindOfTheDiet = "Dieta wegetariańska";
+
+                }
+                else if (_resultGenderSelection == 2)
+                {
+                    kindOfTheDiet = "Dieta standardowa"; 
+
+                }
+                else if (_resultGenderSelection == 3)
+                {
+                    kindOfTheDiet = "Dieta ketogeniczna";
+
+                }
+                else
+                {
+                    Console.WriteLine("\n\nNiewłaściwa operacja! Naciśnij dowolny klawisz, by móc dokonać poprawnego wyboru.");
+                    Console.ReadKey();
+                    i--;
+                }
+            }
+
+                for (int i = 0; i < 1; i++)
+            {
+                _resultThePurposeOfTheDiet = ThePurposeOfTheDiet();
 
                 if (_resultThePurposeOfTheDiet == 1)
                 {
@@ -207,7 +235,7 @@ namespace OwnProjectConsole
                 Console.WriteLine("Podaj swój wiek:");
                 result = int.TryParse(Console.ReadLine(), out _age);
 
-                if (result && _age > 0 && _age<200)
+                if (result && _age > 0 && _age < 200)
                 {
 
                 }
@@ -274,7 +302,28 @@ namespace OwnProjectConsole
             }
             return 0;
         }
-        private static double ThePurposeOfThediet()
+        private static int TheKindOfTheDiet()
+        {
+            ConsoleKey selection;
+
+            Console.Clear();
+            Console.WriteLine("Kliknij liczbę, aby wybrać rodzaj diety:\n");
+            Console.WriteLine("1. Dieta wegetariańska");
+            Console.WriteLine("2. Dieta standardowa ");
+            Console.WriteLine("3. Dieta Ketogeniczna");
+
+            switch (selection = Console.ReadKey().Key)
+            {
+                case ConsoleKey.D1:
+                    return 1;
+                case ConsoleKey.D2:
+                    return 2;
+                case ConsoleKey.D3:
+                    return 3;
+            }
+            return 0;
+        }
+        private static double ThePurposeOfTheDiet()
         {
             ConsoleKey selection;
 
@@ -301,7 +350,7 @@ namespace OwnProjectConsole
         static void TheUserCheckTheData()
         {
             Console.Clear();
-            Console.WriteLine($"Sprawdź proszę swoje dane:\n\nPłeć: {genderSelection},\nWiek: {_age} lat,\nWaga: {_weight} kg,\nWzrost: {_height} cm,\nCel diety: {thePurposeOfTheDiet},\nRodzaj pracy: {kindOfTheWork},\nAktywność fizyczna: {howManyTimesYouTrain}.\n");
+            Console.WriteLine($"Sprawdź proszę swoje dane:\n\nPłeć: {genderSelection},\nWiek: {_age} lat,\nWaga: {_weight} kg,\nWzrost: {_height} cm,\nRodzaj diety: {kindOfTheDiet},\nCel diety: {thePurposeOfTheDiet},\nRodzaj pracy: {kindOfTheWork},\nAktywność fizyczna: {howManyTimesYouTrain}.\n");
             Console.WriteLine("Jeśli podane są poprawne kliknij dowolny przycisk, by przejść dalej.\nJeśli podane dane są niepoprawne to możesz uruchomić program ponownie.");
         }
     }

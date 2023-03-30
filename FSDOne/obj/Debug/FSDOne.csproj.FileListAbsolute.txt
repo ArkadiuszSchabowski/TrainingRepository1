@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\FSDOne\bin\Debug\FSDOne.exe.config
+C:\Users\Greedy\Desktop\2023\FSDOne\bin\Debug\FSDOne.exe
+C:\Users\Greedy\Desktop\2023\FSDOne\bin\Debug\FSDOne.pdb
+C:\Users\Greedy\Desktop\2023\FSDOne\obj\Debug\FSDOne.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\FSDOne\obj\Debug\FSDOne.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\FSDOne\obj\Debug\FSDOne.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\FSDOne\obj\Debug\FSDOne.exe
+C:\Users\Greedy\Desktop\2023\FSDOne\obj\Debug\FSDOne.pdb

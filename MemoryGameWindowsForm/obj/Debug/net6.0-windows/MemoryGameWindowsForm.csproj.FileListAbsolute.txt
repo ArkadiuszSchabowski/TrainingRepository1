@@ -1,0 +1,17 @@
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\bin\Debug\net6.0-windows\MemoryGameWindowsForm.exe
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\bin\Debug\net6.0-windows\MemoryGameWindowsForm.deps.json
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\bin\Debug\net6.0-windows\MemoryGameWindowsForm.runtimeconfig.json
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\bin\Debug\net6.0-windows\MemoryGameWindowsForm.dll
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\bin\Debug\net6.0-windows\MemoryGameWindowsForm.pdb
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.Form1.resources
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.AssemblyInfoInputs.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.AssemblyInfo.cs
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.dll
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\refint\MemoryGameWindowsForm.dll
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.pdb
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\MemoryGameWindowsForm.genruntimeconfig.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameWindowsForm\obj\Debug\net6.0-windows\ref\MemoryGameWindowsForm.dll
