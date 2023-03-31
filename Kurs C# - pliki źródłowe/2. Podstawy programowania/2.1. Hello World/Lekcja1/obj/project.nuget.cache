@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "t0YLzFt4nujYCFcagu2iJWPO/OlX0faVXYewgZBmZfi0Cbm0hAgnUNkc61s3PWG4xMcy/gWkc2nJcdYaA37XEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Greedy\\Desktop\\2023\\Kurs C# - pliki źródłowe\\2. Podstawy programowania\\2.1. Hello World\\Lekcja1\\Lekcja1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Greedy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Greedy\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Greedy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Greedy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

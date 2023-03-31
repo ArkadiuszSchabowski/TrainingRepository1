@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\bin\Debug\AplikacjaKonsolowa.exe.config
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\bin\Debug\AplikacjaKonsolowa.exe
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\bin\Debug\AplikacjaKonsolowa.pdb
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\obj\Debug\AplikacjaKonsolowa.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\obj\Debug\AplikacjaKonsolowa.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\obj\Debug\AplikacjaKonsolowa.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\obj\Debug\AplikacjaKonsolowa.exe
+C:\Users\Greedy\Desktop\2023\RozneTypyAplikacji\AplikacjaKonsolowa\obj\Debug\AplikacjaKonsolowa.pdb
