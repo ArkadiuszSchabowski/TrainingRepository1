@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\AprilCourse\bin\Debug\AprilCourse.exe.config
+C:\Users\Greedy\Desktop\2023\AprilCourse\bin\Debug\AprilCourse.exe
+C:\Users\Greedy\Desktop\2023\AprilCourse\bin\Debug\AprilCourse.pdb
+C:\Users\Greedy\Desktop\2023\AprilCourse\obj\Debug\AprilCourse.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\AprilCourse\obj\Debug\AprilCourse.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\AprilCourse\obj\Debug\AprilCourse.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\AprilCourse\obj\Debug\AprilCourse.exe
+C:\Users\Greedy\Desktop\2023\AprilCourse\obj\Debug\AprilCourse.pdb

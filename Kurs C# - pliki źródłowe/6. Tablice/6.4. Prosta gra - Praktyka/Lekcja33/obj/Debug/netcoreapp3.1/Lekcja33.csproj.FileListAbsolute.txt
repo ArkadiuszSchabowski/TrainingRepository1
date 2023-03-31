@@ -1,0 +1,14 @@
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\bin\Debug\netcoreapp3.1\Lekcja33.exe
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\bin\Debug\netcoreapp3.1\Lekcja33.deps.json
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\bin\Debug\netcoreapp3.1\Lekcja33.runtimeconfig.json
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\bin\Debug\netcoreapp3.1\Lekcja33.runtimeconfig.dev.json
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\bin\Debug\netcoreapp3.1\Lekcja33.dll
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\bin\Debug\netcoreapp3.1\Lekcja33.pdb
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.csproj.AssemblyReference.cache
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.AssemblyInfo.cs
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.dll
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.pdb
+C:\Users\sebas\source\repos\Kurs C#\Lekcja33\Lekcja33\obj\Debug\netcoreapp3.1\Lekcja33.genruntimeconfig.cache
