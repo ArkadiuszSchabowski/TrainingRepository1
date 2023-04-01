@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\checkUserAge\bin\Debug\checkUserAge.exe.config
+C:\Users\Greedy\Desktop\2023\checkUserAge\bin\Debug\checkUserAge.exe
+C:\Users\Greedy\Desktop\2023\checkUserAge\bin\Debug\checkUserAge.pdb
+C:\Users\Greedy\Desktop\2023\checkUserAge\obj\Debug\checkUserAge.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\checkUserAge\obj\Debug\checkUserAge.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\checkUserAge\obj\Debug\checkUserAge.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\checkUserAge\obj\Debug\checkUserAge.exe
+C:\Users\Greedy\Desktop\2023\checkUserAge\obj\Debug\checkUserAge.pdb
