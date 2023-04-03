@@ -25,10 +25,8 @@ class Program
                 Console.WriteLine("Twój wybór to piątek");
                 break;
             case 6:
-                Console.WriteLine("Twój wybór to sobota");
-                break;
             case 7:
-                Console.WriteLine("Twój wybór to niedziela");
+                Console.WriteLine("Twój wybór to weekend");
                 break;
         }
         Console.ReadLine();
