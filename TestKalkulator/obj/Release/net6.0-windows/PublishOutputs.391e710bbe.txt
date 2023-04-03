@@ -1,0 +1,5 @@
+C:\Users\Greedy\Desktop\TestKalkulator.exe
+C:\Users\Greedy\Desktop\TestKalkulator.dll
+C:\Users\Greedy\Desktop\TestKalkulator.deps.json
+C:\Users\Greedy\Desktop\TestKalkulator.runtimeconfig.json
+C:\Users\Greedy\Desktop\TestKalkulator.pdb

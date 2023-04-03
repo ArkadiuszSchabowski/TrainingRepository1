@@ -1,0 +1,17 @@
+C:\Users\Greedy\Desktop\2023\TestKalkulator\bin\Release\net6.0-windows\TestKalkulator.exe
+C:\Users\Greedy\Desktop\2023\TestKalkulator\bin\Release\net6.0-windows\TestKalkulator.deps.json
+C:\Users\Greedy\Desktop\2023\TestKalkulator\bin\Release\net6.0-windows\TestKalkulator.runtimeconfig.json
+C:\Users\Greedy\Desktop\2023\TestKalkulator\bin\Release\net6.0-windows\TestKalkulator.dll
+C:\Users\Greedy\Desktop\2023\TestKalkulator\bin\Release\net6.0-windows\TestKalkulator.pdb
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.Form1.resources
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.AssemblyInfoInputs.cache
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.AssemblyInfo.cs
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.dll
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\refint\TestKalkulator.dll
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.pdb
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\TestKalkulator.genruntimeconfig.cache
+C:\Users\Greedy\Desktop\2023\TestKalkulator\obj\Release\net6.0-windows\ref\TestKalkulator.dll
