@@ -4,22 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        int userInput;
-        Console.WriteLine("Podaj liczbę od 1-50");
-        bool check = int.TryParse(Console.ReadLine(), out userInput);
-        Console.WriteLine();
+        //Oblicz programem średnią arytmetyczną z podanych liczb
+        //int srednia = iloscLiczb / wartosciLiczb;
+        double sumaLiczb = 0;
 
-        if (check && userInput > 0 && userInput < 51)
+        Console.WriteLine("Podaj ilość liczb");
+        int IloscLiczb = int.Parse(Console.ReadLine());
+        int[] iloscLiczb = new int[IloscLiczb];
+
+        for (int i = 0; i < iloscLiczb.Length; i++)
         {
-            for (int i = 1; i < userInput + 1; i++)
-            {
-                Console.WriteLine(i);
-            }
+            Console.WriteLine($"Podaj liczbę: {i + 1}");
+            iloscLiczb[i] = int.Parse(Console.ReadLine());
+            sumaLiczb += iloscLiczb[i];
         }
-        else
-        {
-            Console.WriteLine("Nieprawidłowa wartość");
-        }
+        Console.WriteLine(sumaLiczb);
+        Console.WriteLine("Średnia ocen to: " + Math.Round(sumaLiczb / IloscLiczb, 2));
         Console.ReadKey();
     }
 }
