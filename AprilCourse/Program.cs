@@ -4,22 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Oblicz programem średnią arytmetyczną z podanych liczb
-        //int srednia = iloscLiczb / wartosciLiczb;
-        double sumaLiczb = 0;
+        int[,] array2D = new int[2, 3];
 
-        Console.WriteLine("Podaj ilość liczb");
-        int IloscLiczb = int.Parse(Console.ReadLine());
-        int[] iloscLiczb = new int[IloscLiczb];
+        array2D[0, 0] = 4;
+        array2D[0, 1] = 7;
+        array2D[0, 2] = 6;
+        array2D[1, 0] = 9;
+        array2D[1, 1] = 2;
+        array2D[1, 2] = 3;
 
-        for (int i = 0; i < iloscLiczb.Length; i++)
+        foreach (var item in array2D)
         {
-            Console.WriteLine($"Podaj liczbę: {i + 1}");
-            iloscLiczb[i] = int.Parse(Console.ReadLine());
-            sumaLiczb += iloscLiczb[i];
+            Console.WriteLine(item);
         }
-        Console.WriteLine(sumaLiczb);
-        Console.WriteLine("Średnia ocen to: " + Math.Round(sumaLiczb / IloscLiczb, 2));
+
         Console.ReadKey();
     }
 }
