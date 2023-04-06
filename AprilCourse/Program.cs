@@ -4,18 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Podaj swoje imię");
-        string name = Console.ReadLine();
-        Hello(name);
-        Hello2("Witaj Arek");
+        Console.WriteLine("{0} {1} {2}", "Hello", "World", "!!!");
+        Print("{0} {1} {2}", "Hello", "World", "!!!");
         Console.ReadKey();
     }
-    static void Hello(string name)
+    static void Print (string text, params string[] arg)
     {
-        Console.WriteLine($"Witaj {name}!");
-    }
-    static void Hello2(string text)
-    {
+        for (int i = 0; i < arg.Length; i++)
+        {
+            text = text.Replace("{"+ i +"}", arg[i]);
+        }
         Console.WriteLine(text);
     }
 }
