@@ -4,17 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Params("{0} {1} {2}", "Hello", "World", "!!!");
-
+        Console.WriteLine(Silnia(5));
         Console.ReadKey();
     }
-
-    static void Params(string text, params string[] arg)
+    static int Silnia (int n)
     {
-        for (int i = 0; i < arg.Length; i++)
+        if (n == 0)
         {
-            text = text.Replace("{" +i + "}", arg[i]);
+            return 1;
         }
-        Console.WriteLine(text);
+        else
+        {
+            return n * Silnia(n - 1);
+        }
     }
 }
