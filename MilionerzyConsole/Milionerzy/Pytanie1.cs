@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace Milionerzy
 {
-    internal class PytanieZa100
+    public class Pytanie1
     {
-        public static void PytaniePierwsze()
+        static int _firstQuestion;
+
+        public static bool PytaniePierwsze()
         {
             Random rnd = new Random();
-            int firstQuestion;
             string questionOne = "";
 
-            firstQuestion = rnd.Next(1, 3);
+            _firstQuestion = rnd.Next(1, 4);
             Console.WriteLine("Pytanie 1");
 
-            if (firstQuestion == 1)
+            if (_firstQuestion == 1)
             {
                 Console.WriteLine("Na czym ściera zęby świnka morska");
                 Console.WriteLine("A-Siano\n B-Marchewka\n C-Banan\n D-Gruszka");
@@ -28,24 +29,25 @@ namespace Milionerzy
                 {
                     case "A":
                         Console.WriteLine("Gratulacje to poprawna odpowiedź");
-                        break;
+                        return true;
                     case "B":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                     case "C":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                     case "D":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                 }
+                return false;
             }
 
-            if (firstQuestion == 2)
+            if (_firstQuestion == 2)
             {
 
                 Console.WriteLine("Ile powinna w przybliżeniu ważyć dorosła świnka morska");
-                Console.WriteLine("A-1kg\n B-0,5kg\n C-2kg\n D-1,5kg");
+                Console.WriteLine("A-0,5kgkg\n B-1kg\n C-2kg\n D-1,5kg");
 
                 questionOne = Console.ReadLine();
 
@@ -53,20 +55,21 @@ namespace Milionerzy
                 {
                     case "A":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                     case "B":
                         Console.WriteLine("Gratulacje to poprawna odpowiedź");
-                        break;
+                        return true;
                     case "C":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                     case "D":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                 }
+                return false;
             }
 
-            if (firstQuestion == 3)
+            if (_firstQuestion == 3)
             {
                 Console.WriteLine("Jakiego dźwięku nie wydaje świnka morska");
                 Console.WriteLine("A-Kwiczenie\n B-Gruchotanie\n C-Miauczenie\n D-Piszczenie");
@@ -77,18 +80,21 @@ namespace Milionerzy
                 {
                     case "A":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                     case "B":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                     case "C":
                         Console.WriteLine("Gratulacje to poprawna odpowiedź");
-                        break;
+                        return true;
                     case "D":
                         Console.WriteLine("Niestety to błędna odpowiedź");
-                        break;
+                        return false;
                 }
+                return false;
             }
+            Console.WriteLine("Niepoprawna wartość zmiennej _firstQuestion");
+            return false;
         }
     }
 }
