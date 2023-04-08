@@ -1,0 +1,17 @@
+Pies,pies,3
+Pies,pies,3
+Kot,kto,3
+Pies,pies,3
+Kot,kto,3
+pies,piess,2
+Pies,pies,3
+Kot,kto,3
+pies,piess,2
+Kooot,koooooooooot,3
+Pies,pies,3
+Kot,kto,3
+pies,piess,2
+Kooot,koooooooooot,3
+kooooooktotko,ko,2
+kot,oktoktotkotk,3
+Zadanie: Pies,Opis: Kot,Priorytet: 1

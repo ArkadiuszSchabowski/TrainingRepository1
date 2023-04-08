@@ -1,0 +1,2 @@
+Swinka,swinka,1
+Pies,pies,2

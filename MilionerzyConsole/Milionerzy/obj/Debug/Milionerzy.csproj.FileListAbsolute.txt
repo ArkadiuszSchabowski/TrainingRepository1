@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\bin\Debug\Milionerzy.exe.config
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\bin\Debug\Milionerzy.exe
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\bin\Debug\Milionerzy.pdb
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\obj\Debug\Milionerzy.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\obj\Debug\Milionerzy.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\obj\Debug\Milionerzy.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\obj\Debug\Milionerzy.exe
+C:\Users\Greedy\Desktop\2023\MilionerzyConsole\Milionerzy\obj\Debug\Milionerzy.pdb
