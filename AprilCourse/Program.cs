@@ -4,18 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Silnia(5));
+        int wynik = Test(1,1);
+        Console.WriteLine(wynik);
         Console.ReadKey();
     }
-    static int Silnia (int n)
+    static int Test(int x, int y)
     {
-        if (n == 0)
-        {
-            return 1;
-        }
-        else
-        {
-            return n * Silnia(n - 1);
-        }
+        return x + y;
     }
 }
