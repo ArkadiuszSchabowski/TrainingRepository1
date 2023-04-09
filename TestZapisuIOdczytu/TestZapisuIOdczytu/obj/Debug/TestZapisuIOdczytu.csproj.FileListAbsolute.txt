@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\bin\Debug\TestZapisuIOdczytu.exe.config
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\bin\Debug\TestZapisuIOdczytu.exe
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\bin\Debug\TestZapisuIOdczytu.pdb
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\obj\Debug\TestZapisuIOdczytu.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\obj\Debug\TestZapisuIOdczytu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\obj\Debug\TestZapisuIOdczytu.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\obj\Debug\TestZapisuIOdczytu.exe
+C:\Users\Greedy\Desktop\2023\TestZapisuIOdczytu\TestZapisuIOdczytu\obj\Debug\TestZapisuIOdczytu.pdb
