@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\bin\Debug\Regiony1.exe.config
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\bin\Debug\Regiony1.exe
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\bin\Debug\Regiony1.pdb
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\obj\Debug\Regiony1.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\obj\Debug\Regiony1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\obj\Debug\Regiony1.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\obj\Debug\Regiony1.exe
+C:\Users\Greedy\Desktop\2023\Regiony1\Regiony1\obj\Debug\Regiony1.pdb
