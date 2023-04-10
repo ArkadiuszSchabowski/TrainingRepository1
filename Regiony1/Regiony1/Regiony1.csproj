@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F67FEB7B-463B-4089-A340-62BF7BEFF52F}</ProjectGuid>
+    <ProjectGuid>{CAA331BC-F209-4C0A-9367-6EF8DD2B35E9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Milionerzy</RootNamespace>
-    <AssemblyName>Milionerzy</AssemblyName>
+    <RootNamespace>Regiony1</RootNamespace>
+    <AssemblyName>Regiony1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,10 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pytanie1.cs" />
-    <Compile Include="Pytanie2.cs" />
-    <Compile Include="Pytanie3.cs" />
-    <Compile Include="TabelaNagrod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
