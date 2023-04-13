@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\bin\Debug\ConstructorAndFields.exe.config
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\bin\Debug\ConstructorAndFields.exe
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\bin\Debug\ConstructorAndFields.pdb
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\obj\Debug\ConstructorAndFields.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\obj\Debug\ConstructorAndFields.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\obj\Debug\ConstructorAndFields.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\obj\Debug\ConstructorAndFields.exe
+C:\Users\Greedy\Desktop\2023\ConstructorAndFields\ConstructorAndFields\obj\Debug\ConstructorAndFields.pdb
