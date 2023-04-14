@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\bin\Debug\AprilProgramming.exe.config
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\bin\Debug\AprilProgramming.exe
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\bin\Debug\AprilProgramming.pdb
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\obj\Debug\AprilProgramming.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\obj\Debug\AprilProgramming.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\obj\Debug\AprilProgramming.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\obj\Debug\AprilProgramming.exe
+C:\Users\Greedy\Desktop\2023\AprilProgramming\AprilProgramming\obj\Debug\AprilProgramming.pdb
