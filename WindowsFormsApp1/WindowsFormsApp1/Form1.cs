@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
         {
             Label label;
             int randomNumber;
+
             for (int i = 0; i < tableLayoutPanel1.Controls.Count; i++)
             {
                 if (tableLayoutPanel1.Controls[i] is Label)
