@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.Form1.resources
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\bin\Debug\WindowsFormsCourse.exe.config
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\bin\Debug\WindowsFormsCourse.exe
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\bin\Debug\WindowsFormsCourse.pdb
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.exe
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\WindowsFormsCourse\obj\Debug\WindowsFormsCourse.pdb

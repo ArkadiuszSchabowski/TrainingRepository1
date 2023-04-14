@@ -1,0 +1,10 @@
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\bin\Debug\MemoryGame1.exe.config
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\bin\Debug\MemoryGame1.exe
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\bin\Debug\MemoryGame1.pdb
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.exe
+C:\Users\Greedy\Desktop\2023\WindowsFormsCourse\MemoryGame1\obj\Debug\MemoryGame1.pdb
