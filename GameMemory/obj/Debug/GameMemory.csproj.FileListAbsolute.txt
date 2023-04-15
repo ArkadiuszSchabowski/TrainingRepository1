@@ -1,0 +1,6 @@
+C:\Users\Greedy\Desktop\2023\GameMemory\obj\Debug\GameMemory.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\GameMemory\obj\Debug\GameMemory.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\GameMemory\obj\Debug\GameMemory.Form1.resources
+C:\Users\Greedy\Desktop\2023\GameMemory\obj\Debug\GameMemory.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\GameMemory\obj\Debug\GameMemory.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\GameMemory\obj\Debug\GameMemory.csproj.CoreCompileInputs.cache
