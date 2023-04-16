@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\bin\Debug\IDoStillStiffMemoryGameProject.exe.config
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\bin\Debug\IDoStillStiffMemoryGameProject.exe
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\bin\Debug\IDoStillStiffMemoryGameProject.pdb
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.exe
+C:\Users\Greedy\Desktop\2023\IDoStillStiffMemoryGameProject\obj\Debug\IDoStillStiffMemoryGameProject.pdb
