@@ -14,6 +14,10 @@ namespace ContactBook
         public DateTime birthay;
         public string notes;
 
+        public string Name
+        {
+            get { return name; }
+        }
         public Person()
         {
             Initialize();
