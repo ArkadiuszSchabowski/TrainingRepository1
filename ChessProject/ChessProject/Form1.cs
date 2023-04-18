@@ -19,28 +19,19 @@ namespace ChessProject
         }
         public void ChessField()
         {
-            Label firstLabel;
-            Label secondLabel;
-
-            for (int i = 0; i < tableLayoutPanel1.Controls.Count; i++)
+            Label label;
+            for (int i = 0; i < tableLayoutPanel1.RowCount*tableLayoutPanel1.ColumnCount; i++)
             {
-                for (int j = 0; j < tableLayoutPanel1.Controls.Count; j++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount*tableLayoutPanel1.ColumnCount; j++)
                 {
-                    firstLabel = tableLayoutPanel1.Controls[i] as Label;
+                    label = tableLayoutPanel1.Controls[i] as Label;
+
                     if (i % 2 == 0)
                     {
-                        firstLabel.BackColor = Color.DarkBlue;
-                    }
-                    else
-                    {
-                        if (j % 2 == 1)
-                        {
-                            firstLabel.BackColor = Color.DarkGray;
-                        }
+                        label.BackColor = Color.White;
                     }
                 }
             }
-            
         }
 
         public void OwnChessField()
