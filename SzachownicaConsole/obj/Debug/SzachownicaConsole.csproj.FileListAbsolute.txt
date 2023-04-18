@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\bin\Debug\SzachownicaConsole.exe.config
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\bin\Debug\SzachownicaConsole.exe
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\bin\Debug\SzachownicaConsole.pdb
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\obj\Debug\SzachownicaConsole.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\obj\Debug\SzachownicaConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\obj\Debug\SzachownicaConsole.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\obj\Debug\SzachownicaConsole.exe
+C:\Users\Greedy\Desktop\2023\SzachownicaConsole\obj\Debug\SzachownicaConsole.pdb

@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\bin\Debug\ChessProject.exe.config
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\bin\Debug\ChessProject.exe
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\bin\Debug\ChessProject.pdb
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.exe
+C:\Users\Greedy\Desktop\2023\ChessProject\ChessProject\obj\Debug\ChessProject.pdb

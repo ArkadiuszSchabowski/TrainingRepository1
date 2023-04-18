@@ -6,3 +6,11 @@ C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\CheckSkills\obj\Debug\Check
 C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\CheckSkills\obj\Debug\CheckSkills.csproj.CoreCompileInputs.cache
 C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\CheckSkills\obj\Debug\CheckSkills.exe
 C:\Users\Greedy Piggy\Desktop\Programowanie2023\2023\CheckSkills\obj\Debug\CheckSkills.pdb
+C:\Users\Greedy\Desktop\2023\CheckSkills\bin\Debug\CheckSkills.exe.config
+C:\Users\Greedy\Desktop\2023\CheckSkills\bin\Debug\CheckSkills.exe
+C:\Users\Greedy\Desktop\2023\CheckSkills\bin\Debug\CheckSkills.pdb
+C:\Users\Greedy\Desktop\2023\CheckSkills\obj\Debug\CheckSkills.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\CheckSkills\obj\Debug\CheckSkills.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\CheckSkills\obj\Debug\CheckSkills.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\CheckSkills\obj\Debug\CheckSkills.exe
+C:\Users\Greedy\Desktop\2023\CheckSkills\obj\Debug\CheckSkills.pdb

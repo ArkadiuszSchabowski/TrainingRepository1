@@ -12,12 +12,12 @@ namespace CheckSkills
     {
         static void Main(string[] args)
         {
-            //Zadanie1 - Policz srednia z listy
-            FirstExcercise();
+            ////Zadanie1 - Policz srednia z listy
+            //FirstExcercise();
             //Zadanie2 -Policz srednia z tabeli
             //SecondExercise();
-            //Zadanie3 -Narysuj drabine z X w konsoli
-            //ThirdExercise();
+            //Zadanie3 - Narysuj drabine z X w konsoli
+            ThirdExercise();
             //Zadanie4 -Sprawdz czy dane slowo jest palindromem
             //Palindrom();
             //Zadanie5 -Utworz kolekcje od 1 - 100.Dla argumentu 3 wypisz Fizz, dla 5 wypisz Buzz, dla 15 FizzBuzz.
