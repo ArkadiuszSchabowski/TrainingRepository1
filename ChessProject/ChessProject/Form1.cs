@@ -15,49 +15,29 @@ namespace ChessProject
         public Form1()
         {
             InitializeComponent();
-            ChessField();
-        }
-        public void ChessField()
-        {
-            Label label;
-            for (int i = 0; i < tableLayoutPanel1.RowCount*tableLayoutPanel1.ColumnCount; i++)
-            {
-                for (int j = 0; j < tableLayoutPanel1.RowCount*tableLayoutPanel1.ColumnCount; j++)
-                {
-                    label = tableLayoutPanel1.Controls[i] as Label;
-
-                    if (i % 2 == 0)
-                    {
-                        label.BackColor = Color.White;
-                    }
-                }
-            }
+            OwnChessField();
         }
 
         public void OwnChessField()
         {
-            Label wiersz;
-            Label kolumna;
+            Label label;
 
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount * tableLayoutPanel1.RowCount; i++)
+            for (int row = 0; row < tableLayoutPanel1.RowCount; row++)
             {
-                wiersz = tableLayoutPanel1.Controls[i] as Label;
-
-                for (int j = 0; j < tableLayoutPanel1.RowCount * tableLayoutPanel1.ColumnCount; j++)
+                for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
                 {
-                    kolumna = tableLayoutPanel1.Controls[j] as Label;
-                    if (i % 2 == 0)
+                    int index = row * tableLayoutPanel1.ColumnCount + col;
+
+                    label = tableLayoutPanel1.Controls[index] as Label;
+
+                    if ((row % 2 == 0 && col % 2 == 0) || (row % 2 == 1 && col % 2 == 1))
                     {
-                        wiersz.ForeColor = Color.White;
+                        label.BackColor = Color.YellowGreen;
                     }
                     else
                     {
-                        if (j % 2 == 0)
-                        {
-                            kolumna.ForeColor = Color.White;
-                        }
+                        label.BackColor = Color.DarkGreen;
                     }
-
                 }
             }
         }
