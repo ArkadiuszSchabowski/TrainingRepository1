@@ -74,6 +74,8 @@ namespace ContactBook
             person.notes = textNotes.Text;
 
             UpdateDisplayMember();
+
+            //Test push
         }
     }
 }
