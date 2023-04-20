@@ -15,6 +15,7 @@ namespace ContactBook
         public Form1()
         {
             InitializeComponent();
+            CheckForBirthays();
             UpdateDisplayMember();
         }
 
@@ -23,9 +24,12 @@ namespace ContactBook
             listBox1.Items.Add(new Person());
 
             listBox1.SelectedIndex = listBox1.Items.Count - 1;
+
+            CheckForBirthays();
         }
         private void UpdateDisplayMember()
         {
+            listBox1.DisplayMember = "";
             listBox1.DisplayMember = "Name";
         }
 
@@ -74,8 +78,26 @@ namespace ContactBook
             person.notes = textNotes.Text;
 
             UpdateDisplayMember();
+        }
+        private void CheckForBirthays()
+        {
+            Person person;
+            string birthdays = "";
 
-            //Test push
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+                person = listBox1.Items[i] as Person;
+
+
+                if (person != null && person.birthay.Day == DateTime.Today.Day && person.birthay.Month == DateTime.Today.Month)
+                {
+                    birthdays += person.name + " is " + (DateTime.Today.Month - person.birthay.Month).ToString() + " today";
+                }
+                if (birthdays != "")
+                {
+                    MessageBox.Show(birthdays, "Birthdays");
+                }
+            }
         }
     }
 }
