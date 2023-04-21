@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\InternetShop\bin\Debug\InternetShop.exe.config
+C:\Users\Greedy\Desktop\2023\InternetShop\bin\Debug\InternetShop.exe
+C:\Users\Greedy\Desktop\2023\InternetShop\bin\Debug\InternetShop.pdb
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.Form1.resources
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.exe
+C:\Users\Greedy\Desktop\2023\InternetShop\obj\Debug\InternetShop.pdb
