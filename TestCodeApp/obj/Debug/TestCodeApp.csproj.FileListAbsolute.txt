@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\TestCodeApp\bin\Debug\TestCodeApp.exe.config
+C:\Users\Greedy\Desktop\2023\TestCodeApp\bin\Debug\TestCodeApp.exe
+C:\Users\Greedy\Desktop\2023\TestCodeApp\bin\Debug\TestCodeApp.pdb
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.Form1.resources
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.exe
+C:\Users\Greedy\Desktop\2023\TestCodeApp\obj\Debug\TestCodeApp.pdb

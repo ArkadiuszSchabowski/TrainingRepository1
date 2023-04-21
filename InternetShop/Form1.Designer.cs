@@ -74,14 +74,14 @@
             // koszyk
             // 
             this.koszyk.FormattingEnabled = true;
-            this.koszyk.Location = new System.Drawing.Point(477, 71);
+            this.koszyk.Location = new System.Drawing.Point(626, 65);
             this.koszyk.Name = "koszyk";
             this.koszyk.Size = new System.Drawing.Size(153, 290);
             this.koszyk.TabIndex = 4;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(165, 72);
+            this.btnAdd.Location = new System.Drawing.Point(161, 65);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(80, 59);
             this.btnAdd.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(396, 72);
+            this.btnRemove.Location = new System.Drawing.Point(545, 65);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 59);
             this.btnRemove.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 383);
+            this.ClientSize = new System.Drawing.Size(791, 383);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.koszyk);

@@ -40,7 +40,5 @@ namespace InternetShop
             lista.Items.Add("Dogs");
             lista.Items.Add("Guinea Piggs");
         }
-
-
     }
 }
