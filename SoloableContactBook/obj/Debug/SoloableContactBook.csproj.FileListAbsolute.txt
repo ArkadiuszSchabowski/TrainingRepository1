@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\bin\Debug\SoloableContactBook.exe.config
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\bin\Debug\SoloableContactBook.exe
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\bin\Debug\SoloableContactBook.pdb
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.exe
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.pdb
+C:\Users\Greedy\Desktop\2023\SoloableContactBook\obj\Debug\SoloableContactBook.Form1.resources

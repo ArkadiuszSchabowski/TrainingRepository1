@@ -36,9 +36,9 @@ namespace InternetShop
         }
         private void Category()
         {
-            lista.Items.Add("Cats");
-            lista.Items.Add("Dogs");
-            lista.Items.Add("Guinea Piggs");
+            lista.Items.Add("Siano");
+            lista.Items.Add("Karma versele laga");
+            lista.Items.Add("Poidelko dla swinki morskiej 250ml");
         }
     }
 }
