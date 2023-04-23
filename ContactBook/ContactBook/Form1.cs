@@ -15,7 +15,7 @@ namespace ContactBook
         public Form1()
         {
             InitializeComponent();
-            CheckForBirthays();
+            //CheckForBirthays();
             UpdateDisplayMember();
         }
 
@@ -25,7 +25,7 @@ namespace ContactBook
 
             listBox1.SelectedIndex = listBox1.Items.Count - 1;
 
-            CheckForBirthays();
+            //CheckForBirthays();
         }
         private void UpdateDisplayMember()
         {
@@ -79,25 +79,23 @@ namespace ContactBook
 
             UpdateDisplayMember();
         }
-        private void CheckForBirthays()
-        {
-            Person person;
-            string birthdays = "";
+        //private void CheckForBirthays()
+        //{
+        //    Person person;
+        //    string birthdays = "";
 
-            for (int i = 0; i < listBox1.Items.Count; i++)
-            {
-                person = listBox1.Items[i] as Person;
+        //    for (int i = 0; i < listBox1.Items.Count; i++)
+        //    {
+        //        person = listBox1.Items[i] as Person;
 
 
-                if (person != null && person.birthay.Day == DateTime.Today.Day && person.birthay.Month == DateTime.Today.Month)
-                {
-                    birthdays += person.name + " is " + (DateTime.Today.Month - person.birthay.Month).ToString() + " today";
-                }
-                if (birthdays != "")
-                {
-                    MessageBox.Show(birthdays, "Birthdays");
-                }
+        //        if (person != null && person.birthay.Day == DateTime.Today.Day && person.birthay.Month == DateTime.Today.Month)
+        //        {
+        //            birthdays += person.name + " is " + (DateTime.Today.Month - person.birthay.Month).ToString() + " today";
+        //        }
+        //        if (birthdays != "")
+        //        {
+        //            MessageBox.Show(birthdays, "Birthdays");
+        //        }
             }
         }
-    }
-}

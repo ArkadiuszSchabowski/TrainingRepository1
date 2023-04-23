@@ -8,16 +8,19 @@ namespace SoloableContactBook
 {
     public class Person
     {
-        public string name = "New Person";
+        public string name;
         public string email;
         public string adress;
         public DateTime birthday;
         public string notes;
-        public string Name { get; }
+        public string Name 
+        {
+            get { return name; }
+        }
 
         public Person()
         {
-            Name = name;
+            name = "New Person";
             birthday = DateTime.Now;
         }
     }
