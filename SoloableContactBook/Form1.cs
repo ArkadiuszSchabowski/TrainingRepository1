@@ -15,7 +15,25 @@ namespace SoloableContactBook
         public Form1()
         {
             InitializeComponent();
+            CheckForBirthdays();
             UpdateDisplayMember();
+        }
+        private void CheckForBirthdays()
+        {
+            Person person;
+            string birthdays ="";
+
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+                person = listBox1.Items[i] as Person;
+
+                if (person != null && person.birthday.Day == DateTime.Today.Day && person.birthday.Month == DateTime.Today.Month)
+                    birthdays += person.name + " is " + (DateTime.Now.Year - person.birthday.Year).ToString() + " today! \n";
+            }
+            if (birthdays != "")
+            {
+                MessageBox.Show(birthdays, "Birthdays");
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

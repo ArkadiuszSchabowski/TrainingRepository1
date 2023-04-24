@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\bin\Debug\TicTacToeInApril.exe.config
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\bin\Debug\TicTacToeInApril.exe
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\bin\Debug\TicTacToeInApril.pdb
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.Form1.resources
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.exe
+C:\Users\Greedy\Desktop\2023\TicTacToeInApril\obj\Debug\TicTacToeInApril.pdb
