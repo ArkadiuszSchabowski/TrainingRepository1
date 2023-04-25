@@ -60,7 +60,7 @@ namespace TicTacToeInApril
             {
                 MessageBox.Show("The second player win!");
             }
-            else if (label4.Text == "O" && label5.Text == "O" && label6.Text == "O")
+            if (label4.Text == "O" && label5.Text == "O" && label6.Text == "O")
             {
                 MessageBox.Show("The second player win!");
             }

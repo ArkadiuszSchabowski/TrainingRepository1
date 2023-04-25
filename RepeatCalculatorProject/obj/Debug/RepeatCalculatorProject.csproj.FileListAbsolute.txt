@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\bin\Debug\RepeatCalculatorProject.exe.config
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\bin\Debug\RepeatCalculatorProject.exe
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\bin\Debug\RepeatCalculatorProject.pdb
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.Calculator.resources
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.exe
+C:\Users\Greedy\Desktop\2023\RepeatCalculatorProject\obj\Debug\RepeatCalculatorProject.pdb
