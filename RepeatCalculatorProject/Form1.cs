@@ -12,36 +12,109 @@ namespace RepeatCalculatorProject
 {
     public partial class Calculator : Form
     {
+        public string firstValue = null;
+        public string secondValue = null;
+        public string operationValue = null;
+        public double result = 0;
         public Calculator()
         {
             InitializeComponent();
         }
 
-        private void btnNumberClick(object sender, EventArgs e)
+        private void BtnNumberClick(object sender, EventArgs e)
         {
             var clickedValue = (sender as Button).Text;
 
-            
-            if (Screen.Text != "0")
+            if (firstValue == null && operationValue == null)
             {
+                firstValue += clickedValue;
                 Screen.Text += clickedValue;
             }
 
-            if (Screen.Text == "0")
+            if (firstValue != null && operationValue != null)
             {
-                Screen.Text = "";
+                secondValue += clickedValue;
                 Screen.Text += clickedValue;
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnEqualsClick(object sender, EventArgs e)
         {
-            Screen.Text = "0";
+            double firstNumber, secondNumber;
+
+            if (firstValue != null && secondValue != null && operationValue != null)
+            {
+                firstNumber = double.Parse(firstValue);
+                secondNumber = double.Parse(secondValue);
+
+                if (operationValue == "+")
+                {
+                    result = firstNumber + secondNumber;
+                }
+                if (operationValue == "-")
+                {
+                    result = firstNumber - secondNumber;
+                }
+                if (operationValue == "*")
+                {
+                    result = firstNumber * secondNumber;
+                }
+                if (operationValue == "/")
+                {
+                    result = firstNumber / secondNumber;
+                }
+
+                Screen.Text = result.ToString();
+
+                firstValue = result.ToString();
+                secondValue = null;
+                operationValue = null;
+            }
+        }
+        private bool CheckScreenText()
+        {
+            return true;
         }
 
-        private void btnComma_Click(object sender, EventArgs e)
+        private void BtnOperationClick(object sender, EventArgs e)
         {
+            operationValue = (sender as Button).Text;
 
+            switch (operationValue)
+            {
+                case "+":
+                    if (!Screen.Text.Contains(operationValue) && firstValue != null)
+                    {
+                        Screen.Text += " + ";
+                    }
+                    break;
+                case "-":
+                    if (!Screen.Text.Contains(operationValue) && firstValue != null)
+                    {
+                        Screen.Text += " - ";
+                    }
+                    break;
+                case "*":
+                    if (!Screen.Text.Contains(operationValue) && firstValue != null)
+                    {
+                        Screen.Text += " * ";
+                    }
+                    break;
+                case "/":
+                    if (!Screen.Text.Contains(operationValue) && firstValue != null)
+                    {
+                        Screen.Text += " / ";
+                    }
+                    break;
+            }
+        }
+        private void BtnClearClick(object sender, EventArgs e)
+        {
+            Screen.Text = "";
+
+            firstValue = string.Empty;
+            secondValue = string.Empty;
+            operationValue = string.Empty;
         }
     }
 }
