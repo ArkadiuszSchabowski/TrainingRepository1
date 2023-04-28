@@ -54,7 +54,7 @@ namespace SaveTheEgg
         private void MainGameTimerEvent(object sender, EventArgs e)
         {
             txtScore.Text = "Saved: " + score;
-            txtScore.Text = "Missed: " + missed;
+            txtMissed.Text = "Missed: " + missed;
 
             if (goLeft == true && player.Left > 0)
             {
@@ -66,7 +66,47 @@ namespace SaveTheEgg
                 player.Left += 12;
                 player.Image = Properties.Resources.chicken_normal;
             }
+
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "eggs")
+                {
+                    x.Top += speed;
+
+
+                    if (x.Top + x.Height > this.ClientSize.Height)
+                    {
+                        splash.Image = Properties.Resources.splash;
+                        splash.Location = x.Location;
+                        splash.Height = 60;
+                        splash.Width = 60;
+                        splash.BackColor = Color.Transparent;
+
+                        this.Controls.Add(splash);
+
+                        x.Top = rndY.Next(80, 300) * -1;
+                        x.Left = rndX.Next(5, this.ClientSize.Width - x.Width);
+                        missed += 1;
+                        player.Image = Properties.Resources.chicken_hurt;
+                    }
+
+                    if (player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        x.Top = rndY.Next(80, 300) * -1;
+                        x.Left = rndX.Next(5, this.ClientSize.Width - x.Width);
+                        score += 1;
+                    }
+                }
+            }
+            if (missed > 5)
+            {
+                GameTimer.Stop();
+                MessageBox.Show("Game over!" + Environment.NewLine + "We've lost good eggs!" + Environment.NewLine + "Click ok to retry");
+                RestartGame();
+
+            }
         }
+
 
         private void RestartGame()
         {

@@ -35,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtMissed = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,12 +60,12 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "Eggs";
+            this.pictureBox4.Tag = "eggs";
             // 
             // player
             // 
             this.player.Image = global::SaveTheEgg.Properties.Resources.chicken_normal;
-            this.player.Location = new System.Drawing.Point(153, 200);
+            this.player.Location = new System.Drawing.Point(182, 455);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(81, 52);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -81,7 +81,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "Eggs";
+            this.pictureBox1.Tag = "eggs";
             // 
             // pictureBox2
             // 
@@ -92,7 +92,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "Eggs";
+            this.pictureBox2.Tag = "eggs";
             // 
             // GameTimer
             // 
@@ -100,22 +100,22 @@
             this.GameTimer.Interval = 20;
             this.GameTimer.Tick += new System.EventHandler(this.MainGameTimerEvent);
             // 
-            // label1
+            // txtMissed
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(342, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Missed: 0";
+            this.txtMissed.AutoSize = true;
+            this.txtMissed.Location = new System.Drawing.Point(357, 9);
+            this.txtMissed.Name = "txtMissed";
+            this.txtMissed.Size = new System.Drawing.Size(52, 13);
+            this.txtMissed.TabIndex = 8;
+            this.txtMissed.Text = "Missed: 0";
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(421, 290);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(426, 519);
+            this.Controls.Add(this.txtMissed);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtScore);
@@ -142,7 +142,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Timer GameTimer;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtMissed;
     }
 }
 
