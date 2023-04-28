@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.txtScore = new System.Windows.Forms.Label();
-            this.txtMiss = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.GameTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,23 +47,14 @@
             this.txtScore.AutoSize = true;
             this.txtScore.Location = new System.Drawing.Point(12, 9);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(47, 13);
+            this.txtScore.Size = new System.Drawing.Size(50, 13);
             this.txtScore.TabIndex = 4;
-            this.txtScore.Text = "Score: 0";
-            // 
-            // txtMiss
-            // 
-            this.txtMiss.AutoSize = true;
-            this.txtMiss.Location = new System.Drawing.Point(510, 9);
-            this.txtMiss.Name = "txtMiss";
-            this.txtMiss.Size = new System.Drawing.Size(52, 13);
-            this.txtMiss.TabIndex = 5;
-            this.txtMiss.Text = "Missed: 0";
+            this.txtScore.Text = "Saved: 0";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SaveTheEgg.Properties.Resources.egg;
-            this.pictureBox4.Location = new System.Drawing.Point(42, 31);
+            this.pictureBox4.Location = new System.Drawing.Point(60, 50);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 36);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +65,7 @@
             // player
             // 
             this.player.Image = global::SaveTheEgg.Properties.Resources.chicken_normal;
-            this.player.Location = new System.Drawing.Point(151, 263);
+            this.player.Location = new System.Drawing.Point(153, 200);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(81, 52);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -84,7 +75,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SaveTheEgg.Properties.Resources.egg;
-            this.pictureBox1.Location = new System.Drawing.Point(183, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(182, 50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,7 +86,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SaveTheEgg.Properties.Resources.egg;
-            this.pictureBox2.Location = new System.Drawing.Point(309, 31);
+            this.pictureBox2.Location = new System.Drawing.Point(288, 50);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,21 +94,30 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "Eggs";
             // 
-            // timer1
+            // GameTimer
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.MainGameTimer);
+            this.GameTimer.Enabled = true;
+            this.GameTimer.Interval = 20;
+            this.GameTimer.Tick += new System.EventHandler(this.MainGameTimerEvent);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(342, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Missed: 0";
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(393, 327);
+            this.ClientSize = new System.Drawing.Size(421, 290);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtMiss);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.player);
@@ -139,10 +139,10 @@
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label txtScore;
-        private System.Windows.Forms.Label txtMiss;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer GameTimer;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\bin\Debug\SaveTheEgg.exe.config
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\bin\Debug\SaveTheEgg.exe
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\bin\Debug\SaveTheEgg.pdb
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.MainWindow.resources
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.exe
+C:\Users\Greedy\Desktop\2023\SaveTheEgg\obj\Debug\SaveTheEgg.pdb
