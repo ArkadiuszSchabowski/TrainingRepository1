@@ -18,7 +18,7 @@ namespace OwnProjectSaveTheCarrot
         bool goLeft, goRight;
         int score = 0;
         int missed = 0;
-        int speed = 8;
+        int speed = 5;
 
         public PigGame()
         {
@@ -54,7 +54,31 @@ namespace OwnProjectSaveTheCarrot
                         missed += 1;
                         GuineaPig.Image = Properties.Resources.Miss;
                     }
+
+                    if (GuineaPig.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        x.Top = rndY.Next(80, 300) * -1;
+                        x.Left = rndX.Next(5, this.ClientSize.Width - x.Width);
+                        score += 5;
+                    }
+
+                    if (score == 50)
+                    {
+                        speed = 7;
+                    }
+
+                    if (score == 100)
+                    {
+                        speed = 9;
+                    }
                 }
+            }
+            if (missed > 4)
+            {
+                GameTimer.Stop();
+                labelMissed.Text = "Missed: 5";
+                MessageBox.Show($"Game over! {Environment.NewLine} Your score is {score}!{Environment.NewLine}{Environment.NewLine} Press ok to restart game!");
+                RestartGame();
             }
         }
 
@@ -73,7 +97,7 @@ namespace OwnProjectSaveTheCarrot
 
                 score = 0;
                 missed = 0;
-                speed = 8;
+                speed = 5;
 
                 GuineaPig.Image = Properties.Resources.guineapig;
                 GuineaPig.Left = ClientSize.Width / 2;
