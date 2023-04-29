@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\bin\Debug\OwnProjectSaveTheCarrot.exe.config
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\bin\Debug\OwnProjectSaveTheCarrot.exe
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\bin\Debug\OwnProjectSaveTheCarrot.pdb
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.PigGame.resources
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.exe
+C:\Users\Greedy\Desktop\2023\OwnProjectSaveTheCarrot\obj\Debug\OwnProjectSaveTheCarrot.pdb

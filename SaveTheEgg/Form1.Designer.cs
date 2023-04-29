@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(426, 519);
+            this.ClientSize = new System.Drawing.Size(1068, 519);
             this.Controls.Add(this.txtMissed);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
