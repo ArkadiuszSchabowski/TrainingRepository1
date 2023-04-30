@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\InterviewTest\bin\Debug\InterviewTest.exe.config
+C:\Users\Greedy\Desktop\2023\InterviewTest\bin\Debug\InterviewTest.exe
+C:\Users\Greedy\Desktop\2023\InterviewTest\bin\Debug\InterviewTest.pdb
+C:\Users\Greedy\Desktop\2023\InterviewTest\obj\Debug\InterviewTest.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\InterviewTest\obj\Debug\InterviewTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\InterviewTest\obj\Debug\InterviewTest.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\InterviewTest\obj\Debug\InterviewTest.exe
+C:\Users\Greedy\Desktop\2023\InterviewTest\obj\Debug\InterviewTest.pdb
