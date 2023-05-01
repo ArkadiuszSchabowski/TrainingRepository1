@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\bin\Debug\quizGameWindowsForm.exe.config
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\bin\Debug\quizGameWindowsForm.exe
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\bin\Debug\quizGameWindowsForm.pdb
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.Form1.resources
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.exe
+C:\Users\Greedy\Desktop\2023\quizGameWindowsForm\obj\Debug\quizGameWindowsForm.pdb
