@@ -28,24 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnA = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnD = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblText = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::quizGameWindowsForm.Properties.Resources.rozetka;
-            this.pictureBox1.Location = new System.Drawing.Point(122, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(456, 212);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnA
             // 
@@ -53,9 +43,10 @@
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(253, 32);
             this.btnA.TabIndex = 1;
+            this.btnA.Tag = "1";
             this.btnA.Text = "A";
             this.btnA.UseVisualStyleBackColor = true;
-            this.btnA.Click += new System.EventHandler(this.btn_Click);
+            this.btnA.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // btnC
             // 
@@ -63,9 +54,10 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(253, 32);
             this.btnC.TabIndex = 2;
+            this.btnC.Tag = "3";
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
-            this.btnC.Click += new System.EventHandler(this.btn_Click);
+            this.btnC.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // btnB
             // 
@@ -73,9 +65,10 @@
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(253, 32);
             this.btnB.TabIndex = 3;
+            this.btnB.Tag = "2";
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
-            this.btnB.Click += new System.EventHandler(this.btn_Click);
+            this.btnB.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // btnD
             // 
@@ -83,16 +76,30 @@
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(253, 32);
             this.btnD.TabIndex = 4;
+            this.btnD.Tag = "4";
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
-            this.btnD.Click += new System.EventHandler(this.btn_Click);
+            this.btnD.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
-            // textBox1
+            // lblText
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 247);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(538, 20);
-            this.textBox1.TabIndex = 5;
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblText.Location = new System.Drawing.Point(12, 257);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(685, 34);
+            this.lblText.TabIndex = 5;
+            this.lblText.Text = "label1";
+            this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::quizGameWindowsForm.Properties.Resources.swinka_morska_kawia_domowa;
+            this.pictureBox1.Location = new System.Drawing.Point(122, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(456, 212);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -100,7 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(709, 394);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblText);
             this.Controls.Add(this.btnD);
             this.Controls.Add(this.btnB);
             this.Controls.Add(this.btnC);
@@ -111,7 +118,6 @@
             this.Text = "QUIZ O SWINKACH MORSKICH";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -122,7 +128,7 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Button btnD;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblText;
     }
 }
 

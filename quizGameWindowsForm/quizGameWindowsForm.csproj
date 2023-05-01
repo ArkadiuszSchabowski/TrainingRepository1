@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Properties\teddy.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\swinka-morska-kawia-domowa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

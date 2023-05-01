@@ -83,6 +83,16 @@ namespace quizGameWindowsForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap swinka_morska_kawia_domowa {
+            get {
+                object obj = ResourceManager.GetObject("swinka-morska-kawia-domowa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap teddy {
             get {
                 object obj = ResourceManager.GetObject("teddy", resourceCulture);

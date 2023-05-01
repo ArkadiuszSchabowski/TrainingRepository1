@@ -12,64 +12,71 @@ namespace quizGameWindowsForm
 {
     public partial class Form1 : Form
     {
+        int correctAnswer;
+        int questionNumber = 1;
+        int score;
+        int percentAge;
+        int totalQuestions;
+
+
         public bool isClicked = false;
         public int points = 0;
         public Form1()
         {
             InitializeComponent();
-            QuestionOne();
+            askQuestion(questionNumber);
+
+            totalQuestions = 5;
         }
 
-        public void QuestionOne()
+        public void askQuestion(int qnum)
         {
-            string firstAnswer = "";
-
-            pictureBox1.Image = Properties.Resources.rozetka;
-            textBox1.Text = "Jakiej rasy jest swinka przedstawiona na obrazku?";
-            btnA.Text = " A. Skinny";
-            btnB.Text = " B. Peruwianka";
-            btnC.Text = " C. Rozetka";
-            btnD.Text = " D. Dlugowlosa";
-
-            if (firstAnswer == "C. Rozetka")
+            switch (qnum)
             {
-                QuestionTwo();
+                case 1:
+                    pictureBox1.Image = Properties.Resources.rozetka;
+                    lblText.Text = "Jakiej rasy jest swinka przedstawiona na obrazku?";
+                    btnA.Text = " A. Skinny";
+                    btnB.Text = " B. Peruwianka";
+                    btnC.Text = " C. Rozetka";
+                    btnD.Text = " D. Dlugowlosa";
+
+                    correctAnswer = 1;
+
+                    break;
+
+                case 2:
+                    pictureBox1.Image = Properties.Resources.swinka_morska_kawia_domowa;
+                    lblText.Text = "Na czym z wymienionych produktow najlepiej zetrze zeby swinka morska?";
+                    btnA.Text = "A. Siano";
+                    btnB.Text = "B. Marchew";
+                    btnC.Text = "C. Banan";
+                    btnD.Text = "D. Ogorek";
+                    break;
+
+                case 3:
+                    pictureBox1.Image = Properties.Resources.teddy;
+                    lblText.Text = "Pytanie 2.Jak Inaczej kiedyś nazywano świnkę morską ?";
+                    btnA.Text = "A - świnką miniaturową";
+                    btnB.Text = "B - powiększonym chomikiem";
+                    btnC.Text = "C - uszatniczką";
+                    btnD.Text = "D - świnką nadmorską";
+                    break;
+
+                case 4:
+                    pictureBox1.Image = Properties.Resources.skinny;
+                    lblText.Text = "Jakiej rasy jest swinka przedstawiona na obrazku?";
+                    btnA.Text = " A. Rozetka";
+                    btnB.Text = " B. Teddy";
+                    btnC.Text = " C. Sheltie";
+                    btnD.Text = " D. Skinny";
+                    break;
             }
         }
 
-        private void QuestionTwo()
+        private void CheckAnswerEvent(object sender, EventArgs e)
         {
-            pictureBox1.Image = Properties.Resources.skinny;
-            textBox1.Text = "Jakiej rasy jest swinka przedstawiona na obrazku?";
-            btnA.Text = "A. Skinny";
-            btnB.Text = "B. Peruwianka";
-            btnC.Text = "C. Rozetka";
-            btnD.Text = "D. Dlugowlosa";
-        }
 
-        private void btn_Click(object sender, EventArgs e)
-        {
-            string Answer = (sender as Button).Text;
-
-            if (Answer == "A. Skinny")
-            {
-                isClicked = true;
-            }
-
-            if (Answer == "B. Peruwianka")
-            {
-                isClicked = true;
-            }
-
-            if (Answer == "C. Rozetka")
-            {
-                isClicked = true;
-            }
-
-            if (Answer == "D. Dlugowlosa")
-            {
-                isClicked = true;
-            }
         }
     }
 }
