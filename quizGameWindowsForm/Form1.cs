@@ -12,6 +12,8 @@ namespace quizGameWindowsForm
 {
     public partial class Form1 : Form
     {
+        public bool isClicked = false;
+        public int points = 0;
         public Form1()
         {
             InitializeComponent();
@@ -20,28 +22,53 @@ namespace quizGameWindowsForm
 
         public void QuestionOne()
         {
+            string firstAnswer = "";
+
             pictureBox1.Image = Properties.Resources.rozetka;
             textBox1.Text = "Jakiej rasy jest swinka przedstawiona na obrazku?";
-            btnA.Text = " A - Skinny";
-            btnB.Text = " B - Peruwianka";
-            btnC.Text = " C - Rozetka";
-            btnD.Text = " D - Dlugowlosa";
+            btnA.Text = " A. Skinny";
+            btnB.Text = " B. Peruwianka";
+            btnC.Text = " C. Rozetka";
+            btnD.Text = " D. Dlugowlosa";
+
+            if (firstAnswer == "C. Rozetka")
+            {
+                QuestionTwo();
+            }
+        }
+
+        private void QuestionTwo()
+        {
+            pictureBox1.Image = Properties.Resources.skinny;
+            textBox1.Text = "Jakiej rasy jest swinka przedstawiona na obrazku?";
+            btnA.Text = "A. Skinny";
+            btnB.Text = "B. Peruwianka";
+            btnC.Text = "C. Rozetka";
+            btnD.Text = "D. Dlugowlosa";
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
             string Answer = (sender as Button).Text;
 
-            switch (Answer)
+            if (Answer == "A. Skinny")
             {
-                case "A":
-                    break;
-                case "B":
-                    break;
-                case "C":
-                    break;
-                case "D":
-                    break;
+                isClicked = true;
+            }
+
+            if (Answer == "B. Peruwianka")
+            {
+                isClicked = true;
+            }
+
+            if (Answer == "C. Rozetka")
+            {
+                isClicked = true;
+            }
+
+            if (Answer == "D. Dlugowlosa")
+            {
+                isClicked = true;
             }
         }
     }
