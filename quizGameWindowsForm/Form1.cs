@@ -26,9 +26,35 @@ namespace quizGameWindowsForm
             InitializeComponent();
             askQuestion(questionNumber);
 
-            totalQuestions = 5;
+            totalQuestions = 6;
         }
+        private void CheckAnswerEvent(object sender, EventArgs e)
+        {
+            var senderObject = (Button)sender;
 
+            //int buttonTag = (int)senderObject.Tag;
+            int buttonTag = Convert.ToInt32(senderObject.Tag);
+
+            if (buttonTag == correctAnswer)
+            {
+                score++;
+            }
+            questionNumber++;
+            askQuestion(questionNumber);
+
+            if (questionNumber == 5)
+            {
+                MessageBox.Show("Your corrected answer to: " + score + "questions!");
+
+                questionNumber = 1;
+                score = 0;
+                correctAnswer = 0;
+                percentAge = 100 * (totalQuestions - correctAnswer);
+
+                askQuestion(questionNumber);
+            }
+
+        }
         public void askQuestion(int qnum)
         {
             switch (qnum)
@@ -41,7 +67,7 @@ namespace quizGameWindowsForm
                     btnC.Text = " C. Rozetka";
                     btnD.Text = " D. Dlugowlosa";
 
-                    correctAnswer = 1;
+                    correctAnswer = 2;
 
                     break;
 
@@ -52,15 +78,20 @@ namespace quizGameWindowsForm
                     btnB.Text = "B. Marchew";
                     btnC.Text = "C. Banan";
                     btnD.Text = "D. Ogorek";
+
+                    correctAnswer = 1;
+
                     break;
 
                 case 3:
                     pictureBox1.Image = Properties.Resources.teddy;
-                    lblText.Text = "Pytanie 2.Jak Inaczej kiedyś nazywano świnkę morską ?";
+                    lblText.Text = "Jak Inaczej kiedyś nazywano świnkę morską?";
                     btnA.Text = "A - świnką miniaturową";
                     btnB.Text = "B - powiększonym chomikiem";
                     btnC.Text = "C - uszatniczką";
                     btnD.Text = "D - świnką nadmorską";
+
+                    correctAnswer = 3;
                     break;
 
                 case 4:
@@ -70,13 +101,10 @@ namespace quizGameWindowsForm
                     btnB.Text = " B. Teddy";
                     btnC.Text = " C. Sheltie";
                     btnD.Text = " D. Skinny";
+
+                    correctAnswer = 4;
                     break;
             }
-        }
-
-        private void CheckAnswerEvent(object sender, EventArgs e)
-        {
-
         }
     }
 }
