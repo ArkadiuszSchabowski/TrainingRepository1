@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.Form1.resources
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\bin\Debug\ShoppingList.exe.config
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\bin\Debug\ShoppingList.exe
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\bin\Debug\ShoppingList.pdb
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.exe
+C:\Users\Greedy\Desktop\2023\ShoppingList\ShoppingList\obj\Debug\ShoppingList.pdb
