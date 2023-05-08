@@ -25,7 +25,8 @@ namespace MayRepeats
     {
         static void Main(string[] args)
         {
-            GamePaperRockScissors.RockPaperScissors();
+            //GamePaperRockScissors.RockPaperScissors();
+            PalindromeOrNot.CheckIfWordIsAPalindrome();
         }
     }
 }
