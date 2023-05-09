@@ -19,6 +19,8 @@ namespace MemoryGameMay
             "a","a","Q","Q","C","C", "X","X",
             "d","d","M","M","Z","Z","I","I",
         };
+        Label firstClicked;
+        Label secondClicked;
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +40,25 @@ namespace MemoryGameMay
 
                 list.RemoveAt(position);          
             }
+        }
+
+        private void Label_Click(object sender, EventArgs e)
+        {
+            Label clickedValue;
+            clickedValue = sender as Label;
+
+            if (firstClicked == null)
+            {
+                firstClicked = clickedValue;
+                firstClicked.ForeColor = Color.Black;
+                return;
+            }
+
+                secondClicked = clickedValue;
+                secondClicked.ForeColor = Color.White;
+
+            GameTimerStart();
+
         }
     }
 }
