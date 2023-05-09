@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\bin\Debug\MemoryGameMay.exe.config
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\bin\Debug\MemoryGameMay.exe
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\bin\Debug\MemoryGameMay.pdb
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.Form1.resources
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.exe
+C:\Users\Greedy\Desktop\2023\MemoryGameMay\MemoryGameMay\obj\Debug\MemoryGameMay.pdb
