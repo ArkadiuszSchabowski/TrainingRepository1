@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MemoryGameMay
 {
-    
+
     public partial class Form1 : Form
     {
         Random rnd = new Random();
@@ -34,31 +34,81 @@ namespace MemoryGameMay
             for (int i = 0; i < tableLayoutPanel1.Controls.Count; i++)
             {
                 label = tableLayoutPanel1.Controls[i] as Label;
-               
-                position = rnd.Next(0,list.Count);
+
+                position = rnd.Next(0, list.Count);
                 label.Text = list[position];
 
-                list.RemoveAt(position);          
+                list.RemoveAt(position);
             }
         }
 
         private void Label_Click(object sender, EventArgs e)
         {
-            Label clickedValue;
-            clickedValue = sender as Label;
+            Label clickedLabel;
+            clickedLabel = sender as Label;
+
+            if (firstClicked != null && secondClicked != null)
+            {
+                return;
+            }
+
+            if (clickedLabel == null)
+            {
+                return;
+            }
+
+            if (clickedLabel.ForeColor == Color.Black)
+            {
+                return;
+            }
 
             if (firstClicked == null)
             {
-                firstClicked = clickedValue;
+                firstClicked = clickedLabel;
                 firstClicked.ForeColor = Color.Black;
                 return;
             }
 
-                secondClicked = clickedValue;
-                secondClicked.ForeColor = Color.White;
+            secondClicked = clickedLabel;
+            secondClicked.ForeColor = Color.Black;
 
-            GameTimerStart();
+            if (firstClicked.Text == secondClicked.Text)
+            {
+                firstClicked = null;
+                secondClicked = null;
+                CheckForWinner();
+            }
+            else
+            {
+                timer1.Start();
+            }
 
+        }
+        private void CheckForWinner()
+        {
+            Label check;
+
+            for (int i = 0; i < tableLayoutPanel1.Controls.Count; i++)
+            {
+                check = tableLayoutPanel1.Controls[i] as Label;
+
+                if (check.ForeColor != Color.Black)
+                {
+                    return;
+                }
+            }
+            MessageBox.Show("Congratulations!");
+            Close();
+        }
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+
+            firstClicked.ForeColor = firstClicked.BackColor;
+            secondClicked.ForeColor = secondClicked.BackColor;
+
+            firstClicked = null;
+            secondClicked = null;
         }
     }
 }
