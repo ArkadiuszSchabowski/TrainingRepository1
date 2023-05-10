@@ -12,10 +12,6 @@ namespace Main_System
 {
     public partial class Form1 : Form
     {
-        List<string> orders = new List<string>()
-        {
-            "Polska", "Litwa", "Wlochy"
-        };
         public Form1()
         {
             InitializeComponent();
@@ -24,9 +20,31 @@ namespace Main_System
 
         public void AddCountryToMainList()
         {
-            AvailableOrders.Items.Add("Polska");
-            AvailableOrders.Items.Add("Litwa");
-            AvailableOrders.Items.Add("Wlochy");
+            AvailableOrders.Items.Add("Polska", false);
+            AvailableOrders.Items.Add("Litwa", false);
+            AvailableOrders.Items.Add("Wlochy", false);
+        }
+
+        private void TakeOrders_Click(object sender, EventArgs e)
+        {
+            if (!DowloadedOrders.Items.Contains(AvailableOrders.SelectedItem))
+            {
+                DowloadedOrders.Items.Add(AvailableOrders.SelectedItem);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (DowloadedOrders.SelectedItem != null)
+            {
+                DowloadedOrders.Items.RemoveAt(DowloadedOrders.SelectedIndex);
+            }
+
+        }
+
+        private void DisplayContractors_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

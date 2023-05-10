@@ -43,8 +43,9 @@
             this.DisplayContractors.Name = "DisplayContractors";
             this.DisplayContractors.Size = new System.Drawing.Size(265, 27);
             this.DisplayContractors.TabIndex = 1;
-            this.DisplayContractors.Text = "Wyswietl kontrahentow";
+            this.DisplayContractors.Text = "Wyswietl kontrahentow wybranego kraju";
             this.DisplayContractors.UseVisualStyleBackColor = true;
+            this.DisplayContractors.Click += new System.EventHandler(this.DisplayContractors_Click);
             // 
             // button2
             // 
@@ -54,6 +55,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Anuluj przyjecie";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // TakeOrders
             // 
@@ -63,6 +65,7 @@
             this.TakeOrders.TabIndex = 3;
             this.TakeOrders.Text = "Przyjmij zamowienia";
             this.TakeOrders.UseVisualStyleBackColor = true;
+            this.TakeOrders.Click += new System.EventHandler(this.TakeOrders_Click);
             // 
             // label1
             // 
