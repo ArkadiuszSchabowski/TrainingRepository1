@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\bin\Debug\MainSystemWithoutClasses.exe.config
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\bin\Debug\MainSystemWithoutClasses.exe
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\bin\Debug\MainSystemWithoutClasses.pdb
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.Form1.resources
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.exe
+C:\Users\Greedy\Desktop\2023\MainSystemWithoutClasses\MainSystemWithoutClasses\obj\Debug\MainSystemWithoutClasses.pdb

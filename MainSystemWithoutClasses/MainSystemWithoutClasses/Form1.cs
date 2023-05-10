@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Main_System
+namespace MainSystemWithoutClasses
 {
     public partial class Form1 : Form
     {
@@ -34,17 +34,14 @@ namespace Main_System
         }
         private void CancelOrders_Click(object sender, EventArgs e)
         {
-            if(DowloadedOrders.SelectedItem != null)
+            if (DowloadedOrders.SelectedItem != null)
             {
                 DowloadedOrders.Items.RemoveAt(DowloadedOrders.SelectedIndex);
             }
         }
         private void DisplayContractors_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < AvailableOrders.Items.Count; i++)
-            {
-
-            }
+            //listBox1.Items.Add()
         }
     }
 }

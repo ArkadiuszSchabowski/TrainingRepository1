@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.DisplayContractors = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_CancelOrders = new System.Windows.Forms.Button();
             this.TakeOrders = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.AvailableOrders = new System.Windows.Forms.CheckedListBox();
             this.DowloadedOrders = new System.Windows.Forms.CheckedListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // DisplayContractors
@@ -47,15 +48,15 @@
             this.DisplayContractors.UseVisualStyleBackColor = true;
             this.DisplayContractors.Click += new System.EventHandler(this.DisplayContractors_Click);
             // 
-            // button2
+            // btn_CancelOrders
             // 
-            this.button2.Location = new System.Drawing.Point(305, 100);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 41);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Anuluj przyjecie";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_CancelOrders.Location = new System.Drawing.Point(305, 100);
+            this.btn_CancelOrders.Name = "btn_CancelOrders";
+            this.btn_CancelOrders.Size = new System.Drawing.Size(120, 41);
+            this.btn_CancelOrders.TabIndex = 2;
+            this.btn_CancelOrders.Text = "Anuluj zamowienie";
+            this.btn_CancelOrders.UseVisualStyleBackColor = true;
+            this.btn_CancelOrders.Click += new System.EventHandler(this.CancelOrders_Click);
             // 
             // TakeOrders
             // 
@@ -63,7 +64,7 @@
             this.TakeOrders.Name = "TakeOrders";
             this.TakeOrders.Size = new System.Drawing.Size(120, 43);
             this.TakeOrders.TabIndex = 3;
-            this.TakeOrders.Text = "Przyjmij zamowienia";
+            this.TakeOrders.Text = "Przyjmij zamowienie";
             this.TakeOrders.UseVisualStyleBackColor = true;
             this.TakeOrders.Click += new System.EventHandler(this.TakeOrders_Click);
             // 
@@ -104,18 +105,27 @@
             this.DowloadedOrders.Size = new System.Drawing.Size(265, 289);
             this.DowloadedOrders.TabIndex = 8;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(298, 153);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(161, 199);
+            this.listBox1.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(773, 388);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.DowloadedOrders);
             this.Controls.Add(this.AvailableOrders);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TakeOrders);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_CancelOrders);
             this.Controls.Add(this.DisplayContractors);
             this.Name = "Form1";
             this.Text = "System obslugi kontrahentow";
@@ -126,12 +136,13 @@
 
         #endregion
         private System.Windows.Forms.Button DisplayContractors;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_CancelOrders;
         private System.Windows.Forms.Button TakeOrders;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckedListBox AvailableOrders;
         private System.Windows.Forms.CheckedListBox DowloadedOrders;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
