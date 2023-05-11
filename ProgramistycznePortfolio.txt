@@ -1,0 +1,34 @@
+Portfolio Programistyczne - John Kowalski
+O mnie
+
+Jestem entuzjastą programowania i ambitnym Junior C# Developerem. Skończyłem kursy online związane z programowaniem w C# i mam podstawową wiedzę na temat tworzenia aplikacji desktopowych. Szukam możliwości rozwoju i zdobycia doświadczenia jako część zespołu programistycznego.
+Umiejętności
+
+    Języki programowania: C#, Java, JavaScript
+    Frameworki: .NET Framework, ASP.NET
+    Bazy danych: SQL, MySQL
+    Narzędzia: Visual Studio, Git
+
+Projekty
+Aplikacja zarządzania zadaniami (C#)
+
+    Opis: Aplikacja desktopowa służąca do zarządzania zadaniami w firmie.
+    Wykorzystane technologie: C#, Windows Forms, SQL
+    Link do kodu źródłowego: GitHub
+
+Strona internetowa portfolio (HTML, CSS, JavaScript)
+
+    Opis: Moja osobista strona internetowa portfolio, na której prezentuję moje projekty.
+    Wykorzystane technologie: HTML, CSS, JavaScript
+    Link do strony: John Kowalski Portfolio
+
+Wykształcenie
+
+    Kurs C# Developer (Online Academy, 2022)
+    Licencjat Informatyka (Uniwersytet XYZ, 2021)
+
+Kontakt
+
+    Adres e-mail: johnkowalski@email.com
+    Numer telefonu: +1234567890
+    LinkedIn: Profil na LinkedIn

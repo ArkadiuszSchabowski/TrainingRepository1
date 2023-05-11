@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\bin\Debug\DoubleList.exe.config
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\bin\Debug\DoubleList.exe
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\bin\Debug\DoubleList.pdb
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\obj\Debug\DoubleList.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\obj\Debug\DoubleList.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\obj\Debug\DoubleList.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\obj\Debug\DoubleList.exe
+C:\Users\Greedy\Desktop\2023\DoubleList\DoubleList\obj\Debug\DoubleList.pdb

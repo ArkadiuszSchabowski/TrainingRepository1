@@ -40,7 +40,7 @@
             // 
             // DisplayContractors
             // 
-            this.DisplayContractors.Location = new System.Drawing.Point(12, 337);
+            this.DisplayContractors.Location = new System.Drawing.Point(254, 302);
             this.DisplayContractors.Name = "DisplayContractors";
             this.DisplayContractors.Size = new System.Drawing.Size(265, 27);
             this.DisplayContractors.TabIndex = 1;
@@ -50,9 +50,9 @@
             // 
             // btn_CancelOrders
             // 
-            this.btn_CancelOrders.Location = new System.Drawing.Point(305, 100);
+            this.btn_CancelOrders.Location = new System.Drawing.Point(434, 41);
             this.btn_CancelOrders.Name = "btn_CancelOrders";
-            this.btn_CancelOrders.Size = new System.Drawing.Size(120, 41);
+            this.btn_CancelOrders.Size = new System.Drawing.Size(133, 42);
             this.btn_CancelOrders.TabIndex = 2;
             this.btn_CancelOrders.Text = "Anuluj zamowienie";
             this.btn_CancelOrders.UseVisualStyleBackColor = true;
@@ -60,7 +60,7 @@
             // 
             // TakeOrders
             // 
-            this.TakeOrders.Location = new System.Drawing.Point(305, 51);
+            this.TakeOrders.Location = new System.Drawing.Point(183, 40);
             this.TakeOrders.Name = "TakeOrders";
             this.TakeOrders.Size = new System.Drawing.Size(120, 43);
             this.TakeOrders.TabIndex = 3;
@@ -94,21 +94,21 @@
             this.AvailableOrders.FormattingEnabled = true;
             this.AvailableOrders.Location = new System.Drawing.Point(12, 40);
             this.AvailableOrders.Name = "AvailableOrders";
-            this.AvailableOrders.Size = new System.Drawing.Size(265, 289);
+            this.AvailableOrders.Size = new System.Drawing.Size(165, 289);
             this.AvailableOrders.TabIndex = 7;
             // 
             // DowloadedOrders
             // 
             this.DowloadedOrders.FormattingEnabled = true;
-            this.DowloadedOrders.Location = new System.Drawing.Point(494, 40);
+            this.DowloadedOrders.Location = new System.Drawing.Point(573, 40);
             this.DowloadedOrders.Name = "DowloadedOrders";
-            this.DowloadedOrders.Size = new System.Drawing.Size(265, 289);
+            this.DowloadedOrders.Size = new System.Drawing.Size(186, 289);
             this.DowloadedOrders.TabIndex = 8;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(298, 153);
+            this.listBox1.Location = new System.Drawing.Point(302, 89);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(161, 199);
             this.listBox1.TabIndex = 9;

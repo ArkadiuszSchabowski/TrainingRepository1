@@ -101,9 +101,9 @@
             this.DisplayContractors.Name = "DisplayContractors";
             this.DisplayContractors.Size = new System.Drawing.Size(265, 27);
             this.DisplayContractors.TabIndex = 13;
-            this.DisplayContractors.Text = "Wyswietl kontrahentow wybranego kraju";
+            this.DisplayContractors.Text = "Wyswietl zamowione czesci";
             this.DisplayContractors.UseVisualStyleBackColor = true;
-            this.DisplayContractors.Click += new System.EventHandler(this.DisplayContractors_Click);
+            this.DisplayContractors.Click += new System.EventHandler(this.WyswietlCzesciKontrahenta);
             // 
             // DowloadedOrders
             // 

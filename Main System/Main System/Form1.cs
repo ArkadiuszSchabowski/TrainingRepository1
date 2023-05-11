@@ -41,10 +41,7 @@ namespace Main_System
         }
         private void DisplayContractors_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < AvailableOrders.Items.Count; i++)
-            {
-
-            }
+            //listBox1.Items.Add()
         }
     }
 }
