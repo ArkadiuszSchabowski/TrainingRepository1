@@ -130,11 +130,17 @@
   <data name="guineaPigRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guineaPigRight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Miss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Miss.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="marchew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marchew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carrot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="466208396_max" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\466208396_max.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gf-gmKo-FHYu-mQi6_swinka-morska-kawia-domowa-zywienie-i-opieka-ile-zyje-swinka-morska-1920x1080-nocrop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gf-gmKo-FHYu-mQi6_swinka-morska-kawia-domowa-zywienie-i-opieka-ile-zyje-swinka-morska-1920x1080-nocrop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +148,7 @@
   <data name="guineapig" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guineapig.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Miss" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Miss.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pies.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

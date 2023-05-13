@@ -63,6 +63,16 @@ namespace OwnProjectSaveTheCarrot.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _466208396_max {
+            get {
+                object obj = ResourceManager.GetObject("466208396_max", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carrot {
             get {
                 object obj = ResourceManager.GetObject("carrot", resourceCulture);
@@ -138,6 +148,16 @@ namespace OwnProjectSaveTheCarrot.Properties {
         internal static System.Drawing.Bitmap Miss {
             get {
                 object obj = ResourceManager.GetObject("Miss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pies {
+            get {
+                object obj = ResourceManager.GetObject("pies", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

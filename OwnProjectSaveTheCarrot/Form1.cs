@@ -33,12 +33,12 @@ namespace OwnProjectSaveTheCarrot
             if (goLeft == true && GuineaPig.Left > 0)
             {
                 GuineaPig.Left -= 12;
-                GuineaPig.Image = Properties.Resources.guineapig;
+                GuineaPig.Image = Properties.Resources.pies;
             }
             if (goRight == true && GuineaPig.Right < this.ClientSize.Width)
             {
                 GuineaPig.Left += 12;
-                GuineaPig.Image = Properties.Resources.guineaPigRight;
+                GuineaPig.Image = Properties.Resources.pies;
             }
 
             foreach (Control x in this.Controls)
@@ -99,7 +99,7 @@ namespace OwnProjectSaveTheCarrot
                 missed = 0;
                 speed = 5;
 
-                GuineaPig.Image = Properties.Resources.guineapig;
+                GuineaPig.Image = Properties.Resources.pies;
                 GuineaPig.Left = ClientSize.Width / 2;
 
                 GameTimer.Start();

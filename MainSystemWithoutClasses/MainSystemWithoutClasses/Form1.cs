@@ -15,110 +15,123 @@ namespace MainSystemWithoutClasses
 {
     public partial class Form1 : Form
     {
-        public List<List<string>> polandContractors = new List<List<string>>();
-        public List<string> autoSerwisKatowice = new List<string>();
-        public List<string> warsztatSamochodowyCzteryKola = new List<string>();
-        public List<string> magicznyGaraz = new List<string>();
+        public List<List<string>> litery = new List<List<string>>();
+        public List<string> a = new List<string>();
+        public List<string> b = new List<string>();
+        public List<string> c = new List<string>();
+        public List<string> d = new List<string>();
 
         public Form1()
         {
             InitializeComponent();
-            AddCountryToMainList();
-            PolandContractors();
+            DodajKontrahentowDoListy();
         }
-
-        public void PolandContractors()
+        public void DodajKontrahentowDoListy()
         {
-            autoSerwisKatowice.Add("autoSerwisKatowice");
-            warsztatSamochodowyCzteryKola.Add("warsztatSamochodowyCzteryKola");
-            magicznyGaraz.Add("magicznyGaraz");
+            a.Add("123");
+            a.Add("456");
 
-            polandContractors.Add(autoSerwisKatowice);
-            polandContractors.Add(warsztatSamochodowyCzteryKola);
-            polandContractors.Add(magicznyGaraz);
+            litery.Add(a);
+            litery.Add(b);
+            litery.Add(c);
+            litery.Add(d);
 
-            foreach (var elem in polandContractors)
+            foreach (var kolekcja in litery)
             {
-                if (elem is List<string>)
-                {
-                    var list = elem as List<string>;
-
-                        listBox1.Items.Add(list[0]);
-                }
+                listBox2.Items.Add(GetNazwaKolekcji(kolekcja));
             }
         }
-        private void WyswietlCzesciKontrahenta(object sender, EventArgs e)
+        public string GetNazwaKolekcji(List<string> kolekcja)
         {
-
+            if (kolekcja == a)
+                return "a";
+            else if (kolekcja == b)
+                return "b";
+            else if (kolekcja == c)
+                return "c";
+            else if (kolekcja == d)
+                return "d";
+            else
+                return string.Empty;
         }
-
-
-        public void AddCountryToMainList()
+        private void przyciskWyboru_Click(object sender, EventArgs e)
         {
-            AvailableOrders.Items.Add("Polska");
-            AvailableOrders.Items.Add("Litwa");
-            AvailableOrders.Items.Add("Wlochy");
-        }
-        private void TakeOrders_Click(object sender, EventArgs e)
-        {
-            if (!DowloadedOrders.Items.Contains(AvailableOrders.SelectedItem))
+            if (listBox2.SelectedItem != null)
             {
-                DowloadedOrders.Items.Add(AvailableOrders.SelectedItem);
+                var ClickedValue = listBox2.SelectedItem;
+                listBox2.Items.Clear();
+                listBox2.Items.Add(ClickedValue);
             }
+
         }
-        private void CancelOrders_Click(object sender, EventArgs e)
+
+    
+    public void AddCountryToMainList()
+    {
+        AvailableOrders.Items.Add("Polska");
+        AvailableOrders.Items.Add("Litwa");
+        AvailableOrders.Items.Add("Wlochy");
+    }
+    private void TakeOrders_Click(object sender, EventArgs e)
+    {
+        if (!DowloadedOrders.Items.Contains(AvailableOrders.SelectedItem))
         {
-            if (DowloadedOrders.SelectedItem != null)
-            {
-                DowloadedOrders.Items.RemoveAt(DowloadedOrders.SelectedIndex);
-            }
+            DowloadedOrders.Items.Add(AvailableOrders.SelectedItem);
         }
-        private void DisplayContractors_Click(object sender, EventArgs e)
+    }
+    private void CancelOrders_Click(object sender, EventArgs e)
+    {
+        if (DowloadedOrders.SelectedItem != null)
         {
+            DowloadedOrders.Items.RemoveAt(DowloadedOrders.SelectedIndex);
         }
-        public Random rnd = new Random();
-        public List<string> orders = new List<string>();
-        public void Brembo()
-        {
-            int bremboOrders = rnd.Next(1, 5);
-            List<string> listBrembo = new List<string>()
+    }
+    private void DisplayContractors_Click(object sender, EventArgs e)
+    {
+    }
+    public Random rnd = new Random();
+    public List<string> orders = new List<string>();
+    public void Brembo()
+    {
+        int bremboOrders = rnd.Next(1, 5);
+        List<string> listBrembo = new List<string>()
         {
             "Klocki hamulcowe - MD19132",
             "Klocki hamulcowe - JG23145",
             "Zacisk hamulcowy - MD23142",
             "Tarcza hamulcowa - MD21902",
         };
-            orders.Add(listBrembo[bremboOrders]);
-        }
-        public void Gkn()
-        {
-            List<string> listBrembo = new List<string>()
+        orders.Add(listBrembo[bremboOrders]);
+    }
+    public void Gkn()
+    {
+        List<string> listBrembo = new List<string>()
         {
             "Oslona przegubu - GKN2341",
                  "Oslona przegubu - GKN2389",
                  "Krzyzak walu napedowego - U-942",
                  "Smar do przegubow - 9043111"
             };
-        }
-        public void Rts()
-        {
-            List<string> listRts = new List<string>()
+    }
+    public void Rts()
+    {
+        List<string> listRts = new List<string>()
             {
                 "Sworzen wahacza - 9140650",
                 "Sworzen wahacza - 9300850",
                 "Wahacz Renault lewy - 34817",
                 "Wahacz Renault prawy - 34818"
             };
-        }
-        public void Snr()
-        {
-            List<string> listSnr = new List<string>()
+    }
+    public void Snr()
+    {
+        List<string> listSnr = new List<string>()
             {
                 "Lozysko amortyzatora Citroen",
                 "Zestaw piasty kola tyl",
                 "Lozysko piasty kola",
                 "Lozysko kola Mazda 6 - przod",
             };
-        }
     }
+}
 }

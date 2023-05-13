@@ -1,0 +1,6 @@
+C:\Users\Greedy\Desktop\2023\DogSaveBalls\DogSaveBalls\obj\Debug\DogSaveBalls.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\DogSaveBalls\DogSaveBalls\obj\Debug\DogSaveBalls.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\DogSaveBalls\DogSaveBalls\obj\Debug\DogSaveBalls.Form1.resources
+C:\Users\Greedy\Desktop\2023\DogSaveBalls\DogSaveBalls\obj\Debug\DogSaveBalls.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\DogSaveBalls\DogSaveBalls\obj\Debug\DogSaveBalls.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\DogSaveBalls\DogSaveBalls\obj\Debug\DogSaveBalls.csproj.CoreCompileInputs.cache

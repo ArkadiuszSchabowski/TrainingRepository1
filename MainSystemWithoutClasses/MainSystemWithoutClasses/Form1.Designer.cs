@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.DisplayContractors = new System.Windows.Forms.Button();
             this.DowloadedOrders = new System.Windows.Forms.CheckedListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.przyciskWyboru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -59,7 +61,7 @@
             // 
             // TakeOrders
             // 
-            this.TakeOrders.Location = new System.Drawing.Point(204, 53);
+            this.TakeOrders.Location = new System.Drawing.Point(31, 349);
             this.TakeOrders.Name = "TakeOrders";
             this.TakeOrders.Size = new System.Drawing.Size(120, 43);
             this.TakeOrders.TabIndex = 9;
@@ -70,14 +72,14 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(320, 111);
+            this.listBox1.Location = new System.Drawing.Point(206, 54);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(161, 199);
+            this.listBox1.Size = new System.Drawing.Size(161, 225);
             this.listBox1.TabIndex = 10;
             // 
             // btn_CancelOrders
             // 
-            this.btn_CancelOrders.Location = new System.Drawing.Point(422, 54);
+            this.btn_CancelOrders.Location = new System.Drawing.Point(612, 349);
             this.btn_CancelOrders.Name = "btn_CancelOrders";
             this.btn_CancelOrders.Size = new System.Drawing.Size(133, 42);
             this.btn_CancelOrders.TabIndex = 11;
@@ -97,13 +99,12 @@
             // 
             // DisplayContractors
             // 
-            this.DisplayContractors.Location = new System.Drawing.Point(266, 331);
+            this.DisplayContractors.Location = new System.Drawing.Point(206, 297);
             this.DisplayContractors.Name = "DisplayContractors";
-            this.DisplayContractors.Size = new System.Drawing.Size(265, 27);
+            this.DisplayContractors.Size = new System.Drawing.Size(161, 27);
             this.DisplayContractors.TabIndex = 13;
             this.DisplayContractors.Text = "Wyswietl zamowione czesci";
             this.DisplayContractors.UseVisualStyleBackColor = true;
-            this.DisplayContractors.Click += new System.EventHandler(this.WyswietlCzesciKontrahenta);
             // 
             // DowloadedOrders
             // 
@@ -113,11 +114,31 @@
             this.DowloadedOrders.Size = new System.Drawing.Size(186, 289);
             this.DowloadedOrders.TabIndex = 14;
             // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(409, 53);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(149, 225);
+            this.listBox2.TabIndex = 15;
+            // 
+            // przyciskWyboru
+            // 
+            this.przyciskWyboru.Location = new System.Drawing.Point(397, 297);
+            this.przyciskWyboru.Name = "przyciskWyboru";
+            this.przyciskWyboru.Size = new System.Drawing.Size(161, 27);
+            this.przyciskWyboru.TabIndex = 16;
+            this.przyciskWyboru.Text = "listaWiscie";
+            this.przyciskWyboru.UseVisualStyleBackColor = true;
+            this.przyciskWyboru.Click += new System.EventHandler(this.przyciskWyboru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.przyciskWyboru);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.DowloadedOrders);
             this.Controls.Add(this.DisplayContractors);
             this.Controls.Add(this.label1);
@@ -143,6 +164,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button DisplayContractors;
         private System.Windows.Forms.CheckedListBox DowloadedOrders;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button przyciskWyboru;
     }
 }
 

@@ -32,13 +32,11 @@
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
             this.labelScore = new System.Windows.Forms.Label();
             this.labelMissed = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GuineaPig = new System.Windows.Forms.PictureBox();
-            this.Carrot2 = new System.Windows.Forms.PictureBox();
-            this.Carrot3 = new System.Windows.Forms.PictureBox();
             this.Carrot1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GuineaPig)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Carrot2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Carrot3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Carrot1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,47 +57,36 @@
             // labelMissed
             // 
             this.labelMissed.AutoSize = true;
-            this.labelMissed.Location = new System.Drawing.Point(224, 20);
+            this.labelMissed.Location = new System.Drawing.Point(342, 20);
             this.labelMissed.Name = "labelMissed";
             this.labelMissed.Size = new System.Drawing.Size(52, 13);
             this.labelMissed.TabIndex = 5;
             this.labelMissed.Text = "Missed: 0";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OwnProjectSaveTheCarrot.Properties.Resources._466208396_max;
+            this.pictureBox1.Location = new System.Drawing.Point(308, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(72, 67);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "carrot";
+            // 
             // GuineaPig
             // 
-            this.GuineaPig.Image = global::OwnProjectSaveTheCarrot.Properties.Resources.guineapig;
-            this.GuineaPig.Location = new System.Drawing.Point(90, 362);
+            this.GuineaPig.Image = global::OwnProjectSaveTheCarrot.Properties.Resources.pies;
+            this.GuineaPig.Location = new System.Drawing.Point(122, 246);
             this.GuineaPig.Name = "GuineaPig";
             this.GuineaPig.Size = new System.Drawing.Size(161, 95);
             this.GuineaPig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GuineaPig.TabIndex = 3;
             this.GuineaPig.TabStop = false;
             // 
-            // Carrot2
-            // 
-            this.Carrot2.Image = global::OwnProjectSaveTheCarrot.Properties.Resources.carrot;
-            this.Carrot2.Location = new System.Drawing.Point(179, 42);
-            this.Carrot2.Name = "Carrot2";
-            this.Carrot2.Size = new System.Drawing.Size(72, 67);
-            this.Carrot2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Carrot2.TabIndex = 2;
-            this.Carrot2.TabStop = false;
-            this.Carrot2.Tag = "carrot";
-            // 
-            // Carrot3
-            // 
-            this.Carrot3.Image = global::OwnProjectSaveTheCarrot.Properties.Resources.carrot;
-            this.Carrot3.Location = new System.Drawing.Point(323, 42);
-            this.Carrot3.Name = "Carrot3";
-            this.Carrot3.Size = new System.Drawing.Size(72, 67);
-            this.Carrot3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Carrot3.TabIndex = 1;
-            this.Carrot3.TabStop = false;
-            this.Carrot3.Tag = "carrot";
-            // 
             // Carrot1
             // 
-            this.Carrot1.Image = global::OwnProjectSaveTheCarrot.Properties.Resources.carrot;
+            this.Carrot1.Image = global::OwnProjectSaveTheCarrot.Properties.Resources._466208396_max;
             this.Carrot1.Location = new System.Drawing.Point(22, 42);
             this.Carrot1.Name = "Carrot1";
             this.Carrot1.Size = new System.Drawing.Size(72, 67);
@@ -113,21 +100,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(428, 469);
+            this.ClientSize = new System.Drawing.Size(406, 353);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelMissed);
             this.Controls.Add(this.labelScore);
             this.Controls.Add(this.GuineaPig);
-            this.Controls.Add(this.Carrot2);
-            this.Controls.Add(this.Carrot3);
             this.Controls.Add(this.Carrot1);
             this.MaximizeBox = false;
             this.Name = "PigGame";
-            this.Text = "Swinkowa Gra";
+            this.Text = "Psia Gra";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GuineaPig)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Carrot2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Carrot3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Carrot1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,12 +122,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox Carrot1;
-        private System.Windows.Forms.PictureBox Carrot3;
-        private System.Windows.Forms.PictureBox Carrot2;
         private System.Windows.Forms.PictureBox GuineaPig;
         private System.Windows.Forms.Timer GameTimer;
         private System.Windows.Forms.Label labelScore;
         private System.Windows.Forms.Label labelMissed;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
