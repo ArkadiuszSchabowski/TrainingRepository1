@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\bin\Debug\CvNewProject.exe.config
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\bin\Debug\CvNewProject.exe
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\bin\Debug\CvNewProject.pdb
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.exe
+C:\Users\Greedy\Desktop\2023\CvNewProject\CvNewProject\obj\Debug\CvNewProject.pdb

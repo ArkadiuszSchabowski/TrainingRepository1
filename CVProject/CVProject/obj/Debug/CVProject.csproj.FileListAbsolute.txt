@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\bin\Debug\CVProject.exe.config
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\bin\Debug\CVProject.exe
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\bin\Debug\CVProject.pdb
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.exe
+C:\Users\Greedy\Desktop\2023\CVProject\CVProject\obj\Debug\CVProject.pdb

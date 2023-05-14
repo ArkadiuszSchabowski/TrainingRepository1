@@ -21,16 +21,28 @@ namespace MainSystemWithoutClasses
         public List<string> c = new List<string>();
         public List<string> d = new List<string>();
 
+        public string Nazwa
+        {
+            get { return nazwa; }
+        }
+
+        private string nazwa;
+
         public Form1()
         {
             InitializeComponent();
             DodajKontrahentowDoListy();
+            ZaaktualizujNazwyKontrahentow();
         }
+
+        private void ZaaktualizujNazwyKontrahentow()
+        {
+            nazwa = "Nowa nazwa";
+            listBox2.DisplayMember = "Nazwa";
+        }
+
         public void DodajKontrahentowDoListy()
         {
-            a.Add("123");
-            a.Add("456");
-
             litery.Add(a);
             litery.Add(b);
             litery.Add(c);
@@ -38,22 +50,13 @@ namespace MainSystemWithoutClasses
 
             foreach (var kolekcja in litery)
             {
-                listBox2.Items.Add(GetNazwaKolekcji(kolekcja));
+                foreach (var element in kolekcja)
+                {
+                    listBox2.Items.Add(element);
+                }
             }
         }
-        public string GetNazwaKolekcji(List<string> kolekcja)
-        {
-            if (kolekcja == a)
-                return "a";
-            else if (kolekcja == b)
-                return "b";
-            else if (kolekcja == c)
-                return "c";
-            else if (kolekcja == d)
-                return "d";
-            else
-                return string.Empty;
-        }
+
         private void przyciskWyboru_Click(object sender, EventArgs e)
         {
             if (listBox2.SelectedItem != null)
@@ -65,73 +68,73 @@ namespace MainSystemWithoutClasses
 
         }
 
-    
-    public void AddCountryToMainList()
-    {
-        AvailableOrders.Items.Add("Polska");
-        AvailableOrders.Items.Add("Litwa");
-        AvailableOrders.Items.Add("Wlochy");
-    }
-    private void TakeOrders_Click(object sender, EventArgs e)
-    {
-        if (!DowloadedOrders.Items.Contains(AvailableOrders.SelectedItem))
+
+        public void AddCountryToMainList()
         {
-            DowloadedOrders.Items.Add(AvailableOrders.SelectedItem);
+            AvailableOrders.Items.Add("Polska");
+            AvailableOrders.Items.Add("Litwa");
+            AvailableOrders.Items.Add("Wlochy");
         }
-    }
-    private void CancelOrders_Click(object sender, EventArgs e)
-    {
-        if (DowloadedOrders.SelectedItem != null)
+        private void TakeOrders_Click(object sender, EventArgs e)
         {
-            DowloadedOrders.Items.RemoveAt(DowloadedOrders.SelectedIndex);
+            if (!DowloadedOrders.Items.Contains(AvailableOrders.SelectedItem))
+            {
+                DowloadedOrders.Items.Add(AvailableOrders.SelectedItem);
+            }
         }
-    }
-    private void DisplayContractors_Click(object sender, EventArgs e)
-    {
-    }
-    public Random rnd = new Random();
-    public List<string> orders = new List<string>();
-    public void Brembo()
-    {
-        int bremboOrders = rnd.Next(1, 5);
-        List<string> listBrembo = new List<string>()
+        private void CancelOrders_Click(object sender, EventArgs e)
+        {
+            if (DowloadedOrders.SelectedItem != null)
+            {
+                DowloadedOrders.Items.RemoveAt(DowloadedOrders.SelectedIndex);
+            }
+        }
+        private void DisplayContractors_Click(object sender, EventArgs e)
+        {
+        }
+        public Random rnd = new Random();
+        public List<string> orders = new List<string>();
+        public void Brembo()
+        {
+            int bremboOrders = rnd.Next(1, 5);
+            List<string> listBrembo = new List<string>()
         {
             "Klocki hamulcowe - MD19132",
             "Klocki hamulcowe - JG23145",
             "Zacisk hamulcowy - MD23142",
             "Tarcza hamulcowa - MD21902",
         };
-        orders.Add(listBrembo[bremboOrders]);
-    }
-    public void Gkn()
-    {
-        List<string> listBrembo = new List<string>()
+            orders.Add(listBrembo[bremboOrders]);
+        }
+        public void Gkn()
+        {
+            List<string> listBrembo = new List<string>()
         {
             "Oslona przegubu - GKN2341",
                  "Oslona przegubu - GKN2389",
                  "Krzyzak walu napedowego - U-942",
                  "Smar do przegubow - 9043111"
             };
-    }
-    public void Rts()
-    {
-        List<string> listRts = new List<string>()
+        }
+        public void Rts()
+        {
+            List<string> listRts = new List<string>()
             {
                 "Sworzen wahacza - 9140650",
                 "Sworzen wahacza - 9300850",
                 "Wahacz Renault lewy - 34817",
                 "Wahacz Renault prawy - 34818"
             };
-    }
-    public void Snr()
-    {
-        List<string> listSnr = new List<string>()
+        }
+        public void Snr()
+        {
+            List<string> listSnr = new List<string>()
             {
                 "Lozysko amortyzatora Citroen",
                 "Zestaw piasty kola tyl",
                 "Lozysko piasty kola",
                 "Lozysko kola Mazda 6 - przod",
             };
+        }
     }
-}
 }
