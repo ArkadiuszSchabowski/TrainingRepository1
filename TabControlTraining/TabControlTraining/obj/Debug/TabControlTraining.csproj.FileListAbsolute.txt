@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\bin\Debug\TabControlTraining.exe.config
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\bin\Debug\TabControlTraining.exe
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\bin\Debug\TabControlTraining.pdb
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.Form1.resources
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.exe
+C:\Users\Greedy\Desktop\2023\TabControlTraining\TabControlTraining\obj\Debug\TabControlTraining.pdb

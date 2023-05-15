@@ -35,10 +35,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnRemoveContractor = new System.Windows.Forms.Button();
             this.BtnSaveInformation = new System.Windows.Forms.Button();
+            this.BtnRemoveContractor = new System.Windows.Forms.Button();
+            this.BtnEditInformation = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +96,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -107,17 +106,9 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacje:";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(39, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 27);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Edytuj Dane";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnEditInformation);
             this.groupBox2.Controls.Add(this.BtnSaveInformation);
             this.groupBox2.Controls.Add(this.BtnRemoveContractor);
             this.groupBox2.Controls.Add(this.btnAddContractor);
@@ -129,6 +120,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kontrahenci:";
             // 
+            // BtnSaveInformation
+            // 
+            this.BtnSaveInformation.Location = new System.Drawing.Point(29, 331);
+            this.BtnSaveInformation.Name = "BtnSaveInformation";
+            this.BtnSaveInformation.Size = new System.Drawing.Size(195, 26);
+            this.BtnSaveInformation.TabIndex = 3;
+            this.BtnSaveInformation.Text = "Zapisz Informacje";
+            this.BtnSaveInformation.UseVisualStyleBackColor = true;
+            this.BtnSaveInformation.Click += new System.EventHandler(this.BtnSaveInformation_Click);
+            // 
             // BtnRemoveContractor
             // 
             this.BtnRemoveContractor.Location = new System.Drawing.Point(29, 261);
@@ -139,15 +140,15 @@
             this.BtnRemoveContractor.UseVisualStyleBackColor = true;
             this.BtnRemoveContractor.Click += new System.EventHandler(this.BtnRemoveContractor_Click);
             // 
-            // BtnSaveInformation
+            // BtnEditInformation
             // 
-            this.BtnSaveInformation.Location = new System.Drawing.Point(29, 304);
-            this.BtnSaveInformation.Name = "BtnSaveInformation";
-            this.BtnSaveInformation.Size = new System.Drawing.Size(195, 26);
-            this.BtnSaveInformation.TabIndex = 3;
-            this.BtnSaveInformation.Text = "Zapisz Informacje";
-            this.BtnSaveInformation.UseVisualStyleBackColor = true;
-            this.BtnSaveInformation.Click += new System.EventHandler(this.BtnSaveInformation_Click);
+            this.BtnEditInformation.Location = new System.Drawing.Point(29, 293);
+            this.BtnEditInformation.Name = "BtnEditInformation";
+            this.BtnEditInformation.Size = new System.Drawing.Size(195, 26);
+            this.BtnEditInformation.TabIndex = 4;
+            this.BtnEditInformation.Text = "Edytuj Informacje";
+            this.BtnEditInformation.UseVisualStyleBackColor = true;
+            this.BtnEditInformation.Click += new System.EventHandler(this.btnEditInformation_Click);
             // 
             // Form1
             // 
@@ -174,10 +175,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button BtnSaveInformation;
         private System.Windows.Forms.Button BtnRemoveContractor;
+        private System.Windows.Forms.Button BtnEditInformation;
     }
 }
 

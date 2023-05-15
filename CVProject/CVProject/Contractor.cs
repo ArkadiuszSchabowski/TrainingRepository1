@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CVProject
 {
-    public class Contractors
+    public class Contractor
     {
         public string CompanyName
         {
@@ -17,7 +17,7 @@ namespace CVProject
         public string adress;
         public string eMail;
 
-        public Contractors()
+        public Contractor()
         {
             Initialize();
         }

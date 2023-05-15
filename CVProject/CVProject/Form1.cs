@@ -20,7 +20,7 @@ namespace CVProject
 
         private void BtnAddContractor_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(new Contractors());
+            listBox1.Items.Add(new Contractor());
         }
 
         private void UpdateDisplayMember()
@@ -36,6 +36,12 @@ namespace CVProject
         private void BtnSaveInformation_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditInformation_Click(object sender, EventArgs e)
+        {
+            listBox1.SelectedItem = textBox1.Text;
+            textBox1.Text = string.Empty;
         }
     }
 }
