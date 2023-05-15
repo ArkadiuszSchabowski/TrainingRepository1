@@ -15,6 +15,35 @@ namespace TabControlTraining
         public Form1()
         {
             InitializeComponent();
+            UpdateDisplay();
+            AddCountry();
+        }
+        public void AddCountry()
+        {
+            countryList.Items.Add(Orders.Polska);
+            countryList.Items.Add(Orders.Litwa);
+            countryList.Items.Add(Orders.Wlochy);
+        }
+
+        private void UpdateDisplay()
+        {
+            contractorsList.DisplayMember = "Name";
+            countryList.DisplayMember = "Country";
+        }
+
+        private void btnAddContractor_Click(object sender, EventArgs e)
+        {
+            contractorsList.Items.Add(new Contractor());
+        }
+
+        private void btnSaveInformation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRemoveContractor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
