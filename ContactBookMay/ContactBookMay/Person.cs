@@ -13,10 +13,14 @@ namespace ContactBookMay
             get { return name; } 
         }
         public string name;
+        public string email;
+        public string adress;
+        public DateTime birthday;
         public string notes;
         public Person()
         {
             name = "New Person";
+            birthday = DateTime.Now;
         }
     }
 }
