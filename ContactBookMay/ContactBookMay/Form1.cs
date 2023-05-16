@@ -27,5 +27,14 @@ namespace ContactBookMay
         {
             listBox1.Items.Add(new Person());
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem == null)
+                return;
+
+            Person person = (Person)listBox1.SelectedItem;
+
+        }
     }
 }
