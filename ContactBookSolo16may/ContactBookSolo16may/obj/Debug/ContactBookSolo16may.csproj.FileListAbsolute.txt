@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\bin\Debug\ContactBookSolo16may.exe.config
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\bin\Debug\ContactBookSolo16may.exe
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\bin\Debug\ContactBookSolo16may.pdb
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.Form1.resources
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.exe
+C:\Users\Greedy\Desktop\2023\ContactBookSolo16may\ContactBookSolo16may\obj\Debug\ContactBookSolo16may.pdb

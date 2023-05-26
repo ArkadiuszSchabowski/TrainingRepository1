@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\bin\Debug\HiHeyHelloGame.exe.config
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\bin\Debug\HiHeyHelloGame.exe
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\bin\Debug\HiHeyHelloGame.pdb
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\obj\Debug\HiHeyHelloGame.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\obj\Debug\HiHeyHelloGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\obj\Debug\HiHeyHelloGame.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\obj\Debug\HiHeyHelloGame.exe
+C:\Users\Greedy\Desktop\2023\HiHeyHelloGame\HiHeyHelloGame\obj\Debug\HiHeyHelloGame.pdb
