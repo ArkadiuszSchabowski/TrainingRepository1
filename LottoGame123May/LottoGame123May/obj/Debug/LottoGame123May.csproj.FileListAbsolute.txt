@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\bin\Debug\LottoGame123May.exe.config
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\bin\Debug\LottoGame123May.exe
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\bin\Debug\LottoGame123May.pdb
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\obj\Debug\LottoGame123May.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\obj\Debug\LottoGame123May.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\obj\Debug\LottoGame123May.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\obj\Debug\LottoGame123May.exe
+C:\Users\Greedy\Desktop\2023\LottoGame123May\LottoGame123May\obj\Debug\LottoGame123May.pdb
