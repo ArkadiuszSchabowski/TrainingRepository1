@@ -16,5 +16,20 @@ namespace ProjectEnglishFlashCards
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != string.Empty)
+            {
+                if (!listBox1.Items.Contains(textBox1.Text))
+                {
+                    listBox1.Items.Add(textBox1.Text);
+                }
+                else
+                {
+                    MessageBox.Show("List contains your word!");
+                }
+            }
+        }
     }
 }

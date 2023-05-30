@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\bin\Debug\ProjectEnglishFlashCards.exe.config
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\bin\Debug\ProjectEnglishFlashCards.exe
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\bin\Debug\ProjectEnglishFlashCards.pdb
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.Form1.resources
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.exe
+C:\Users\Greedy\Desktop\2023\ProjectEnglishFlashCards\ProjectEnglishFlashCards\obj\Debug\ProjectEnglishFlashCards.pdb
