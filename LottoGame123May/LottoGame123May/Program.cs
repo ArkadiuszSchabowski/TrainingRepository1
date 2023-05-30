@@ -9,21 +9,22 @@ namespace LottoGame123May
     public static class Program
     {
         static int balance = 20;
-        static int number1, number2, number3, number4, number5, number6;
+        static int startBalance = balance;
+        static int userNumber1, userNumber2, userNumber3, userNumber4, userNumber5, userNumber6;
         static int comNumber1, comNumber2, comNumber3, comNumber4, comNumber5, comNumber6;
         static Random rnd = new Random();
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Lotto Game\n");
-            Console.WriteLine();
             Menu();
         }
         static void Menu()
         {
+
+            Console.Clear();
             Console.WriteLine($"Your balance is {balance}$\n");
             Console.WriteLine("Your tickets:\n");
 
-            Console.WriteLine("1. Send a ticket - 2$");
+            Console.WriteLine("1. Send lottery ticket - 2$");
             Console.WriteLine("2. Check a results");
             Console.WriteLine("3. Quit Game");
 
@@ -32,19 +33,23 @@ namespace LottoGame123May
             switch (key)
             {
                 case ConsoleKey.D1:
-                    SendATicket();
+                    SendLotteryTicket();
                     break;
                 case ConsoleKey.D2:
-                    CheckedAResults();
+                    CheckResults();
                     break;
                 case ConsoleKey.D3:
-                    Quitgame();
+                    QuitGame();
                     break;
                 default:
+                    Console.WriteLine("Select the correct option, please!\n");
+                    Console.WriteLine("Press any key to continue");
+                    Console.ReadKey();
+                    Menu();
                     break;
             }
         }
-        static void SendATicket()
+        static void SendLotteryTicket()
         {
             if (balance > 2)
             {
@@ -64,24 +69,25 @@ namespace LottoGame123May
         {
             bool correct;
 
-
-            correct = int.TryParse(Console.ReadLine(), out number1);
-            if (correct)
+            for (int i = 0; i < 7; i++)
             {
-
+                correct = int.TryParse(Console.ReadLine(), out userNumber1);
+                if (correct && userNumber1 > 0 && userNumber1 < 50)
+                {
+                }
+                else
+                {
+                    Console.WriteLine("Wrong value, select the correct value please!");
+                }
+                userNumber2 = int.Parse(Console.ReadLine());
+                userNumber3 = int.Parse(Console.ReadLine());
+                userNumber4 = int.Parse(Console.ReadLine());
+                userNumber5 = int.Parse(Console.ReadLine());
+                userNumber6 = int.Parse(Console.ReadLine());
             }
-            else
-            {
-                Console.WriteLine("Wrong value, select the correct value please!");
-            }
-            number2 = int.Parse(Console.ReadLine());
-            number3 = int.Parse(Console.ReadLine());
-            number4 = int.Parse(Console.ReadLine());
-            number5 = int.Parse(Console.ReadLine());
-            number6 = int.Parse(Console.ReadLine());
         }
 
-        private static void CheckedAResults()
+        private static void CheckResults()
         {
             comNumber1 = rnd.Next(1, 50);
             comNumber2 = rnd.Next(1, 50);
@@ -90,12 +96,13 @@ namespace LottoGame123May
             comNumber5 = rnd.Next(1, 50);
             comNumber6 = rnd.Next(1, 50);
 
-            Console.WriteLine($"{comNumber1}, {comNumber1}, {comNumber1}, {comNumber1},{comNumber1},,{comNumber1},");
+            Console.WriteLine("Computer numbers are:\n");
+            Console.WriteLine($"{comNumber1}, {comNumber2}, {comNumber3}, {comNumber4},{comNumber5},,{comNumber6}.");
         }
-
-        private static void Quitgame()
+        private static void QuitGame()
         {
-
+            Console.WriteLine($"Thank You for your game. Your result is: {balance - startBalance}");
+            Console.ReadKey();
         }
     }
 }
