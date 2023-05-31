@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\bin\Debug\BarCodeProject.exe.config
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\bin\Debug\BarCodeProject.exe
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\bin\Debug\BarCodeProject.pdb
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.exe
+C:\Users\Greedy\Desktop\2023\BarCodeProject\BarCodeProject\obj\Debug\BarCodeProject.pdb

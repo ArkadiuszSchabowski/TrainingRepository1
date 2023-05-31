@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelMySql = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtBarCode = new System.Windows.Forms.TextBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.labelBarCode = new System.Windows.Forms.Label();
@@ -42,8 +43,8 @@
             this.txtAdress = new System.Windows.Forms.TextBox();
             this.txtMobile = new System.Windows.Forms.TextBox();
             this.txtMemberID = new System.Windows.Forms.TextBox();
-            this.comboBoxMemberType = new System.Windows.Forms.ComboBox();
-            this.comboBoxGender = new System.Windows.Forms.ComboBox();
+            this.cboMemberType = new System.Windows.Forms.ComboBox();
+            this.cboGender = new System.Windows.Forms.ComboBox();
             this.labelMemberType = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelPostCode = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.txtBarCode = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -101,6 +101,15 @@
             this.panel2.Size = new System.Drawing.Size(825, 57);
             this.panel2.TabIndex = 1;
             // 
+            // txtBarCode
+            // 
+            this.txtBarCode.Font = new System.Drawing.Font("CCode39", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarCode.Location = new System.Drawing.Point(148, 10);
+            this.txtBarCode.Multiline = true;
+            this.txtBarCode.Name = "txtBarCode";
+            this.txtBarCode.Size = new System.Drawing.Size(225, 34);
+            this.txtBarCode.TabIndex = 4;
+            // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -138,8 +147,8 @@
             this.panel3.Controls.Add(this.txtAdress);
             this.panel3.Controls.Add(this.txtMobile);
             this.panel3.Controls.Add(this.txtMemberID);
-            this.panel3.Controls.Add(this.comboBoxMemberType);
-            this.panel3.Controls.Add(this.comboBoxGender);
+            this.panel3.Controls.Add(this.cboMemberType);
+            this.panel3.Controls.Add(this.cboGender);
             this.panel3.Controls.Add(this.labelMemberType);
             this.panel3.Controls.Add(this.labelEmail);
             this.panel3.Controls.Add(this.labelPostCode);
@@ -203,21 +212,30 @@
             this.txtMemberID.Size = new System.Drawing.Size(155, 20);
             this.txtMemberID.TabIndex = 11;
             // 
-            // comboBoxMemberType
+            // cboMemberType
             // 
-            this.comboBoxMemberType.FormattingEnabled = true;
-            this.comboBoxMemberType.Location = new System.Drawing.Point(639, 72);
-            this.comboBoxMemberType.Name = "comboBoxMemberType";
-            this.comboBoxMemberType.Size = new System.Drawing.Size(164, 21);
-            this.comboBoxMemberType.TabIndex = 10;
+            this.cboMemberType.FormattingEnabled = true;
+            this.cboMemberType.Items.AddRange(new object[] {
+            "",
+            "Annual",
+            "Monthly",
+            "Quarterly"});
+            this.cboMemberType.Location = new System.Drawing.Point(639, 72);
+            this.cboMemberType.Name = "cboMemberType";
+            this.cboMemberType.Size = new System.Drawing.Size(164, 21);
+            this.cboMemberType.TabIndex = 10;
             // 
-            // comboBoxGender
+            // cboGender
             // 
-            this.comboBoxGender.FormattingEnabled = true;
-            this.comboBoxGender.Location = new System.Drawing.Point(336, 35);
-            this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(172, 21);
-            this.comboBoxGender.TabIndex = 9;
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Items.AddRange(new object[] {
+            "",
+            "Female",
+            "Male"});
+            this.cboGender.Location = new System.Drawing.Point(336, 35);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(172, 21);
+            this.cboGender.TabIndex = 9;
             // 
             // labelMemberType
             // 
@@ -357,6 +375,7 @@
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnDelete
             // 
@@ -384,14 +403,6 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add new";
             this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // txtBarCode
-            // 
-            this.txtBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBarCode.Location = new System.Drawing.Point(148, 10);
-            this.txtBarCode.Name = "txtBarCode";
-            this.txtBarCode.Size = new System.Drawing.Size(225, 31);
-            this.txtBarCode.TabIndex = 4;
             // 
             // Form1
             // 
@@ -434,8 +445,8 @@
         private System.Windows.Forms.TextBox txtAdress;
         private System.Windows.Forms.TextBox txtMobile;
         private System.Windows.Forms.TextBox txtMemberID;
-        private System.Windows.Forms.ComboBox comboBoxMemberType;
-        private System.Windows.Forms.ComboBox comboBoxGender;
+        private System.Windows.Forms.ComboBox cboMemberType;
+        private System.Windows.Forms.ComboBox cboGender;
         private System.Windows.Forms.Label labelMemberType;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelPostCode;
