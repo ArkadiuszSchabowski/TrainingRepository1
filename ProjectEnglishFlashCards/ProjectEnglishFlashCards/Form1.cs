@@ -15,15 +15,26 @@ namespace ProjectEnglishFlashCards
         public Form1()
         {
             InitializeComponent();
+            CountWords();
+        }
+        private void CountWords()
+        {
+            firstLabel.Text = "Your dictionary contains " + listBox1.Items.Count + " words!";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == string.Empty)
+            {
+                MessageBox.Show("You can't add word empty!");
+            }
+
             if (textBox1.Text != string.Empty)
             {
                 if (!listBox1.Items.Contains(textBox1.Text))
                 {
                     listBox1.Items.Add(textBox1.Text);
+                    CountWords();
                 }
                 else
                 {

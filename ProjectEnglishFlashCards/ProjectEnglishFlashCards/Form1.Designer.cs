@@ -36,6 +36,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.firstLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Chocolate;
+            this.tabPage1.Controls.Add(this.firstLabel);
             this.tabPage1.Controls.Add(this.btnSave);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.listBox1);
@@ -71,7 +73,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(316, 118);
+            this.tabPage2.Size = new System.Drawing.Size(756, 315);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -98,9 +100,9 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(450, 22);
+            this.listBox1.Location = new System.Drawing.Point(448, 61);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(265, 238);
+            this.listBox1.Size = new System.Drawing.Size(267, 199);
             this.listBox1.TabIndex = 2;
             // 
             // textBox1
@@ -119,6 +121,15 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save Information";
             this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // firstLabel
+            // 
+            this.firstLabel.AutoSize = true;
+            this.firstLabel.Location = new System.Drawing.Point(445, 26);
+            this.firstLabel.Name = "firstLabel";
+            this.firstLabel.Size = new System.Drawing.Size(166, 13);
+            this.firstLabel.TabIndex = 5;
+            this.firstLabel.Text = "Your dictionary contains: 0 words!";
             // 
             // Form1
             // 
@@ -145,6 +156,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label firstLabel;
     }
 }
 
