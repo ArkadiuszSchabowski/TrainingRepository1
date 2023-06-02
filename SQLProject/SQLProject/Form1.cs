@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace SQLProject
     {
         MySqlConnection sqlConn = new MySqlConnection();
         MySqlCommand sqlCmd = new MySqlCommand();
-        DataTable dt = new DataTable();
+        DataTable sqlDt = new DataTable();
         String sqlQuery;
         MySqlDataAdapter Dta = new MySqlDataAdapter();
         MySqlDataReader sqlRd;
@@ -24,7 +25,7 @@ namespace SQLProject
 
         String server = "localhost";
         String username = "root";
-        String password = "12345";
+        String password = "YES";
         String database = "membership";
         public Form1()
         {
@@ -32,9 +33,28 @@ namespace SQLProject
         }
         private void uploadData()
         {
-            sqlConn.ConnectionString = "server=" + server + ";" + "username" + username + ";" + "password " + password + ";" + "database" + database;
+            sqlConn.ConnectionString = "server=" + server + ";"
+                + "username =" + username + ";"
+                + "password =" + password + ";"
+                + "database =" + database;
+
             sqlConn.Open();
             sqlCmd.Connection = sqlConn;
+            sqlCmd.CommandText = "SELECT * FROM membership.membership";
+            sqlRd = sqlCmd.ExecuteReader();
+            sqlDt.Load(sqlRd);
+            sqlRd.Close();
+            sqlConn.Close();
+
+            dataGridView1.DataSource = sqlDt;
+
+        }
+
+        private void refNumber()
+        {
+            Random rnd = new Random();
+            int num = rnd.Next(5000, 10000);
+            txtBarCode.Text = "Additional Ref" + Convert.ToString(num * 12);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -79,6 +99,12 @@ namespace SQLProject
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            refNumber();
+            uploadData();
         }
     }
 }

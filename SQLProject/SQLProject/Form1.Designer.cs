@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelMySql = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -76,14 +77,14 @@
             this.panel1.Controls.Add(this.labelMySql);
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(825, 65);
+            this.panel1.Size = new System.Drawing.Size(825, 39);
             this.panel1.TabIndex = 0;
             // 
             // labelMySql
             // 
             this.labelMySql.AutoSize = true;
             this.labelMySql.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelMySql.Location = new System.Drawing.Point(230, 16);
+            this.labelMySql.Location = new System.Drawing.Point(230, 3);
             this.labelMySql.Name = "labelMySql";
             this.labelMySql.Size = new System.Drawing.Size(372, 31);
             this.labelMySql.TabIndex = 0;
@@ -96,7 +97,7 @@
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.labelBarCode);
-            this.panel2.Location = new System.Drawing.Point(6, 77);
+            this.panel2.Location = new System.Drawing.Point(6, 51);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(825, 57);
             this.panel2.TabIndex = 1;
@@ -158,7 +159,7 @@
             this.panel3.Controls.Add(this.labelFirstName);
             this.panel3.Controls.Add(this.labelSurname);
             this.panel3.Controls.Add(this.labelMemberID);
-            this.panel3.Location = new System.Drawing.Point(6, 140);
+            this.panel3.Location = new System.Drawing.Point(6, 114);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(825, 109);
             this.panel3.TabIndex = 2;
@@ -331,17 +332,28 @@
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.Location = new System.Drawing.Point(6, 255);
+            this.panel4.Location = new System.Drawing.Point(6, 229);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(825, 91);
+            this.panel4.Size = new System.Drawing.Size(825, 167);
             this.panel4.TabIndex = 3;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(8, 8);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(816, 72);
+            this.dataGridView1.Size = new System.Drawing.Size(816, 156);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel5
@@ -352,14 +364,14 @@
             this.panel5.Controls.Add(this.btnDelete);
             this.panel5.Controls.Add(this.btnDisplay);
             this.panel5.Controls.Add(this.btnAdd);
-            this.panel5.Location = new System.Drawing.Point(6, 352);
+            this.panel5.Location = new System.Drawing.Point(5, 399);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(825, 77);
+            this.panel5.Size = new System.Drawing.Size(825, 35);
             this.panel5.TabIndex = 4;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(673, 21);
+            this.btnExit.Location = new System.Drawing.Point(673, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(142, 28);
             this.btnExit.TabIndex = 4;
@@ -369,7 +381,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(511, 21);
+            this.btnReset.Location = new System.Drawing.Point(504, 3);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(142, 28);
             this.btnReset.TabIndex = 5;
@@ -379,7 +391,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(335, 21);
+            this.btnDelete.Location = new System.Drawing.Point(335, 3);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(142, 28);
             this.btnDelete.TabIndex = 6;
@@ -388,7 +400,7 @@
             // 
             // btnDisplay
             // 
-            this.btnDisplay.Location = new System.Drawing.Point(169, 21);
+            this.btnDisplay.Location = new System.Drawing.Point(169, 3);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(142, 28);
             this.btnDisplay.TabIndex = 7;
@@ -397,7 +409,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(12, 21);
+            this.btnAdd.Location = new System.Drawing.Point(6, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(142, 28);
             this.btnAdd.TabIndex = 8;
@@ -416,6 +428,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Member ID";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
