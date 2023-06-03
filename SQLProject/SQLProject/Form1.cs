@@ -115,7 +115,7 @@ namespace SQLProject
 
                 sqlConn.Open();
 
-                sqlQuery = "INSERT INTO membership.membership (memid, firstname, surname, address, postcode, gender, mobile, email, mtype) VALUES('" + txtMemberID.Text + "','" + txtFirstName.Text + "','" + txtSurname.Text + "','" + txtAdress.Text + "','" + txtPostCode.Text + "','" + cboGender.Text + "','" + txtMobile.Text + "','" + txtEmail.Text + "','" + cboMemberType.Text + "')";
+                sqlQuery = "INSERT INTO membership.membership (memid, firstname, surname, address, postcode, gender, mobile, email, mtype) VALUES('" + (txtMemberID.Text + "','" + txtFirstName.Text + "','" + txtSurname.Text + "','" + txtAdress.Text + "','" + txtPostCode.Text + "','" + cboGender.Text + "','" + txtMobile.Text + "','" + txtEmail.Text + "','" + cboMemberType.Text + "')").ToUpper();
 
                 sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
                 sqlRd = sqlCmd.ExecuteReader();
@@ -131,6 +131,60 @@ namespace SQLProject
             }
             uploadData();
             refNumber();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMemberID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                txtFirstName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                txtSurname.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                txtAdress.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                txtPostCode.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                cboGender.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                txtMobile.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                txtEmail.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                cboMemberType.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataView dv = sqlDt.DefaultView;
+                dv.RowFilter = String.Format("firstname like '%{0}%'", txtSearch.Text);
+                dataGridView1.DataSource = dv.ToTable();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConn.ConnectionString = "server=" + server + ";" + "username =" + username + ";" + "password =" + password + ";" + "database =" + database;
+
+                sqlConn.Open();
+
+                sqlCmd.CommandText = "DELETE FROM membership.membership WHERE memid =@memid";
+
+                sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
+
+                sqlConn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
