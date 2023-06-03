@@ -106,5 +106,31 @@ namespace SQLProject
             refNumber();
             uploadData();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConn.ConnectionString = "server=" + server + ";" + "username =" + username + ";" + "password =" + password + ";" + "database =" + database;
+
+                sqlConn.Open();
+
+                sqlQuery = "INSERT INTO membership.membership (memid, firstname, surname, address, postcode, gender, mobile, email, mtype) VALUES('" + txtMemberID.Text + "','" + txtFirstName.Text + "','" + txtSurname.Text + "','" + txtAdress.Text + "','" + txtPostCode.Text + "','" + cboGender.Text + "','" + txtMobile.Text + "','" + txtEmail.Text + "','" + cboMemberType.Text + "')";
+
+                sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
+                sqlRd = sqlCmd.ExecuteReader();
+                sqlConn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally 
+            {
+                sqlConn.Close();
+            }
+            uploadData();
+            refNumber();
+        }
     }
 }
