@@ -20,6 +20,9 @@ namespace EnglishFlashcards
 
         Random rnd = new Random();
 
+        int correct = 0;
+        int incorrect = 0;
+
         MySqlConnection sqlConn = new MySqlConnection();
         MySqlCommand sqlCmd = new MySqlCommand();
         DataTable sqlDt = new DataTable();
@@ -44,8 +47,35 @@ namespace EnglishFlashcards
             CountWords();
             AddFewWordsToTheLists();
         }
+        private void AllAnswers()
+        {
+            try
+            {
+                int sum =0;
+                int average =0;
+
+                sum = correct + incorrect;
+                average = (correct * 100) / sum;
+
+                lblCorrect.Text = $"Poprawnych odpowiedzi {correct}.";
+                lblIncorrect.Text = $"Blednych odpowiedzi {incorrect}.";
+                lblAverage.Text = $"Procent poprawnosci: {average}%";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void CountWords()
         {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+            }
             lblCount.Text = "Ilosc fiszek w bazie danych: " + (dataGridView1.RowCount - 1);
         }
         private void btnRandomPl_Click(object sender, EventArgs e)
@@ -90,7 +120,6 @@ namespace EnglishFlashcards
 
             dataGridView1.DataSource = sqlDt;
         }
-
         private void btnPlay_Click(object sender, EventArgs e)
         {
 
@@ -176,21 +205,34 @@ namespace EnglishFlashcards
         {
 
         }
-
         private void btnCheck_Click(object sender, EventArgs e)
         {
+
             string polandWord = txtPoland.Text.ToLower();
             string englandWord = txtEngland.Text.ToLower();
 
-            if (listPoland.Items.Contains(polandWord) && listEngland.Items.Contains(englandWord))
+            int index = listPoland.Items.IndexOf(polandWord);
+
+            if (index != -1 && listEngland.Items.Count > index && listEngland.Items[index].ToString().ToLower() == englandWord)
             {
                 MessageBox.Show("Poprawne słowo!");
+                correct++;
+                AllAnswers();
+
+                txtPoland.Text = "";
+                txtEngland.Text = "";
             }
             else
             {
                 MessageBox.Show("Niepoprawne słowo!");
+                incorrect++;
+                AllAnswers();
+
+                txtPoland.Text = "";
+                txtEngland.Text = "";
             }
         }
     }
 }
+
 
