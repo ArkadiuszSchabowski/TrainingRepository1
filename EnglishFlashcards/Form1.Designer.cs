@@ -31,12 +31,12 @@
             this.Game = new System.Windows.Forms.TabControl();
             this.Dictionary = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
-            this.textNumber = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textEnglish = new System.Windows.Forms.TextBox();
-            this.textPolish = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtEnglish = new System.Windows.Forms.TextBox();
+            this.txtPolish = new System.Windows.Forms.TextBox();
+            this.lblCount = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -61,8 +61,13 @@
             this.txtEngland = new System.Windows.Forms.TextBox();
             this.txtPoland = new System.Windows.Forms.TextBox();
             this.btnRandomPl = new System.Windows.Forms.Button();
-            this.listUsa = new System.Windows.Forms.ListBox();
+            this.listEngland = new System.Windows.Forms.ListBox();
             this.listPoland = new System.Windows.Forms.ListBox();
+            this.btnAddWord = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.Game.SuspendLayout();
             this.Dictionary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,12 +92,12 @@
             // 
             this.Dictionary.BackColor = System.Drawing.Color.CadetBlue;
             this.Dictionary.Controls.Add(this.label9);
-            this.Dictionary.Controls.Add(this.textNumber);
+            this.Dictionary.Controls.Add(this.txtNumber);
             this.Dictionary.Controls.Add(this.label8);
             this.Dictionary.Controls.Add(this.label7);
-            this.Dictionary.Controls.Add(this.textEnglish);
-            this.Dictionary.Controls.Add(this.textPolish);
-            this.Dictionary.Controls.Add(this.label1);
+            this.Dictionary.Controls.Add(this.txtEnglish);
+            this.Dictionary.Controls.Add(this.txtPolish);
+            this.Dictionary.Controls.Add(this.lblCount);
             this.Dictionary.Controls.Add(this.btnRemove);
             this.Dictionary.Controls.Add(this.btnModify);
             this.Dictionary.Controls.Add(this.btnAdd);
@@ -114,12 +119,12 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Numer fiszki:";
             // 
-            // textNumber
+            // txtNumber
             // 
-            this.textNumber.Location = new System.Drawing.Point(332, 53);
-            this.textNumber.Name = "textNumber";
-            this.textNumber.Size = new System.Drawing.Size(459, 26);
-            this.textNumber.TabIndex = 9;
+            this.txtNumber.Location = new System.Drawing.Point(332, 53);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(459, 26);
+            this.txtNumber.TabIndex = 9;
             // 
             // label8
             // 
@@ -141,29 +146,29 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Angielskie znaczenie:";
             // 
-            // textEnglish
+            // txtEnglish
             // 
-            this.textEnglish.Location = new System.Drawing.Point(332, 130);
-            this.textEnglish.Name = "textEnglish";
-            this.textEnglish.Size = new System.Drawing.Size(459, 26);
-            this.textEnglish.TabIndex = 6;
+            this.txtEnglish.Location = new System.Drawing.Point(332, 130);
+            this.txtEnglish.Name = "txtEnglish";
+            this.txtEnglish.Size = new System.Drawing.Size(459, 26);
+            this.txtEnglish.TabIndex = 6;
             // 
-            // textPolish
+            // txtPolish
             // 
-            this.textPolish.Location = new System.Drawing.Point(332, 93);
-            this.textPolish.Name = "textPolish";
-            this.textPolish.Size = new System.Drawing.Size(459, 26);
-            this.textPolish.TabIndex = 5;
+            this.txtPolish.Location = new System.Drawing.Point(332, 93);
+            this.txtPolish.Name = "txtPolish";
+            this.txtPolish.Size = new System.Drawing.Size(459, 26);
+            this.txtPolish.TabIndex = 5;
             // 
-            // label1
+            // lblCount
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(25, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 31);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Ilosc fiszek w bazie danych:";
+            this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCount.Location = new System.Drawing.Point(25, 3);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(379, 31);
+            this.lblCount.TabIndex = 4;
+            this.lblCount.Text = "Ilosc fiszek w bazie danych:";
             // 
             // btnRemove
             // 
@@ -174,6 +179,7 @@
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "Usun";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnModify
             // 
@@ -184,6 +190,7 @@
             this.btnModify.TabIndex = 2;
             this.btnModify.Text = "Edytuj";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnAdd
             // 
@@ -234,7 +241,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(201, 24);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Fiszek w pojemniku 1: ";
+            this.label6.Text = "Fiszek w pojemniku 2: ";
             // 
             // label5
             // 
@@ -244,7 +251,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(201, 24);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Fiszek w pojemniku 1: ";
+            this.label5.Text = "Fiszek w pojemniku 3: ";
             // 
             // label4
             // 
@@ -254,7 +261,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(201, 24);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Fiszek w pojemniku 1: ";
+            this.label4.Text = "Fiszek w pojemniku 4: ";
             // 
             // label3
             // 
@@ -264,7 +271,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 24);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Fiszek w pojemniku 1: ";
+            this.label3.Text = "Fiszek w pojemniku 5: ";
             // 
             // label2
             // 
@@ -346,13 +353,18 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.CadetBlue;
+            this.tabPage1.Controls.Add(this.btnCheck);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.btnAddWord);
             this.tabPage1.Controls.Add(this.btnRandomEng);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.txtEngland);
             this.tabPage1.Controls.Add(this.txtPoland);
             this.tabPage1.Controls.Add(this.btnRandomPl);
-            this.tabPage1.Controls.Add(this.listUsa);
+            this.tabPage1.Controls.Add(this.listEngland);
             this.tabPage1.Controls.Add(this.listPoland);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -363,7 +375,7 @@
             // 
             // btnRandomEng
             // 
-            this.btnRandomEng.Location = new System.Drawing.Point(19, 294);
+            this.btnRandomEng.Location = new System.Drawing.Point(19, 245);
             this.btnRandomEng.Name = "btnRandomEng";
             this.btnRandomEng.Size = new System.Drawing.Size(257, 43);
             this.btnRandomEng.TabIndex = 7;
@@ -375,7 +387,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(106, 133);
+            this.label11.Location = new System.Drawing.Point(106, 76);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 31);
             this.label11.TabIndex = 6;
@@ -385,7 +397,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(106, 34);
+            this.label10.Location = new System.Drawing.Point(106, 4);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 31);
             this.label10.TabIndex = 5;
@@ -393,21 +405,21 @@
             // 
             // txtEngland
             // 
-            this.txtEngland.Location = new System.Drawing.Point(19, 166);
+            this.txtEngland.Location = new System.Drawing.Point(19, 109);
             this.txtEngland.Name = "txtEngland";
             this.txtEngland.Size = new System.Drawing.Size(257, 26);
             this.txtEngland.TabIndex = 4;
             // 
             // txtPoland
             // 
-            this.txtPoland.Location = new System.Drawing.Point(19, 68);
+            this.txtPoland.Location = new System.Drawing.Point(19, 38);
             this.txtPoland.Name = "txtPoland";
             this.txtPoland.Size = new System.Drawing.Size(257, 26);
             this.txtPoland.TabIndex = 3;
             // 
             // btnRandomPl
             // 
-            this.btnRandomPl.Location = new System.Drawing.Point(19, 232);
+            this.btnRandomPl.Location = new System.Drawing.Point(19, 196);
             this.btnRandomPl.Name = "btnRandomPl";
             this.btnRandomPl.Size = new System.Drawing.Size(257, 43);
             this.btnRandomPl.TabIndex = 2;
@@ -415,23 +427,73 @@
             this.btnRandomPl.UseVisualStyleBackColor = true;
             this.btnRandomPl.Click += new System.EventHandler(this.btnRandomPl_Click);
             // 
-            // listUsa
+            // listEngland
             // 
-            this.listUsa.FormattingEnabled = true;
-            this.listUsa.ItemHeight = 20;
-            this.listUsa.Location = new System.Drawing.Point(554, 33);
-            this.listUsa.Name = "listUsa";
-            this.listUsa.Size = new System.Drawing.Size(197, 304);
-            this.listUsa.TabIndex = 1;
+            this.listEngland.FormattingEnabled = true;
+            this.listEngland.ItemHeight = 20;
+            this.listEngland.Location = new System.Drawing.Point(566, 126);
+            this.listEngland.Name = "listEngland";
+            this.listEngland.Size = new System.Drawing.Size(197, 204);
+            this.listEngland.TabIndex = 1;
             // 
             // listPoland
             // 
             this.listPoland.FormattingEnabled = true;
             this.listPoland.ItemHeight = 20;
-            this.listPoland.Location = new System.Drawing.Point(309, 33);
+            this.listPoland.Location = new System.Drawing.Point(327, 126);
             this.listPoland.Name = "listPoland";
-            this.listPoland.Size = new System.Drawing.Size(197, 304);
+            this.listPoland.Size = new System.Drawing.Size(197, 204);
             this.listPoland.TabIndex = 0;
+            // 
+            // btnAddWord
+            // 
+            this.btnAddWord.Location = new System.Drawing.Point(19, 294);
+            this.btnAddWord.Name = "btnAddWord";
+            this.btnAddWord.Size = new System.Drawing.Size(257, 43);
+            this.btnAddWord.TabIndex = 8;
+            this.btnAddWord.Text = "Dodaj Slowko";
+            this.btnAddWord.UseVisualStyleBackColor = true;
+            this.btnAddWord.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(321, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(337, 31);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Poprawnych odpowiedzi:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(321, 31);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(297, 31);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Blednych odpowiedzi:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label14.Location = new System.Drawing.Point(321, 62);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(390, 31);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Procent dobrych odpowiedzi:";
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(19, 147);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(257, 43);
+            this.btnCheck.TabIndex = 12;
+            this.btnCheck.Text = "Sprawdz";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // Form1
             // 
@@ -458,7 +520,7 @@
         private System.Windows.Forms.TabControl Game;
         private System.Windows.Forms.TabPage Dictionary;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnModify;
         private System.Windows.Forms.Button btnAdd;
@@ -477,12 +539,12 @@
         private System.Windows.Forms.Button btnInformation;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textEnglish;
-        private System.Windows.Forms.TextBox textPolish;
+        private System.Windows.Forms.TextBox txtEnglish;
+        private System.Windows.Forms.TextBox txtPolish;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textNumber;
+        private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListBox listUsa;
+        private System.Windows.Forms.ListBox listEngland;
         private System.Windows.Forms.ListBox listPoland;
         private System.Windows.Forms.TextBox txtEngland;
         private System.Windows.Forms.TextBox txtPoland;
@@ -490,6 +552,11 @@
         private System.Windows.Forms.Button btnRandomEng;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnAddWord;
+        private System.Windows.Forms.Button btnCheck;
     }
 }
 

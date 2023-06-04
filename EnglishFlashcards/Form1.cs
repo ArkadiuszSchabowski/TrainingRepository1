@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Protobuf.Collections;
 using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -39,7 +41,12 @@ namespace EnglishFlashcards
         {
             InitializeComponent();
             UploadData();
+            CountWords();
             AddFewWordsToTheLists();
+        }
+        private void CountWords()
+        {
+            lblCount.Text = "Ilosc fiszek w bazie danych: " + (dataGridView1.RowCount - 1);
         }
         private void btnRandomPl_Click(object sender, EventArgs e)
         {
@@ -50,20 +57,20 @@ namespace EnglishFlashcards
         }
         private void btnRandomEng_Click(object sender, EventArgs e)
         {
-            int rndIndex = rnd.Next(0, listUsa.Items.Count);
-            string wylosowane = listUsa.Items[rndIndex].ToString();
+            int rndIndex = rnd.Next(0, listEngland.Items.Count);
+            string wylosowane = listEngland.Items[rndIndex].ToString();
             txtEngland.Text = wylosowane.ToString();
             txtPoland.Text = "";
         }
         private void AddFewWordsToTheLists()
         {
-            listPoland.Items.Add("Pies");
-            listPoland.Items.Add("Szczur");
-            listPoland.Items.Add("Gryzon");
+            listPoland.Items.Add("pies");
+            listPoland.Items.Add("szczur");
+            listPoland.Items.Add("gryzon");
 
-            listUsa.Items.Add("Dog");
-            listUsa.Items.Add("Rat");
-            listUsa.Items.Add("Rodent");
+            listEngland.Items.Add("dog");
+            listEngland.Items.Add("rat");
+            listEngland.Items.Add("rodent");
         }
 
         private void UploadData()
@@ -101,24 +108,24 @@ namespace EnglishFlashcards
                 sqlConn.ConnectionString = "server=" + server + ";" + "username =" + user + ";" + "password =" + password + ";" + "database =" + database;
                 sqlConn.Open();
 
-                sqlQuery = "INSERT INTO englishflashcards VALUES('" + (textNumber.Text + "','" + textPolish.Text + "','" + textEnglish.Text + "')").ToUpper();
+                sqlQuery = "INSERT INTO englishflashcards VALUES('" + (txtNumber.Text + "','" + txtPolish.Text + "','" + txtEnglish.Text + "')").ToUpper();
 
                 sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
                 sqlRd = sqlCmd.ExecuteReader();
                 sqlConn.Close();
 
-                string newFlashcard = textNumber.Text + " - " + textPolish.Text + " - " + textEnglish.Text;
+                string newFlashcard = txtNumber.Text + " - " + txtPolish.Text + " - " + txtEnglish.Text;
                 listStageOne.Items.Add(newFlashcard);
 
-                string poland = textPolish.Text;
-                string usa = textEnglish.Text;
+                string poland = txtPolish.Text;
+                string usa = txtEnglish.Text;
 
                 listPoland.Items.Add(poland);
-                listUsa.Items.Add(usa);
+                listEngland.Items.Add(usa);
 
-                textNumber.Text = "";
-                textPolish.Text = "";
-                textEnglish.Text = "";
+                txtNumber.Text = "";
+                txtPolish.Text = "";
+                txtEnglish.Text = "";
             }
             catch (Exception ex)
             {
@@ -130,5 +137,60 @@ namespace EnglishFlashcards
             }
             UploadData();
         }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            if (txtPoland.Text != string.Empty && txtEngland.Text != string.Empty)
+            {
+                if (!listPoland.Items.Contains(txtPoland.Text.ToLower()) && !listEngland.Items.Contains(txtEngland.Text.ToLower()))
+                {
+                    listPoland.Items.Add(txtPoland.Text.ToLower());
+                    listEngland.Items.Add(txtEngland.Text.ToLower());
+
+                    txtPoland.Text = "";
+                    txtEngland.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Dodales juz takie slowo!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtPoland.Text = "";
+                    txtEngland.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Slowo jest puste lub nie wpisales poprawnego tlumaczenia", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtPoland.Text = "";
+                txtEngland.Text = "";
+            }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            string polandWord = txtPoland.Text.ToLower();
+            string englandWord = txtEngland.Text.ToLower();
+
+            if (listPoland.Items.Contains(polandWord) && listEngland.Items.Contains(englandWord))
+            {
+                MessageBox.Show("Poprawne słowo!");
+            }
+            else
+            {
+                MessageBox.Show("Niepoprawne słowo!");
+            }
+        }
     }
 }
+
