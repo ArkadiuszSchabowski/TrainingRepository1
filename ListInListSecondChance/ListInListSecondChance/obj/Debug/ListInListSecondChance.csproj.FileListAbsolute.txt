@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\bin\Debug\ListInListSecondChance.exe.config
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\bin\Debug\ListInListSecondChance.exe
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\bin\Debug\ListInListSecondChance.pdb
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.Form1.resources
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.exe
+C:\Users\Greedy\Desktop\2023\ListInListSecondChance\ListInListSecondChance\obj\Debug\ListInListSecondChance.pdb
