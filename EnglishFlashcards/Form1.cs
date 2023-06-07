@@ -51,8 +51,8 @@ namespace EnglishFlashcards
         {
             try
             {
-                int sum =0;
-                int average =0;
+                int sum = 0;
+                int average = 0;
 
                 sum = correct + incorrect;
                 average = (correct * 100) / sum;
@@ -130,70 +130,9 @@ namespace EnglishFlashcards
             MessageBox.Show("Dzieki projektowi English Flashcards nauczysz sie slownictwa angielskiego. Jesli poprawnie wpiszesz slowo zostanie ono dodane do nastepnego pudelka .Pudelek jest piec. Jesli fiszka trafi do ostatniego pudelka zostanie uznana jako zaliczona. Jesli bedziesz miala taka potrzebe mozesz przerzucic ja ponownie na poczatek.Powodzenia!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                sqlConn.ConnectionString = "server=" + server + ";" + "username =" + user + ";" + "password =" + password + ";" + "database =" + database;
-                sqlConn.Open();
-
-                sqlQuery = "INSERT INTO englishflashcards VALUES('" + (txtNumber.Text + "','" + txtPolish.Text + "','" + txtEnglish.Text + "')").ToUpper();
-
-                sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
-                sqlRd = sqlCmd.ExecuteReader();
-                sqlConn.Close();
-
-                string newFlashcard = txtNumber.Text + " - " + txtPolish.Text + " - " + txtEnglish.Text;
-                listStageOne.Items.Add(newFlashcard);
-
-                string poland = txtPolish.Text;
-                string usa = txtEnglish.Text;
-
-                listPoland.Items.Add(poland);
-                listEngland.Items.Add(usa);
-
-                txtNumber.Text = "";
-                txtPolish.Text = "";
-                txtEnglish.Text = "";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-            UploadData();
-        }
-
         private void btnOk_Click(object sender, EventArgs e)
         {
-            if (txtPoland.Text != string.Empty && txtEngland.Text != string.Empty)
-            {
-                if (!listPoland.Items.Contains(txtPoland.Text.ToLower()) && !listEngland.Items.Contains(txtEngland.Text.ToLower()))
-                {
-                    listPoland.Items.Add(txtPoland.Text.ToLower());
-                    listEngland.Items.Add(txtEngland.Text.ToLower());
 
-                    txtPoland.Text = "";
-                    txtEngland.Text = "";
-                }
-                else
-                {
-                    MessageBox.Show("Dodales juz takie slowo!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    txtPoland.Text = "";
-                    txtEngland.Text = "";
-                }
-            }
-            else
-            {
-                MessageBox.Show("Slowo jest puste lub nie wpisales poprawnego tlumaczenia", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                txtPoland.Text = "";
-                txtEngland.Text = "";
-            }
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -231,6 +170,43 @@ namespace EnglishFlashcards
                 txtPoland.Text = "";
                 txtEngland.Text = "";
             }
+        }
+
+        private void btnAddWord_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConn.ConnectionString = "server=" + server + ";" + "username =" + user + ";" + "password =" + password + ";" + "database =" + database;
+                sqlConn.Open();
+
+                sqlQuery = "INSERT INTO englishflashcards VALUES('" + (txtNumber.Text + "','" + txtPolish.Text + "','" + txtEnglish.Text + "')").ToUpper();
+
+                sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
+                sqlRd = sqlCmd.ExecuteReader();
+                sqlConn.Close();
+
+                string newFlashcard = txtNumber.Text + " - " + txtPolish.Text + " - " + txtEnglish.Text;
+                listStageOne.Items.Add(newFlashcard);
+
+                string poland = txtPolish.Text;
+                string usa = txtEnglish.Text;
+
+                listPoland.Items.Add(poland);
+                listEngland.Items.Add(usa);
+
+                txtNumber.Text = "";
+                txtPolish.Text = "";
+                txtEnglish.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlConn.Close();
+            }
+            UploadData();
         }
     }
 }

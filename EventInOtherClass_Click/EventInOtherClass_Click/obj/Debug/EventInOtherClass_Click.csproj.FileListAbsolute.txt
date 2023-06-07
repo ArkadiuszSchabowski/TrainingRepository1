@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\bin\Debug\EventInOtherClass_Click.exe.config
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\bin\Debug\EventInOtherClass_Click.exe
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\bin\Debug\EventInOtherClass_Click.pdb
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.exe
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.pdb
+C:\Users\Greedy\Desktop\2023\EventInOtherClass_Click\EventInOtherClass_Click\obj\Debug\EventInOtherClass_Click.Main.resources

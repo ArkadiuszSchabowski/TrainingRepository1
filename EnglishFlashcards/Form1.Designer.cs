@@ -30,26 +30,36 @@
         {
             this.Game = new System.Windows.Forms.TabControl();
             this.Dictionary = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNumber = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtEnglish = new System.Windows.Forms.TextBox();
-            this.txtPolish = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.lblCount = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtPolish = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
+            this.txtEnglish = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnInformation = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.listStageThree = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listStageFive = new System.Windows.Forms.ListBox();
             this.listStageFour = new System.Windows.Forms.ListBox();
-            this.listStageThree = new System.Windows.Forms.ListBox();
             this.listStageTwo = new System.Windows.Forms.ListBox();
             this.listStageOne = new System.Windows.Forms.ListBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -66,28 +76,18 @@
             this.btnRandomPl = new System.Windows.Forms.Button();
             this.listEngland = new System.Windows.Forms.ListBox();
             this.listPoland = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnInformation = new System.Windows.Forms.Button();
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.Game.SuspendLayout();
             this.Dictionary.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Game
@@ -118,59 +118,14 @@
             this.Dictionary.TabIndex = 0;
             this.Dictionary.Text = "Slownik";
             // 
-            // label9
+            // panel4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(149, 25);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Numer fiszki:";
-            // 
-            // txtNumber
-            // 
-            this.txtNumber.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNumber.Location = new System.Drawing.Point(251, 1);
-            this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(137, 26);
-            this.txtNumber.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(3, 40);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(210, 25);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Polskie znaczenie:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(409, 40);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(242, 25);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Angielskie znaczenie:";
-            // 
-            // txtEnglish
-            // 
-            this.txtEnglish.BackColor = System.Drawing.SystemColors.Control;
-            this.txtEnglish.Location = new System.Drawing.Point(657, 41);
-            this.txtEnglish.Name = "txtEnglish";
-            this.txtEnglish.Size = new System.Drawing.Size(137, 26);
-            this.txtEnglish.TabIndex = 6;
-            // 
-            // txtPolish
-            // 
-            this.txtPolish.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPolish.Location = new System.Drawing.Point(251, 41);
-            this.txtPolish.Name = "txtPolish";
-            this.txtPolish.Size = new System.Drawing.Size(137, 26);
-            this.txtPolish.TabIndex = 5;
+            this.panel4.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel4.Controls.Add(this.lblCount);
+            this.panel4.Location = new System.Drawing.Point(20, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(807, 54);
+            this.panel4.TabIndex = 14;
             // 
             // lblCount
             // 
@@ -181,6 +136,17 @@
             this.lblCount.Size = new System.Drawing.Size(405, 33);
             this.lblCount.TabIndex = 4;
             this.lblCount.Text = "Ilosc fiszek w bazie danych:";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel3.Controls.Add(this.btnRemove);
+            this.panel3.Controls.Add(this.btnModify);
+            this.panel3.Controls.Add(this.btnAdd);
+            this.panel3.Location = new System.Drawing.Point(19, 330);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(808, 67);
+            this.panel3.TabIndex = 13;
             // 
             // btnRemove
             // 
@@ -218,6 +184,15 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Location = new System.Drawing.Point(20, 189);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(807, 135);
+            this.panel2.TabIndex = 12;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -226,6 +201,103 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(779, 105);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtPolish);
+            this.panel1.Controls.Add(this.txtNumber);
+            this.panel1.Controls.Add(this.txtEnglish);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(19, 70);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(808, 113);
+            this.panel1.TabIndex = 11;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "",
+            "A1",
+            "A2",
+            "B1",
+            "B2",
+            "C1",
+            "C2"});
+            this.comboBox1.Location = new System.Drawing.Point(251, 78);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(137, 28);
+            this.comboBox1.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(10, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Poziom Jezykowy:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(149, 25);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Numer fiszki:";
+            // 
+            // txtPolish
+            // 
+            this.txtPolish.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPolish.Location = new System.Drawing.Point(251, 41);
+            this.txtPolish.Name = "txtPolish";
+            this.txtPolish.Size = new System.Drawing.Size(137, 26);
+            this.txtPolish.TabIndex = 5;
+            // 
+            // txtNumber
+            // 
+            this.txtNumber.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNumber.Location = new System.Drawing.Point(251, 1);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(137, 26);
+            this.txtNumber.TabIndex = 9;
+            // 
+            // txtEnglish
+            // 
+            this.txtEnglish.BackColor = System.Drawing.SystemColors.Control;
+            this.txtEnglish.Location = new System.Drawing.Point(657, 41);
+            this.txtEnglish.Name = "txtEnglish";
+            this.txtEnglish.Size = new System.Drawing.Size(137, 26);
+            this.txtEnglish.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(3, 40);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(210, 25);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Polskie znaczenie:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(409, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(242, 25);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Angielskie znaczenie:";
             // 
             // tabPage2
             // 
@@ -239,6 +311,59 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Graj";
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnInformation);
+            this.panel5.Controls.Add(this.btnPlay);
+            this.panel5.Location = new System.Drawing.Point(19, 16);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(767, 64);
+            this.panel5.TabIndex = 13;
+            // 
+            // btnInformation
+            // 
+            this.btnInformation.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnInformation.Location = new System.Drawing.Point(607, 13);
+            this.btnInformation.Name = "btnInformation";
+            this.btnInformation.Size = new System.Drawing.Size(143, 35);
+            this.btnInformation.TabIndex = 0;
+            this.btnInformation.Text = "Informacje";
+            this.btnInformation.UseVisualStyleBackColor = false;
+            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPlay.Location = new System.Drawing.Point(27, 13);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(143, 35);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.Text = "Graj";
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.listStageThree);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.listStageFive);
+            this.groupBox1.Controls.Add(this.listStageFour);
+            this.groupBox1.Controls.Add(this.listStageTwo);
+            this.groupBox1.Controls.Add(this.listStageOne);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.Location = new System.Drawing.Point(19, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(754, 311);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Twoje pojemniki:";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -248,6 +373,16 @@
             this.label6.Size = new System.Drawing.Size(201, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "Fiszek w pojemniku 2: ";
+            // 
+            // listStageThree
+            // 
+            this.listStageThree.BackColor = System.Drawing.SystemColors.Control;
+            this.listStageThree.FormattingEnabled = true;
+            this.listStageThree.ItemHeight = 25;
+            this.listStageThree.Location = new System.Drawing.Point(532, 71);
+            this.listStageThree.Name = "listStageThree";
+            this.listStageThree.Size = new System.Drawing.Size(197, 79);
+            this.listStageThree.TabIndex = 4;
             // 
             // label5
             // 
@@ -308,16 +443,6 @@
             this.listStageFour.Name = "listStageFour";
             this.listStageFour.Size = new System.Drawing.Size(230, 79);
             this.listStageFour.TabIndex = 5;
-            // 
-            // listStageThree
-            // 
-            this.listStageThree.BackColor = System.Drawing.SystemColors.Control;
-            this.listStageThree.FormattingEnabled = true;
-            this.listStageThree.ItemHeight = 25;
-            this.listStageThree.Location = new System.Drawing.Point(532, 71);
-            this.listStageThree.Name = "listStageThree";
-            this.listStageThree.Size = new System.Drawing.Size(197, 79);
-            this.listStageThree.TabIndex = 4;
             // 
             // listStageTwo
             // 
@@ -412,7 +537,7 @@
             this.btnAddWord.TabIndex = 8;
             this.btnAddWord.Text = "Dodaj Slowko";
             this.btnAddWord.UseVisualStyleBackColor = false;
-            this.btnAddWord.Click += new System.EventHandler(this.btnOk_Click);
+            this.btnAddWord.Click += new System.EventHandler(this.btnAddWord_Click);
             // 
             // btnRandomEng
             // 
@@ -492,131 +617,6 @@
             this.listPoland.Size = new System.Drawing.Size(197, 204);
             this.listPoland.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtPolish);
-            this.panel1.Controls.Add(this.txtNumber);
-            this.panel1.Controls.Add(this.txtEnglish);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(19, 70);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(808, 113);
-            this.panel1.TabIndex = 11;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(20, 189);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(807, 135);
-            this.panel2.TabIndex = 12;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel3.Controls.Add(this.btnRemove);
-            this.panel3.Controls.Add(this.btnModify);
-            this.panel3.Controls.Add(this.btnAdd);
-            this.panel3.Location = new System.Drawing.Point(19, 330);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(808, 67);
-            this.panel3.TabIndex = 13;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel4.Controls.Add(this.lblCount);
-            this.panel4.Location = new System.Drawing.Point(20, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(807, 54);
-            this.panel4.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(10, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 25);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Poziom Jezykowy:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "A1",
-            "A2",
-            "B1",
-            "B2",
-            "C1",
-            "C2"});
-            this.comboBox1.Location = new System.Drawing.Point(251, 78);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 28);
-            this.comboBox1.TabIndex = 12;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.listStageThree);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.listStageFive);
-            this.groupBox1.Controls.Add(this.listStageFour);
-            this.groupBox1.Controls.Add(this.listStageTwo);
-            this.groupBox1.Controls.Add(this.listStageOne);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(19, 86);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(754, 311);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Twoje pojemniki:";
-            // 
-            // btnInformation
-            // 
-            this.btnInformation.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnInformation.Location = new System.Drawing.Point(607, 13);
-            this.btnInformation.Name = "btnInformation";
-            this.btnInformation.Size = new System.Drawing.Size(143, 35);
-            this.btnInformation.TabIndex = 0;
-            this.btnInformation.Text = "Informacje";
-            this.btnInformation.UseVisualStyleBackColor = false;
-            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnPlay.Location = new System.Drawing.Point(27, 13);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(143, 35);
-            this.btnPlay.TabIndex = 1;
-            this.btnPlay.Text = "Graj";
-            this.btnPlay.UseVisualStyleBackColor = false;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnInformation);
-            this.panel5.Controls.Add(this.btnPlay);
-            this.panel5.Location = new System.Drawing.Point(19, 16);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(767, 64);
-            this.panel5.TabIndex = 13;
-            // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
@@ -637,19 +637,19 @@
             this.Text = "Fiszki angielskie";
             this.Game.ResumeLayout(false);
             this.Dictionary.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel5.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
