@@ -83,7 +83,7 @@ namespace ListInListSecondChance
 
         private void btnAddListCountry_Click(object sender, EventArgs e)
         {
-            if (listBox1.Text == "")
+            if (textBox1.Text == "")
             {
                 MessageBox.Show("Nie podano kraju!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
