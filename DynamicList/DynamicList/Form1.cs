@@ -20,7 +20,7 @@ namespace DynamicList
         {
             InitializeComponent();
             AddCountryToTheCountryList();
-            AddContractorToTheCountry();
+            AddContractorListToTheCountry();
             AddCountryListToTheListBoxOne();
         }
         public void AddCountryToTheCountryList()
@@ -28,7 +28,7 @@ namespace DynamicList
             CountryList.Add("Poland", Poland);
             CountryList.Add("Italy", Italy);
         }
-        public void AddContractorToTheCountry()
+        public void AddContractorListToTheCountry()
         {
             Poland.Add("Cztery Kola");
         }
@@ -36,9 +36,9 @@ namespace DynamicList
         {
             try
             {
-                foreach (var item in CountryList.Keys)
+                foreach (string country in CountryList.Keys)
                 {
-                    listBox1.Items.Add(item);
+                    listBox1.Items.Add(country);
                 }
             }
             catch (Exception ex)
@@ -47,7 +47,29 @@ namespace DynamicList
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (listBox1.SelectedItem != null)
+                {
+                    string selectedCountry = listBox1.SelectedItem.ToString();
+
+                    if (CountryList.ContainsKey(selectedCountry))
+                    {
+                        List<string> contractors = CountryList[selectedCountry];
+                        listBox2.Items.Clear();
+                        listBox2.Items.AddRange(contractors.ToArray());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnAddCountry_Click(object sender, EventArgs e)
         {
             try
             {
@@ -77,7 +99,6 @@ namespace DynamicList
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnAddContractor_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
@@ -99,21 +120,6 @@ namespace DynamicList
                 else
                 {
                     MessageBox.Show("Nie podano nazwy kontrahenta", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedItem != null)
-            {
-                string selectedCountry = listBox1.SelectedItem.ToString();
-
-                if (CountryList.ContainsKey(selectedCountry))
-                {
-                    List<string> contractors = CountryList[selectedCountry];
-                    listBox2.Items.Clear();
-                    listBox2.Items.AddRange(contractors.ToArray());
                 }
             }
         }
