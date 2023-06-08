@@ -13,11 +13,18 @@ namespace DynamicListProject
     public partial class Form1 : Form
     {
         Dictionary<string, List<string>> CountryList = new Dictionary<string, List<string>>();
+        Random rnd = new Random();
+        List<string> CountryRecord;
+
         public Form1()
         {
             InitializeComponent();
         }
-
+        private void AssignBarCodeToTheContractor()
+        {
+            string barCode = rnd.Next(100000, 200000).ToString();
+            txtBarCode.Text = barCode;
+        }
         private void btnAddCountry_Click(object sender, EventArgs e)
         {
             try
@@ -41,6 +48,7 @@ namespace DynamicListProject
                     CountryList.Add(nameList, country);
                     listBox1.Items.Clear();
                     DisplayCountriesInListBoxOne();
+                    comboBox1.Items.Add(nameList);
                     return;
                 }
             }
@@ -75,6 +83,7 @@ namespace DynamicListProject
                         listBox2.Items.Clear();
                         listBox2.Items.AddRange(contractors.ToArray());
                         textBox2.Clear();
+                        AssignBarCodeToTheContractor();
                     }
                 }
                 else
@@ -85,7 +94,39 @@ namespace DynamicListProject
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+                if (listBox1.SelectedItem != null)
+                {
+                    string selectedCountry = listBox1.SelectedItem.ToString();
 
+                    if (CountryList.ContainsKey(selectedCountry))
+                    {
+                        List<string> contractors = CountryList[selectedCountry];
+                        listBox2.Items.Clear();
+                        listBox2.Items.AddRange(contractors.ToArray());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = comboBox1.SelectedItem.ToString();
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string contractor;
+
+            if(comboBox2.SelectedItem != null) 
+            { 
+            }
         }
     }
 }
+
