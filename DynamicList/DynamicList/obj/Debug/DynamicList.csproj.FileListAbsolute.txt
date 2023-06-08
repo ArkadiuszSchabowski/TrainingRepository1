@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\bin\Debug\DynamicList.exe.config
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\bin\Debug\DynamicList.exe
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\bin\Debug\DynamicList.pdb
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.Form1.resources
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.exe
+C:\Users\Greedy\Desktop\2023\DynamicList\DynamicList\obj\Debug\DynamicList.pdb

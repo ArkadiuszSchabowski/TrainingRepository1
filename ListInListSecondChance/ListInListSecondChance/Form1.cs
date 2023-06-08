@@ -16,6 +16,7 @@ namespace ListInListSecondChance
         List<string> Polska = new List<string>();
         List<string> Italy = new List<string>();
         List<string> Hungary = new List<string>();
+        int numberContractor;
         public Form1()
         {
             InitializeComponent();
