@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\bin\Debug\Serializacja.exe.config
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\bin\Debug\Serializacja.exe
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\bin\Debug\Serializacja.pdb
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.Form1.resources
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.exe
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.pdb

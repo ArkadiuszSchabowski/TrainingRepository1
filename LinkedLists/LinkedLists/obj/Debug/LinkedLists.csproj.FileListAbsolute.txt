@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\bin\Debug\LinkedLists.exe.config
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\bin\Debug\LinkedLists.exe
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\bin\Debug\LinkedLists.pdb
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.Form1.resources
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.exe
+C:\Users\Greedy\Desktop\2023\LinkedLists\LinkedLists\obj\Debug\LinkedLists.pdb

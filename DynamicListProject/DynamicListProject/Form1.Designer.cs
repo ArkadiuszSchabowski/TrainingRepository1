@@ -47,6 +47,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtBarCode = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -66,6 +68,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Coral;
+            this.tabPage1.Controls.Add(this.btnSave);
+            this.tabPage1.Controls.Add(this.btnExit);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtBarCode);
             this.tabPage1.Controls.Add(this.label4);
@@ -248,6 +252,24 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Kod kreskowy kontrahenta:";
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(156, 15);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(126, 34);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "Zamknij";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(8, 17);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(126, 34);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Zapisz";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,6 +308,8 @@
         private System.Windows.Forms.TextBox txtBarCode;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
