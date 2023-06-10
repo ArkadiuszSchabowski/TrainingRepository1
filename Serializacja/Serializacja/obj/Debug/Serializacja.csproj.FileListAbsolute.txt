@@ -9,3 +9,6 @@ C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.cs
 C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.csproj.CoreCompileInputs.cache
 C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.exe
 C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.pdb
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\Serializacja\Serializacja\obj\Debug\Serializacja.csproj.CopyComplete

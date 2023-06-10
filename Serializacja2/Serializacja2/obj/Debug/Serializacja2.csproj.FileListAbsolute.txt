@@ -1,0 +1,14 @@
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\bin\Debug\Serializacja2.exe.config
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\bin\Debug\Serializacja2.exe
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\bin\Debug\Serializacja2.pdb
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.Form1.resources
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.exe
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.pdb
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\Serializacja2\Serializacja2\obj\Debug\Serializacja2.csproj.CopyComplete
