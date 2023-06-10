@@ -8,8 +8,9 @@ namespace DynamicListProject.Models
 {
     internal class ContractorInformation
     {
-        public string Country { get; set; }
-        public string Name { get; set; }
-        public string BarCode { get; set; }
+        public string Nazwa { get; set; }
+        public string Kraj { get; set; }
+        public string Kod { get; set; }
+        public string Trasa { get; set; }
     }
 }
