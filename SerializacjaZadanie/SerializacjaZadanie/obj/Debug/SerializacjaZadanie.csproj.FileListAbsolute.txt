@@ -1,0 +1,14 @@
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\bin\Debug\SerializacjaZadanie.exe.config
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\bin\Debug\SerializacjaZadanie.exe
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\bin\Debug\SerializacjaZadanie.pdb
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.Form1.resources
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.exe
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.pdb
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\SerializacjaZadanie\SerializacjaZadanie\obj\Debug\SerializacjaZadanie.csproj.CopyComplete

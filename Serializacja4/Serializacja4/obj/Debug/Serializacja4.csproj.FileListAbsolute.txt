@@ -1,0 +1,14 @@
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\bin\Debug\Serializacja4.exe.config
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\bin\Debug\Serializacja4.exe
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\bin\Debug\Serializacja4.pdb
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.Form1.resources
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.exe
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.pdb
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\Serializacja4\Serializacja4\obj\Debug\Serializacja4.csproj.CopyComplete
