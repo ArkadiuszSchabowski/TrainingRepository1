@@ -10,7 +10,7 @@ namespace DynamicListProject.Models
     {
         public string Nazwa { get; set; }
         public string Kraj { get; set; }
-        public string Kod { get; set; }
         public string Trasa { get; set; }
+        public string Kod { get; set; }
     }
 }

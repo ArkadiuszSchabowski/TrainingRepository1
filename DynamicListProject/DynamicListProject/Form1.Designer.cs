@@ -33,13 +33,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
-            this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonRemove = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbCountry = new System.Windows.Forms.ComboBox();
+            this.cboCountry = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,6 +47,8 @@
             this.tbNumberRoute = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -55,18 +56,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.tabPage3.Controls.Add(this.panel5);
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.panel2);
             this.tabPage3.Controls.Add(this.panel1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(794, 442);
+            this.tabPage3.Size = new System.Drawing.Size(790, 504);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "First";
             // 
@@ -82,9 +85,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.buttonModify);
-            this.panel4.Controls.Add(this.buttonSearch);
             this.panel4.Controls.Add(this.buttonRemove);
             this.panel4.Controls.Add(this.buttonAdd);
             this.panel4.Location = new System.Drawing.Point(21, 11);
@@ -94,9 +95,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(430, 6);
+            this.button1.Location = new System.Drawing.Point(3, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 45);
+            this.button1.Size = new System.Drawing.Size(139, 38);
             this.button1.TabIndex = 4;
             this.button1.Text = "Wyszukaj";
             this.button1.UseVisualStyleBackColor = true;
@@ -109,15 +110,6 @@
             this.buttonModify.TabIndex = 3;
             this.buttonModify.Text = "Modyfikuj";
             this.buttonModify.UseVisualStyleBackColor = true;
-            // 
-            // buttonSearch
-            // 
-            this.buttonSearch.Location = new System.Drawing.Point(285, 6);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(139, 45);
-            this.buttonSearch.TabIndex = 2;
-            this.buttonSearch.Text = "Wyszukaj";
-            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
             // buttonRemove
             // 
@@ -154,11 +146,12 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(723, 176);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.cmbCountry);
+            this.panel1.Controls.Add(this.cboCountry);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -171,18 +164,18 @@
             this.panel1.Size = new System.Drawing.Size(756, 126);
             this.panel1.TabIndex = 1;
             // 
-            // cmbCountry
+            // cboCountry
             // 
-            this.cmbCountry.FormattingEnabled = true;
-            this.cmbCountry.Items.AddRange(new object[] {
+            this.cboCountry.FormattingEnabled = true;
+            this.cboCountry.Items.AddRange(new object[] {
             "",
             "Polska",
             "Litwa",
             "Wlochy"});
-            this.cmbCountry.Location = new System.Drawing.Point(377, 43);
-            this.cmbCountry.Name = "cmbCountry";
-            this.cmbCountry.Size = new System.Drawing.Size(287, 21);
-            this.cmbCountry.TabIndex = 8;
+            this.cboCountry.Location = new System.Drawing.Point(377, 43);
+            this.cboCountry.Name = "cboCountry";
+            this.cboCountry.Size = new System.Drawing.Size(287, 21);
+            this.cboCountry.TabIndex = 8;
             // 
             // label8
             // 
@@ -253,14 +246,32 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(802, 468);
+            this.tabControl1.Size = new System.Drawing.Size(798, 530);
             this.tabControl1.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Location = new System.Drawing.Point(15, 442);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(756, 54);
+            this.panel5.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.Location = new System.Drawing.Point(150, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(593, 38);
+            this.textBox1.TabIndex = 5;
             // 
             // btnAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 468);
+            this.ClientSize = new System.Drawing.Size(798, 530);
             this.Controls.Add(this.tabControl1);
             this.Name = "btnAdd";
             this.Text = "Moto-Project";
@@ -272,6 +283,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -281,7 +294,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonModify;
-        private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Button buttonRemove;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Panel panel2;
@@ -297,7 +309,9 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cmbCountry;
+        private System.Windows.Forms.ComboBox cboCountry;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
