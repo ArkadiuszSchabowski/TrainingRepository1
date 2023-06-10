@@ -9,3 +9,6 @@ C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\obj\Debug\Dyn
 C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\obj\Debug\DynamicListProject.exe
 C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\obj\Debug\DynamicListProject.pdb
 C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\obj\Debug\DynamicListProject.btnAdd.resources
+C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\DynamicListProject\DynamicListProject\obj\Debug\DynamicListProject.csproj.CopyComplete

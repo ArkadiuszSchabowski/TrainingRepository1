@@ -1,9 +1,12 @@
 ﻿using DynamicListProject.Models;
+using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,20 +16,54 @@ namespace DynamicListProject
 {
     public partial class btnAdd : Form
     {
-        BindingList<ContractorInformation> list = new BindingList<ContractorInformation>();
+        BindingList<ContractorInformation> _list = new BindingList<ContractorInformation>();
         Random rnd = new Random();
+        string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
         string _barCode;
 
         public btnAdd()
         {
             InitializeComponent();
-            dataGridView1.DataSource = list;
+
+            CreateData();
+
+            GetData();
+
+            dataGridView1.DataSource = _list;
         }
+
+        private void GetData()
+        {
+            var json = File.ReadAllText(_filePath);
+            _list = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
+
+            if (_list == null || !_list.Any())
+            {
+                _list = new BindingList<ContractorInformation>();
+            }
+        }
+
+        private void CreateData()
+        {
+            if (!File.Exists(_filePath))
+            {
+                File.Create(_filePath);
+            }
+        }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             AddNewContractor();
 
+            SaveData();
+
             ClearFields();
+        }
+
+        private void SaveData()
+        {
+            var json = JsonConvert.SerializeObject(_list);
+            File.WriteAllText(_filePath, json);
         }
 
         private void ClearFields()
@@ -52,7 +89,7 @@ namespace DynamicListProject
                 Trasa = tbNumberRoute.Text,
                 Kod = barCode,
             };
-            list.Add(newObject);
+            _list.Add(newObject);
         }
 
         private string AddBarCodeToTheContractor(string x)
