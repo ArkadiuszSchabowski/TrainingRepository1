@@ -38,7 +38,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbPostCode = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.tbRouteNumber = new System.Windows.Forms.TextBox();
             this.lblPostCode = new System.Windows.Forms.Label();
@@ -52,9 +52,9 @@
             this.tbContractor = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.lblCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -69,7 +69,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 38);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1292, 193);
+            this.dataGridView1.Size = new System.Drawing.Size(1132, 193);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -119,7 +119,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(13, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1325, 84);
+            this.panel1.Size = new System.Drawing.Size(1164, 84);
             this.panel1.TabIndex = 7;
             // 
             // label3
@@ -137,7 +137,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel2.Controls.Add(this.tbPhone);
             this.panel2.Controls.Add(this.lblPhone);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.tbPostCode);
             this.panel2.Controls.Add(this.lblEmail);
             this.panel2.Controls.Add(this.tbRouteNumber);
             this.panel2.Controls.Add(this.lblPostCode);
@@ -153,7 +153,7 @@
             this.panel2.Controls.Add(this.lblContractor);
             this.panel2.Location = new System.Drawing.Point(13, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1325, 182);
+            this.panel2.Size = new System.Drawing.Size(1164, 168);
             this.panel2.TabIndex = 8;
             // 
             // tbPhone
@@ -174,13 +174,13 @@
             this.lblPhone.TabIndex = 18;
             this.lblPhone.Text = "Telefon:";
             // 
-            // textBox5
+            // tbPostCode
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(992, 66);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(160, 31);
-            this.textBox5.TabIndex = 17;
+            this.tbPostCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbPostCode.Location = new System.Drawing.Point(992, 66);
+            this.tbPostCode.Name = "tbPostCode";
+            this.tbPostCode.Size = new System.Drawing.Size(160, 31);
+            this.tbPostCode.TabIndex = 17;
             // 
             // lblEmail
             // 
@@ -296,39 +296,30 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(13, 307);
+            this.panel3.Location = new System.Drawing.Point(13, 272);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1325, 244);
+            this.panel3.Size = new System.Drawing.Size(1164, 244);
             this.panel3.TabIndex = 9;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.tbSearch);
             this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.btnRemove);
-            this.panel4.Location = new System.Drawing.Point(13, 633);
+            this.panel4.Location = new System.Drawing.Point(12, 574);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1325, 84);
+            this.panel4.Size = new System.Drawing.Size(1164, 84);
             this.panel4.TabIndex = 10;
             // 
-            // panel5
+            // tbSearch
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel5.Controls.Add(this.lblCount);
-            this.panel5.Location = new System.Drawing.Point(12, 557);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1326, 70);
-            this.panel5.TabIndex = 11;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(334, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(454, 31);
-            this.textBox1.TabIndex = 2;
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbSearch.Location = new System.Drawing.Point(334, 29);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(454, 31);
+            this.tbSearch.TabIndex = 2;
             // 
             // button1
             // 
@@ -339,11 +330,20 @@
             this.button1.Text = "Szukaj";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel5.Controls.Add(this.lblCount);
+            this.panel5.Location = new System.Drawing.Point(12, 522);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1165, 46);
+            this.panel5.TabIndex = 11;
+            // 
             // lblCount
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCount.Location = new System.Drawing.Point(18, 20);
+            this.lblCount.Location = new System.Drawing.Point(10, 10);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(388, 31);
             this.lblCount.TabIndex = 0;
@@ -354,7 +354,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1195, 685);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -389,7 +389,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox tbBarCode;
         private System.Windows.Forms.Label lblBarCode;
@@ -399,7 +399,7 @@
         private System.Windows.Forms.TextBox tbContractor;
         private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbPostCode;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox tbRouteNumber;
         private System.Windows.Forms.Label lblPostCode;

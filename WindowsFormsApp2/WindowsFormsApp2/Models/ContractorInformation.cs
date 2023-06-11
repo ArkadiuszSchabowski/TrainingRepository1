@@ -16,7 +16,5 @@ namespace WindowsFormsApp2.Models
         public string Kod_pocztowy { get; set; }
         public string Numer_Trasy { get; set; }
         public string Kod_Kreskowy { get; set; }
-
-
     }
 }

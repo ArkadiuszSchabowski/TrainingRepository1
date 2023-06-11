@@ -1,13 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2.Models;
 
@@ -83,10 +78,13 @@ namespace WindowsFormsApp2
 
         private void RemoveRecord()
         {
-            if (dataGridView1.SelectedRows.Count > 0 )
+            if (dataGridView1.SelectedRows.Count > 0)
             {
                 var selectedRowIndex = dataGridView1.SelectedRows[0].Index;
-                _list.RemoveAt(selectedRowIndex);
+                if (selectedRowIndex >= 0 && selectedRowIndex < _list.Count)
+                {
+                    _list.RemoveAt(selectedRowIndex);
+                }
             }
         }
 
@@ -121,8 +119,15 @@ namespace WindowsFormsApp2
 
         private void ClearFields()
         {
+            foreach (Control item in panel2.Controls)
+            {
+                if (item is TextBox)
+                {
+                    (item as TextBox).Clear();
+                }
+            }
             cboCountry.Text = "";
-            tbContractor.Text = "";
+            tbSearch.Text = "";
         }
 
         private void SaveData()
