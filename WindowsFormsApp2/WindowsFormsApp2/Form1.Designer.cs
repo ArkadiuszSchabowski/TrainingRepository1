@@ -67,9 +67,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 18);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 38);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1292, 306);
+            this.dataGridView1.Size = new System.Drawing.Size(1292, 193);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -97,7 +97,7 @@
             // 
             this.lblCountry.AutoSize = true;
             this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCountry.Location = new System.Drawing.Point(329, 10);
+            this.lblCountry.Location = new System.Drawing.Point(441, 12);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.Size = new System.Drawing.Size(56, 25);
             this.lblCountry.TabIndex = 3;
@@ -126,7 +126,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(514, 19);
+            this.label3.Location = new System.Drawing.Point(394, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(274, 42);
             this.label3.TabIndex = 0;
@@ -153,13 +153,13 @@
             this.panel2.Controls.Add(this.lblContractor);
             this.panel2.Location = new System.Drawing.Point(13, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1325, 109);
+            this.panel2.Size = new System.Drawing.Size(1325, 182);
             this.panel2.TabIndex = 8;
             // 
             // tbPhone
             // 
             this.tbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbPhone.Location = new System.Drawing.Point(1158, 17);
+            this.tbPhone.Location = new System.Drawing.Point(223, 61);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(160, 31);
             this.tbPhone.TabIndex = 19;
@@ -168,7 +168,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPhone.Location = new System.Drawing.Point(1000, 20);
+            this.lblPhone.Location = new System.Drawing.Point(15, 64);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(90, 25);
             this.lblPhone.TabIndex = 18;
@@ -177,7 +177,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(487, 57);
+            this.textBox5.Location = new System.Drawing.Point(992, 66);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(160, 31);
             this.textBox5.TabIndex = 17;
@@ -186,7 +186,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblEmail.Location = new System.Drawing.Point(15, 60);
+            this.lblEmail.Location = new System.Drawing.Point(441, 64);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(71, 25);
             this.lblEmail.TabIndex = 16;
@@ -196,7 +196,7 @@
             // 
             this.tbRouteNumber.Enabled = false;
             this.tbRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbRouteNumber.Location = new System.Drawing.Point(834, 58);
+            this.tbRouteNumber.Location = new System.Drawing.Point(607, 115);
             this.tbRouteNumber.Name = "tbRouteNumber";
             this.tbRouteNumber.Size = new System.Drawing.Size(160, 31);
             this.tbRouteNumber.TabIndex = 15;
@@ -205,7 +205,7 @@
             // 
             this.lblPostCode.AutoSize = true;
             this.lblPostCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPostCode.Location = new System.Drawing.Point(317, 57);
+            this.lblPostCode.Location = new System.Drawing.Point(822, 66);
             this.lblPostCode.Name = "lblPostCode";
             this.lblPostCode.Size = new System.Drawing.Size(154, 25);
             this.lblPostCode.TabIndex = 14;
@@ -214,7 +214,7 @@
             // tbAdress
             // 
             this.tbAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbAdress.Location = new System.Drawing.Point(834, 12);
+            this.tbAdress.Location = new System.Drawing.Point(991, 12);
             this.tbAdress.Name = "tbAdress";
             this.tbAdress.Size = new System.Drawing.Size(160, 31);
             this.tbAdress.TabIndex = 13;
@@ -223,7 +223,7 @@
             // 
             this.lblAdress.AutoSize = true;
             this.lblAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAdress.Location = new System.Drawing.Point(667, 15);
+            this.lblAdress.Location = new System.Drawing.Point(824, 15);
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(74, 25);
             this.lblAdress.TabIndex = 12;
@@ -241,7 +241,7 @@
             "Czechy",
             "Niemcy",
             "Francja"});
-            this.cboCountry.Location = new System.Drawing.Point(487, 4);
+            this.cboCountry.Location = new System.Drawing.Point(606, 4);
             this.cboCountry.Name = "cboCountry";
             this.cboCountry.Size = new System.Drawing.Size(160, 33);
             this.cboCountry.TabIndex = 11;
@@ -250,7 +250,7 @@
             // 
             this.tbBarCode.Enabled = false;
             this.tbBarCode.Font = new System.Drawing.Font("CCode39", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBarCode.Location = new System.Drawing.Point(1158, 57);
+            this.tbBarCode.Location = new System.Drawing.Point(223, 101);
             this.tbBarCode.Name = "tbBarCode";
             this.tbBarCode.Size = new System.Drawing.Size(160, 40);
             this.tbBarCode.TabIndex = 10;
@@ -260,7 +260,7 @@
             // 
             this.lblBarCode.AutoSize = true;
             this.lblBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblBarCode.Location = new System.Drawing.Point(1000, 61);
+            this.lblBarCode.Location = new System.Drawing.Point(17, 113);
             this.lblBarCode.Name = "lblBarCode";
             this.lblBarCode.Size = new System.Drawing.Size(152, 25);
             this.lblBarCode.TabIndex = 9;
@@ -269,7 +269,7 @@
             // tbEmail
             // 
             this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbEmail.Location = new System.Drawing.Point(139, 57);
+            this.tbEmail.Location = new System.Drawing.Point(606, 63);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(160, 31);
             this.tbEmail.TabIndex = 8;
@@ -278,7 +278,7 @@
             // 
             this.lblRouteNumber.AutoSize = true;
             this.lblRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblRouteNumber.Location = new System.Drawing.Point(667, 61);
+            this.lblRouteNumber.Location = new System.Drawing.Point(440, 118);
             this.lblRouteNumber.Name = "lblRouteNumber";
             this.lblRouteNumber.Size = new System.Drawing.Size(141, 25);
             this.lblRouteNumber.TabIndex = 7;
@@ -287,7 +287,7 @@
             // tbContractor
             // 
             this.tbContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbContractor.Location = new System.Drawing.Point(139, 4);
+            this.tbContractor.Location = new System.Drawing.Point(223, 9);
             this.tbContractor.Name = "tbContractor";
             this.tbContractor.Size = new System.Drawing.Size(160, 31);
             this.tbContractor.TabIndex = 6;
@@ -296,9 +296,9 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(13, 213);
+            this.panel3.Location = new System.Drawing.Point(13, 307);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1325, 338);
+            this.panel3.Size = new System.Drawing.Size(1325, 244);
             this.panel3.TabIndex = 9;
             // 
             // panel4
@@ -342,10 +342,10 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblCount.Location = new System.Drawing.Point(18, 20);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(307, 25);
+            this.lblCount.Size = new System.Drawing.Size(388, 31);
             this.lblCount.TabIndex = 0;
             this.lblCount.Text = "Ilosc aktualnych kontrahentow:";
             // 

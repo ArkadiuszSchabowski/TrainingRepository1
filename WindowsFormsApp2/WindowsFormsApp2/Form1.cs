@@ -83,7 +83,7 @@ namespace WindowsFormsApp2
 
         private void RemoveRecord()
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0 )
             {
                 var selectedRowIndex = dataGridView1.SelectedRows[0].Index;
                 _list.RemoveAt(selectedRowIndex);
@@ -112,10 +112,6 @@ namespace WindowsFormsApp2
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddRecord();
-
-            AddBarCodeToTheContractor();
-
-            AddRouteNumberToTheContractor();
 
             SaveData();
 
@@ -149,6 +145,10 @@ namespace WindowsFormsApp2
             _list.Add(whoBorrow);
 
             tbBarCode.Text = _barCode;
+
+            AddBarCodeToTheContractor();
+
+            AddRouteNumberToTheContractor();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
