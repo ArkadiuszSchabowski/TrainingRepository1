@@ -32,76 +32,125 @@ namespace WindowsFormsApp2
 
         private void CountContractors()
         {
-            lblCount.Text = $"Ilosc aktualnych kontrahentow: {countContractors}";
+            try
+            {
+                lblCount.Text = $"Ilosc aktualnych kontrahentow: {countContractors}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            RemoveRecord();
+            try
+            {
+                RemoveRecord();
 
-            SaveData();
+                SaveData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void AddRouteNumberToTheContractor()
         {
-            string routeNumber = tbRouteNumber.Text;
-
-            switch (routeNumber)
+            try
             {
-                case "POLSKA":
-                    tbRouteNumber.Text = "A";
-                    break;
-                case "LITWA":
-                    tbRouteNumber.Text = "A";
-                    break;
-                case "WLOCHY":
-                    tbRouteNumber.Text = "A";
-                    break;
-                case "CZECHY":
-                    tbRouteNumber.Text = "A";
-                    break;
-                case "NIEMCY":
-                    tbRouteNumber.Text = "A";
-                    break;
-                case "FRANCJA":
-                    tbRouteNumber.Text = "A";
-                    break;
-                default:
-                    break;
+                string routeNumber = tbRouteNumber.Text;
+
+                switch (routeNumber)
+                {
+                    case "POLSKA":
+                        tbRouteNumber.Text = "A";
+                        break;
+                    case "LITWA":
+                        tbRouteNumber.Text = "A";
+                        break;
+                    case "WLOCHY":
+                        tbRouteNumber.Text = "A";
+                        break;
+                    case "CZECHY":
+                        tbRouteNumber.Text = "A";
+                        break;
+                    case "NIEMCY":
+                        tbRouteNumber.Text = "A";
+                        break;
+                    case "FRANCJA":
+                        tbRouteNumber.Text = "A";
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         private void AddBarCodeToTheContractor()
         {
-            _barCode = rnd.Next(100000000, 999999999).ToString();
+            try
+            {
+                _barCode = rnd.Next(100000000, 999999999).ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void RemoveRecord()
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            try
             {
-                var selectedRowIndex = dataGridView1.SelectedRows[0].Index;
-                if (selectedRowIndex >= 0 && selectedRowIndex < _list.Count)
+                if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    _list.RemoveAt(selectedRowIndex);
+                    var selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                    if (selectedRowIndex >= 0 && selectedRowIndex < _list.Count)
+                    {
+                        _list.RemoveAt(selectedRowIndex);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void GetData()
         {
-            var json = File.ReadAllText(_filePath);
-            _list = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
-
-            if (json == null || !json.Any())
+            try
             {
-                _list = new BindingList<ContractorInformation>();
+                var json = File.ReadAllText(_filePath);
+                _list = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
+
+                if (json == null || !json.Any())
+                {
+                    _list = new BindingList<ContractorInformation>();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void CreateFile()
         {
-            if (!File.Exists(_filePath))
+            try
             {
-                File.Create(_filePath);
+                if (!File.Exists(_filePath))
+                {
+                    File.Create(_filePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -114,58 +163,96 @@ namespace WindowsFormsApp2
             SaveData();
 
             ClearFields();
-
         }
 
         private void ClearFields()
         {
-            foreach (Control item in panel2.Controls)
+            try
             {
-                if (item is TextBox)
+                foreach (Control item in panel2.Controls)
                 {
-                    (item as TextBox).Clear();
+                    if (item is TextBox)
+                    {
+                        (item as TextBox).Clear();
+                    }
                 }
+                cboCountry.Text = "";
+                tbSearch.Text = "";
             }
-            cboCountry.Text = "";
-            tbSearch.Text = "";
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void SaveData()
         {
-            var json = JsonConvert.SerializeObject(_list);
-            File.WriteAllText(_filePath, json);
+            try
+            {
+                var json = JsonConvert.SerializeObject(_list);
+                File.WriteAllText(_filePath, json);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void AddRecord()
         {
-
-            var newContractor = new ContractorInformation()
+            try
             {
-                Kontrahent = cboCountry.Text,
-                Kraj = tbContractor.Text,
-                Adres = tbAdress.Text,
-                Telefon = tbPhone.Text,
-                Email = tbEmail.Text,
-                Kod_pocztowy = tbPostCode.Text,
-                Numer_Trasy = tbRouteNumber.Text,
-                Kod_Kreskowy = tbBarCode.Text,
-            };
+                var newContractor = new ContractorInformation()
+                {
+                    Kontrahent = tbContractor.Text,
+                    Kraj = cboCountry.Text,
+                    Adres = tbAdress.Text,
+                    Telefon = tbPhone.Text,
+                    Email = tbEmail.Text,
+                    Kod_pocztowy = tbPostCode.Text,
+                    Numer_Trasy = tbRouteNumber.Text,
+                    Kod_Kreskowy = tbBarCode.Text,
+                };
 
-            newContractor.Kod_Kreskowy = _barCode;
+                newContractor.Kod_Kreskowy = _barCode;
 
-            _list.Add(newContractor);
-            countContractors++;
+                if (cboCountry.Text == string.Empty || tbContractor.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
+                {
+                    DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste. Czy chcesz dodac mimo tego?", "Ostrzezenie", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            tbBarCode.Text = _barCode;
+                    if (checkFields == DialogResult.Yes)
+                    {
+                        _list.Add(newContractor);
+                        countContractors++;
 
-            AddBarCodeToTheContractor();
+                        tbBarCode.Text = _barCode;
 
-            AddRouteNumberToTheContractor();
+                        AddBarCodeToTheContractor();
+
+                        AddRouteNumberToTheContractor();
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -190,14 +277,7 @@ namespace WindowsFormsApp2
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            try
-            {
-                ClearFields();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            ClearFields();
         }
     }
 }
