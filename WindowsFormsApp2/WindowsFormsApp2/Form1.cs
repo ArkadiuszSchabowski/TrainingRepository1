@@ -32,8 +32,6 @@ namespace WindowsFormsApp2
 
         private void CountContractors()
         {
-            countContractors = dataGridView1.RowCount;
-
             lblCount.Text = $"Ilosc aktualnych kontrahentow: {countContractors}";
         }
 
@@ -73,7 +71,7 @@ namespace WindowsFormsApp2
         }
         private void AddBarCodeToTheContractor()
         {
-            _barCode = rnd.Next(100000, 200000).ToString();
+            _barCode = rnd.Next(100000000, 999999999).ToString();
         }
 
         private void RemoveRecord()
@@ -111,6 +109,8 @@ namespace WindowsFormsApp2
         {
             AddRecord();
 
+            CountContractors();
+
             SaveData();
 
             ClearFields();
@@ -139,15 +139,22 @@ namespace WindowsFormsApp2
         private void AddRecord()
         {
 
-            var whoBorrow = new ContractorInformation()
+            var newContractor = new ContractorInformation()
             {
+                Kontrahent = cboCountry.Text,
                 Kraj = tbContractor.Text,
-                Kontrahent = cboCountry.Text
+                Adres = tbAdress.Text,
+                Telefon = tbPhone.Text,
+                Email = tbEmail.Text,
+                Kod_pocztowy = tbPostCode.Text,
+                Numer_Trasy = tbRouteNumber.Text,
+                Kod_Kreskowy = tbBarCode.Text,
             };
 
-            whoBorrow.Kod_Kreskowy = _barCode;
+            newContractor.Kod_Kreskowy = _barCode;
 
-            _list.Add(whoBorrow);
+            _list.Add(newContractor);
+            countContractors++;
 
             tbBarCode.Text = _barCode;
 
@@ -159,6 +166,38 @@ namespace WindowsFormsApp2
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult iExit = MessageBox.Show("Czy na pewno chcesz wyjsc z aplikacji?", "Moto-Profil app", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (iExit == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                if (iExit == DialogResult.No)
+                {
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
