@@ -29,7 +29,6 @@ namespace WindowsFormsApp2
             dataGridView1.DataSource = _list;
 
         }
-
         private void CountContractors()
         {
             try
@@ -41,7 +40,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnRemove_Click(object sender, EventArgs e)
         {
             try
@@ -101,7 +99,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void RemoveRecord()
         {
             try
@@ -120,7 +117,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void GetData()
         {
             try
@@ -138,7 +134,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void CreateFile()
         {
             try
@@ -153,7 +148,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddRecord();
@@ -164,7 +158,6 @@ namespace WindowsFormsApp2
 
             ClearFields();
         }
-
         private void ClearFields()
         {
             try
@@ -184,7 +177,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void SaveData()
         {
             try
@@ -197,7 +189,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void AddRecord()
         {
             try
@@ -216,7 +207,13 @@ namespace WindowsFormsApp2
 
                 newContractor.Kod_Kreskowy = _barCode;
 
-                if (cboCountry.Text == string.Empty || tbContractor.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
+                if (cboCountry.Items.Contains(cboCountry.Text))
+                {
+                    MessageBox.Show("Wybrany kraj jest nieprawidlowy!\nWprowadz prosze poprawny kod, by numer trasy zostal wygenerowany poprawnie.");
+                    return;
+                }
+
+                if (tbContractor.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
                 {
                     DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste. Czy chcesz dodac mimo tego?", "Ostrzezenie", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
@@ -242,7 +239,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -254,7 +250,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
@@ -274,7 +269,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnReset_Click(object sender, EventArgs e)
         {
             ClearFields();
