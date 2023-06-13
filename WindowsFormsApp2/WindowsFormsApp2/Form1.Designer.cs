@@ -52,12 +52,12 @@
             this.tbContractor = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblCount = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1132, 196);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnAdd
             // 
@@ -320,6 +320,28 @@
             this.panel4.Size = new System.Drawing.Size(1210, 84);
             this.panel4.TabIndex = 0;
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(920, 16);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(83, 52);
+            this.btnReset.TabIndex = 0;
+            this.btnReset.TabStop = false;
+            this.btnReset.Text = "Resetuj";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(1057, 16);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(83, 52);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TabStop = false;
+            this.btnExit.Text = "Wyjscie";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // tbSearch
             // 
             this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -356,28 +378,6 @@
             this.lblCount.Size = new System.Drawing.Size(388, 31);
             this.lblCount.TabIndex = 0;
             this.lblCount.Text = "Ilosc aktualnych kontrahentow:";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(1057, 16);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(83, 52);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.TabStop = false;
-            this.btnExit.Text = "Wyjscie";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(920, 16);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(83, 52);
-            this.btnReset.TabIndex = 0;
-            this.btnReset.TabStop = false;
-            this.btnReset.Text = "Resetuj";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Form1
             // 

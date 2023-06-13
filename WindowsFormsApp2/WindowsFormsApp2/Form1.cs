@@ -11,7 +11,7 @@ namespace WindowsFormsApp2
     public partial class Form1 : Form
     {
         Random rnd = new Random();
-        string _barCode;
+        int _barCode;
         int countContractors = 0;
         BindingList<ContractorInformation> _list = new BindingList<ContractorInformation>();
         string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
@@ -88,16 +88,10 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-        private void AddBarCodeToTheContractor()
+        private int AddBarCodeToTheContractor()
         {
-            try
-            {
-                _barCode = rnd.Next(100000000, 999999999).ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                _barCode = rnd.Next(100000000, 999999999);
+                return _barCode;
         }
         private void RemoveRecord()
         {
@@ -191,6 +185,9 @@ namespace WindowsFormsApp2
         }
         private void AddRecord()
         {
+
+            AddRouteNumberToTheContractor();
+
             try
             {
                 var newContractor = new ContractorInformation()
@@ -201,55 +198,35 @@ namespace WindowsFormsApp2
                     Telefon = tbPhone.Text,
                     Email = tbEmail.Text,
                     Kod_pocztowy = tbPostCode.Text,
-                    Numer_Trasy = tbRouteNumber.Text,
-                    Kod_Kreskowy = tbBarCode.Text,
+                    //Numer_Trasy = ,
+                    Kod_Kreskowy = AddBarCodeToTheContractor(),
                 };
 
-                newContractor.Kod_Kreskowy = _barCode;
-
-                if (cboCountry.Items.Contains(cboCountry.Text))
-                {
-                    MessageBox.Show("Wybrany kraj jest nieprawidlowy!\nWprowadz prosze poprawny kod, by numer trasy zostal wygenerowany poprawnie.");
-                    return;
-                }
+                //if (cboCountry.Items.Contains(cboCountry.Text))
+                //{
+                //    MessageBox.Show("Wybrany kraj jest nieprawidlowy!\nWprowadz prosze poprawny kod, by numer trasy zostal wygenerowany poprawnie.");
+                //    return;
+                //}
 
                 if (tbContractor.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
                 {
                     DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste. Czy chcesz dodac mimo tego?", "Ostrzezenie", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                    if (checkFields == DialogResult.Yes)
-                    {
-                        _list.Add(newContractor);
-                        countContractors++;
-
-                        tbBarCode.Text = _barCode;
-
-                        AddBarCodeToTheContractor();
-
-                        AddRouteNumberToTheContractor();
-                    }
-                    else
+                    if (checkFields == DialogResult.No)
                     {
                         return;
                     }
                 }
+                _list.Add(newContractor);
+                countContractors++;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
@@ -272,6 +249,18 @@ namespace WindowsFormsApp2
         private void btnReset_Click(object sender, EventArgs e)
         {
             ClearFields();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //try
+            //{
+            //    //tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
     }
 }
