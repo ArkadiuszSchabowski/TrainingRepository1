@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp2.Models;
+using System.Drawing;
 
 namespace WindowsFormsApp2
 {
@@ -28,6 +29,12 @@ namespace WindowsFormsApp2
 
             dataGridView1.DataSource = _list;
 
+            ChangeFontInDataGridViev();
+
+        }
+        private void ChangeFontInDataGridViev()
+        {
+            dataGridView1.Columns[7].DefaultCellStyle.Font = new Font("CCode39", 20);
         }
         private void CountContractors()
         {
@@ -198,7 +205,7 @@ namespace WindowsFormsApp2
                     Telefon = tbPhone.Text,
                     Email = tbEmail.Text,
                     Kod_pocztowy = tbPostCode.Text,
-                    //Numer_Trasy = ,
+                    Numer_Trasy = tbRouteNumber.Text,
                     Kod_Kreskowy = AddBarCodeToTheContractor(),
                 };
 
@@ -253,14 +260,21 @@ namespace WindowsFormsApp2
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //try
-            //{
-            //    //tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
+            try
+            {
+                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                //tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
