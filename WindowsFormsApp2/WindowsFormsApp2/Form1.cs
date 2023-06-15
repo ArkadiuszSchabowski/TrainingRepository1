@@ -21,6 +21,8 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
+            WindowState = FormWindowState.Maximized;
+
             CreateFile();
 
             GetData();
@@ -92,40 +94,38 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-        private void AddRouteNumberToTheContractor()
+        private string AddRouteNumberToTheContractor()
         {
-            try
-            {
-                string routeNumber = tbRouteNumber.Text;
+            string route = "";
+            string number = rnd.Next(1, 500).ToString();
 
-                switch (routeNumber)
-                {
-                    case "POLSKA":
-                        tbRouteNumber.Text = "A";
-                        break;
-                    case "LITWA":
-                        tbRouteNumber.Text = "A";
-                        break;
-                    case "WLOCHY":
-                        tbRouteNumber.Text = "A";
-                        break;
-                    case "CZECHY":
-                        tbRouteNumber.Text = "A";
-                        break;
-                    case "NIEMCY":
-                        tbRouteNumber.Text = "A";
-                        break;
-                    case "FRANCJA":
-                        tbRouteNumber.Text = "A";
-                        break;
-                    default:
-                        break;
-                }
-            }
-            catch (Exception ex)
+            switch (cboCountry.Text.ToUpper())
             {
-                MessageBox.Show(ex.Message);
+                case "POLSKA":
+                    route = "P" + number;
+                    break;
+                case "LITWA":
+                    route = "L" + number;
+                    break;
+                case "WLOCHY":
+                    route = "W" + number;
+                    break;
+                case "CZECHY":
+                    route = "C" + number;
+                    break;
+                case "NIEMCY":
+                    route = "N" + number;
+                    break;
+                case "FRANCJA":
+                    route = "F" + number;
+                    break;
+                default:
+                    route = "0";
+                    break;
             }
+
+            tbRouteNumber.Text = route;
+            return route;
         }
         private int AddBarCodeToTheContractor()
         {
@@ -224,9 +224,6 @@ namespace WindowsFormsApp2
         }
         private void AddRecord()
         {
-
-            AddRouteNumberToTheContractor();
-
             try
             {
                 var newContractor = new ContractorInformation()
@@ -237,17 +234,11 @@ namespace WindowsFormsApp2
                     Telefon = tbPhone.Text,
                     Email = tbEmail.Text,
                     Kod_pocztowy = tbPostCode.Text,
-                    Trasa = tbRouteNumber.Text,
+                    Trasa = AddRouteNumberToTheContractor(),
                     Kod_Kreskowy = AddBarCodeToTheContractor(),
                 };
 
-                //if (cboCountry.Items.Contains(cboCountry.Text))
-                //{
-                //    MessageBox.Show("Wybrany kraj jest nieprawidlowy!\nWprowadz prosze poprawny kod, by numer trasy zostal wygenerowany poprawnie.");
-                //    return;
-                //}
-
-                if (tbContractor.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
+                if (tbContractor.Text == string.Empty || cboCountry.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
                 {
                     DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste. Czy chcesz dodac mimo tego?", "Ostrzezenie", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
@@ -264,8 +255,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
@@ -289,7 +278,6 @@ namespace WindowsFormsApp2
         {
             ClearFields();
         }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
@@ -71,17 +71,17 @@
             // 
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 0);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 15);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1204, 196);
+            this.dataGridView1.Size = new System.Drawing.Size(1291, 176);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -112,7 +112,7 @@
             // 
             this.lblCountry.AutoSize = true;
             this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCountry.Location = new System.Drawing.Point(441, 27);
+            this.lblCountry.Location = new System.Drawing.Point(460, 27);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.Size = new System.Drawing.Size(56, 25);
             this.lblCountry.TabIndex = 3;
@@ -132,20 +132,21 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(13, 8);
+            this.panel1.Location = new System.Drawing.Point(22, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1210, 84);
+            this.panel1.Size = new System.Drawing.Size(1325, 84);
             this.panel1.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(394, 18);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(431, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(274, 42);
+            this.label3.Size = new System.Drawing.Size(369, 55);
             this.label3.TabIndex = 0;
             this.label3.Text = "Moto-Profil App";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -166,17 +167,17 @@
             this.panel2.Controls.Add(this.lblCountry);
             this.panel2.Controls.Add(this.tbContractor);
             this.panel2.Controls.Add(this.lblContractor);
-            this.panel2.Location = new System.Drawing.Point(13, 98);
+            this.panel2.Location = new System.Drawing.Point(22, 101);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1210, 203);
+            this.panel2.Size = new System.Drawing.Size(1325, 203);
             this.panel2.TabIndex = 0;
             // 
             // tbPhone
             // 
-            this.tbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbPhone.Location = new System.Drawing.Point(223, 78);
+            this.tbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbPhone.Location = new System.Drawing.Point(181, 89);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(200, 38);
+            this.tbPhone.Size = new System.Drawing.Size(250, 31);
             this.tbPhone.TabIndex = 4;
             // 
             // lblPhone
@@ -191,17 +192,17 @@
             // 
             // tbPostCode
             // 
-            this.tbPostCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbPostCode.Location = new System.Drawing.Point(992, 66);
+            this.tbPostCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbPostCode.Location = new System.Drawing.Point(1056, 87);
             this.tbPostCode.Name = "tbPostCode";
-            this.tbPostCode.Size = new System.Drawing.Size(200, 38);
+            this.tbPostCode.Size = new System.Drawing.Size(250, 31);
             this.tbPostCode.TabIndex = 6;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblEmail.Location = new System.Drawing.Point(441, 93);
+            this.lblEmail.Location = new System.Drawing.Point(460, 93);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(71, 25);
             this.lblEmail.TabIndex = 16;
@@ -210,17 +211,17 @@
             // tbRouteNumber
             // 
             this.tbRouteNumber.Enabled = false;
-            this.tbRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbRouteNumber.Location = new System.Drawing.Point(223, 139);
+            this.tbRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbRouteNumber.Location = new System.Drawing.Point(181, 150);
             this.tbRouteNumber.Name = "tbRouteNumber";
-            this.tbRouteNumber.Size = new System.Drawing.Size(200, 38);
+            this.tbRouteNumber.Size = new System.Drawing.Size(250, 31);
             this.tbRouteNumber.TabIndex = 0;
             // 
             // lblPostCode
             // 
             this.lblPostCode.AutoSize = true;
             this.lblPostCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPostCode.Location = new System.Drawing.Point(822, 66);
+            this.lblPostCode.Location = new System.Drawing.Point(899, 79);
             this.lblPostCode.Name = "lblPostCode";
             this.lblPostCode.Size = new System.Drawing.Size(154, 25);
             this.lblPostCode.TabIndex = 14;
@@ -228,17 +229,17 @@
             // 
             // tbAdress
             // 
-            this.tbAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbAdress.Location = new System.Drawing.Point(991, 12);
+            this.tbAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbAdress.Location = new System.Drawing.Point(1056, 22);
             this.tbAdress.Name = "tbAdress";
-            this.tbAdress.Size = new System.Drawing.Size(200, 38);
+            this.tbAdress.Size = new System.Drawing.Size(250, 31);
             this.tbAdress.TabIndex = 3;
             // 
             // lblAdress
             // 
             this.lblAdress.AutoSize = true;
             this.lblAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAdress.Location = new System.Drawing.Point(824, 15);
+            this.lblAdress.Location = new System.Drawing.Point(901, 28);
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(74, 25);
             this.lblAdress.TabIndex = 12;
@@ -246,7 +247,7 @@
             // 
             // cboCountry
             // 
-            this.cboCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cboCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cboCountry.FormattingEnabled = true;
             this.cboCountry.Items.AddRange(new object[] {
             "",
@@ -256,18 +257,18 @@
             "Czechy",
             "Niemcy",
             "Francja"});
-            this.cboCountry.Location = new System.Drawing.Point(606, 11);
+            this.cboCountry.Location = new System.Drawing.Point(623, 23);
             this.cboCountry.Name = "cboCountry";
-            this.cboCountry.Size = new System.Drawing.Size(200, 39);
+            this.cboCountry.Size = new System.Drawing.Size(250, 33);
             this.cboCountry.TabIndex = 2;
             // 
             // tbBarCode
             // 
             this.tbBarCode.Enabled = false;
             this.tbBarCode.Font = new System.Drawing.Font("CCode39", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBarCode.Location = new System.Drawing.Point(606, 140);
+            this.tbBarCode.Location = new System.Drawing.Point(623, 141);
             this.tbBarCode.Name = "tbBarCode";
-            this.tbBarCode.Size = new System.Drawing.Size(200, 46);
+            this.tbBarCode.Size = new System.Drawing.Size(250, 46);
             this.tbBarCode.TabIndex = 0;
             this.tbBarCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -275,7 +276,7 @@
             // 
             this.lblBarCode.AutoSize = true;
             this.lblBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblBarCode.Location = new System.Drawing.Point(441, 148);
+            this.lblBarCode.Location = new System.Drawing.Point(460, 148);
             this.lblBarCode.Name = "lblBarCode";
             this.lblBarCode.Size = new System.Drawing.Size(152, 25);
             this.lblBarCode.TabIndex = 9;
@@ -283,10 +284,10 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbEmail.Location = new System.Drawing.Point(606, 78);
+            this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbEmail.Location = new System.Drawing.Point(623, 88);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(200, 38);
+            this.tbEmail.Size = new System.Drawing.Size(250, 31);
             this.tbEmail.TabIndex = 5;
             // 
             // lblRouteNumber
@@ -301,19 +302,19 @@
             // 
             // tbContractor
             // 
-            this.tbContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbContractor.Location = new System.Drawing.Point(223, 12);
+            this.tbContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbContractor.Location = new System.Drawing.Point(181, 23);
             this.tbContractor.Name = "tbContractor";
-            this.tbContractor.Size = new System.Drawing.Size(200, 38);
+            this.tbContractor.Size = new System.Drawing.Size(250, 31);
             this.tbContractor.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(13, 307);
+            this.panel3.Location = new System.Drawing.Point(22, 310);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1210, 209);
+            this.panel3.Size = new System.Drawing.Size(1325, 209);
             this.panel3.TabIndex = 0;
             // 
             // panel4
@@ -325,9 +326,9 @@
             this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.btnRemove);
-            this.panel4.Location = new System.Drawing.Point(12, 574);
+            this.panel4.Location = new System.Drawing.Point(21, 577);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1210, 84);
+            this.panel4.Size = new System.Drawing.Size(1325, 84);
             this.panel4.TabIndex = 0;
             // 
             // btnReset
@@ -374,9 +375,9 @@
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel5.Controls.Add(this.lblCount);
-            this.panel5.Location = new System.Drawing.Point(12, 522);
+            this.panel5.Location = new System.Drawing.Point(21, 525);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1211, 46);
+            this.panel5.Size = new System.Drawing.Size(1326, 46);
             this.panel5.TabIndex = 0;
             // 
             // lblCount
@@ -394,7 +395,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1237, 685);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
