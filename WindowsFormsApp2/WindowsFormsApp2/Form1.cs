@@ -30,11 +30,43 @@ namespace WindowsFormsApp2
             dataGridView1.DataSource = _list;
 
             ChangeFontInDataGridViev();
-
+            ChangeColumnWidths();
+            ChangeColumnHeaders();
+            HideBarCodeColumnWithDataGridView();
         }
+        private void HideBarCodeColumnWithDataGridView()
+        {
+            dataGridView1.Columns["Kod_Kreskowy"].Visible = false;
+        }
+        private void ChangeColumnWidths()
+        {
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            }
+            dataGridView1.Columns["Trasa"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            dataGridView1.Columns["Kontrahent"].Width = 180;
+            dataGridView1.Columns["Kraj"].Width = 120;
+            dataGridView1.Columns["Adres"].Width = 200;
+            dataGridView1.Columns["Telefon"].Width = 150;
+            dataGridView1.Columns["Email"].Width = 270;
+            dataGridView1.Columns["Kod_Pocztowy"].Width = 140;
+        }
+        private void ChangeColumnHeaders()
+        {
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.HeaderCell.Style.Font = new Font(dataGridView1.Font.FontFamily, 12, FontStyle.Bold);
+            }
+        }
+
         private void ChangeFontInDataGridViev()
         {
-            dataGridView1.Columns[7].DefaultCellStyle.Font = new Font("CCode39", 20);
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.DefaultCellStyle.Font = new Font("Verdana", 10);
+            }
         }
         private void CountContractors()
         {
@@ -97,8 +129,8 @@ namespace WindowsFormsApp2
         }
         private int AddBarCodeToTheContractor()
         {
-                _barCode = rnd.Next(100000000, 999999999);
-                return _barCode;
+            _barCode = rnd.Next(100000000, 999999999);
+            return _barCode;
         }
         private void RemoveRecord()
         {
@@ -205,7 +237,7 @@ namespace WindowsFormsApp2
                     Telefon = tbPhone.Text,
                     Email = tbEmail.Text,
                     Kod_pocztowy = tbPostCode.Text,
-                    Numer_Trasy = tbRouteNumber.Text,
+                    Trasa = tbRouteNumber.Text,
                     Kod_Kreskowy = AddBarCodeToTheContractor(),
                 };
 

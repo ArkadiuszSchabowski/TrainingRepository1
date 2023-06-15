@@ -14,7 +14,7 @@ namespace WindowsFormsApp2.Models
         public string Telefon { get; set; }
         public string Email { get; set; }
         public string Kod_pocztowy { get; set; }
-        public string Numer_Trasy { get; set; }
+        public string Trasa { get; set; }
         public int Kod_Kreskowy { get; set; }
     }
 }
