@@ -21,7 +21,7 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
-            WindowState = FormWindowState.Maximized;
+            StrechTheWindowsToFullScreen();
 
             CreateFile();
 
@@ -36,9 +36,37 @@ namespace WindowsFormsApp2
             ChangeColumnHeaders();
             HideBarCodeColumnWithDataGridView();
         }
+        //Set windows property
+
+        private void StrechTheWindowsToFullScreen()
+        {
+            WindowState = FormWindowState.Maximized;
+        }
+        //Label
+        private void CountContractors()
+        {
+            try
+            {
+                lblCount.Text = $"Ilosc aktualnych kontrahentow: {countContractors}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        //DataGridView
+
         private void HideBarCodeColumnWithDataGridView()
         {
             dataGridView1.Columns["Kod_Kreskowy"].Visible = false;
+        }
+        private void ChangeColumnHeaders()
+        {
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.HeaderCell.Style.Font = new Font(dataGridView1.Font.FontFamily, 12, FontStyle.Bold);
+            }
         }
         private void ChangeColumnWidths()
         {
@@ -55,13 +83,6 @@ namespace WindowsFormsApp2
             dataGridView1.Columns["Email"].Width = 270;
             dataGridView1.Columns["Kod_Pocztowy"].Width = 140;
         }
-        private void ChangeColumnHeaders()
-        {
-            foreach (DataGridViewColumn column in dataGridView1.Columns)
-            {
-                column.HeaderCell.Style.Font = new Font(dataGridView1.Font.FontFamily, 12, FontStyle.Bold);
-            }
-        }
 
         private void ChangeFontInDataGridViev()
         {
@@ -70,158 +91,25 @@ namespace WindowsFormsApp2
                 column.DefaultCellStyle.Font = new Font("Verdana", 10);
             }
         }
-        private void CountContractors()
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
-                lblCount.Text = $"Ilosc aktualnych kontrahentow: {countContractors}";
+                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                //tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void btnRemove_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                RemoveRecord();
-
-                SaveData();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private string AddRouteNumberToTheContractor()
-        {
-            string route = "";
-            string number = rnd.Next(1, 500).ToString();
-
-            switch (cboCountry.Text.ToUpper())
-            {
-                case "POLSKA":
-                    route = "P" + number;
-                    break;
-                case "LITWA":
-                    route = "L" + number;
-                    break;
-                case "WLOCHY":
-                    route = "W" + number;
-                    break;
-                case "CZECHY":
-                    route = "C" + number;
-                    break;
-                case "NIEMCY":
-                    route = "N" + number;
-                    break;
-                case "FRANCJA":
-                    route = "F" + number;
-                    break;
-                default:
-                    route = "0";
-                    break;
-            }
-
-            tbRouteNumber.Text = route;
-            return route;
-        }
-        private int AddBarCodeToTheContractor()
-        {
-            _barCode = rnd.Next(100000000, 999999999);
-            return _barCode;
-        }
-        private void RemoveRecord()
-        {
-            try
-            {
-                if (dataGridView1.SelectedRows.Count > 0)
-                {
-                    var selectedRowIndex = dataGridView1.SelectedRows[0].Index;
-                    if (selectedRowIndex >= 0 && selectedRowIndex < _list.Count)
-                    {
-                        _list.RemoveAt(selectedRowIndex);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void GetData()
-        {
-            try
-            {
-                var json = File.ReadAllText(_filePath);
-                _list = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
-
-                if (json == null || !json.Any())
-                {
-                    _list = new BindingList<ContractorInformation>();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void CreateFile()
-        {
-            try
-            {
-                if (!File.Exists(_filePath))
-                {
-                    File.Create(_filePath);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            AddRecord();
-
-            CountContractors();
-
-            SaveData();
-
-            ClearFields();
-        }
-        private void ClearFields()
-        {
-            try
-            {
-                foreach (Control item in panel2.Controls)
-                {
-                    if (item is TextBox)
-                    {
-                        (item as TextBox).Clear();
-                    }
-                }
-                cboCountry.Text = "";
-                tbSearch.Text = "";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void SaveData()
-        {
-            try
-            {
-                var json = JsonConvert.SerializeObject(_list);
-                File.WriteAllText(_filePath, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        //Methods
         private void AddRecord()
         {
             try
@@ -255,6 +143,159 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
+        private string AddRouteNumberToTheContractor()
+        {
+            string route = "";
+            string number = rnd.Next(1, 500).ToString();
+            string selectedCountry = cboCountry.Text;
+
+            switch (selectedCountry)
+            {
+                case "Polska":
+                    route = "P" + number;
+                    break;
+                case "Litwa":
+                    route = "L" + number;
+                    break;
+                case "Wlochy":
+                    route = "W" + number;
+                    break;
+                case "Czechy":
+                    route = "C" + number;
+                    break;
+                case "Niemcy":
+                    route = "N" + number;
+                    break;
+                case "Francja":
+                    route = "F" + number;
+                    break;
+                default:
+                    route = "0";
+                    break;
+            }
+            tbRouteNumber.Text = route;
+            return route;
+        }
+        private int AddBarCodeToTheContractor()
+        {
+            _barCode = rnd.Next(100000000, 999999999);
+            return _barCode;
+        }
+
+        private void RemoveRecord()
+        {
+            try
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    var selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                    if (selectedRowIndex >= 0 && selectedRowIndex < _list.Count)
+                    {
+                        _list.RemoveAt(selectedRowIndex);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ClearFields()
+        {
+            try
+            {
+                foreach (Control item in panel2.Controls)
+                {
+                    if (item is TextBox)
+                    {
+                        (item as TextBox).Clear();
+                    }
+                }
+                cboCountry.Text = "";
+                tbSearch.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        
+        //Save and load from file
+        private void SaveData()
+        {
+            try
+            {
+                var json = JsonConvert.SerializeObject(_list);
+                File.WriteAllText(_filePath, json);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void GetData()
+        {
+            try
+            {
+                var json = File.ReadAllText(_filePath);
+                _list = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
+
+                if (json == null || !json.Any())
+                {
+                    _list = new BindingList<ContractorInformation>();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CreateFile()
+        {
+            try
+            {
+                if (!File.Exists(_filePath))
+                {
+                    File.Create(_filePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        //Buttons
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddRecord();
+
+            CountContractors();
+
+            SaveData();
+
+            ClearFields();
+        }
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RemoveRecord();
+
+                SaveData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
@@ -268,28 +309,6 @@ namespace WindowsFormsApp2
                 {
                     return;
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            ClearFields();
-        }
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                //tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
             }
             catch (Exception ex)
             {
