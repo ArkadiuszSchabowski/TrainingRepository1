@@ -49,13 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\AllButtons.cs" />
+    <Compile Include="Class\DataFromGridView.cs" />
+    <Compile Include="Class\SerializeAndDeserialize.cs" />
+    <Compile Include="Class\SomeMethods.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContractorInformation.cs" />
+    <Compile Include="Class\ContractorInformation.cs" />
+    <Compile Include="Class\LabelCountContractors.cs" />
+    <Compile Include="Class\SetWindowsProperty.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

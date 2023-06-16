@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Done X
+
 namespace WindowsFormsApp2.Models
 {
     internal class ContractorInformation
