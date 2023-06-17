@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\bin\Debug\RoadToCvProject.exe.config
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\bin\Debug\RoadToCvProject.exe
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\bin\Debug\RoadToCvProject.pdb
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.exe
+C:\Users\Greedy\Desktop\2023\RoadToCvProject\RoadToCvProject\obj\Debug\RoadToCvProject.pdb
