@@ -14,6 +14,8 @@ namespace RoadToCvProject
     public partial class Form1 : Form
     {
         public static int _countFruit = 0;
+        public static Label FruitLabel { get { return lblFruit; } }
+
         public Form1()
         {
             InitializeComponent();
