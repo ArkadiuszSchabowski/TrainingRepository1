@@ -125,15 +125,16 @@ namespace WindowsFormsApp2
                     Trasa = AddRouteNumberToTheContractor(),
                     Kod_Kreskowy = AddBarCodeToTheContractor(),
                 };
+                if (string.IsNullOrEmpty(newContractor.Kraj) || !IsValidCountry(newContractor.Kraj))
+                {
+                    MessageBox.Show("Wybierz poprawny kraj z listy.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 if (tbContractor.Text == string.Empty || cboCountry.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
                 {
-                    DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste. Czy chcesz dodac mimo tego?", "Ostrzezenie", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                    if (checkFields == DialogResult.No)
-                    {
-                        return;
-                    }
+                    DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste.", "Ostrzezenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
                 _list.Add(newContractor);
                 countContractors++;
@@ -142,6 +143,11 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private bool IsValidCountry(string country)
+        {
+            string[] allowedCountries = { "Polska", "Litwa", "Wlochy", "Czechy", "Niemcy", "Francja" };
+            return allowedCountries.Contains(country);
         }
         private string AddRouteNumberToTheContractor()
         {
@@ -291,6 +297,9 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
+        private void btnSort_Click(object sender, EventArgs e)
+        {
+        }
         private void btnReset_Click(object sender, EventArgs e)
         {
             ClearFields();
@@ -313,6 +322,11 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
