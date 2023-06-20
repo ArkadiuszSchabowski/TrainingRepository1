@@ -125,15 +125,16 @@ namespace WindowsFormsApp2
                     Trasa = AddRouteNumberToTheContractor(),
                     Kod_Kreskowy = AddBarCodeToTheContractor(),
                 };
-                if (string.IsNullOrEmpty(newContractor.Kraj) || !IsValidCountry(newContractor.Kraj))
-                {
-                    MessageBox.Show("Wybierz poprawny kraj z listy.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
 
                 if (tbContractor.Text == string.Empty || cboCountry.Text == string.Empty || tbAdress.Text == string.Empty || tbPhone.Text == string.Empty || tbEmail.Text == string.Empty || tbPostCode.Text == string.Empty)
                 {
                     DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pol jest puste.", "Ostrzezenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(newContractor.Kraj) || !IsValidCountry(newContractor.Kraj))
+                {
+                    MessageBox.Show("Wybierz poprawny kraj z listy.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 _list.Add(newContractor);
