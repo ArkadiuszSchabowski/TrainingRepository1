@@ -9,3 +9,6 @@ C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.cspro
 C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.csproj.CoreCompileInputs.cache
 C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.exe
 C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.pdb
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.csproj.CopyComplete

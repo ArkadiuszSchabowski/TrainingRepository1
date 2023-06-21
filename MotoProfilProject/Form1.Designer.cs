@@ -29,43 +29,43 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.tbSearch = new System.Windows.Forms.TextBox();
-            this.lblRouteNumber = new System.Windows.Forms.Label();
-            this.lblBarCode = new System.Windows.Forms.Label();
-            this.tbBarCode = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.tbRouteNumber = new System.Windows.Forms.TextBox();
+            this.tbBarCode = new System.Windows.Forms.TextBox();
+            this.lblBarCode = new System.Windows.Forms.Label();
+            this.lblRouteNumber = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
+            this.lblCountry = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
+            this.lblContractor = new System.Windows.Forms.Label();
             this.tbPostCode = new System.Windows.Forms.TextBox();
+            this.tbContractor = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.lblPostCode = new System.Windows.Forms.Label();
+            this.cboCountry = new System.Windows.Forms.ComboBox();
             this.tbAdress = new System.Windows.Forms.TextBox();
             this.lblAdress = new System.Windows.Forms.Label();
-            this.cboCountry = new System.Windows.Forms.ComboBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
-            this.lblCountry = new System.Windows.Forms.Label();
-            this.tbContractor = new System.Windows.Forms.TextBox();
-            this.lblContractor = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,6 +77,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1326, 65);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(409, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(357, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Aplikacja Moto-Profil";
             // 
             // panel5
             // 
@@ -94,61 +104,24 @@
             this.panel5.Size = new System.Drawing.Size(1326, 97);
             this.panel5.TabIndex = 0;
             // 
-            // panel4
+            // btnSearch
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel4.Location = new System.Drawing.Point(12, 377);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1326, 237);
-            this.panel4.TabIndex = 0;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSearch.Location = new System.Drawing.Point(370, 22);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(183, 52);
+            this.btnSearch.TabIndex = 16;
+            this.btnSearch.Text = "Wyszukaj";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // panel3
+            // tbSearch
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.tbRouteNumber);
-            this.panel3.Controls.Add(this.tbBarCode);
-            this.panel3.Controls.Add(this.lblBarCode);
-            this.panel3.Controls.Add(this.lblRouteNumber);
-            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel3.Location = new System.Drawing.Point(12, 269);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1326, 102);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.tbPhone);
-            this.panel2.Controls.Add(this.lblCountry);
-            this.panel2.Controls.Add(this.lblPhone);
-            this.panel2.Controls.Add(this.lblContractor);
-            this.panel2.Controls.Add(this.tbPostCode);
-            this.panel2.Controls.Add(this.tbContractor);
-            this.panel2.Controls.Add(this.lblEmail);
-            this.panel2.Controls.Add(this.tbEmail);
-            this.panel2.Controls.Add(this.lblPostCode);
-            this.panel2.Controls.Add(this.cboCountry);
-            this.panel2.Controls.Add(this.tbAdress);
-            this.panel2.Controls.Add(this.lblAdress);
-            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(12, 98);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1326, 154);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(409, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Aplikacja Moto-Profil";
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbSearch.Location = new System.Drawing.Point(577, 27);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(497, 47);
+            this.tbSearch.TabIndex = 15;
             // 
             // btnEdit
             // 
@@ -206,48 +179,61 @@
             this.btnRemove.Size = new System.Drawing.Size(83, 52);
             this.btnRemove.TabIndex = 13;
             this.btnRemove.TabStop = false;
-            this.btnRemove.Text = "Usun";
+            this.btnRemove.Text = "Usuń";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // btnSearch
+            // panel4
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnSearch.Location = new System.Drawing.Point(370, 22);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(183, 52);
-            this.btnSearch.TabIndex = 16;
-            this.btnSearch.Text = "Wyszukaj";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.panel4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel4.Location = new System.Drawing.Point(12, 377);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1326, 237);
+            this.panel4.TabIndex = 0;
             // 
-            // tbSearch
+            // dataGridView1
             // 
-            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbSearch.Location = new System.Drawing.Point(577, 27);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(497, 47);
-            this.tbSearch.TabIndex = 15;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1303, 207);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // lblRouteNumber
+            // panel3
             // 
-            this.lblRouteNumber.AutoSize = true;
-            this.lblRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblRouteNumber.Location = new System.Drawing.Point(12, 50);
-            this.lblRouteNumber.Name = "lblRouteNumber";
-            this.lblRouteNumber.Size = new System.Drawing.Size(141, 25);
-            this.lblRouteNumber.TabIndex = 33;
-            this.lblRouteNumber.Text = "Numer Trasy:";
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.tbRouteNumber);
+            this.panel3.Controls.Add(this.tbBarCode);
+            this.panel3.Controls.Add(this.lblBarCode);
+            this.panel3.Controls.Add(this.lblRouteNumber);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Location = new System.Drawing.Point(12, 269);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1326, 102);
+            this.panel3.TabIndex = 0;
             // 
-            // lblBarCode
+            // label3
             // 
-            this.lblBarCode.AutoSize = true;
-            this.lblBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblBarCode.Location = new System.Drawing.Point(468, 50);
-            this.lblBarCode.Name = "lblBarCode";
-            this.lblBarCode.Size = new System.Drawing.Size(152, 25);
-            this.lblBarCode.TabIndex = 34;
-            this.lblBarCode.Text = "Kod kreskowy:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(16, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(231, 16);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Dane generowane przez system:";
+            // 
+            // tbRouteNumber
+            // 
+            this.tbRouteNumber.Enabled = false;
+            this.tbRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbRouteNumber.Location = new System.Drawing.Point(159, 45);
+            this.tbRouteNumber.Name = "tbRouteNumber";
+            this.tbRouteNumber.Size = new System.Drawing.Size(250, 38);
+            this.tbRouteNumber.TabIndex = 31;
             // 
             // tbBarCode
             // 
@@ -259,14 +245,57 @@
             this.tbBarCode.TabIndex = 32;
             this.tbBarCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tbRouteNumber
+            // lblBarCode
             // 
-            this.tbRouteNumber.Enabled = false;
-            this.tbRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbRouteNumber.Location = new System.Drawing.Point(159, 45);
-            this.tbRouteNumber.Name = "tbRouteNumber";
-            this.tbRouteNumber.Size = new System.Drawing.Size(250, 38);
-            this.tbRouteNumber.TabIndex = 31;
+            this.lblBarCode.AutoSize = true;
+            this.lblBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblBarCode.Location = new System.Drawing.Point(468, 50);
+            this.lblBarCode.Name = "lblBarCode";
+            this.lblBarCode.Size = new System.Drawing.Size(152, 25);
+            this.lblBarCode.TabIndex = 34;
+            this.lblBarCode.Text = "Kod kreskowy:";
+            // 
+            // lblRouteNumber
+            // 
+            this.lblRouteNumber.AutoSize = true;
+            this.lblRouteNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblRouteNumber.Location = new System.Drawing.Point(12, 50);
+            this.lblRouteNumber.Name = "lblRouteNumber";
+            this.lblRouteNumber.Size = new System.Drawing.Size(141, 25);
+            this.lblRouteNumber.TabIndex = 33;
+            this.lblRouteNumber.Text = "Numer Trasy:";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.tbPhone);
+            this.panel2.Controls.Add(this.lblCountry);
+            this.panel2.Controls.Add(this.lblPhone);
+            this.panel2.Controls.Add(this.lblContractor);
+            this.panel2.Controls.Add(this.tbPostCode);
+            this.panel2.Controls.Add(this.tbContractor);
+            this.panel2.Controls.Add(this.lblEmail);
+            this.panel2.Controls.Add(this.tbEmail);
+            this.panel2.Controls.Add(this.lblPostCode);
+            this.panel2.Controls.Add(this.cboCountry);
+            this.panel2.Controls.Add(this.tbAdress);
+            this.panel2.Controls.Add(this.lblAdress);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(12, 98);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1326, 154);
+            this.panel2.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(16, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(261, 16);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Dane wypełniane przez użytkownika:";
             // 
             // tbPhone
             // 
@@ -275,6 +304,16 @@
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(250, 31);
             this.tbPhone.TabIndex = 39;
+            // 
+            // lblCountry
+            // 
+            this.lblCountry.AutoSize = true;
+            this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCountry.Location = new System.Drawing.Point(414, 47);
+            this.lblCountry.Name = "lblCountry";
+            this.lblCountry.Size = new System.Drawing.Size(56, 25);
+            this.lblCountry.TabIndex = 38;
+            this.lblCountry.Text = "Kraj:";
             // 
             // lblPhone
             // 
@@ -286,6 +325,16 @@
             this.lblPhone.TabIndex = 46;
             this.lblPhone.Text = "Telefon:";
             // 
+            // lblContractor
+            // 
+            this.lblContractor.AutoSize = true;
+            this.lblContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblContractor.Location = new System.Drawing.Point(14, 47);
+            this.lblContractor.Name = "lblContractor";
+            this.lblContractor.Size = new System.Drawing.Size(123, 25);
+            this.lblContractor.TabIndex = 40;
+            this.lblContractor.Text = "Kontrahent:";
+            // 
             // tbPostCode
             // 
             this.tbPostCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -293,6 +342,14 @@
             this.tbPostCode.Name = "tbPostCode";
             this.tbPostCode.Size = new System.Drawing.Size(250, 31);
             this.tbPostCode.TabIndex = 42;
+            // 
+            // tbContractor
+            // 
+            this.tbContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbContractor.Location = new System.Drawing.Point(144, 47);
+            this.tbContractor.Name = "tbContractor";
+            this.tbContractor.Size = new System.Drawing.Size(250, 31);
+            this.tbContractor.TabIndex = 35;
             // 
             // lblEmail
             // 
@@ -304,6 +361,14 @@
             this.lblEmail.TabIndex = 45;
             this.lblEmail.Text = "Email:";
             // 
+            // tbEmail
+            // 
+            this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbEmail.Location = new System.Drawing.Point(524, 112);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(250, 31);
+            this.tbEmail.TabIndex = 41;
+            // 
             // lblPostCode
             // 
             this.lblPostCode.AutoSize = true;
@@ -313,6 +378,23 @@
             this.lblPostCode.Size = new System.Drawing.Size(154, 25);
             this.lblPostCode.TabIndex = 44;
             this.lblPostCode.Text = "Kod Pocztowy:";
+            // 
+            // cboCountry
+            // 
+            this.cboCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cboCountry.FormattingEnabled = true;
+            this.cboCountry.Items.AddRange(new object[] {
+            "",
+            "Polska",
+            "Litwa",
+            "Wlochy",
+            "Czechy",
+            "Niemcy",
+            "Francja"});
+            this.cboCountry.Location = new System.Drawing.Point(524, 47);
+            this.cboCountry.Name = "cboCountry";
+            this.cboCountry.Size = new System.Drawing.Size(250, 33);
+            this.cboCountry.TabIndex = 36;
             // 
             // tbAdress
             // 
@@ -332,87 +414,6 @@
             this.lblAdress.TabIndex = 43;
             this.lblAdress.Text = "Adres:";
             // 
-            // cboCountry
-            // 
-            this.cboCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.cboCountry.FormattingEnabled = true;
-            this.cboCountry.Items.AddRange(new object[] {
-            "",
-            "Polska",
-            "Litwa",
-            "Wlochy",
-            "Czechy",
-            "Niemcy",
-            "Francja"});
-            this.cboCountry.Location = new System.Drawing.Point(524, 47);
-            this.cboCountry.Name = "cboCountry";
-            this.cboCountry.Size = new System.Drawing.Size(250, 33);
-            this.cboCountry.TabIndex = 36;
-            // 
-            // tbEmail
-            // 
-            this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbEmail.Location = new System.Drawing.Point(524, 112);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(250, 31);
-            this.tbEmail.TabIndex = 41;
-            // 
-            // lblCountry
-            // 
-            this.lblCountry.AutoSize = true;
-            this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCountry.Location = new System.Drawing.Point(414, 47);
-            this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(56, 25);
-            this.lblCountry.TabIndex = 38;
-            this.lblCountry.Text = "Kraj:";
-            // 
-            // tbContractor
-            // 
-            this.tbContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbContractor.Location = new System.Drawing.Point(144, 47);
-            this.tbContractor.Name = "tbContractor";
-            this.tbContractor.Size = new System.Drawing.Size(250, 31);
-            this.tbContractor.TabIndex = 35;
-            // 
-            // lblContractor
-            // 
-            this.lblContractor.AutoSize = true;
-            this.lblContractor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblContractor.Location = new System.Drawing.Point(14, 47);
-            this.lblContractor.Name = "lblContractor";
-            this.lblContractor.Size = new System.Drawing.Size(123, 25);
-            this.lblContractor.TabIndex = 40;
-            this.lblContractor.Text = "Kontrahent:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1303, 207);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(16, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(261, 16);
-            this.label2.TabIndex = 47;
-            this.label2.Text = "Dane wypełniane przez użytkownika:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(16, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 16);
-            this.label3.TabIndex = 48;
-            this.label3.Text = "Dane generowane przez system:";
-            // 
             // MotoApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,11 +431,11 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
