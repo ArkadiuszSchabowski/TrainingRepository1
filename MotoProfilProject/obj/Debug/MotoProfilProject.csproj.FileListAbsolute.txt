@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\bin\Debug\MotoProfilProject.exe.config
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\bin\Debug\MotoProfilProject.exe
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\bin\Debug\MotoProfilProject.pdb
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.MotoApp.resources
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.exe
+C:\Users\Greedy\Desktop\2023\MotoProfilProject\obj\Debug\MotoProfilProject.pdb

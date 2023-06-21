@@ -114,6 +114,7 @@ namespace WindowsFormsApp2
         {
             try
             {
+                var selectedIndex = dataGridView1.SelectedRows;
                 var newContractor = new ContractorInformation()
                 {
                     Kontrahent = tbContractor.Text,
@@ -138,6 +139,7 @@ namespace WindowsFormsApp2
                     return;
                 }
                 _list.Add(newContractor);
+                selectedIndex = null;
                 countContractors++;
             }
             catch (Exception ex)
@@ -272,6 +274,10 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void changeSelectedIndex()
+        {
+
         }
 
         //Buttons
