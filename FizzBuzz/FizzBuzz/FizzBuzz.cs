@@ -4,13 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FizzBuzz
+namespace FizzBuzzProject
 {
-    internal class Program
+    internal class FizzBuzz
     {
         static void Main(string[] args)
         {
-            for (int  i = 1;  i < 101;  i++)
+            TheFizzBuzz(5);
+        }
+
+        private static void TheFizzBuzz(int x)
+        {
+            for (int i = 1; i < 101; i++)
             {
                 if (i % 3 == 0 && i % 5 == 0)
                 {
