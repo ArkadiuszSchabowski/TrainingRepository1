@@ -95,6 +95,7 @@ namespace MotoProfilProject
 
             }
         }
+        //Serialize and deserialize
 
         private void CreateFile()
         {
@@ -129,14 +130,6 @@ namespace MotoProfilProject
             }
         }
 
-        //Buttons
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            AddNewContractor();
-
-            SaveData();
-        }
-
         private void SaveData()
         {
             try
@@ -148,6 +141,14 @@ namespace MotoProfilProject
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        //Buttons
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddNewContractor();
+
+            SaveData();
         }
 
         private void AddNewContractor()

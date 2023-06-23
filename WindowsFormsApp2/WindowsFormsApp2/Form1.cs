@@ -21,13 +21,11 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
-            StrechTheWindowsToFullScreen();
+            StrechTheWindowToFullScreen();
 
             CreateFile();
 
             GetData();
-
-            CountContractors();
 
             dataGridView1.DataSource = _list;
 
@@ -38,22 +36,11 @@ namespace WindowsFormsApp2
         }
         //Set windows property
 
-        private void StrechTheWindowsToFullScreen()
+        private void StrechTheWindowToFullScreen()
         {
             WindowState = FormWindowState.Maximized;
         }
-        //Label
-        private void CountContractors()
-        {
-            try
-            {
-                lblCount.Text = $"Ilosc aktualnych kontrahentow: {countContractors}";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+
 
         //DataGridView
 
@@ -114,7 +101,6 @@ namespace WindowsFormsApp2
         {
             try
             {
-                var selectedIndex = dataGridView1.SelectedRows;
                 var newContractor = new ContractorInformation()
                 {
                     Kontrahent = tbContractor.Text,
@@ -139,7 +125,6 @@ namespace WindowsFormsApp2
                     return;
                 }
                 _list.Add(newContractor);
-                selectedIndex = null;
                 countContractors++;
             }
             catch (Exception ex)
@@ -275,17 +260,11 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-        private void changeSelectedIndex()
-        {
-
-        }
 
         //Buttons
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddRecord();
-
-            CountContractors();
 
             SaveData();
 

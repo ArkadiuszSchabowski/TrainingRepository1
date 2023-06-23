@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\bin\Debug\FirstUnitTest.exe.config
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\bin\Debug\FirstUnitTest.exe
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\bin\Debug\FirstUnitTest.pdb
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\obj\Debug\FirstUnitTest.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\obj\Debug\FirstUnitTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\obj\Debug\FirstUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\obj\Debug\FirstUnitTest.exe
+C:\Users\Greedy\Desktop\2023\FirstUnitTest\obj\Debug\FirstUnitTest.pdb
