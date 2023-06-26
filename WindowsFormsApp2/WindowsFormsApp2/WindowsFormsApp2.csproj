@@ -56,6 +56,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\ContractorInformation.cs" />
+    <Compile Include="Models\ContractorManager.cs" />
+    <Compile Include="Models\DataAccess.cs" />
+    <Compile Include="Models\DataGridViewHelper.cs" />
+    <Compile Include="Models\RandomGenerator.cs" />
+    <Compile Include="Models\ValidationHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
