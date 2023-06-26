@@ -45,23 +45,5 @@ namespace WindowsFormsApp2.Models
                 column.DefaultCellStyle.Font = new Font("Verdana", 10);
             }
         }
-        public static void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }

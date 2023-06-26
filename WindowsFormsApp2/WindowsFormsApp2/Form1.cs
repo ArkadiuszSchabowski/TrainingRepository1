@@ -11,8 +11,6 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        Random rnd = new Random();
-        int _barCode;
         int countContractors = 0;
         BindingList<ContractorInformation> _list = new BindingList<ContractorInformation>();
         string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
@@ -43,6 +41,24 @@ namespace WindowsFormsApp2
         }
 
         //Buttons
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text);
@@ -50,6 +66,13 @@ namespace WindowsFormsApp2
             DataAccess.SaveData();
 
             ContractorManager.ClearContractors();
+        }
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnSort_Click(object sender, EventArgs e)
+        {
         }
         private void btnRemove_Click(object sender, EventArgs e)
         {
@@ -63,9 +86,6 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-        private void btnSort_Click(object sender, EventArgs e)
-        {
         }
         private void btnReset_Click(object sender, EventArgs e)
         {
@@ -89,11 +109,6 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

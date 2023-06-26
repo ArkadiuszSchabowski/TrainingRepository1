@@ -8,6 +8,8 @@ namespace WindowsFormsApp2.Models
 {
     internal class RandomGenerator
     {
+        Random rnd = new Random();
+        int _barCode;
         private string AddRouteNumberToTheContractor()
         {
             string route = "";
