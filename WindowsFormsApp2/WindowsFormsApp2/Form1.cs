@@ -11,7 +11,8 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        int countContractors = 0;
+        RandomGenerator randomGenerator = new RandomGenerator();
+
         BindingList<ContractorInformation> _list = new BindingList<ContractorInformation>();
         string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
 
@@ -41,6 +42,7 @@ namespace WindowsFormsApp2
         }
 
         //Buttons
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -62,6 +64,7 @@ namespace WindowsFormsApp2
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text);
+
 
             DataAccess.SaveData();
 

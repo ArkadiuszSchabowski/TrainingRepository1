@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\LastClassProject\bin\Debug\LastClassProject.exe.config
+C:\Users\Greedy\Desktop\2023\LastClassProject\bin\Debug\LastClassProject.exe
+C:\Users\Greedy\Desktop\2023\LastClassProject\bin\Debug\LastClassProject.pdb
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.Form1.resources
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.exe
+C:\Users\Greedy\Desktop\2023\LastClassProject\obj\Debug\LastClassProject.pdb

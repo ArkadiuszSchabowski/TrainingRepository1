@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using WindowsFormsApp2;
 
 namespace WindowsFormsApp2.Models
 {
-    internal class RandomGenerator
+    public class RandomGenerator
     {
         Random rnd = new Random();
         int _barCode;
-        private string AddRouteNumberToTheContractor()
+
+        public string AddRouteNumberToTheContractor(string country)
         {
             string route = "";
             string number = rnd.Next(1, 500).ToString();
