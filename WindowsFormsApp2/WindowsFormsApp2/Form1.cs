@@ -65,7 +65,7 @@ namespace WindowsFormsApp2
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string routeNumber = randomGenerator.AddRouteNumberToTheContractor(cboCountry.Text);
-            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list);
+            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text);
 
 
             DataAccess.SaveData(_filePath, _list);
@@ -83,7 +83,7 @@ namespace WindowsFormsApp2
         {
             try
             {
-                ContractorManager.RemoveContractor(dataGridView1, cboCountry, tbSearch, panel2, _list);
+                ContractorManager.RemoveContractor(dataGridView1, cboCountry, tbSearch, panel2);
 
                 DataAccess.SaveData(_filePath, _list);
             }
