@@ -12,7 +12,7 @@ namespace WindowsFormsApp2.Models
     public class ContractorManager
     {
 
-        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode)
+        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode, BindingList<ContractorInformation> _list)
         {
             try
             {
@@ -46,7 +46,7 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void RemoveContractor(DataGridView dataGridView1)
+        public static void RemoveContractor(DataGridView dataGridView1, ComboBox cboCountry, TextBox tbSearch, Panel panel2, BindingList<ContractorInformation> _list)
         {
             try
             {
@@ -56,7 +56,7 @@ namespace WindowsFormsApp2.Models
                     if (selectedRowIndex >= 0 && selectedRowIndex < _list.Count)
                     {
                         _list.RemoveAt(selectedRowIndex);
-                        ClearContractors();
+                        ClearContractors(cboCountry, tbSearch, panel2);
                     }
                 }
             }

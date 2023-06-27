@@ -27,7 +27,7 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void SaveData(string _filePath)
+        public static void SaveData(string _filePath, BindingList<ContractorInformation> _list)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void GetData(string _filePath)
+        public static void GetData(string _filePath, BindingList<ContractorInformation> _list)
         {
             try
             {
