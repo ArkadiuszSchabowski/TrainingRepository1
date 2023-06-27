@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp2.Models;
 using System.Drawing;
+using System.Net.NetworkInformation;
 
 namespace WindowsFormsApp2
 {
@@ -31,7 +32,7 @@ namespace WindowsFormsApp2
             DataGridViewHelper.ChangeFontInDataGridViev();
             DataGridViewHelper.ChangeColumnWidths();
             DataGridViewHelper.ChangeColumnHeaders();
-            DataGridViewHelper.HideBarCodeColumnWithDataGridView();
+            DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
         }
 
         //Set windows property
@@ -63,6 +64,7 @@ namespace WindowsFormsApp2
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            string routeNumber = randomGenerator.AddRouteNumberToTheContractor(cboCountry.Text);
             ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text);
 
 

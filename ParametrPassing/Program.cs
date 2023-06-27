@@ -24,11 +24,6 @@ public class Book
         Author = author;
         PublicationYear = publicationYear;
     }
-
-    public override string ToString()
-    {
-        return $"Title: {Title}, Author: {Author}, Publication Year: {PublicationYear}";
-    }
 }
 
 public class Library

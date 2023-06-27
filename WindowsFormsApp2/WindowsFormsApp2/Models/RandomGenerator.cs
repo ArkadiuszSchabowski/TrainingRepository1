@@ -17,7 +17,7 @@ namespace WindowsFormsApp2.Models
         {
             string route = "";
             string number = rnd.Next(1, 500).ToString();
-            string selectedCountry = cboCountry.Text;
+            string selectedCountry = country;
 
             switch (selectedCountry)
             {

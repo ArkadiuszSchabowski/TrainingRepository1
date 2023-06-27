@@ -11,7 +11,7 @@ namespace WindowsFormsApp2.Models
     internal class DataGridViewHelper
     {
 
-        public static void HideBarCodeColumnWithDataGridView()
+        public static void HideBarCodeColumnWithDataGridView(DataGridView dataGridView)
         {
             dataGridView1.Columns["Kod_Kreskowy"].Visible = false;
         }
