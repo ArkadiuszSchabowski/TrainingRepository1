@@ -29,9 +29,9 @@ namespace WindowsFormsApp2
 
             dataGridView1.DataSource = _list;
 
-            DataGridViewHelper.ChangeFontInDataGridViev();
-            DataGridViewHelper.ChangeColumnWidths();
-            DataGridViewHelper.ChangeColumnHeaders();
+            DataGridViewHelper.ChangeFontInDataGridViev(dataGridView1);
+            DataGridViewHelper.ChangeColumnWidths(dataGridView1);
+            DataGridViewHelper.ChangeColumnHeaders(dataGridView1);
             DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
         }
 

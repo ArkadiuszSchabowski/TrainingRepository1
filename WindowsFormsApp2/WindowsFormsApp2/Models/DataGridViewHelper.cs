@@ -13,16 +13,16 @@ namespace WindowsFormsApp2.Models
 
         public static void HideBarCodeColumnWithDataGridView(DataGridView dataGridView)
         {
-            dataGridView1.Columns["Kod_Kreskowy"].Visible = false;
+            dataGridView.Columns["Kod_Kreskowy"].Visible = false;
         }
-        public static void ChangeColumnHeaders()
+        public static void ChangeColumnHeaders(DataGridView dataGridView1)
         {
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
                 column.HeaderCell.Style.Font = new Font(dataGridView1.Font.FontFamily, 12, FontStyle.Bold);
             }
         }
-        public static void ChangeColumnWidths()
+        public static void ChangeColumnWidths(DataGridView dataGridView1)
         {
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
@@ -38,7 +38,7 @@ namespace WindowsFormsApp2.Models
             dataGridView1.Columns["Kod_Pocztowy"].Width = 140;
         }
 
-        public static void ChangeFontInDataGridViev()
+        public static void ChangeFontInDataGridViev(DataGridView dataGridView1)
         {
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
