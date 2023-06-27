@@ -23,9 +23,9 @@ namespace WindowsFormsApp2
 
             StrechTheWindowToFullScreen();
 
-            DataAccess.CreateFile();
+            DataAccess.CreateFile(_filePath);
 
-            DataAccess.GetData();
+            DataAccess.GetData(_filePath);
 
             dataGridView1.DataSource = _list;
 
@@ -68,9 +68,9 @@ namespace WindowsFormsApp2
             ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text);
 
 
-            DataAccess.SaveData();
+            DataAccess.SaveData(_filePath);
 
-            ContractorManager.ClearContractors();
+            ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -83,9 +83,9 @@ namespace WindowsFormsApp2
         {
             try
             {
-                ContractorManager.RemoveContractor();
+                ContractorManager.RemoveContractor(dataGridView1);
 
-                DataAccess.SaveData();
+                DataAccess.SaveData(_filePath);
             }
             catch (Exception ex)
             {
@@ -94,7 +94,7 @@ namespace WindowsFormsApp2
         }
         private void btnReset_Click(object sender, EventArgs e)
         {
-            ContractorManager.ClearContractors();
+            ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
         }
         private void btnExit_Click(object sender, EventArgs e)
         {

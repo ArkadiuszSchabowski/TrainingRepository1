@@ -40,14 +40,13 @@ namespace WindowsFormsApp2.Models
                     return;
                 }
                 _list.Add(newContractor);
-                countContractors++;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void RemoveContractor()
+        public static void RemoveContractor(DataGridView dataGridView1)
         {
             try
             {
@@ -67,7 +66,7 @@ namespace WindowsFormsApp2.Models
             }
         }
 
-        public static void ClearContractors()
+        public static void ClearContractors(ComboBox cboCountry, TextBox tbSearch, Panel panel2)
         {
             try
             {

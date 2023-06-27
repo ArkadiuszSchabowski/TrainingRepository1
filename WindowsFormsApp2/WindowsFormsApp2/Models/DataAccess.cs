@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace WindowsFormsApp2.Models
 {
     internal class DataAccess
     {
-        public static void CreateFile()
+        public static void CreateFile(string _filePath)
         {
             try
             {
@@ -26,7 +27,7 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void SaveData()
+        public static void SaveData(string _filePath)
         {
             try
             {
@@ -38,7 +39,7 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void GetData()
+        public static void GetData(string _filePath)
         {
             try
             {
