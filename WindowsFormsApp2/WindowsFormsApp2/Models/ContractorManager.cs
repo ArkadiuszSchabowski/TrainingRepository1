@@ -16,6 +16,9 @@ namespace WindowsFormsApp2.Models
         {
             try
             {
+                RandomGenerator random = new RandomGenerator();
+
+
                 var newContractor = new ContractorInformation()
                 {
                     Kontrahent = contractorName,
@@ -24,8 +27,8 @@ namespace WindowsFormsApp2.Models
                     Telefon = phone,
                     Email = email,
                     Kod_pocztowy = postCode,
-                    Trasa = AddRouteNumberToTheContractor(),
-                    Kod_Kreskowy = AddBarCodeToTheContractor(),
+                    Trasa = random.AddRouteNumberToTheContractor(country),
+                    Kod_Kreskowy = random.AddBarCodeToTheContractor(),
                 };
 
                 if (contractorName == string.Empty || country == string.Empty || address == string.Empty || phone == string.Empty || email == string.Empty || postCode == string.Empty)
@@ -34,7 +37,7 @@ namespace WindowsFormsApp2.Models
                     return;
                 }
 
-                if (string.IsNullOrEmpty(newContractor.Kraj) || !IsValidCountry(newContractor.Kraj))
+                if (string.IsNullOrEmpty(newContractor.Kraj) || !ValidationHelper.IsValidCountry(newContractor.Kraj))
                 {
                     MessageBox.Show("Wybierz poprawny kraj z listy.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

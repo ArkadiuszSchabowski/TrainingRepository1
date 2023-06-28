@@ -45,7 +45,7 @@ namespace WindowsFormsApp2.Models
             }
             return route;
         }
-        private int AddBarCodeToTheContractor()
+        public int AddBarCodeToTheContractor()
         {
             _barCode = rnd.Next(100000000, 999999999);
             return _barCode;

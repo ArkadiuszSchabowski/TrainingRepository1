@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp2.Models
 {
-    internal class ValidationHelper
+    public class ValidationHelper
     {
-        private bool IsValidCountry(string country)
+        public static bool IsValidCountry(string country)
         {
             string[] allowedCountries = { "Polska", "Litwa", "Wlochy", "Czechy", "Niemcy", "Francja" };
             return allowedCountries.Contains(country);
