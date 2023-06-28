@@ -72,6 +72,10 @@ namespace WindowsFormsApp2
         {
 
         }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
         private void btnSort_Click(object sender, EventArgs e)
         {
         }
@@ -111,5 +115,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

@@ -58,15 +58,13 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -328,7 +326,7 @@
             this.panel4.Controls.Add(this.btnExit);
             this.panel4.Controls.Add(this.tbSearch);
             this.panel4.Controls.Add(this.btnAdd);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btnSearch);
             this.panel4.Controls.Add(this.btnRemove);
             this.panel4.Location = new System.Drawing.Point(21, 577);
             this.panel4.Name = "panel4";
@@ -387,34 +385,24 @@
             this.tbSearch.Size = new System.Drawing.Size(346, 31);
             this.tbSearch.TabIndex = 7;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Location = new System.Drawing.Point(400, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 52);
-            this.button1.TabIndex = 0;
-            this.button1.TabStop = false;
-            this.button1.Text = "Szukaj";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(400, 16);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(83, 52);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Text = "Szukaj";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel5.Controls.Add(this.lblCount);
             this.panel5.Location = new System.Drawing.Point(21, 525);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1326, 46);
             this.panel5.TabIndex = 0;
-            // 
-            // lblCount
-            // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCount.Location = new System.Drawing.Point(10, 10);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(388, 31);
-            this.lblCount.TabIndex = 0;
-            this.lblCount.Text = "Ilosc aktualnych kontrahentow:";
             // 
             // Form1
             // 
@@ -437,8 +425,6 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -457,7 +443,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox tbBarCode;
         private System.Windows.Forms.Label lblBarCode;
         private System.Windows.Forms.TextBox tbEmail;
@@ -472,7 +458,6 @@
         private System.Windows.Forms.Label lblPostCode;
         private System.Windows.Forms.TextBox tbAdress;
         private System.Windows.Forms.Label lblAdress;
-        private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnSort;
