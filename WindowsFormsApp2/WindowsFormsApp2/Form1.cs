@@ -44,14 +44,15 @@ namespace WindowsFormsApp2
         {
             try
             {
-                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                tbID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
             }
             catch (Exception ex)
             {
@@ -74,25 +75,25 @@ namespace WindowsFormsApp2
         }
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            //string searchText = tbSearch.Text.ToLower();
+            string searchText = tbSearch.Text.ToLower();
 
-            //var searchResults = new BindingList<ContractorInformation>();
+            var searchResults = new BindingList<ContractorInformation>();
 
-            //foreach (var contractor in _list)
-            //{
-            //    if (contractor.Kontrahent.ToLower().Contains(searchText) ||
-            //        contractor.Kraj.ToLower().Contains(searchText) ||
-            //        contractor.Adres.ToLower().Contains(searchText) ||
-            //        contractor.Telefon.ToLower().Contains(searchText) ||
-            //        contractor.Email.ToLower().Contains(searchText) ||
-            //        contractor.Kod_pocztowy.ToLower().Contains(searchText) ||
-            //        contractor.Trasa.ToLower().Contains(searchText))
-            //    {
-            //        searchResults.Add(contractor);
-            //    }
-            //}
+            foreach (var contractor in _list)
+            {
+                if (contractor.Kontrahent.ToLower().Contains(searchText) ||
+                    contractor.Kraj.ToLower().Contains(searchText) ||
+                    contractor.Adres.ToLower().Contains(searchText) ||
+                    contractor.Telefon.ToLower().Contains(searchText) ||
+                    contractor.Email.ToLower().Contains(searchText) ||
+                    contractor.Kod_pocztowy.ToLower().Contains(searchText) ||
+                    contractor.Trasa.ToLower().Contains(searchText))
+                {
+                    searchResults.Add(contractor);
+                }
+            }
 
-            //dataGridView1.DataSource = searchResults;
+            dataGridView1.DataSource = searchResults;
         }
         private void btnSort_Click(object sender, EventArgs e)
         {
@@ -133,6 +134,5 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
     }
 }

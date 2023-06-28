@@ -20,6 +20,7 @@ namespace WindowsFormsApp2.Models
 
                 var newContractor = new ContractorInformation()
                 {
+                    ID = AddIdToTheContractor(),
                     Kontrahent = contractorName,
                     Kraj = country,
                     Adres = address,
@@ -48,6 +49,13 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private static int AddIdToTheContractor()
+        {
+            int idNumber = 5;
+            return idNumber;
+        }
+
         public static void RemoveContractor(DataGridView dataGridView1, ComboBox cboCountry, TextBox tbSearch, Panel panel2, BindingList<ContractorInformation> _list)
         {
             try

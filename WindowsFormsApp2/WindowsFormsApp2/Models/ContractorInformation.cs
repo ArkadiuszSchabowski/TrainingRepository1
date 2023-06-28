@@ -8,6 +8,7 @@ namespace WindowsFormsApp2.Models
 {
     public class ContractorInformation
     {
+        public int ID { get; set; }
         public string Kontrahent { get; set; }
         public string Kraj { get; set; }
         public string Adres { get; set; }
