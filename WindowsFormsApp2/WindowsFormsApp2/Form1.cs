@@ -74,7 +74,25 @@ namespace WindowsFormsApp2
         }
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            //string searchText = tbSearch.Text.ToLower();
 
+            //var searchResults = new BindingList<ContractorInformation>();
+
+            //foreach (var contractor in _list)
+            //{
+            //    if (contractor.Kontrahent.ToLower().Contains(searchText) ||
+            //        contractor.Kraj.ToLower().Contains(searchText) ||
+            //        contractor.Adres.ToLower().Contains(searchText) ||
+            //        contractor.Telefon.ToLower().Contains(searchText) ||
+            //        contractor.Email.ToLower().Contains(searchText) ||
+            //        contractor.Kod_pocztowy.ToLower().Contains(searchText) ||
+            //        contractor.Trasa.ToLower().Contains(searchText))
+            //    {
+            //        searchResults.Add(contractor);
+            //    }
+            //}
+
+            //dataGridView1.DataSource = searchResults;
         }
         private void btnSort_Click(object sender, EventArgs e)
         {
