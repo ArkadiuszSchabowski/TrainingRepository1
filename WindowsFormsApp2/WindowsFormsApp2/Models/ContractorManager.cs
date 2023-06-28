@@ -12,12 +12,11 @@ namespace WindowsFormsApp2.Models
     public class ContractorManager
     {
 
-        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode)
+        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode, BindingList<ContractorInformation> _list)
         {
             try
             {
                 RandomGenerator random = new RandomGenerator();
-
 
                 var newContractor = new ContractorInformation()
                 {
@@ -49,7 +48,7 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void RemoveContractor(DataGridView dataGridView1, ComboBox cboCountry, TextBox tbSearch, Panel panel2)
+        public static void RemoveContractor(DataGridView dataGridView1, ComboBox cboCountry, TextBox tbSearch, Panel panel2, BindingList<ContractorInformation> _list)
         {
             try
             {

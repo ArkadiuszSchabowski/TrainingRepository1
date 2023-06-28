@@ -1,12 +1,8 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp2.Models;
-using System.Drawing;
-using System.Net.NetworkInformation;
 
 namespace WindowsFormsApp2
 {
@@ -65,7 +61,7 @@ namespace WindowsFormsApp2
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string routeNumber = randomGenerator.AddRouteNumberToTheContractor(cboCountry.Text);
-            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text);
+            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list);
 
 
             DataAccess.SaveData(_filePath, _list);
@@ -83,7 +79,7 @@ namespace WindowsFormsApp2
         {
             try
             {
-                ContractorManager.RemoveContractor(dataGridView1, cboCountry, tbSearch, panel2);
+                ContractorManager.RemoveContractor(dataGridView1, cboCountry, tbSearch, panel2, _list);
 
                 DataAccess.SaveData(_filePath, _list);
             }

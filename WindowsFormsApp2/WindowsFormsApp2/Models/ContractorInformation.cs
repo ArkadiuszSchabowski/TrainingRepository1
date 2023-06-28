@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp2.Models
 {
-    internal class ContractorInformation
+    public class ContractorInformation
     {
         public string Kontrahent { get; set; }
         public string Kraj { get; set; }
