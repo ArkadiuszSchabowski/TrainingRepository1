@@ -11,15 +11,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2.Models
 {
-    internal class DataAccess
+
+    public class DataAccess
     {
-        public static void CreateFile(string _filePath)
+        public static void CreateFile(string filePath)
         {
             try
             {
-                if (!File.Exists(_filePath))
+                if (!File.Exists(filePath))
                 {
-                    File.Create(_filePath);
+                    File.Create(filePath).Close();
                 }
             }
             catch (Exception ex)
@@ -27,28 +28,37 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void SaveData(string _filePath, BindingList<ContractorInformation> _list)
+
+        public static void SaveData(string filePath, BindingList<ContractorInformation> list)
         {
             try
             {
-                var json = JsonConvert.SerializeObject(_list);
-                File.WriteAllText(_filePath, json);
+                var json = JsonConvert.SerializeObject(list);
+                File.WriteAllText(filePath, json);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void GetData(string _filePath, BindingList<ContractorInformation> _list)
+
+        public static void GetData(string filePath, BindingList<ContractorInformation> list)
         {
             try
             {
-                var json = File.ReadAllText(_filePath);
-                _list = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
-
-                if (json == null || !json.Any())
+                if (File.Exists(filePath))
                 {
-                    _list = new BindingList<ContractorInformation>();
+                    var json = File.ReadAllText(filePath);
+                    list.Clear();
+
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        var contractors = JsonConvert.DeserializeObject<BindingList<ContractorInformation>>(json);
+                        foreach (var contractor in contractors)
+                        {
+                            list.Add(contractor);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -58,3 +68,5 @@ namespace WindowsFormsApp2.Models
         }
     }
 }
+
+
