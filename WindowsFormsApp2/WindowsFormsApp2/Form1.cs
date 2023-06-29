@@ -68,6 +68,9 @@ namespace WindowsFormsApp2
             DataAccess.SaveData(_filePath, _list);
 
             ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
+
+            dataGridView1.DataSource = _list;
+
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
