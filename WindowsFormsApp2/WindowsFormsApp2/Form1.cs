@@ -29,6 +29,8 @@ namespace WindowsFormsApp2
             DataGridViewHelper.ChangeColumnWidths(dataGridView1);
             DataGridViewHelper.ChangeColumnHeaders(dataGridView1);
             DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
+
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         //Set windows property
@@ -44,15 +46,20 @@ namespace WindowsFormsApp2
         {
             try
             {
-                tbID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                tbContractor.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                cboCountry.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                tbAdress.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                tbPhone.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                tbEmail.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                tbPostCode.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                tbRouteNumber.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-                tbBarCode.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count) // Sprawdź, czy wiersz indeksu istnieje
+                {
+                    DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
+
+                    tbID.Text = selectedRow.Cells[0].Value.ToString();
+                    tbContractor.Text = selectedRow.Cells[1].Value.ToString();
+                    cboCountry.Text = selectedRow.Cells[2].Value.ToString();
+                    tbAdress.Text = selectedRow.Cells[3].Value.ToString();
+                    tbPhone.Text = selectedRow.Cells[4].Value.ToString();
+                    tbEmail.Text = selectedRow.Cells[5].Value.ToString();
+                    tbPostCode.Text = selectedRow.Cells[6].Value.ToString();
+                    tbRouteNumber.Text = selectedRow.Cells[7].Value.ToString();
+                    tbBarCode.Text = selectedRow.Cells[8].Value.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -95,8 +102,8 @@ namespace WindowsFormsApp2
                     searchResults.Add(contractor);
                 }
             }
-
             dataGridView1.DataSource = searchResults;
+            tbSearch.Text = "";
         }
         private void btnSort_Click(object sender, EventArgs e)
         {

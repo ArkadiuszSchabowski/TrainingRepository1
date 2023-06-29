@@ -68,5 +68,3 @@ namespace WindowsFormsApp2.Models
         }
     }
 }
-
-
