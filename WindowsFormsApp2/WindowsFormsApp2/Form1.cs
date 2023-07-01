@@ -134,7 +134,8 @@ namespace WindowsFormsApp2
 
             foreach (var contractor in _list)
             {
-                if (contractor.Kontrahent.ToLower().Contains(searchText) ||
+                if (contractor.ID.ToString().Contains(searchText) ||
+                    contractor.Kontrahent.ToLower().Contains(searchText) ||
                     contractor.Kraj.ToLower().Contains(searchText) ||
                     contractor.Adres.ToLower().Contains(searchText) ||
                     contractor.Telefon.ToLower().Contains(searchText) ||
