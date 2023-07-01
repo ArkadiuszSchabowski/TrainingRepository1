@@ -12,7 +12,7 @@ namespace WindowsFormsApp2.Models
     public class ContractorManager
     {
 
-        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode, BindingList<ContractorInformation> _list)
+        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode, BindingList<ContractorInformation> _list, int idCounter)
         {
             try
             {
@@ -20,7 +20,7 @@ namespace WindowsFormsApp2.Models
 
                 var newContractor = new ContractorInformation()
                 {
-                    ID = AddIdToTheContractor(),
+                    ID = idCounter,
                     Kontrahent = contractorName,
                     Kraj = country,
                     Adres = address,

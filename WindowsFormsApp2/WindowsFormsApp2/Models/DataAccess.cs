@@ -66,5 +66,46 @@ namespace WindowsFormsApp2.Models
                 MessageBox.Show(ex.Message);
             }
         }
+        public static void SaveIdCounterToFile(string idNumber)
+        {
+            try
+            {
+                if (!File.Exists(idNumber))
+                {
+                    File.Create(idNumber).Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public static int ReadIdCounterFromFile(string idNumber)
+        {
+            try
+            {
+                if (!File.Exists(idNumber))
+                {
+                    File.Create(idNumber).Close();
+                    return 1;
+                }
+
+                string idCounterText = File.ReadAllText(idNumber);
+
+                if (int.TryParse(idCounterText, out int counter))
+                {
+                    return counter;
+                }
+                else
+                {
+                    return 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 1;
+            }
+        }
     }
 }

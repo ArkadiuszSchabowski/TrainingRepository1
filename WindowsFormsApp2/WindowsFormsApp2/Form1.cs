@@ -9,9 +9,10 @@ namespace WindowsFormsApp2
     public partial class Form1 : Form
     {
         RandomGenerator randomGenerator = new RandomGenerator();
-
         BindingList<ContractorInformation> _list = new BindingList<ContractorInformation>();
         string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
+        string idNumber = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "idCounter.txt");
+        private int _idCounter;
 
         public Form1()
         {
@@ -31,6 +32,8 @@ namespace WindowsFormsApp2
             DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
 
             dataGridView1.AllowUserToAddRows = false;
+
+            _idCounter = DataAccess.ReadIdCounterFromFile(idNumber);
         }
 
         //Set windows property
@@ -66,23 +69,30 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string routeNumber = randomGenerator.AddRouteNumberToTheContractor(cboCountry.Text);
-            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list);
 
+            DataAccess.SaveIdCounterToFile(idNumber);
+
+            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list, _idCounter);
+
+            _idCounter++;
+            File.WriteAllText(idNumber, _idCounter.ToString());
 
             DataAccess.SaveData(_filePath, _list);
 
             ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
 
             dataGridView1.DataSource = _list;
-
         }
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            // TODO: Implement the Edit button functionality
         }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string searchText = tbSearch.Text.ToLower();
@@ -105,9 +115,12 @@ namespace WindowsFormsApp2
             dataGridView1.DataSource = searchResults;
             tbSearch.Text = "";
         }
+
         private void btnSort_Click(object sender, EventArgs e)
         {
+            // TODO: Implement the Sort button functionality
         }
+
         private void btnRemove_Click(object sender, EventArgs e)
         {
             try
@@ -121,10 +134,12 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void btnReset_Click(object sender, EventArgs e)
         {
             ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
         }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
