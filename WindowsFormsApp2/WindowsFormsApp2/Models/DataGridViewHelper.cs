@@ -24,6 +24,7 @@ namespace WindowsFormsApp2.Models
             }
             dataGridView1.Columns["Trasa"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
+            dataGridView1.Columns["ID"].Width = 60;
             dataGridView1.Columns["Kontrahent"].Width = 180;
             dataGridView1.Columns["Kraj"].Width = 120;
             dataGridView1.Columns["Adres"].Width = 200;
