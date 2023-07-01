@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp2.Models;
 
@@ -13,6 +15,7 @@ namespace WindowsFormsApp2
         string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
         string idNumber = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "idCounter.txt");
         private int _idCounter;
+        private int sortClickCount = 0;
 
         public Form1()
         {
@@ -49,7 +52,7 @@ namespace WindowsFormsApp2
         {
             try
             {
-                if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count) // Sprawdź, czy wiersz indeksu istnieje
+                if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
                 {
                     DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
 
@@ -118,7 +121,19 @@ namespace WindowsFormsApp2
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-            // TODO: Implement the Sort button functionality
+            sortClickCount++;
+
+            var sortedList = new List<ContractorInformation>();
+
+            if (sortClickCount % 2 == 1)
+            {
+                sortedList = _list.OrderByDescending(item => item.ID).ToList();
+            }
+            else
+            {
+                sortedList = _list.OrderBy(item => item.ID).ToList();
+            }
+            dataGridView1.DataSource = sortedList;
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
