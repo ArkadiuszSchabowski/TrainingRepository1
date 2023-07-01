@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
@@ -37,6 +37,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tbID = new System.Windows.Forms.TextBox();
+            this.lblPersonalID = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
             this.tbPostCode = new System.Windows.Forms.TextBox();
@@ -60,8 +62,6 @@
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblPersonalID = new System.Windows.Forms.Label();
-            this.tbID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -73,14 +73,14 @@
             // 
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(15, 15);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1291, 176);
@@ -106,7 +106,7 @@
             this.btnRemove.Size = new System.Drawing.Size(83, 52);
             this.btnRemove.TabIndex = 0;
             this.btnRemove.TabStop = false;
-            this.btnRemove.Text = "Usun";
+            this.btnRemove.Text = "Usuń";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -175,6 +175,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1325, 203);
             this.panel2.TabIndex = 0;
+            // 
+            // tbID
+            // 
+            this.tbID.Enabled = false;
+            this.tbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbID.Location = new System.Drawing.Point(144, 144);
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(250, 31);
+            this.tbID.TabIndex = 20;
+            // 
+            // lblPersonalID
+            // 
+            this.lblPersonalID.AutoSize = true;
+            this.lblPersonalID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPersonalID.Location = new System.Drawing.Point(15, 142);
+            this.lblPersonalID.Name = "lblPersonalID";
+            this.lblPersonalID.Size = new System.Drawing.Size(38, 25);
+            this.lblPersonalID.TabIndex = 19;
+            this.lblPersonalID.Text = "ID:";
             // 
             // tbPhone
             // 
@@ -377,7 +396,7 @@
             this.btnExit.Size = new System.Drawing.Size(83, 52);
             this.btnExit.TabIndex = 0;
             this.btnExit.TabStop = false;
-            this.btnExit.Text = "Wyjscie";
+            this.btnExit.Text = "Wyjście";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -407,25 +426,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1326, 46);
             this.panel5.TabIndex = 0;
-            // 
-            // lblPersonalID
-            // 
-            this.lblPersonalID.AutoSize = true;
-            this.lblPersonalID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPersonalID.Location = new System.Drawing.Point(15, 142);
-            this.lblPersonalID.Name = "lblPersonalID";
-            this.lblPersonalID.Size = new System.Drawing.Size(38, 25);
-            this.lblPersonalID.TabIndex = 19;
-            this.lblPersonalID.Text = "ID:";
-            // 
-            // tbID
-            // 
-            this.tbID.Enabled = false;
-            this.tbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tbID.Location = new System.Drawing.Point(144, 144);
-            this.tbID.Name = "tbID";
-            this.tbID.Size = new System.Drawing.Size(250, 31);
-            this.tbID.TabIndex = 20;
             // 
             // Form1
             // 

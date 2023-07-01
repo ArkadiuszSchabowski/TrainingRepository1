@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace WindowsFormsApp2.Models
 {
@@ -6,6 +7,7 @@ namespace WindowsFormsApp2.Models
     {
         Random rnd = new Random();
         int _barCode;
+        private List<string> generatedRoutes = new List<string>();
 
         public string AddRouteNumberToTheContractor(string country)
         {
@@ -37,6 +39,40 @@ namespace WindowsFormsApp2.Models
                     route = "0";
                     break;
             }
+
+            if (generatedRoutes.Contains(route))
+            {
+                while (generatedRoutes.Contains(route))
+                {
+                    number = rnd.Next(1, 500).ToString();
+                    switch (selectedCountry)
+                    {
+                        case "Polska":
+                            route = "P" + number;
+                            break;
+                        case "Litwa":
+                            route = "L" + number;
+                            break;
+                        case "Wlochy":
+                            route = "W" + number;
+                            break;
+                        case "Czechy":
+                            route = "C" + number;
+                            break;
+                        case "Niemcy":
+                            route = "N" + number;
+                            break;
+                        case "Francja":
+                            route = "F" + number;
+                            break;
+                        default:
+                            route = "0";
+                            break;
+                    }
+                }
+            }
+            generatedRoutes.Add(route);
+
             return route;
         }
         public int AddBarCodeToTheContractor()
