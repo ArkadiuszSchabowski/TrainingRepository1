@@ -65,6 +65,14 @@ namespace WindowsFormsApp2
                     tbPostCode.Text = selectedRow.Cells[6].Value.ToString();
                     tbRouteNumber.Text = selectedRow.Cells[7].Value.ToString();
                     tbBarCode.Text = selectedRow.Cells[8].Value.ToString();
+
+                    foreach (DataGridViewCell cell in selectedRow.Cells)
+                    {
+                        cell.ReadOnly = true;
+                    }
+
+                    dataGridView1.ClearSelection();
+                    selectedRow.Selected = true;
                 }
             }
             catch (Exception ex)
@@ -175,6 +183,7 @@ namespace WindowsFormsApp2
         private void btnReset_Click(object sender, EventArgs e)
         {
             ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
+            dataGridView1.ClearSelection();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
