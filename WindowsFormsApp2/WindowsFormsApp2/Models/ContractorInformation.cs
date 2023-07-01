@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WindowsFormsApp2.Models
+﻿namespace WindowsFormsApp2.Models
 {
     public class ContractorInformation
     {
@@ -16,7 +10,6 @@ namespace WindowsFormsApp2.Models
         public string Email { get; set; }
         public string Kod_pocztowy { get; set; }
         public string Trasa { get; set; }
-
         public int Kod_Kreskowy { get; set; }
     }
 }

@@ -93,7 +93,29 @@ namespace WindowsFormsApp2
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            // TODO: Implement the Edit button functionality
+            int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
+
+            int id = int.Parse(dataGridView1.Rows[rowIndex].Cells[0].Value.ToString());
+
+            ContractorInformation contractor = _list.FirstOrDefault(item => item.ID == id);
+
+            if (contractor != null)
+            {
+                contractor.Kontrahent = tbContractor.Text;
+                contractor.Kraj = cboCountry.Text;
+                contractor.Adres = tbAdress.Text;
+                contractor.Telefon = tbPhone.Text;
+                contractor.Email = tbEmail.Text;
+                contractor.Kod_pocztowy = tbPostCode.Text;
+
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = _list;
+
+                DataGridViewHelper.ChangeFontInDataGridViev(dataGridView1);
+                DataGridViewHelper.ChangeColumnWidths(dataGridView1);
+                DataGridViewHelper.ChangeColumnHeaders(dataGridView1);
+                DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
