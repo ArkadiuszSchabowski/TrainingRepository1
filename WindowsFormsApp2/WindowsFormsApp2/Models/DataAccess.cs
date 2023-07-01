@@ -6,7 +6,6 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2.Models
 {
-
     public class DataAccess
     {
         public static void CreateFile(string filePath)
