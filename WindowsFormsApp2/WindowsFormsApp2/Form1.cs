@@ -193,7 +193,7 @@ namespace WindowsFormsApp2
         {
             try
             {
-                DialogResult iExit = MessageBox.Show("Czy na pewno chcesz wyjsc z aplikacji?", "Moto-Profil app", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult iExit = MessageBox.Show("Czy na pewno chcesz wyjść z aplikacji?", "Informacja", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (iExit == DialogResult.Yes)
                 {
                     Application.Exit();
