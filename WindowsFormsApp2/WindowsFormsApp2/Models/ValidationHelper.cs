@@ -6,7 +6,7 @@ namespace WindowsFormsApp2.Models
     {
         public static bool IsValidCountry(string country)
         {
-            string[] allowedCountries = { "Polska", "Litwa", "Wlochy", "Czechy", "Niemcy", "Francja" };
+            string[] allowedCountries = { "Polska", "Czechy", "Francja", "Litwa", "Niemcy", "Włochy" };
             return allowedCountries.Contains(country);
         }
     }

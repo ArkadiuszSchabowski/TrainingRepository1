@@ -20,20 +20,20 @@ namespace WindowsFormsApp2.Models
                 case "Polska":
                     route = "P" + number;
                     break;
-                case "Litwa":
-                    route = "L" + number;
-                    break;
-                case "Wlochy":
-                    route = "W" + number;
-                    break;
                 case "Czechy":
                     route = "C" + number;
+                    break;
+                case "Francja":
+                    route = "F" + number;
+                    break;
+                case "Litwa":
+                    route = "L" + number;
                     break;
                 case "Niemcy":
                     route = "N" + number;
                     break;
-                case "Francja":
-                    route = "F" + number;
+                case "Włochy":
+                    route = "W" + number;
                     break;
                 default:
                     route = "0";
