@@ -174,6 +174,8 @@ namespace WindowsFormsApp2
                 ContractorManager.RemoveContractor(dataGridView1, cboCountry, tbSearch, panel2, _list);
 
                 DataAccess.SaveData(_filePath, _list);
+
+                DataGridViewHelper.SaveLastSelectedIndex(dataGridView1);
             }
             catch (Exception ex)
             {

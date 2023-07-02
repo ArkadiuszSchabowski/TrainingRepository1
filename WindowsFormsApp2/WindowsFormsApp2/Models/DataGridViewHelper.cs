@@ -40,5 +40,16 @@ namespace WindowsFormsApp2.Models
                 column.DefaultCellStyle.Font = new Font("Verdana", 10);
             }
         }
+        public static void SaveLastSelectedIndex(DataGridView dataGridView1)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                if (dataGridView1.Rows.Count > 0)
+                {
+                    int lastRowIndex = dataGridView1.Rows.Count - 1;
+                    dataGridView1.Rows[lastRowIndex].Selected = true;
+                }
+            }
+        }
     }
 }
