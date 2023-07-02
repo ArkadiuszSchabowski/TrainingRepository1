@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -11,18 +10,17 @@ namespace WindowsFormsApp2.Models
         {
             if (string.IsNullOrEmpty(contractor) || string.IsNullOrEmpty(adress) || string.IsNullOrEmpty(phone) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(postCode))
             {
-                MessageBox.Show("Przynajmniej jedno z pól jest puste.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("At least one of the fields is empty.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-
             return true;
         }
 
         public static bool ValidateContractorName(BindingList<ContractorInformation> _list, string contractor)
         {
-            if (_list.Any(item => item.Kontrahent.ToLower() == contractor.ToLower()))
+            if (_list.Any(item => item.Contractor.ToLower() == contractor.ToLower()))
             {
-                MessageBox.Show("Kontrahent o takiej nazwie już istnieje.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("An contractor with that name already exists.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
@@ -34,7 +32,7 @@ namespace WindowsFormsApp2.Models
 
             if (!isValidCountry)
             {
-                MessageBox.Show("Wybierz poprawny kraj z listy.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select the correct country from the list.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             return true;

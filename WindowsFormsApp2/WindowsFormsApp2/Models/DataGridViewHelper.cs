@@ -7,7 +7,7 @@ namespace WindowsFormsApp2.Models
     {
         public static void HideBarCodeColumnWithDataGridView(DataGridView dataGridView)
         {
-            dataGridView.Columns["Kod_Kreskowy"].Visible = false;
+            dataGridView.Columns["Bar_Code"].Visible = false;
         }
         public static void ChangeColumnHeaders(DataGridView dataGridView1)
         {
@@ -22,15 +22,15 @@ namespace WindowsFormsApp2.Models
             {
                 column.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             }
-            dataGridView1.Columns["Trasa"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns["Route"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             dataGridView1.Columns["ID"].Width = 60;
-            dataGridView1.Columns["Kontrahent"].Width = 180;
-            dataGridView1.Columns["Kraj"].Width = 120;
-            dataGridView1.Columns["Adres"].Width = 200;
-            dataGridView1.Columns["Telefon"].Width = 150;
+            dataGridView1.Columns["Contractor"].Width = 180;
+            dataGridView1.Columns["Country"].Width = 120;
+            dataGridView1.Columns["Adress"].Width = 200;
+            dataGridView1.Columns["Phone"].Width = 150;
             dataGridView1.Columns["Email"].Width = 270;
-            dataGridView1.Columns["Kod_Pocztowy"].Width = 140;
+            dataGridView1.Columns["Post_Code"].Width = 140;
         }
 
         public static void ChangeFontInDataGridViev(DataGridView dataGridView1)

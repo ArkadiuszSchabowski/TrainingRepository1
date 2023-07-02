@@ -105,9 +105,8 @@ namespace WindowsFormsApp2
             _list = new BindingList<ContractorInformation>(_list.OrderByDescending(item => item.ID).ToList());
             dataGridView1.DataSource = _list;
 
-            isSortedDescending = true; // Ustawienie sortowania na malejące po dodaniu kontrahenta
+            isSortedDescending = true;
         }
-
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -119,12 +118,12 @@ namespace WindowsFormsApp2
 
             if (contractor != null)
             {
-                contractor.Kontrahent = tbContractor.Text;
-                contractor.Kraj = cboCountry.Text;
-                contractor.Adres = tbAdress.Text;
-                contractor.Telefon = tbPhone.Text;
+                contractor.Contractor = tbContractor.Text;
+                contractor.Country = cboCountry.Text;
+                contractor.Adress = tbAdress.Text;
+                contractor.Phone = tbPhone.Text;
                 contractor.Email = tbEmail.Text;
-                contractor.Kod_pocztowy = tbPostCode.Text;
+                contractor.Post_Code = tbPostCode.Text;
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = _list;
@@ -134,7 +133,40 @@ namespace WindowsFormsApp2
                 DataGridViewHelper.ChangeColumnHeaders(dataGridView1);
                 DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
             }
+
+            DataAccess.SaveData(_filePath, _list);
         }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
+
+                int id = int.Parse(dataGridView1.Rows[rowIndex].Cells[0].Value.ToString());
+
+                ContractorInformation contractor = _list.FirstOrDefault(item => item.ID == id);
+
+                if (contractor != null)
+                {
+                    _list.Remove(contractor);
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = _list;
+
+                    DataGridViewHelper.ChangeFontInDataGridViev(dataGridView1);
+                    DataGridViewHelper.ChangeColumnWidths(dataGridView1);
+                    DataGridViewHelper.ChangeColumnHeaders(dataGridView1);
+                    DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
+
+                    DataAccess.SaveData(_filePath, _list);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -145,13 +177,13 @@ namespace WindowsFormsApp2
             foreach (var contractor in _list)
             {
                 if (contractor.ID.ToString().Contains(searchText) ||
-                    contractor.Kontrahent.ToLower().Contains(searchText) ||
-                    contractor.Kraj.ToLower().Contains(searchText) ||
-                    contractor.Adres.ToLower().Contains(searchText) ||
-                    contractor.Telefon.ToLower().Contains(searchText) ||
+                    contractor.Contractor.ToLower().Contains(searchText) ||
+                    contractor.Country.ToLower().Contains(searchText) ||
+                    contractor.Adress.ToLower().Contains(searchText) ||
+                    contractor.Phone.ToLower().Contains(searchText) ||
                     contractor.Email.ToLower().Contains(searchText) ||
-                    contractor.Kod_pocztowy.ToLower().Contains(searchText) ||
-                    contractor.Trasa.ToLower().Contains(searchText))
+                    contractor.Post_Code.ToLower().Contains(searchText) ||
+                    contractor.Route.ToLower().Contains(searchText))
                 {
                     searchResults.Add(contractor);
                 }
@@ -176,23 +208,6 @@ namespace WindowsFormsApp2
             dataGridView1.DataSource = _list;
         }
 
-
-        private void btnRemove_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ContractorManager.RemoveContractor(dataGridView1, cboCountry, tbSearch, panel2, _list);
-
-                DataAccess.SaveData(_filePath, _list);
-
-                DataGridViewHelper.SaveLastSelectedIndex(dataGridView1);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void btnReset_Click(object sender, EventArgs e)
         {
             ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
@@ -203,7 +218,7 @@ namespace WindowsFormsApp2
         {
             try
             {
-                DialogResult iExit = MessageBox.Show("Czy na pewno chcesz wyjść z aplikacji?", "Informacja", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult iExit = MessageBox.Show("Are you sure you want to exit the application?", "Information!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (iExit == DialogResult.Yes)
                 {
                     Application.Exit();

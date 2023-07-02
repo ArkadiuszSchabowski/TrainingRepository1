@@ -15,14 +15,14 @@ namespace WindowsFormsApp2.Models
                 var newContractor = new ContractorInformation()
                 {
                     ID = idCounter,
-                    Kontrahent = contractorName,
-                    Kraj = country,
-                    Adres = address,
-                    Telefon = phone,
+                    Contractor = contractorName,
+                    Country = country,
+                    Adress = address,
+                    Phone = phone,
                     Email = email,
-                    Kod_pocztowy = postCode,
-                    Trasa = random.AddRouteNumberToTheContractor(country),
-                    Kod_Kreskowy = random.AddBarCodeToTheContractor(),
+                    Post_Code = postCode,
+                    Route = random.AddRouteNumberToTheContractor(country),
+                    Bar_Code = random.AddBarCodeToTheContractor(),
                 };
                 list.Add(newContractor);
             }
