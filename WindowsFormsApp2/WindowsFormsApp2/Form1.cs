@@ -27,6 +27,7 @@ namespace WindowsFormsApp2
 
             DataAccess.GetData(_filePath, _list);
 
+            _list = new BindingList<ContractorInformation>(_list.OrderBy(item => item.ID).ToList());
             dataGridView1.DataSource = _list;
 
             DataGridViewHelper.ChangeFontInDataGridViev(dataGridView1);
@@ -96,6 +97,7 @@ namespace WindowsFormsApp2
 
             ContractorManager.ClearContractors(cboCountry, tbSearch, panel2);
 
+            _list = new BindingList<ContractorInformation>(_list.OrderByDescending(item => item.ID).ToList());
             dataGridView1.DataSource = _list;
         }
 
@@ -156,7 +158,7 @@ namespace WindowsFormsApp2
 
             var sortedList = new List<ContractorInformation>();
 
-            if (sortClickCount % 2 == 1)
+            if (sortClickCount % 2 == 0)
             {
                 sortedList = _list.OrderByDescending(item => item.ID).ToList();
             }
