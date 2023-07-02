@@ -6,8 +6,7 @@ namespace WindowsFormsApp2.Models
 {
     public class ContractorManager
     {
-
-        public static void AddContractor(string contractorName, string country, string address, string phone, string email, string postCode, BindingList<ContractorInformation> _list, int idCounter)
+        public static void AddContractor(int idCounter, string contractorName, string country, string address, string phone, string email, string postCode, BindingList<ContractorInformation> list)
         {
             try
             {
@@ -25,23 +24,12 @@ namespace WindowsFormsApp2.Models
                     Trasa = random.AddRouteNumberToTheContractor(country),
                     Kod_Kreskowy = random.AddBarCodeToTheContractor(),
                 };
-
-                if (contractorName == string.Empty || country == string.Empty || address == string.Empty || phone == string.Empty || email == string.Empty || postCode == string.Empty)
-                {
-                    DialogResult checkFields = MessageBox.Show("Przynajmniej jedno z pól jest puste.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (string.IsNullOrEmpty(newContractor.Kraj) || !ValidationHelper.IsValidCountry(newContractor.Kraj))
-                {
-                    MessageBox.Show("Wybierz poprawny kraj z listy.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                _list.Add(newContractor);
+                list.Add(newContractor);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return;
             }
         }
 

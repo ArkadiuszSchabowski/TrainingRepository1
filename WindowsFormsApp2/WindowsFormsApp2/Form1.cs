@@ -40,6 +40,7 @@ namespace WindowsFormsApp2
             _idCounter = DataAccess.ReadIdCounterFromFile(idNumber);
         }
 
+
         //Set windows property
 
         private void StrechTheWindowToFullScreen()
@@ -84,11 +85,20 @@ namespace WindowsFormsApp2
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string routeNumber = randomGenerator.AddRouteNumberToTheContractor(cboCountry.Text);
-
             DataAccess.SaveIdCounterToFile(idNumber);
 
-            ContractorManager.AddContractor(tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list, _idCounter);
+            ValidationHelper validator = new ValidationHelper();
+
+            if (!validator.ValidateFields(tbContractor.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text))
+                return;
+
+            if (!validator.ValidateContractorName(_list, tbContractor.Text))
+                return;
+
+            if (!validator.ValidateCountry(cboCountry.Text, _list))
+                return;
+
+            ContractorManager.AddContractor(_idCounter, tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list);
 
             _idCounter++;
             File.WriteAllText(idNumber, _idCounter.ToString());
@@ -100,6 +110,7 @@ namespace WindowsFormsApp2
             _list = new BindingList<ContractorInformation>(_list.OrderByDescending(item => item.ID).ToList());
             dataGridView1.DataSource = _list;
         }
+
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
