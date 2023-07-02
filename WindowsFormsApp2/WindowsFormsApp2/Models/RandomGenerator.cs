@@ -9,13 +9,11 @@ namespace WindowsFormsApp2.Models
         int _barCode;
         private List<string> generatedRoutes = new List<string>();
 
-        public string AddRouteNumberToTheContractor(string country)
+        private string GenerateRoute(string country, string number)
         {
             string route = "";
-            string number = rnd.Next(1, 500).ToString();
-            string selectedCountry = country;
 
-            switch (selectedCountry)
+            switch (country)
             {
                 case "Polska":
                     route = "P" + number;
@@ -39,42 +37,30 @@ namespace WindowsFormsApp2.Models
                     route = "0";
                     break;
             }
+            return route;
+        }
+
+        public string AddRouteNumberToTheContractor(string country)
+        {
+            string route = "";
+            string number = rnd.Next(1, 500).ToString();
+            string selectedCountry = country;
+
+            route = GenerateRoute(selectedCountry, number);
 
             if (generatedRoutes.Contains(route))
             {
                 while (generatedRoutes.Contains(route))
                 {
                     number = rnd.Next(1, 500).ToString();
-                    switch (selectedCountry)
-                    {
-                        case "Polska":
-                            route = "P" + number;
-                            break;
-                        case "Litwa":
-                            route = "L" + number;
-                            break;
-                        case "Wlochy":
-                            route = "W" + number;
-                            break;
-                        case "Czechy":
-                            route = "C" + number;
-                            break;
-                        case "Niemcy":
-                            route = "N" + number;
-                            break;
-                        case "Francja":
-                            route = "F" + number;
-                            break;
-                        default:
-                            route = "0";
-                            break;
-                    }
+                    route = GenerateRoute(selectedCountry, number);
                 }
             }
             generatedRoutes.Add(route);
 
             return route;
         }
+
         public int AddBarCodeToTheContractor()
         {
             _barCode = rnd.Next(100000000, 999999999);
