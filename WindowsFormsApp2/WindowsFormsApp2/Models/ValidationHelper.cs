@@ -7,7 +7,7 @@ namespace WindowsFormsApp2.Models
 {
     public class ValidationHelper
     {
-        public bool ValidateFields(string contractor, string adress, string phone, string email, string postCode)
+        public static bool ValidateFields(string contractor, string adress, string phone, string email, string postCode)
         {
             if (string.IsNullOrEmpty(contractor) || string.IsNullOrEmpty(adress) || string.IsNullOrEmpty(phone) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(postCode))
             {
@@ -18,7 +18,7 @@ namespace WindowsFormsApp2.Models
             return true;
         }
 
-        public bool ValidateContractorName(BindingList<ContractorInformation>_list, string contractor)
+        public static bool ValidateContractorName(BindingList<ContractorInformation> _list, string contractor)
         {
             if (_list.Any(item => item.Kontrahent.ToLower() == contractor.ToLower()))
             {
@@ -28,10 +28,10 @@ namespace WindowsFormsApp2.Models
 
             return true;
         }
-
-        public bool ValidateCountry(string country, BindingList<ContractorInformation> list)
+        public static bool ValidateCountry(ComboBox cboCountry, string country)
         {
-            bool isValidCountry = list.Any(item => item.Kraj.ToLower() == country.ToLower());
+            bool isValidCountry = cboCountry.Items.Contains(country);
+
             if (!isValidCountry)
             {
                 MessageBox.Show("Wybierz poprawny kraj z listy.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -39,5 +39,6 @@ namespace WindowsFormsApp2.Models
             }
             return true;
         }
+
     }
 }

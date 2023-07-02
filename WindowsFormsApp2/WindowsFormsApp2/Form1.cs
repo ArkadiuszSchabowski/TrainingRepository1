@@ -15,7 +15,7 @@ namespace WindowsFormsApp2
         string _filePath = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "data.json");
         string idNumber = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), "idCounter.txt");
         private int _idCounter;
-        private int sortClickCount = 0;
+        private bool isSortedDescending = true;
 
         public Form1()
         {
@@ -40,16 +40,13 @@ namespace WindowsFormsApp2
             _idCounter = DataAccess.ReadIdCounterFromFile(idNumber);
         }
 
-
         //Set windows property
-
         private void StrechTheWindowToFullScreen()
         {
             WindowState = FormWindowState.Maximized;
         }
 
         //Buttons
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -87,15 +84,13 @@ namespace WindowsFormsApp2
         {
             DataAccess.SaveIdCounterToFile(idNumber);
 
-            ValidationHelper validator = new ValidationHelper();
-
-            if (!validator.ValidateFields(tbContractor.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text))
+            if (!ValidationHelper.ValidateFields(tbContractor.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text))
                 return;
 
-            if (!validator.ValidateContractorName(_list, tbContractor.Text))
+            if (!ValidationHelper.ValidateContractorName(_list, tbContractor.Text))
                 return;
 
-            if (!validator.ValidateCountry(cboCountry.Text, _list))
+            if (!ValidationHelper.ValidateCountry(cboCountry, cboCountry.Text))
                 return;
 
             ContractorManager.AddContractor(_idCounter, tbContractor.Text, cboCountry.Text, tbAdress.Text, tbPhone.Text, tbEmail.Text, tbPostCode.Text, _list);
@@ -109,6 +104,8 @@ namespace WindowsFormsApp2
 
             _list = new BindingList<ContractorInformation>(_list.OrderByDescending(item => item.ID).ToList());
             dataGridView1.DataSource = _list;
+
+            isSortedDescending = true; // Ustawienie sortowania na malejące po dodaniu kontrahenta
         }
 
 
@@ -165,20 +162,20 @@ namespace WindowsFormsApp2
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-            sortClickCount++;
-
-            var sortedList = new List<ContractorInformation>();
-
-            if (sortClickCount % 2 == 0)
+            if (isSortedDescending)
             {
-                sortedList = _list.OrderByDescending(item => item.ID).ToList();
+                _list = new BindingList<ContractorInformation>(_list.OrderBy(item => item.ID).ToList());
             }
             else
             {
-                sortedList = _list.OrderBy(item => item.ID).ToList();
+                _list = new BindingList<ContractorInformation>(_list.OrderByDescending(item => item.ID).ToList());
             }
-            dataGridView1.DataSource = sortedList;
+
+            isSortedDescending = !isSortedDescending;
+
+            dataGridView1.DataSource = _list;
         }
+
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
