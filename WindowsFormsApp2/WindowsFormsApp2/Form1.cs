@@ -133,7 +133,6 @@ namespace WindowsFormsApp2
                 DataGridViewHelper.ChangeColumnHeaders(dataGridView1);
                 DataGridViewHelper.HideBarCodeColumnWithDataGridView(dataGridView1);
             }
-
             DataAccess.SaveData(_filePath, _list);
         }
 
@@ -166,7 +165,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
         }
-
 
         private void btnSearch_Click(object sender, EventArgs e)
         {

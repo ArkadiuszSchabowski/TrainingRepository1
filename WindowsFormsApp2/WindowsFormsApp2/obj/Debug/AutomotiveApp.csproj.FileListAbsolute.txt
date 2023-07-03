@@ -1,0 +1,14 @@
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AutomotiveApp.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AutomotiveApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AutomotiveApp.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AutomotiveApp.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AutomotiveApp.csproj.CopyComplete
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Greedy\Desktop\2023\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
