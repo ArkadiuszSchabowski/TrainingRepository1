@@ -1,0 +1,38 @@
+body {
+    background-color: aqua;
+}
+
+menu {
+    background-color: blanchedalmond;
+}
+
+h1
+{
+    color: rgb(17, 196, 250);
+    text-align: right;
+    font-weight: 900
+}
+    h2
+{
+    color: rgb(17, 196, 250);
+    text-align: center;
+    font-weight: 900
+}
+h3
+{
+text-align: center;
+}
+p
+{
+text-align: right;
+}
+nav
+{background-color: darkgreen;}
+.article
+{background-color: chartreuse;}
+div#footer
+{background-color: rgb(0, 0, 0); color: antiquewhite;}
+.table
+{background-color: blueviolet;}
+div#sztywno
+{background-color: blueviolet;}

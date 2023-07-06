@@ -1,0 +1,59 @@
+body {
+    background-image: url("swinkotapeta.jpg");
+    background-size: cover;
+}
+
+menu {
+    background-color: blanchedalmond;
+}
+
+h1
+{
+    color: rgb(17, 196, 250);
+    text-align: right;
+    font-weight: 900
+}
+    h2
+{
+    color: rgb(17, 196, 250);
+    text-align: center;
+    font-weight: 900
+}
+h3
+{
+text-align: center;
+}
+p
+{
+text-align: right;
+}
+nav
+{background-color: darkgreen;}
+.article
+{background-color: chartreuse;}
+div#footer
+{background-color: rgb(0, 0, 0); color: antiquewhite;}
+.table
+{background-color: blueviolet;}
+div#sztywno
+{background-color: blueviolet;}
+a{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: coral;
+    text-decoration: none;
+    text-align: center;
+    transition: 1s;
+}
+a.menu:hover {background-color: red;
+}
+
+img.pl{
+    width: 75px;
+    height: 75px;
+}
+img.eng{
+width: 75px;
+height: 75px;
+}
