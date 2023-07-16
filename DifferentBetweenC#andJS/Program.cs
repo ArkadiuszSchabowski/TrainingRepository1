@@ -10,12 +10,11 @@ namespace DifferentBetweenC_andJS
     {
         static void Main(string[] args)
         {
-            string name;
-            Console.WriteLine("Podaj swoje imię");
-            name = Console.ReadLine();
-
-            Console.WriteLine($"Hello {name}\n");
-            Console.ReadLine();
+            var number = 5;
+            Console.WriteLine(number);
+            number = 8;
+            Console.WriteLine(number);
+            Console.ReadKey();
         }
     }
 }

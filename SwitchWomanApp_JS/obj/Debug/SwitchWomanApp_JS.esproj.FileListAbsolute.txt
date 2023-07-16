@@ -1,0 +1,2 @@
+C:\Users\Greedy\Desktop\2023\SwitchWomanApp_JS\obj\Debug\SwitchWomanApp_JS.esproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\SwitchWomanApp_JS\obj\Debug\SwitchWomanApp_JS.esproj.CoreCompileInputs.cache
