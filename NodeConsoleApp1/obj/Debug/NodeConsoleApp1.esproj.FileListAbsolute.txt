@@ -1,0 +1,2 @@
+C:\Users\Greedy\Desktop\2023\NodeConsoleApp1\obj\Debug\NodeConsoleApp1.esproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\NodeConsoleApp1\obj\Debug\NodeConsoleApp1.esproj.CoreCompileInputs.cache
