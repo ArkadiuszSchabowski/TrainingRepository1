@@ -11,7 +11,7 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
-            WithoutPolymorphism.WithoutPol();
+            //WithoutPolymorphism.WithoutPol();
         }
     }
     public class WithoutPolymorphism
@@ -56,7 +56,6 @@ namespace Polymorphism
             {
                 Console.WriteLine("Draw triangle");
             }
-
         }
     }
 }

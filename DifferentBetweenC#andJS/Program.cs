@@ -28,6 +28,37 @@ namespace DifferentBetweenC_andJS
             //Zmienna w C# NIE moze zaczynac sie znakiem dolara!
 
             //string $data = "jakis string";
+
+            //Switch w JS
+            //W instrukcji warunkowej switch w JS warunku default nie trzeba konczyc slowkiem kluczowym break. W C# to niedopuszczalne.
+
+            Console.WriteLine("What is the your favorite animal?");
+            Console.WriteLine("A - guinea pig");
+            Console.WriteLine("B - dog");
+            Console.WriteLine("C - cat");
+            Console.WriteLine("D - rabbit");
+            string question = Console.ReadLine();
+            string text = "Your favorite animal is a ";
+
+            switch (question)
+            {
+                case "A":
+                    Console.WriteLine(text + "guinea pig!");
+                    break;
+                case "B":
+                    Console.WriteLine(text + "dog!");
+                    break;
+                case "C":
+                    Console.WriteLine(text + "cat!");
+                    break;
+                case "D":
+                    Console.WriteLine(text + "rabbit!");
+                    break;
+                default:
+                    Console.WriteLine(text + "other animal!");
+                    break;
+            }
+            Console.ReadKey();
         }
     }
 }
