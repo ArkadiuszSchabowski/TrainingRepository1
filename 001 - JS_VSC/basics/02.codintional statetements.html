@@ -8,33 +8,26 @@
 </head>
 <body>
     <script>
-         let codintion = 6;
-        if (codintion > 5)
-         {
-             console.log("twoja zmienna jest wieksza od 5")
-        }
-         else if(codintion < 5)
-         {
-             console.log("twoja zmienna jest mniejsza od 5")
-         }
-         else {
-            console.log("twoja zmienna jest rowna 5")
-         }
+            let question = prompt("What is the your favorite animal?");
+            let text = "Your favorite animal is a ";
 
-        let test = 10;
-
-        if (test > 10)
-        {
-            console.log("Wieksze od 10");
-        }
-        else if (test <10)
-        {
-            console.log("Mniejsze od 10");
-        }
-        else
-        {
-            console.log("Rowne 10");
-        }
+            switch (question)
+            {
+                case "A":
+                    console.log(text + "guinea pig!");
+                    break;
+                case "B":
+                    console.log(text + "dog!");
+                    break;
+                case "C":
+                    console.log(text + "cat!");
+                    break;
+                case "D":
+                    console.log(text + "rabbit!");
+                    break;
+                default:
+                    console.log(text + "other animal!");
+            }
     </script>
 </body>
 </html>

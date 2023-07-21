@@ -37,6 +37,7 @@ namespace DifferentBetweenC_andJS
             Console.WriteLine("B - dog");
             Console.WriteLine("C - cat");
             Console.WriteLine("D - rabbit");
+
             string question = Console.ReadLine();
             string text = "Your favorite animal is a ";
 

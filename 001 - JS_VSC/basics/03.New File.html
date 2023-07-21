@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let tempreature = 31;
+
+        switch (tempreature) {
+            case -10:
+                console.log("S: Bardzo zimno");
+                break;
+            case 0:
+                console.log("S: Zimno");
+                break;
+            case 10:
+                console.log("S: Wiosna");
+                break;
+            case 20:
+                console.log("S: Lato");
+                break;
+            case 30:
+                console.log("S: Bardzo cieplo");
+                break;
+            default:
+            console.log("S: Zostań w domu");
+        }
+
+
+        if(tempreature >= -10 && tempreature < 0)
+        {
+            console.log("Bardzo zimno")
+        }
+        else if(tempreature >= 0 && tempreature < 10)
+        {
+            console.log("Zimno")
+        }
+        else if(tempreature >= 10 && tempreature < 20)
+        {
+            console.log("Wiosna")
+        }
+        else if(tempreature >= 20 && tempreature < 30)
+        {
+            console.log("Lato")
+        }
+        else if(tempreature == 30)
+        {
+            console.log("Bardzo cieplo")
+        }
+        else if(tempreature < -10 || tempreature > 30)
+        {
+            console.log("Zostan w domu")
+        }
+    </script>
+</body>
+
+</html>
