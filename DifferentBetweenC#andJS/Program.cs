@@ -78,6 +78,55 @@ namespace DifferentBetweenC_andJS
             //        Add(1, 2, 5);
             //</ script >
 
+            //W JS można zaokrąglić metodą Math.round() do liczby całkowitej, aby zaokrąglić liczbę do double (np.2 miejsca po przecinku używamy metody toFixed(2) na naszej zmiennej let.
+
+            //C#:
+            //double a = 100;
+            //double b = 3;
+            //double result = Math.Round(a / b, 2);
+            //Console.WriteLine($"Twój wynik to: {result}\n");
+
+            //double c = 10;
+            //double d = 3;
+            //double result2 = c / d;
+            //Console.WriteLine($"Twój wynik to: {Math.Round(result2, 2)}");
+            //Console.ReadLine();
+
+            // JS: 
+            //    let divisionResult = division(100, 3)
+            //    {
+            //        console.log("Wynik przy użyciu metody: Math.round = " + Math.round(divisionResult));
+            //        console.log(divisionResult.toFixed(2));
+            //    }
         }
+        //W JS możemy stworzyć zmienną globalną np. "text", a następnie nadpisać ją zmienną lokalną "text".
+        //W C# nie ma takiej możliwości nazwy zmiennych nie mogą się powtarzać.
+
+        // Błąd w C#:
+
+        //class Testing
+        //    {
+        //    public string text = "HI";
+        //    public void Test()
+        //    {
+        //        private string text = "Hello";
+        //    }
+        //}
+
+        //JS: prawidłowy zapis
+
+    //        <script>
+    //    let data = 55;
+
+    //    function test()
+    //    {
+    //        let data = 20;
+    //        console.log("Wartość data", data);
+    //    }
+
+    //    test();
+    //    console.log(data);
+
+    //       </script>
     }
 }

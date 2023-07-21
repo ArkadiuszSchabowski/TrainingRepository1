@@ -11,15 +11,27 @@
     <script>
         function Add(a, b) {
             let c = a + b;
-            console.log("Wynik: " + c);
+            console.log("Wynik: ", c);
         }
-        function Add(d, e, f) 
+        Add(5, 4);
+
+        function Multiply(a, b) {
+            return a * b;
+        }
+
+        let multiplication = Multiply(6, 9);
+        console.log("Wynik: ", multiplication);
+
+        let division = function (a, b) {
+            return a / b;
+        }
+
+        let divisionResult = division(100, 3)
         {
-            let g = d + e + f;
-            console.log("Wynik: " + g);
+            console.log("Wynik przy użyciu metody: Math.round = " + Math.round(divisionResult));
+            console.log(divisionResult.toFixed(2));
         }
-        Add(1,5);
-        Add(1, 2, 5);
+
     </script>
 </body>
 
