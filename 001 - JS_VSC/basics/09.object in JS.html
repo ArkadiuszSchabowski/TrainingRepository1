@@ -10,33 +10,46 @@
 <body>
     <script>
         let car = {
-            brand : "Mazda",
-            type : "6",
-            countDoor : 5,
-            maxSpeed : 240,
+            brand: "Mazda",
+            type: "6",
+            countDoor: 5,
+            maxSpeed: 240,
         };
         console.log(car);
 
         let person = {
-            name : "Dominika",
-            surname : "Króliczek",
-            age : 21,
-            sex : "female"
+            name: "Dominika",
+            surname: "Króliczek",
+            age: 21,
+            sex: "female"
         };
         console.log(person.sex);
 
         let book = {
-            name : "Animal Farm",
-            publisher : "George Orwell",
-            numberOfPages : 250,
-            chapters : {
-                countChapters : 20,
-                chapterOne : "Introduction",
-                chapterTwo : "Manor Farm",
-                chapterThree : "Taking Authority" 
-            }
+            name: "Animal Farm",
+            publisher: "George Orwell",
+            numberOfPages: 250,
+            chapters: {
+                countChapters: 20,
+                chapterOne: "Introduction",
+                chapterTwo: "Manor Farm",
+                chapterThree: "Taking Authority",
+            },
+            printInfo: function ()
+             {
+                return console.log(this.chapters.countChapters);
+                }
         };
+        displayPagesAndChapters = function (a, b) {
+            return a + " " + b;
+        }
+
+        book.printInfo();
+
+        let display = displayPagesAndChapters(book.numberOfPages, book.chapters.countChapters);
         console.log(book.chapters.chapterThree);
+
+        console.log(display);
     </script>
 </body>
 
