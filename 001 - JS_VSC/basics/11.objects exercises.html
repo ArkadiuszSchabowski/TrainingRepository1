@@ -10,18 +10,33 @@
 <body>
     <script>
         let person = {
-            name : "Arkadiusz",
-            surname : "Świnka",
-            age : 32,
-            city : "Chorzow",
-            postCode : "41-506",
-            getName : function(){
+            name: "Arkadiusz",
+            surname: "Świnka",
+            age: 32,
+            city: "Chorzow",
+            postCode: "41-506",
+            getName: function () {
                 return this.name + " " + this.surname
             },
         };
 
         let IntroduceYourself = person.getName();
         console.log(IntroduceYourself);
+        console.log(person.getName());
+
+        function getPerson(name, surname, age, city) {
+            return {
+                name: name,
+                surname: surname,
+                age: age,
+                city: city
+            }
+        };
+
+        let user = getPerson("Arek", "Świnka", 32, "Chorzów");
+        console.log(user);
+        let user2 = getPerson("Dominika", "Króliczek", 21, "Ruda Śląska");
+        console.log(user2);
     </script>
 
 </body>
