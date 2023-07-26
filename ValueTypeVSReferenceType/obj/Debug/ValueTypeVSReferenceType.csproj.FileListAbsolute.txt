@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\bin\Debug\ValueTypeVSReferenceType.exe.config
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\bin\Debug\ValueTypeVSReferenceType.exe
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\bin\Debug\ValueTypeVSReferenceType.pdb
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\obj\Debug\ValueTypeVSReferenceType.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\obj\Debug\ValueTypeVSReferenceType.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\obj\Debug\ValueTypeVSReferenceType.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\obj\Debug\ValueTypeVSReferenceType.exe
+C:\Users\Greedy\Desktop\2023\ValueTypeVSReferenceType\obj\Debug\ValueTypeVSReferenceType.pdb
