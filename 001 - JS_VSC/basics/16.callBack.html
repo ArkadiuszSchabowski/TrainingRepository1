@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function GreaterOrEqualZero(n)
+        {
+            console.log("Number is more or eqaul zero", n)
+        }
+
+        function LessThanZero(n)
+        {
+            console.log("Number is less than 0: ", n);
+        }
+
+        function CheckNumber(n, GreaterOrEqualZero, LessThanZero)
+        {
+            if(n >= 0)
+            {
+                GreaterOrEqualZero(n);
+                return;
+            }
+            LessThanZero(n);
+        }
+
+        CheckNumber(-6, GreaterOrEqualZero, LessThanZero);
+    </script>
+</body>
+
+</html>
