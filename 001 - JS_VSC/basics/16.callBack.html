@@ -12,6 +12,10 @@
     <button id="button1">
         click me
     </button>
+
+    <button id="button2">
+        click me too
+    </button>
     <script>
         function GreaterThanOrEqualToZero(n) {
             console.log("Success: number is greater than or equal to zero", n)
@@ -38,6 +42,10 @@
         }
 
         document.getElementById("button1").addEventListener("click", buttonClicked);
+
+        document.getElementById("button2").addEventListener("click", function(){
+            console.log("Thank You!");
+        });
 
     </script>
 </body>
