@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let user = {
+            name: "Arkadiusz",
+            surname: "Świnka",
+            adress: {
+                city: null,
+                postCode: null,
+                country: null
+            }
+        };
+
+        function UpdateAdress(city, postCode, country) {
+            user.adress.city = city;
+            user.adress.postCode = postCode;
+            user.adress.country = country;
+        }
+
+        UpdateAdress("Chorzów Batory", "41-506", "POLSKA");
+        console.log(user);
+    </script>
+</body>
+
+</html>

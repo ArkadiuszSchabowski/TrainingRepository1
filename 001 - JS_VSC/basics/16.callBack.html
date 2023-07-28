@@ -8,28 +8,37 @@
 </head>
 
 <body>
+
+    <button id="button1">
+        click me
+    </button>
     <script>
-        function GreaterOrEqualZero(n)
-        {
-            console.log("Number is more or eqaul zero", n)
+        function GreaterThanOrEqualToZero(n) {
+            console.log("Success: number is greater than or equal to zero", n)
         }
 
-        function LessThanZero(n)
-        {
-            console.log("Number is less than 0: ", n);
+        function LessThanZero(n) {
+            console.log("No success: number is less than 0: ", n);
         }
 
-        function CheckNumber(n, GreaterOrEqualZero, LessThanZero)
-        {
-            if(n >= 0)
-            {
-                GreaterOrEqualZero(n);
+        function CheckNumber(n, success, noSuccess) {
+            if (n >= 0) {
+                GreaterThanOrEqualToZero(n);
                 return;
             }
             LessThanZero(n);
         }
 
-        CheckNumber(-6, GreaterOrEqualZero, LessThanZero);
+        CheckNumber(6, GreaterThanOrEqualToZero, LessThanZero);
+
+        //Przykład 2 - podpięcie funkcji callback pod zdarzenie click.
+
+        function buttonClicked(event) {
+            console.log("Button clicked");
+        }
+
+        document.getElementById("button1").addEventListener("click", buttonClicked);
+
     </script>
 </body>
 
