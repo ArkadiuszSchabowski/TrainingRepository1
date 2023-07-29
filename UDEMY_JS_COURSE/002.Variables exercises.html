@@ -10,7 +10,7 @@
 <body>
     <script>
 
-        let answer = prompt(`What is favourite fruit for guinea pigs?
+        /*let answer = prompt(`What is favourite fruit for guinea pigs?
     A-banana
     B-apple
     C-beetroot
@@ -34,6 +34,20 @@
                 console.log("Incorrect answer - favorite fruit for guinea pigs is a other than above mentioned fruits");
                 break;
             }
+        }*/
+
+        let topSpeed = 100;
+        switch (topSpeed) {
+            case 100:
+                console.log("Your speed is equal 100km/h");
+                break;
+            default:
+                if (topSpeed < 100) {
+                    console.log("Your speed is less than 100");
+                } else {
+                    console.log("Your speed is greater than or equal to 100");
+                }
+                break;
         }
     </script>
 </body>
