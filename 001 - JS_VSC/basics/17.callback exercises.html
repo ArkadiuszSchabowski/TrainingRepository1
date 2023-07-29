@@ -11,11 +11,12 @@
         click me
     </button>
     <script>
-        function doubleClick(event) {
-            console.log("Your button was double-clicked")
+        function buttonClicked(event)
+        {
+            console.log("Your button was clicked!");
         }
 
-        document.getElementById("button1").addEventListener("dblclick", doubleClick);
+        document.getElementById("button1").addEventListener("dblclick", buttonClicked);
 
     </script>
 </body>
