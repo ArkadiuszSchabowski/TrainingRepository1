@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let answer = prompt(`What is favourite fruit for guinea pigs?
+    A-banana
+    B-apple
+    C-beetroot
+    D-other fruit
+        `);
+
+        switch (answer) {
+            case "A": {
+                console.log("Incorrect answer - favourite fruit for guinea pig is not a banana");
+                break;
+            }
+            case "B": {
+                console.log("Incorrect answer - favourite fruit for guinea pig is not a apple");
+                break;
+            }
+            case "C": {
+                console.log("Correct answer -Favourite fruit for guinea pig is a beetroot");
+                break;
+            }
+            default: {
+                console.log("Incorrect answer - favorite fruit for guinea pigs is a other than above mentioned fruits");
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>
