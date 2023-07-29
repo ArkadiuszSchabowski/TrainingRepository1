@@ -36,18 +36,42 @@
             }
         }*/
 
-        let topSpeed = 100;
-        switch (topSpeed) {
-            case 100:
-                console.log("Your speed is equal 100km/h");
+        // let topSpeed = 150;
+        // switch (topSpeed) {
+        //     case 100:
+        //         console.log("Your speed is equal 100km/h");
+        //         break;
+        //     default:
+        //         if (topSpeed < 100) {
+        //             console.log("Your speed is less than 100km/h");
+        //         } else {
+        //             console.log("Your speed is greater than 100km/h");
+        //         }
+        //         break;
+        // }
+
+        let answer = prompt(`What is the brightness color?
+    A-White
+    B-Green
+    C-Yellow
+    D-Red`)
+        switch (answer) {
+            case "A": {
+                console.log("Correct answer!");
                 break;
-            default:
-                if (topSpeed < 100) {
-                    console.log("Your speed is less than 100");
-                } else {
-                    console.log("Your speed is greater than or equal to 100");
+            }
+            case "B":
+            case "C":
+            case "D":
+                {
+                    console.log("Sorry, your answer is incorrect!");
                 }
                 break;
+            default: {
+                console.log(`Your choice is incorrect!
+        Choose one of the answer's: A, B, C or D.`)
+                break;
+            }
         }
     </script>
 </body>
