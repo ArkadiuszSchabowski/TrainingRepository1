@@ -11,16 +11,28 @@
     <button id="button1">Button 1</button>
     <script>
 
-        let rocket = {
-            brand : "NASA",
-            speed : 30000,
-            MaxPersonalStaff : 4,
-            AllParametrs : function(){
-                console.log("Show all parameters: ", this.brand, this.speed, this.MaxPersonalStaff);
+        function getUser(name, surname, age) {
+            return {
+                name: name,
+                surname: surname,
+                age: age
             }
         };
 
-        rocket.AllParametrs();
+        const user = getUser("Dominika", "Króliczek", 21);
+        console.log(user);
+
+        let person = {
+            name: "Arek",
+            surname: "Świnka",
+            age: 32,
+            getName: function () {
+                return this.name + " " + this.surname;
+            }
+        }
+
+        let nameAndSurname = person.getName();
+        console.log(nameAndSurname);
 
         // function ClickButton(event) {
         //     console.log("Your button was clicked!");

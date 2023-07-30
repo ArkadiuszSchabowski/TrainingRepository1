@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let user = {
+        //     name: "Dominika";
+        //     surname: "Króliczek";
+        //     age: 21;
+        //     adress: {
+        //         street: null,
+        //         city: null,
+        //         country: null
+        //     }
+        // };
+
+        // function UpdateAdress(user, userStreet, userCity, userCountry) {
+        //     return {
+        //         user = user;
+        //         user.street = userStreet;
+        //         user.city = userCity;
+        //         user.country = userCountry;
+        //     }
+        // };
+
+        // let user1 = UpdateAdress("Brzozowa", "Chorzów, Polska");
+        // console.log(user1);
+
+        let user = {
+            name: "Dominika",
+            surname: "Króliczek",
+            age: 21,
+            adress: {
+                street: null,
+                city: null,
+                country: null
+            }
+        };
+
+        function UpdateAdress(obj, userStreet, userCity, userCountry) {
+            user.adress.street = userStreet;
+            user.adress.city = userCity;
+            user.adress.country = userCountry;
+        }
+
+        UpdateAdress(user, "Brzozowa", "Chorzów", "Polska");
+        console.log(user);
+
+    </script>
+</body>
+
+</html>
