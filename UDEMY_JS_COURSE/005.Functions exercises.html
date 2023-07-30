@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button1">Button 1</button>
+    <script>
+
+        let rocket = {
+            brand : "NASA",
+            speed : 30000,
+            MaxPersonalStaff : 4,
+            AllParametrs : function(){
+                console.log("Show all parameters: ", this.brand, this.speed, this.MaxPersonalStaff);
+            }
+        };
+
+        rocket.AllParametrs();
+
+        // function ClickButton(event) {
+        //     console.log("Your button was clicked!");
+        // }
+        // document.getElementById("button1").addEventListener("click", ClickButton);
+
+        // function AbsoluteValue(a){
+        //     if(a < 0)
+        //     {
+        //         a *= -1;
+        //     }
+        //     console.log(a);
+        // }
+
+        // AbsoluteValue(-15);
+    </script>
+</body>
+
+</html>
