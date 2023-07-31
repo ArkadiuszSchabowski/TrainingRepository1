@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Zrobić program, który będzie obliczał 4% odsetek dla każdego roku. W następnym roku
+        //Kwota już będzie większa. Robimy bez tutoriala. Tylko własne myśli.
+
+        let accountBalance = 1000;
+        let percentPerYear = 0.04;
+        let years = 10;
+
+        let oneYear;
+        let i=1;
+        
+        function CountBalanceForYear(){
+            return accountBalance * percentPerYear;
+        }
+
+        console.log("Your start account balance is: ", accountBalance);
+        console.log("");
+
+        while(i<=years){
+            oneYear = CountBalanceForYear();
+            accountBalance += oneYear;
+            console.log(`Account Balance after the ${i} years: `, accountBalance);
+            i++;
+        }
+        
+    </script>
+</body>
+
+</html>
