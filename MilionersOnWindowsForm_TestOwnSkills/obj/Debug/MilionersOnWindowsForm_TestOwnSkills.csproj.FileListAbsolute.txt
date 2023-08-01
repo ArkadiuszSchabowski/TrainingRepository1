@@ -1,0 +1,11 @@
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\bin\Debug\MilionersOnWindowsForm_TestOwnSkills.exe.config
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\bin\Debug\MilionersOnWindowsForm_TestOwnSkills.exe
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\bin\Debug\MilionersOnWindowsForm_TestOwnSkills.pdb
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.Form1.resources
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.Properties.Resources.resources
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.csproj.GenerateResource.cache
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.exe
+C:\Users\Greedy\Desktop\2023\MilionersOnWindowsForm_TestOwnSkills\obj\Debug\MilionersOnWindowsForm_TestOwnSkills.pdb
