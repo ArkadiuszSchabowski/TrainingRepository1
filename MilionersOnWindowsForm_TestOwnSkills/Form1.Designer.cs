@@ -47,6 +47,7 @@
             this.btnA.TabIndex = 0;
             this.btnA.Text = "A";
             this.btnA.UseVisualStyleBackColor = true;
+            this.btnA.Click += new System.EventHandler(this.btnA_Click);
             // 
             // btnB
             // 
@@ -56,6 +57,7 @@
             this.btnB.TabIndex = 1;
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
+            this.btnB.Click += new System.EventHandler(this.btnB_Click);
             // 
             // btnC
             // 
@@ -65,6 +67,7 @@
             this.btnC.TabIndex = 2;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // btnD
             // 
@@ -74,6 +77,7 @@
             this.btnD.TabIndex = 3;
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.Click += new System.EventHandler(this.btnD_Click);
             // 
             // lblQuestion
             // 
