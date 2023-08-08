@@ -87,7 +87,7 @@
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(236, 39);
             this.lblQuestion.TabIndex = 4;
-            this.lblQuestion.Text = "First question:";
+            this.lblQuestion.Text = "First _question:";
             // 
             // bbtAudience
             // 

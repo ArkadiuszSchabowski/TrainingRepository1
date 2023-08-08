@@ -8,28 +8,29 @@ namespace MilionersOnWindowsForm_TestOwnSkills
         string _userChoice;
         int _accountBalance = 0;
         string[] _arrayQuestions = new string[3];
-        int _currentQuestion = 0;
+        int _question;
+        Random rnd = new Random();
         public Form1()
         {
             InitializeComponent();
             AssignAccountBalanceToUser();
-            AssignQuestionsToArray();
-            DisplayQuestions(_currentQuestion);
+            _question = RandomQuestion();
+            QuestionsFor100.DisplaySelectedQuestion(_arrayQuestions, _question);
+            DisplayQuestions(_question);
         }
         private void AssignAccountBalanceToUser()
         {
             lblAccountBalance.Text = _accountBalance.ToString();
         }
-        private void AssignQuestionsToArray()
+        public int RandomQuestion()
         {
-            _arrayQuestions[0] = "Jakiego koloru jest świnka Pepa?";
-            _arrayQuestions[1] = "Co jedzą świnki, by ścierać zęby?";
-            _arrayQuestions[2] = "Jakie jest prawidłowe poidełko dla jednej świnki morskiej?";
+            int quest = rnd.Next(1, 3);
+            return quest;
         }
 
-        private void AssignButtonsToQuestion(int currentQuestion)
+        private void AssignAnswersToButtons(int currentQuestion)
         {
-            switch (_currentQuestion)
+            switch (_question)
             {
                 case 0:
                     btnA.Text = "A.Biała";
@@ -49,34 +50,32 @@ namespace MilionersOnWindowsForm_TestOwnSkills
                     btnC.Text = "C.225ml";
                     btnD.Text = "D.250ml lub większe";
                     break;
-
             }
-
         }
-
 
         private void DisplayQuestions(int currentQuestion)
         {
-            if (_currentQuestion < _arrayQuestions.Length)
+            QuestionsFor100.DisplaySelectedQuestion(_arrayQuestions, _question);
+
+            if (_question < _arrayQuestions.Length)
             {
-                lblQuestion.Text = _arrayQuestions[_currentQuestion];
-                AssignButtonsToQuestion(_currentQuestion);
+                lblQuestion.Text = _arrayQuestions[_question];
+                AssignAnswersToButtons(_question);
             }
         }
 
         private void CheckAnswer(string userChoice)
         {
-            if (_currentQuestion == 0)
+            if (_question == 0)
             {
                 if (_userChoice == "A.Biała")
                 {
                     _userChoice = "";
-                    _currentQuestion++;
                     _accountBalance += 100;
                     AssignAccountBalanceToUser();
 
-                    DisplayQuestions(_currentQuestion);
-                    AssignButtonsToQuestion(_currentQuestion);
+                    DisplayQuestions(_question);
+                    AssignAnswersToButtons(_question);
 
                     return;
                 }
@@ -88,7 +87,7 @@ namespace MilionersOnWindowsForm_TestOwnSkills
                 }
             }
 
-            if (_currentQuestion == 1)
+            if (_question == 1)
             {
 
                 if (_userChoice == "B.Siano")
@@ -96,9 +95,8 @@ namespace MilionersOnWindowsForm_TestOwnSkills
                     _userChoice = "";
                     lblQuestion.Text = _arrayQuestions[1];
                     _accountBalance += 100;
-                    _currentQuestion++;
-                    DisplayQuestions(_currentQuestion);
-                    AssignButtonsToQuestion(_currentQuestion);
+                    DisplayQuestions(_question);
+                    AssignAnswersToButtons(_question);
                     return;
                 }
                 else if (_userChoice == "A.Sałatę rzymską" || _userChoice == "C.Banana" || _userChoice == "D.Pomidora")
@@ -108,16 +106,16 @@ namespace MilionersOnWindowsForm_TestOwnSkills
                     return;
                 }
             }
-            if (_currentQuestion == 2)
+            if (_question == 2)
             {
 
                 if (_userChoice == "D.250ml lub większe")
                 {
-                    //_userChoice = "";
-                    //lblQuestion.Text = _arrayQuestions[1];
-                    //_currentQuestion++;
-                    //DisplayQuestions(_currentQuestion);
-                    //AssignButtonsToQuestion(_currentQuestion);
+                    _userChoice = "";
+                    lblQuestion.Text = _arrayQuestions[1];
+                    _question++;
+                    DisplayQuestions(_question);
+                    AssignAnswersToButtons(_question);
 
                     _accountBalance += 100;
                     MessageBox.Show($"Congrats! You win a {_accountBalance}$!");
@@ -136,7 +134,6 @@ namespace MilionersOnWindowsForm_TestOwnSkills
         {
             Close();
         }
-
 
 
         private void btnA_Click(object sender, EventArgs e)
