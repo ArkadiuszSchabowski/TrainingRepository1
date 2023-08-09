@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr7 = [44, 55, 111, 99, 321];
+        let sortedArr7 = arr7.sort();
+        console.log(sortedArr7); // źle [111, 321, 44, 55, 99]
+
+        function sortNumbers(a, b) {
+            // return 0 jeśli są równe a i b
+            // wartość większą od zera jeśli a > b
+            // wartość mniejszą od zera jesli a < b
+            // a = 5   b = 7
+            // return a - b   = 5 - 7 = -2
+            return a - b;
+        }
+
+        let sortedArr7ok = arr7.sort(sortNumbers);
+        console.log(sortedArr7ok); // [44, 55, 99, 111, 321]
+    </script>
+</body>
+
+</html>
