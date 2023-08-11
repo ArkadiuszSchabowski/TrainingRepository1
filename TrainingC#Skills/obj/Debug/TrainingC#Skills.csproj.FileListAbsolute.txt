@@ -1,0 +1,8 @@
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\bin\Debug\TrainingC#Skills.exe.config
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\bin\Debug\TrainingC#Skills.exe
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\bin\Debug\TrainingC#Skills.pdb
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\obj\Debug\TrainingC#Skills.csproj.AssemblyReference.cache
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\obj\Debug\TrainingC#Skills.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\obj\Debug\TrainingC#Skills.csproj.CoreCompileInputs.cache
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\obj\Debug\TrainingC#Skills.exe
+C:\Users\Greedy\Desktop\2023\TrainingC#Skills\obj\Debug\TrainingC#Skills.pdb

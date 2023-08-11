@@ -8,9 +8,42 @@
 <body>
     <script>
         //skrócony operator logiczny
-        let age = 19;
+        let age = 16;
         let data = (age>18) ? "Pełnoletni" : "Niepełnoletni";
         console.log(data);
+
+        console.log((age>18) ? "Pełnoletnia" : "Niepełnoletnia");
+
+        (age >= 10) ? console.log("Więcej lub 10") : console.log("Mniej niż 10");
+
+        //zamiana stringa na liczbę
+        let value = "9";
+        console.log(typeof value); //string
+        value = +"9";
+        console.log(typeof value); //number
+
+        let array = [1,2,3,4,5,6,7,8,9,10];
+
+        delete array[4];
+        console.log(array);
+        console.log(typeof array[4]); //undefined
+        console.log(typeof array[7]); //number
+
+        //void 0 = undefined
+        let y = void 0;
+        console.log(y); //undefined
+
+        //Kasowanie właściwości obiektu
+        let obj = {a:10, b:20};
+        delete obj.a;
+        console.log(obj);
+
+        console.log(typeof null); //object
+
+        if ("b" in obj) console.log("Hej jestem"); //wykona się
+        if ("a" in obj) console.log("I am here"); //nie wykona się
+
+        if(obj instanceof Object) console.log("Jestem instancją obiektu Object");
     </script>
 </body>
 </html>
