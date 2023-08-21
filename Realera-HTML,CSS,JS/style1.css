@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+article {
+    margin: top 300px;
+}
+
+body {
+    margin: 0 15%;
+    background-color: silver;
+}
+
+header img {
+    width: 100%;
+    height: 50%;
+}
+
+nav a {
+    color: white;
+    width: 25%;
+    background-color: forestgreen;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+#content {
+    background-color: white;
+    min-height: 100vh;
+}
+
+footer {
+    font-weight: bold;
+    background-color: white;
+}
