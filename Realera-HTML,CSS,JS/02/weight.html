@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="checkStyle.css">
 </head>
+
 <body>
-    HEJ
+    <div id="content">
+        <p>Podaj wagę świnki</p>
+        <input type="text" id="weight">
+        <button id="check">OK</button>
+        <div id="output"></div>
+    </div>
+    <script>
+
+        let checkPiggy = document.getElementById("check");
+        let weightPiggy = document.getElementById("weight");
+        let displayOutput = document.getElementById("output");
+
+        checkPiggy.addEventListener("click", function () {
+            checkPiggyWeight(weightPiggy.value);
+            weightPiggy.value = "";
+        });
+
+        function checkPiggyWeight(weight) {
+            if (!weight) {
+                displayOutput.innerHTML = "Nie wpisano żadnej wartości";
+                return;
+            }
+
+            if (weight != null) {
+                if (weight >= 1500) {
+                    displayOutput.innerHTML = "Twoja świnka waży trochę za dużo. Popracuj nad tym";
+                } else if (weight < 800) {
+                    displayOutput.innerHTML = "Twoja świnka waży trochę za mało. Popracuj nad tym";
+                } else {
+                    displayOutput.innerHTML = "Waga Twojej świnki jest w normie";
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>

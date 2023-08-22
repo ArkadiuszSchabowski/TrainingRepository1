@@ -26,9 +26,7 @@ body{
     min-height: 100%;
 }
 
-nav a{
-    margin: 10 0 50 0;
-    padding: 50 0;
+a{
     width: 50%;
     display: inline-block;
     text-align: center;
@@ -39,12 +37,13 @@ nav a{
     font-size: large;
 }
 
-nav a:hover{
+a:hover{
     background-color: green;
 }
 
-section img{
+img{
     display: inline-block;
     width: 50%;
     height: 200px;
+    vertical-align: top;
 }
