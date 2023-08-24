@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+.normal{
+
+}
+
+.active{
+    background-color: red;
+}
 body{
     margin: 0 10%;
     background-color:honeydew

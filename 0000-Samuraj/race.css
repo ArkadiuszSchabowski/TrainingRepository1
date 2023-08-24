@@ -1,0 +1,14 @@
+body {
+}
+
+#piggies {
+    height: 100vh;
+    background: url(Tola.png) no-repeat, url(Pepa.png) no-repeat, url(Kreska.png) no-repeat, url(Kropka.png) no-repeat;
+    background-size: auto 15%, auto 15%, auto 15%, auto 15%;
+    background-position: top 8% left 2%, top 32% left 2%, top 55% left 2%, top 80% left 2%, top 0 left 0;
+    transition: 10s linear;
+    }
+
+#piggies img:hover {
+  margin-left: 400px;
+}
