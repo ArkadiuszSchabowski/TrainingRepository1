@@ -1,0 +1,39 @@
+body {
+  background-color: olivedrab;
+}
+
+#both{
+width: 80%;
+background-color: silver;
+font-size: 20px;
+}
+#contentFirstQuestion{
+  width: 70%;
+  display: inline-block;
+}
+
+#contentForUser{
+  background-color: red;
+  width: 20%;
+  display: inline-block;
+}
+
+
+#contentFirstQuestion button {
+  padding-top: 10px;
+  width: 50%;
+}
+
+#contentFirstQuestion label {
+  margin: 0 8%;
+  width: 100%;
+  font-size: 30px;
+}
+
+#contentFirstQuestion img {
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  width: 50%;
+  height: 50%;
+}
