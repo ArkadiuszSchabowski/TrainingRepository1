@@ -6,6 +6,7 @@ let btnC = document.getElementById("btnC");
 let btnD = document.getElementById("btnD");
 let userScore = document.getElementById("score");
 let countCarrots = 0;
+let pictures = document.getElementById("pictures");
 
 function DisplayTime() {
   let date = new Date();
@@ -31,41 +32,32 @@ function DisplayFirstQuestion() {
   btnD.addEventListener("click", IncorrectAnswer);
 }
 function FirstAnswerCorrect() {
-  countCarrots += 20;
-
-  btnA.removeEventListener("click", IncorrectAnswer);
-  btnB.removeEventListener("click", IncorrectAnswer);
-  btnC.removeEventListener("click", FirstAnswerCorrect);
-  btnD.removeEventListener("click", IncorrectAnswer);
-
-  userScore.innerHTML = "Zdobytych marchewek: " + countCarrots.toString();
+  countCarrots += 10;
+  DisplayTheCollectedCarrots();
   DisplaySecondQuestion();
 }
 
 function DisplaySecondQuestion() {
-    label.innerHTML = "Gdy młoda świnka się cieszy to może zacząć?";
-    btnA.innerHTML = "A.Stawać na tylnich łapach";
-    btnB.innerHTML = "B.Popcornować";
-    btnC.innerHTML = "C.Syczeć";
-    btnD.innerHTML = "D.Gruchotać";
-    
-    document.getElementById("btnA").addEventListener("click", IncorrectAnswer);
-    document.getElementById("btnB").addEventListener("click", SecondAnswerCorrect);
-    document.getElementById("btnC").addEventListener("click", IncorrectAnswer);
-    document.getElementById("btnD").addEventListener("click", IncorrectAnswer);
+  ResetButtonEventsAfterFirstCorrectAnswer();
+  label.innerHTML = "Gdy młoda świnka się cieszy to może zacząć?";
+  btnA.innerHTML = "A.Stawać na tylnich łapach";
+  btnB.innerHTML = "B.Popcornować";
+  btnC.innerHTML = "C.Syczeć";
+  btnD.innerHTML = "D.Gruchotać";
+
+  document.getElementById("btnA").addEventListener("click", IncorrectAnswer);
+  // prettier-ignore
+  document.getElementById("btnB").addEventListener("click", SecondAnswerCorrect);
+  document.getElementById("btnC").addEventListener("click", IncorrectAnswer);
+  document.getElementById("btnD").addEventListener("click", IncorrectAnswer);
 }
 function SecondAnswerCorrect() {
-
-    btnA.removeEventListener("click", IncorrectAnswer);
-    btnB.removeEventListener("click", SecondAnswerCorrect);
-    btnC.removeEventListener("click", IncorrectAnswer);
-    btnD.removeEventListener("click", IncorrectAnswer);
-
   countCarrots += 20;
-  userScore.innerHTML = "Zdobytych marchewek: " + countCarrots.toString();
+  DisplayTheCollectedCarrots();
   DisplayThirdQuestion();
 }
 function DisplayThirdQuestion() {
+  ResetButtonEventsAfterSecondCorrectAnswer();
   label.innerHTML = "Czego nie może jeść świnka morska?";
   btnA.innerHTML = "A.Cebuli";
   btnB.innerHTML = "B.Pietruszki";
@@ -78,13 +70,37 @@ function DisplayThirdQuestion() {
   document.getElementById("btnD").addEventListener("click", IncorrectAnswer);
 }
 
-
 function ThirdAnswerCorrect() {
-  countCarrots += 60;
+  countCarrots += 30;
+  DisplayTheCollectedCarrots();
+  DisplayFourthQuestion();
+}
+function DisplayFourthQuestion() {
+  ResetButtonEventsAfterThirdCorrectAnswer();
+  label.innerHTML = "Jaka jest rasa świnki wyświetlonej na ekranie?";
+
+  let pigImage = document.createElement("img");
+  pigImage.src = "Peruwianka.jpg";
+  pictures.appendChild(pigImage);
+
+  btnA.innerHTML = "A.Peruwianka";
+  btnB.innerHTML = "B.Skinny";
+  btnC.innerHTML = "C.Długowłosa";
+  btnD.innerHTML = "D.Teddy";
+
+  document.getElementById("btnA").addEventListener("click", LastAnswerCorrect);
+  document.getElementById("btnB").addEventListener("click", IncorrectAnswer);
+  document.getElementById("btnC").addEventListener("click", IncorrectAnswer);
+  document.getElementById("btnD").addEventListener("click", IncorrectAnswer);
+  return;
+}
+
+function LastAnswerCorrect() {
+  countCarrots += 40;
   quiz.innerHTML =
     "Gratulacje odpowiedziałeś poprawnie na wszystkie pytania. Otrzymujesz " +
     countCarrots.toString() +
-    " marchewek!";
+    "/100 marchewek!";
   return;
 }
 
@@ -101,4 +117,25 @@ function IncorrectAnswer() {
       "/100 marchewek. Gratulacje!";
     return;
   }
+}
+function ResetButtonEventsAfterFirstCorrectAnswer() {
+  btnA.removeEventListener("click", IncorrectAnswer);
+  btnB.removeEventListener("click", IncorrectAnswer);
+  btnC.removeEventListener("click", FirstAnswerCorrect);
+  btnD.removeEventListener("click", IncorrectAnswer);
+}
+function ResetButtonEventsAfterSecondCorrectAnswer() {
+  btnA.removeEventListener("click", IncorrectAnswer);
+  btnB.removeEventListener("click", SecondAnswerCorrect);
+  btnC.removeEventListener("click", IncorrectAnswer);
+  btnD.removeEventListener("click", IncorrectAnswer);
+}
+function ResetButtonEventsAfterThirdCorrectAnswer() {
+  btnA.removeEventListener("click", ThirdAnswerCorrect);
+  btnB.removeEventListener("click", IncorrectAnswer);
+  btnC.removeEventListener("click", IncorrectAnswer);
+  btnD.removeEventListener("click", IncorrectAnswer);
+}
+function DisplayTheCollectedCarrots() {
+  userScore.innerHTML = "Zdobytych marchewek: " + countCarrots.toString();
 }

@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+#pictures{
+    width: 50%;
+    height: 60%;
+}
+
 #firstQuestion{
     width: 100%;
     padding: 10px;
