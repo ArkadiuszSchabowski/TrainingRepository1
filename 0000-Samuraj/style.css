@@ -3,13 +3,30 @@
     padding: 0;
 }
 
-.normal{
+#firstQuestion{
+    width: 100%;
+    padding: 10px;
+    display:inline-block;
+    font-weight: bold;
+    text-align: center;
+}
 
+#score{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+
+button{
+    width: 50%;
+    height: 40px;
 }
 
 .active{
     background-color: red;
 }
+
 body{
     margin: 0 10%;
     background-color:honeydew
@@ -76,5 +93,5 @@ footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     text-align: center;
-    margin: auto;
+    padding: 10px;
 }
