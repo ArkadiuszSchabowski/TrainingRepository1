@@ -8,14 +8,6 @@ let userScore = document.getElementById("score");
 let countCarrots = 0;
 let pictures = document.getElementById("pictures");
 
-function DisplayTime() {
-  let date = new Date();
-  let timer = document.getElementById("time");
-  timer.innerHTML = date.toLocaleTimeString();
-}
-
-setInterval(DisplayTime, 1000);
-
 DisplayFirstQuestion();
 
 function DisplayFirstQuestion() {
