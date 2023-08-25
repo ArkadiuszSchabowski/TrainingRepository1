@@ -39,11 +39,11 @@ function FirstAnswerCorrect() {
 
 function DisplaySecondQuestion() {
   ResetButtonEventsAfterFirstCorrectAnswer();
-  label.innerHTML = "Gdy młoda świnka się cieszy to może zacząć?";
-  btnA.innerHTML = "A.Stawać na tylnich łapach";
-  btnB.innerHTML = "B.Popcornować";
-  btnC.innerHTML = "C.Syczeć";
-  btnD.innerHTML = "D.Gruchotać";
+  label.innerHTML = "Jak nazywa się termin oznaczający charakterystyczne podskawiwanie szczęśliwej świnki morskiej?";
+  btnA.innerHTML = "A.Kwiczenie";
+  btnB.innerHTML = "B.Popcorning";
+  btnC.innerHTML = "C.Syczenie";
+  btnD.innerHTML = "D.Gruchotanie";
 
   document.getElementById("btnA").addEventListener("click", IncorrectAnswer);
   // prettier-ignore
@@ -80,7 +80,7 @@ function DisplayFourthQuestion() {
   label.innerHTML = "Jaka jest rasa świnki wyświetlonej na ekranie?";
 
   let pigImage = document.createElement("img");
-  pigImage.src = "Peruwianka.jpg";
+  pigImage.src = "../image/Peruwianka.jpg";
   pictures.appendChild(pigImage);
 
   btnA.innerHTML = "A.Peruwianka";

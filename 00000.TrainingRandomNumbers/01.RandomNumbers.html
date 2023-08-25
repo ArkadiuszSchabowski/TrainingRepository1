@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="generate">Losuj liczbę</button>
+    <div id="content"></div>
+    <script>
+        let content = document.getElementById("content");
+
+        let btn = document.getElementById("generate");
+        btn.addEventListener("click", function(){
+            content.innerHTML = Math.random(1,49);
+        })
+    </script>
+</body>
+</html>

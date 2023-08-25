@@ -29,6 +29,23 @@ button{
 }
 
 .active{
+    background-color: green;
+}
+.active:hover{
+    background-color: red;
+}
+nav a{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(19, 102, 4);
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: all 1s ease;
+}
+nav a:hover{
     background-color: red;
 }
 
@@ -61,19 +78,6 @@ section img{
 
 nav{
     width: 100%;
-}
-nav a{
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgb(19, 102, 4);
-    color: white;
-    padding: 10px 0;
-    font-size: 16px;
-}
-nav a:hover{
-    background-color: red;
 }
 #header{
     width: 80%;
