@@ -1,0 +1,16 @@
+*{
+    background-color: green;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(19, 102, 4);
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+  }
+
+  .flipped{
+
+  }
