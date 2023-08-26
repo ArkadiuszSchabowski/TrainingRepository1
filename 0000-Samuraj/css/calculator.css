@@ -11,15 +11,45 @@
   font-weight: bold;
   color: white;
 }
-#screen{
-    width: 99%;
-    margin-bottom: 10px;
+#screen {
+  color: white;
+  text-align: right;
+  padding: 1%;
+  background-color: rgb(19, 102, 4);
+  font-weight: bold;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 0 3% 15%;
 }
 button {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(19, 102, 4);
   display: inline-block;
-  width: 33%;
+  width: 15%;
 }
 
-#equal {
-  width: 99%;
+#buttons {
+  margin-left: 15%;
+}
+#others {
+  margin-left: 15%;
+}
+#btnDelete {
+  margin-left: 10%;
+  width: 30%;
+}
+#btnAddition {
+  margin-left: 10%;
+}
+#btnMultiplication {
+  margin-left: 10%;
+}
+#btn0 {
+  width: 30%;
+}
+#btnEqual {
+  margin-left: 10%;
+  width: 30%;
 }
