@@ -4,29 +4,38 @@
 }
 
 #pictures{
-    width: 50%;
-    height: 60%;
+    width: 20%;
+    height: 20%;
 }
 
 #firstQuestion{
+    font-size: 24px;
+    margin: 3% 0;
+    color: white;
+    background-color: rgb(19, 102, 4);
     width: 100%;
-    padding: 10px;
     display:inline-block;
-    font-weight: bold;
     text-align: center;
 }
 
 #score{
+    background-color: rgb(19, 102, 4);
     font-weight: bold;
     text-align: center;
+    margin-top: 3%;
     padding: 10px;
+    font-size: 20px;
+    color: white;
 }
 
-
-button{
+button {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(19, 102, 4);
+    display: inline-block;
     width: 50%;
     height: 40px;
-}
+  }
 
 .active{
     background-color: green;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script>
+        let school = {
+            name: "WSB",
+            students: [
+                { name: "Ania", age: 27 },
+                { name: "Arek", age: 32 },
+                { name: "Dominika", age: 21 },
+            ],
+            swimingPool: false,
+            PrintInfoSchool: function () {
+                console.log(this.name);
+
+                this.students.forEach(function(student) {
+                    console.log(student.name + " " + student.age);
+                });
+            }
+        }; 
+        
+        school.PrintInfoSchool();
+    </script>
+</body>
+</html>
