@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let car1 = {
+            model: "Dodge",
+            SetModel: function(model){
+                if(model.length > 3 && (typeof model === "string")){
+                    this.model = model
+                }
+            },
+            GetModel: function(){
+                return console.log("Twój aktualny model to " + this.model +"!");
+            }
+        }
+        car1.SetModel("ab");
+        console.log(car1.model);
+        car1.SetModel(69);
+        car1.SetModel("Ferrari");
+        console.log(car1.model);
+        
+        car1.GetModel();
+
+    </script>
+</body>
+</html>

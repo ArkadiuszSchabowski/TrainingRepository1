@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            _name : "Ania",
+            set name(newName){
+                if(typeof newName === "string"){
+                    this._name = newName;
+                }
+            },
+            get name(){
+                return this._name;
+            },
+            printName(){
+                console.log(this._name)
+            }
+        };
+
+        person.name = "Ola";
+        person.printName();
+    </script>
+</body>
+</html>
