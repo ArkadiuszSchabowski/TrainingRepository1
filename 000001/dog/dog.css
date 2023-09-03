@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#content{
+    margin-top: 10vh;
+    margin-left: 15vh;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    background: orangered;
+}
+#randomImg{
+    margin-top: 2vh;
+    height: 50vh;
+    display: inline-block;
+}
+#text{
+    margin-left: 15vh;
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    background: orangered;
+    color: white;
+    font-size: 24px;
+}
